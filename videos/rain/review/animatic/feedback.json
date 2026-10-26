@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "animatic:shot.04": [
+      {
+        "id": "fb-roFOGkAT",
+        "displayedVariants": {
+          "animatic:shot.04.first": "v-vN5msM5L"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "1208d36324c4"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.78,
+          "y": 0.2
+        },
+        "time": 11.3,
+        "text": "This hand reads twenty years too young. Give it his age — thin knuckles, a few spots, the cardigan cuff hanging loose.",
+        "createdAt": "2000-01-01T00:14:35.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-68aGn2L9",
+        "displayedVariants": {
+          "animatic:shot.04.first": "v-0ggTb7B4"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "1208d36324c4"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.68,
+          "y": 0.3
+        },
+        "text": "Yes — that's his hand now.",
+        "time": 11.1,
+        "createdAt": "2000-01-01T00:15:07.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.02": [
+      {
+        "id": "fb-FNQ0Kx2n",
+        "displayedVariants": {
+          "animatic:shot.02.first": "v-5kwVlnwq",
+          "animatic:shot.02.line": "v-uyq7rGo1"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.02#composition": "0a4c603f47bd",
+          "animatic:shot.02#stem": "3f948012d79c"
+        },
+        "annotation": null,
+        "time": 5.6,
+        "text": "Her line is right. Keep the breath before it.",
+        "createdAt": "2000-01-01T00:14:35.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.05": [
+      {
+        "id": "fb-st2DDvN7",
+        "displayedVariants": {
+          "animatic:shot.05.first": "v-1gHeNpO7",
+          "animatic:shot.05.line": "v-jEBIybAB"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.05#composition": "3f04caf48268",
+          "animatic:shot.05#stem": "25a08cb0f4c6"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.55,
+          "y": 0.52
+        },
+        "time": 15,
+        "text": "The handle pointing at her is what makes this. Keep it.",
+        "createdAt": "2000-01-01T00:14:35.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.01": [
+      {
+        "id": "fb-OLSgs8E4",
+        "displayedVariants": {
+          "animatic:shot.01.first": "v-hypKU7St"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.01#composition": "bb2840a456ac"
+        },
+        "annotation": null,
+        "time": 1,
+        "text": "Picked the first take — the owner smaller, the window hers.",
+        "createdAt": "2000-01-01T00:14:35.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

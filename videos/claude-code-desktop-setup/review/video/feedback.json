@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "video:shot.07": [
+      {
+        "id": "fb-hZYH0vq4",
+        "displayedVariants": {
+          "reference:sfxClick": "v-rP7AHaR5",
+          "animatic:shot.07#narrationStem": "v-gEt1Q7u7"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.07#composition": "b70b886fbb8c",
+          "video:shot.07#stem": "173de433d09a"
+        },
+        "annotation": null,
+        "text": "from a repository の音声だけちょっと浮いてるから再生成したいな",
+        "time": 14.533333333333333,
+        "shotTime": 1.0333333333333332,
+        "createdAt": "2000-01-01T00:07:35.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

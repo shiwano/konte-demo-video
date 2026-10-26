@@ -1,0 +1,18 @@
+{
+  "stage": "direction",
+  "summary": "Six shots, about 21 seconds: one quiet act of kindness at closing time. Please sign off the direction before we spend on the animatic.",
+  "notes": [
+    {
+      "address": "direction:brief.hook",
+      "text": "The hook leans on 'closing time' — shot 01 now shows the chairs already upturned so it reads without a word."
+    },
+    {
+      "address": "direction:sequence.shots.04",
+      "text": "The turn is a single insert: his hand lifting the umbrella. Is 2.5s enough for it to land?"
+    },
+    {
+      "address": "direction:props.umbrella",
+      "text": "The yellow umbrella is the only saturated colour in the piece, planted in the stand in 03 and fired in 04."
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "video:shot.01": [
+      {
+        "id": "fb-cikE4egE",
+        "displayedVariants": {
+          "reference:sfxTyping": "v-zaUWybZ5",
+          "reference:sfxClick": "v-w04rJkle",
+          "animatic:shot.01#narrationStem": "v-hm4tH399",
+          "video:shot.01#composition": "v-SNNaoxrb"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.01#composition": "b179a8605535",
+          "video:shot.01#stem": "237229b4f3fb"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.119,
+          "y": 0.082
+        },
+        "time": 0,
+        "shotTime": 0,
+        "text": "claude code のアイコンが崩れてる",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-5IH2AYHO",
+        "displayedVariants": {
+          "reference:sfxTyping": "v-zaUWybZ5",
+          "reference:sfxClick": "v-w04rJkle",
+          "animatic:shot.01#narrationStem": "v-hm4tH399",
+          "video:shot.01#composition": "v-SNNaoxrb"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.01#composition": "b179a8605535",
+          "video:shot.01#stem": "237229b4f3fb"
+        },
+        "annotation": null,
+        "time": 1.8,
+        "shotTime": 1.8,
+        "text": "字幕が全体的にほしい",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-vF41v0eZ",
+        "displayedVariants": {
+          "reference:sfxTyping": "v-zaUWybZ5",
+          "reference:sfxClick": "v-w04rJkle",
+          "animatic:shot.01#narrationStem": "v-aKQhocNn"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.01#composition": "697e54ba393a",
+          "video:shot.01#stem": "237229b4f3fb"
+        },
+        "annotation": null,
+        "time": 1.6666666666666667,
+        "shotTime": 1.6666666666666667,
+        "text": "ここズームするのが気持ち悪い",
+        "createdAt": "2000-01-01T00:02:48.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.03": [
+      {
+        "id": "fb-CAURFRgq",
+        "displayedVariants": {
+          "reference:icon": "v-NjizW5dk",
+          "video:shot.03#composition": "v-qUIbVNeZ"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.03#composition": "3b9685fdb82f"
+        },
+        "annotation": null,
+        "time": 5.733333333333333,
+        "shotTime": 0.2333333333333334,
+        "text": "direction の説明もほしい",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-tROcq67v",
+        "displayedVariants": {
+          "animatic:shot.03#narrationStem": "v-1mqLSXyS",
+          "reference:icon": "v-NjizW5dk",
+          "video:shot.03#composition": "v-XoITvwP2"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.03#composition": "11b2017e4f5f",
+          "video:shot.03#stem": "e24cfea6bb1f"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.957,
+          "y": 0.924
+        },
+        "text": "submit ボタンの追従がおかしい。消していいよ",
+        "time": 10.033333333333333,
+        "shotTime": 4.533333333333333,
+        "createdAt": "2000-01-01T00:04:26.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.05": [
+      {
+        "id": "fb-koO3Ttl6",
+        "displayedVariants": {
+          "reference:sfxClick": "v-w04rJkle",
+          "animatic:shot.05#narrationStem": "v-CawaQLFk",
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN",
+          "video:shot.05#composition": "v-GZRnkIa4"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.05#composition": "8fd8819e5ee7",
+          "video:shot.05#stem": "a35fec3a1d3b"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.916,
+          "y": 0.052
+        },
+        "time": 11.266666666666667,
+        "shotTime": 1.2666666666666675,
+        "text": "テロップが小さくて分かりにくい",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.07": [
+      {
+        "id": "fb-PhotL9jg",
+        "displayedVariants": {
+          "animatic:shot.07#narrationStem": "v-ZzjDDnsP",
+          "video:shot.07#composition": "v-F0HFLHQr"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.07#composition": "e229d7dfb328",
+          "video:shot.07#stem": "a1f575343a1a"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.115,
+          "y": 0.363
+        },
+        "time": 17.5,
+        "shotTime": 2.5,
+        "text": "スペース一個ずれてる",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.15": [
+      {
+        "id": "fb-JkPhtQvt",
+        "displayedVariants": {
+          "animatic:shot.15#narrationStem": "v-wU5Egnr2",
+          "video:shot.15#composition": "v-zliyxIup"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.15#composition": "0a7a5c7e756a",
+          "video:shot.15#stem": "05bc0350559d"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.274,
+          "y": 0.346
+        },
+        "time": 35.86666666666667,
+        "shotTime": 1.3666666666666671,
+        "text": "こういうゲージはclaudecodeで出ないので勝手に出さないでほしい。\n出力を捏造しないで",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-TMfUb5kC",
+        "displayedVariants": {
+          "animatic:shot.15#narrationStem": "v-sJMw2CbT",
+          "video:shot.15#composition": "v-RSbBXUsI"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.15#composition": "389bcb552ed5",
+          "video:shot.15#stem": "05bc0350559d"
+        },
+        "annotation": null,
+        "text": "15, 16 まとめて、もっと短くできない？6sは長い",
+        "time": 39,
+        "shotTime": 0,
+        "createdAt": "2000-01-01T00:04:26.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video": [
+      {
+        "id": "fb-fLguRCHq",
+        "displayedVariants": {},
+        "annotation": null,
+        "text": "あと全体的にセリフがわかりにくい。もっとちゃんとした説明にして。",
+        "createdAt": "2000-01-01T00:01:06.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.14": [
+      {
+        "id": "fb-gnIPZNoO",
+        "displayedVariants": {
+          "animatic:shot.14#narrationStem": "v-SHnqIELd",
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:clip05": "v-rMkPLdvo",
+          "video:shot.14#composition": "v-AYqfBhaF"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.14#composition": "aedad44b96db",
+          "video:shot.14#stem": "496186668eb5"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.865,
+          "y": 0.747
+        },
+        "time": 38.06666666666667,
+        "shotTime": 1.56666666666667,
+        "text": "クリックしている場所がボタンじゃない",
+        "createdAt": "2000-01-01T00:03:35.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "video:shot.02": [
+      {
+        "id": "fb-uKBQP65q",
+        "displayedVariants": {
+          "video:shot.02.motion": "v-7fADlkye"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.02#composition": "2c242d53de56",
+          "video:shot.02#stem": "62f8e700c0d2"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.47,
+          "y": 0.32
+        },
+        "text": "By the end she's turned almost fully away from us. Keep her in three-quarter toward the glass so we still catch her eyes.",
+        "time": 6.8,
+        "shotTime": 2.8,
+        "createdAt": "2000-01-01T00:15:15.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.05": [
+      {
+        "id": "fb-iDJp9pMd",
+        "displayedVariants": {
+          "video:shot.05.motion": "v-UoYck1Nt"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.05#composition": "006414e81aab",
+          "video:shot.05#stem": "00aefd64af1d"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.62,
+          "y": 0.55
+        },
+        "text": "Accepting this, but could we see one where her hands actually reach the handle before the cut?",
+        "time": 16.4,
+        "shotTime": 3.3999999999999986,
+        "createdAt": "2000-01-01T00:15:15.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.04": [
+      {
+        "id": "fb-inG8d0ZT",
+        "displayedVariants": {
+          "video:shot.04.motion": "v-TScUmzZN"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.04#composition": "982043916a67",
+          "video:shot.04#stem": "4e5e2a2a8318"
+        },
+        "annotation": null,
+        "text": "The umbrella sliding out is lovely. No changes.",
+        "time": 12.3,
+        "shotTime": 1.8000000000000007,
+        "createdAt": "2000-01-01T00:15:15.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.01": [
+      {
+        "id": "fb-PWoNaGop",
+        "displayedVariants": {
+          "video:shot.01.motion": "v-FEVr63No"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.01#composition": "e0346b41f353",
+          "video:shot.01#stem": "2b0f9423b8b6"
+        },
+        "annotation": null,
+        "text": "Could the fade from black be a touch shorter? It eats the hook.",
+        "time": 0.4,
+        "shotTime": 0.4,
+        "createdAt": "2000-01-01T00:15:15.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.06": [
+      {
+        "id": "fb-o6TAQ0vv",
+        "displayedVariants": {
+          "video:shot.06.motion": "v-zy2o8KOE"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.06#composition": "f606eb374f44",
+          "video:shot.06#stem": "0f3bed84abec"
+        },
+        "annotation": null,
+        "text": "Title is perfect over the umbrella.",
+        "time": 19,
+        "shotTime": 2,
+        "createdAt": "2000-01-01T00:15:15.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

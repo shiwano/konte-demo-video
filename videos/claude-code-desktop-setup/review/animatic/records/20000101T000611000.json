@@ -1,0 +1,485 @@
+{
+  "mode": "animatic-preview",
+  "stage": "animatic",
+  "createdAt": "2000-01-01T00:06:11.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2,
+        "variants": {
+          "voFit": "v-o571YMeZ"
+        },
+        "takes": {
+          "animatic:shot.01.voFit": "v-o571YMeZ"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "03",
+        "start": 4.5,
+        "duration": 2,
+        "variants": {
+          "vo": "v-XvMgufHo"
+        },
+        "takes": {
+          "animatic:shot.03.vo": "v-XvMgufHo"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 6.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-4kFj9VER"
+        },
+        "takes": {
+          "animatic:shot.04.vo": "v-4kFj9VER"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 9,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-1i9p8xI3"
+        },
+        "takes": {
+          "animatic:shot.05.vo": "v-1i9p8xI3"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 11.5,
+        "duration": 2,
+        "variants": {
+          "vo": "v-4yiRaXba"
+        },
+        "takes": {
+          "animatic:shot.06.vo": "v-4yiRaXba"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 13.5,
+        "duration": 2,
+        "variants": {
+          "vo": "v-5nOVZbOx"
+        },
+        "takes": {
+          "animatic:shot.07.vo": "v-5nOVZbOx"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 15.5,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-mx94Itmp"
+        },
+        "takes": {
+          "animatic:shot.08.vo": "v-mx94Itmp"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 19,
+        "duration": 2,
+        "variants": {
+          "vo": "v-umG4N0N2"
+        },
+        "takes": {
+          "animatic:shot.09.vo": "v-umG4N0N2"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 21,
+        "duration": 3,
+        "variants": {
+          "vo": "v-jsroNZQA"
+        },
+        "takes": {
+          "animatic:shot.10.vo": "v-jsroNZQA"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 24,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-Uy2YZZDP"
+        },
+        "takes": {
+          "animatic:shot.11.vo": "v-Uy2YZZDP"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 26.5,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-L7j0H5ba"
+        },
+        "takes": {
+          "animatic:shot.12.vo": "v-L7j0H5ba"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 30,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-lh5lkul0"
+        },
+        "takes": {
+          "animatic:shot.13.vo": "v-lh5lkul0"
+        }
+      },
+      {
+        "shotId": "14",
+        "start": 32.5,
+        "duration": 2,
+        "variants": {
+          "voFit": "v-DfcMIKIs"
+        },
+        "takes": {
+          "animatic:shot.14.voFit": "v-DfcMIKIs"
+        }
+      },
+      {
+        "shotId": "15",
+        "start": 34.5,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "16",
+        "start": 37,
+        "duration": 4,
+        "variants": {
+          "vo": "v-SpMprQbN"
+        },
+        "takes": {
+          "animatic:shot.16.vo": "v-SpMprQbN"
+        }
+      },
+      {
+        "shotId": "17",
+        "start": 41,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-79d1Fe4n"
+        },
+        "takes": {
+          "animatic:shot.17.vo": "v-79d1Fe4n"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {},
+    "contentHashes": {
+      "animatic:shot.01#composition": "71e6a35f35ae9ce4c5fd7d5849bf0423fb68e6e326f3a71ed41ac34f09e6063e",
+      "animatic:shot.02#composition": "2c50e238715f714ee1ca4e45603018c409d0ea1f750c2b6930e8c5680a6acfcb",
+      "animatic:shot.03#composition": "b93eb543187f2f63761984e59ffb79a706f5a671200e6151e62193db8a979db1",
+      "animatic:shot.04#composition": "77f14ebad033536b751fbc3fccd9b7dbe757b3fe8a4306963a8da800fc2633d6",
+      "animatic:shot.05#composition": "e8c6b45683d8d1485a5217e8828c7cf394525620109967796470d5a795d65414",
+      "animatic:shot.06#composition": "dc3faba94338f74210b44687fae430f8fcc9b487ba1360a35d1f1442c44c1bb7",
+      "animatic:shot.07#composition": "4148c2fed5ace208637161390b5f866db4401c98c4ebe28cf8a4e49ea6f3bacf",
+      "animatic:shot.08#composition": "0c457a789d0ebec526c7b2e580f158c70d6c472b564c73ba62bc99fb06f060ae",
+      "animatic:shot.09#composition": "a71d0b16d9a1162d02b996c05e778e81435fb7d088b413ff526fd1abc714b350",
+      "animatic:shot.10#composition": "4bb282fd605f9e76afcd371cb13ca7df360e9f8821f609b0e8e4c153d2673bd5",
+      "animatic:shot.11#composition": "993da43d4f17acbde17ae2aa97af80246ac170035bccdc8f72974ee8dce52e74",
+      "animatic:shot.12#composition": "694002862b669e98754993faaf539dc1b6af0787ef6e57f844eb65563649e4b9",
+      "animatic:shot.13#composition": "99039cdae30808f29b4d38fad88180e6327b8a272670621dbcb121d0ee7825cd",
+      "animatic:shot.14#composition": "843e2f0a800a5355f46df9e857119f22ba46bdb8b7c179cc139ced3a3cdc5e63",
+      "animatic:shot.15#composition": "7cf62ee94e78970949bea9a054ccd38678a49e145c91127af0539f01a34296f1",
+      "animatic:shot.16#composition": "a595b71b9163aeb87583c54127d503d0372cf51c3090479da403efccbfc8eb62",
+      "animatic:shot.17#composition": "7528e8b4a95c69160bb690980b70cfb1bd8ee6207fc5d89635a232c3b61519c7",
+      "animatic:shot.01#narrationStem": "c9c8f757b2497b068b0124ae4647c9c32defe866e0ead13959cab3aa092174c1",
+      "animatic:shot.03#narrationStem": "896c05bf47f46aa8ba57c867d46bd59c282f793ff12331938915d692cef322b1",
+      "animatic:shot.04#narrationStem": "d832c41699ebb16395218242400a220c14d2dbff0a68158c2b7d379ef33ac232",
+      "animatic:shot.05#narrationStem": "d7b39b0cc8b4f6bafd4fbcb6e62f153c87d5091ca155678252e39f8fe472c572",
+      "animatic:shot.06#narrationStem": "790b0800fd18f9d5becd33994dcb39713de5bdaad8c9a92e22d9501dd1eb097a",
+      "animatic:shot.07#narrationStem": "2c9bd685dda1ed4e2ca2a0d48bbcb0c5df94647d4dfe167eb43b43511304a332",
+      "animatic:shot.08#narrationStem": "fc2502ed0f6a5773b3f5a38801412622e90a1f8d063c6864fd2f1ed772c48ba0",
+      "animatic:shot.09#narrationStem": "e432a27ece8931f4437c3b6507e989c861f1411e0a21b8ba19abd94be79f457c",
+      "animatic:shot.10#narrationStem": "3bfd6df59b6719ed5263a0375748a0874a08b6996b58626773ee0acb443ca3ee",
+      "animatic:shot.11#narrationStem": "a775b079e919ae141354ed4cf790bb4d5f4118ecba7916f04058bc8ef74e8427",
+      "animatic:shot.12#narrationStem": "274b1536c90d0cee8435d543884c20b4ecf97fb1f9dab1d5338668e40a1e206a",
+      "animatic:shot.13#narrationStem": "bb7900fd31643cd860459ea0aca4b7affe034b92eacc38ace130534c2860b7d1",
+      "animatic:shot.14#narrationStem": "3f1454b16f9115393a959951f44bf7348c403ff8ed4ee7495e6e530045a75262",
+      "animatic:shot.16#narrationStem": "0f20768b2a6beefcfb658a13e7fa0fc7acc65d5bfaccc8ed25934bae0589921a",
+      "animatic:shot.17#narrationStem": "812a4d5cdb7c725e40ec68673ba91994a7178b639a1821c925477a30411f4b27"
+    }
+  },
+  "decisions": {
+    "10": "accepted",
+    "11": "accepted",
+    "12": "accepted",
+    "13": "accepted",
+    "14": "accepted",
+    "15": "accepted",
+    "16": "accepted",
+    "17": "accepted",
+    "01": "accepted",
+    "02": "accepted",
+    "03": "accepted",
+    "04": "accepted",
+    "05": "accepted",
+    "06": "accepted",
+    "07": "accepted",
+    "08": "accepted",
+    "09": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "animatic:shot.01.voFit",
+      "via": "animatic:shot.01#narrationStem"
+    },
+    {
+      "address": "animatic:shot.01.vo",
+      "via": "animatic:shot.01#stem"
+    },
+    {
+      "address": "animatic:shot.03.vo",
+      "via": "animatic:shot.03#narrationStem"
+    },
+    {
+      "address": "animatic:shot.04.vo",
+      "via": "animatic:shot.04#narrationStem"
+    },
+    {
+      "address": "animatic:shot.05.vo",
+      "via": "animatic:shot.05#narrationStem"
+    },
+    {
+      "address": "animatic:shot.06.vo",
+      "via": "animatic:shot.06#narrationStem"
+    },
+    {
+      "address": "animatic:shot.07.vo",
+      "via": "animatic:shot.07#narrationStem"
+    },
+    {
+      "address": "animatic:shot.08.vo",
+      "via": "animatic:shot.08#narrationStem"
+    },
+    {
+      "address": "animatic:shot.09.vo",
+      "via": "animatic:shot.09#narrationStem"
+    },
+    {
+      "address": "animatic:shot.10.vo",
+      "via": "animatic:shot.10#narrationStem"
+    },
+    {
+      "address": "animatic:shot.11.vo",
+      "via": "animatic:shot.11#narrationStem"
+    },
+    {
+      "address": "animatic:shot.12.vo",
+      "via": "animatic:shot.12#narrationStem"
+    },
+    {
+      "address": "animatic:shot.13.vo",
+      "via": "animatic:shot.13#narrationStem"
+    },
+    {
+      "address": "animatic:shot.14.voFit",
+      "via": "animatic:shot.14#narrationStem"
+    },
+    {
+      "address": "animatic:shot.14.vo",
+      "via": "animatic:shot.14#stem"
+    },
+    {
+      "address": "animatic:shot.16.vo",
+      "via": "animatic:shot.16#narrationStem"
+    },
+    {
+      "address": "animatic:shot.17.vo",
+      "via": "animatic:shot.17#narrationStem"
+    },
+    {
+      "address": "animatic:shot.01#narrationStem",
+      "via": "animatic:shot.01"
+    },
+    {
+      "address": "animatic:shot.03#narrationStem",
+      "via": "animatic:shot.03"
+    },
+    {
+      "address": "animatic:shot.04#narrationStem",
+      "via": "animatic:shot.04"
+    },
+    {
+      "address": "animatic:shot.05#narrationStem",
+      "via": "animatic:shot.05"
+    },
+    {
+      "address": "animatic:shot.06#narrationStem",
+      "via": "animatic:shot.06"
+    },
+    {
+      "address": "animatic:shot.07#narrationStem",
+      "via": "animatic:shot.07"
+    },
+    {
+      "address": "animatic:shot.08#narrationStem",
+      "via": "animatic:shot.08"
+    },
+    {
+      "address": "animatic:shot.09#narrationStem",
+      "via": "animatic:shot.09"
+    },
+    {
+      "address": "animatic:shot.10#narrationStem",
+      "via": "animatic:shot.10"
+    },
+    {
+      "address": "animatic:shot.11#narrationStem",
+      "via": "animatic:shot.11"
+    },
+    {
+      "address": "animatic:shot.12#narrationStem",
+      "via": "animatic:shot.12"
+    },
+    {
+      "address": "animatic:shot.13#narrationStem",
+      "via": "animatic:shot.13"
+    },
+    {
+      "address": "animatic:shot.14#narrationStem",
+      "via": "animatic:shot.14"
+    },
+    {
+      "address": "animatic:shot.16#narrationStem",
+      "via": "animatic:shot.16"
+    },
+    {
+      "address": "animatic:shot.17#narrationStem",
+      "via": "animatic:shot.17"
+    },
+    {
+      "address": "animatic:shot.01#composition",
+      "via": "animatic:shot.01"
+    },
+    {
+      "address": "animatic:shot.02#composition",
+      "via": "animatic:shot.02"
+    },
+    {
+      "address": "animatic:shot.03#composition",
+      "via": "animatic:shot.03"
+    },
+    {
+      "address": "animatic:shot.04#composition",
+      "via": "animatic:shot.04"
+    },
+    {
+      "address": "animatic:shot.05#composition",
+      "via": "animatic:shot.05"
+    },
+    {
+      "address": "animatic:shot.06#composition",
+      "via": "animatic:shot.06"
+    },
+    {
+      "address": "animatic:shot.07#composition",
+      "via": "animatic:shot.07"
+    },
+    {
+      "address": "animatic:shot.08#composition",
+      "via": "animatic:shot.08"
+    },
+    {
+      "address": "animatic:shot.09#composition",
+      "via": "animatic:shot.09"
+    },
+    {
+      "address": "animatic:shot.10#composition",
+      "via": "animatic:shot.10"
+    },
+    {
+      "address": "animatic:shot.11#composition",
+      "via": "animatic:shot.11"
+    },
+    {
+      "address": "animatic:shot.12#composition",
+      "via": "animatic:shot.12"
+    },
+    {
+      "address": "animatic:shot.13#composition",
+      "via": "animatic:shot.13"
+    },
+    {
+      "address": "animatic:shot.14#composition",
+      "via": "animatic:shot.14"
+    },
+    {
+      "address": "animatic:shot.15#composition",
+      "via": "animatic:shot.15"
+    },
+    {
+      "address": "animatic:shot.16#composition",
+      "via": "animatic:shot.16"
+    },
+    {
+      "address": "animatic:shot.17#composition",
+      "via": "animatic:shot.17"
+    },
+    {
+      "address": "video:shot.02#composition",
+      "via": "animatic:shot.02"
+    },
+    {
+      "address": "video:shot.15#composition",
+      "via": "animatic:shot.15"
+    },
+    {
+      "address": "direction:sequence",
+      "via": "animatic:shot.01"
+    },
+    {
+      "address": "direction:sequence.shots.08",
+      "via": "animatic:shot.08"
+    },
+    {
+      "address": "direction:sequence.shots.12",
+      "via": "animatic:shot.12"
+    },
+    {
+      "address": "direction:sequence.shots.16",
+      "via": "animatic:shot.16"
+    }
+  ],
+  "handoffId": "20000101T000610000",
+  "handoffSummary": "コメントを反映しました。行やメニュー項目はクリックしてもへこまないようにし、入力と選択の場面に間をとりました（全体で約45秒）。",
+  "handoffNotes": [
+    {
+      "address": "animatic:shot.07",
+      "text": "行がクリックで縮む動きをやめました（メニュー項目や左の一覧も同様です）。ボタンだけが押し込まれます。"
+    },
+    {
+      "address": "animatic:shot.08",
+      "text": "尺を2.5秒から3.5秒に延ばし、1文字ずつゆっくり打ち込んでから候補が出るまで少し待ちます。"
+    },
+    {
+      "address": "animatic:shot.12",
+      "text": "尺を3.5秒に延ばし、候補が出てから選ぶまで、選んでから送信するまでにそれぞれ間をとりました。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "サイドバーの konte-workspace にカーソルを合わせると出る + から新しいセッションを開くようにしました。尺は4秒です。ナレーションは入力が始まるタイミングに合わせています。"
+    }
+  ]
+}

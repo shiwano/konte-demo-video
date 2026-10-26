@@ -1,0 +1,30 @@
+{
+  "stage": "video",
+  "summary": "README の文言変更と、絵コンテでいただいたコメントの修正を、映像に反映しました。",
+  "notes": [
+    {
+      "address": "video:shot.03",
+      "text": "Characters・Props・Locations を足し、最後に台本の6ショットが収まるようにしました（カーソルなし）。"
+    },
+    {
+      "address": "video:shot.04",
+      "text": "ナレーションを「You accept it.」に変えました。ページを最後まで下げた位置にして、表の終わりが Submit ボタンのすぐ上に来ます。"
+    },
+    {
+      "address": "video:shot.05",
+      "text": "見出しを「2 Review shared assets」に、ナレーションを「Next, accept …」に変えました。"
+    },
+    {
+      "address": "video:shot.08",
+      "text": "再生位置の線がショットの境目を越えた瞬間に、絵が切り替わるようにしました。"
+    },
+    {
+      "address": "video:shot.15",
+      "text": "ナレーションを「Accept the cut, …」に変えました。"
+    },
+    {
+      "address": "video:shot.16",
+      "text": "15と同じ縮尺に固定して、最後のズームをなくしました。"
+    }
+  ]
+}

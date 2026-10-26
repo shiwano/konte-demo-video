@@ -1,0 +1,14 @@
+{
+  "stage": "animatic",
+  "summary": "direction 画面に Characters・Props・Locations を足して、本物の konte と同じ並びにしました。",
+  "notes": [
+    {
+      "address": "animatic:shot.03",
+      "text": "本物の konte の direction 画面と同じく、Policy と Flow & Shots の間に Characters・Props・Locations を入れました。最後は、台本の6ショットが画面いっぱいに収まります。"
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "カメラは元の寄りの動きに戻しました。ページを最後まで下げた位置にして、表の終わりが Submit ボタンのすぐ上に来るようにしています。"
+    }
+  ]
+}

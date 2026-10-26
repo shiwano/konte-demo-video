@@ -1,0 +1,26 @@
+{
+  "stage": "video",
+  "summary": "First motion pass on all six shots, about 21 seconds. Both lines are lip-synced from the board's stems; rain runs under the whole piece and the piano enters at 03.",
+  "notes": [
+    {
+      "address": "video:shot.01",
+      "text": "Held wide, only the owner's hands and the rain moving. Opens from black over 1.2s."
+    },
+    {
+      "address": "video:shot.02",
+      "text": "Slow push in while she speaks. Check the mouth closes on 'is it?'."
+    },
+    {
+      "address": "video:shot.04",
+      "text": "The umbrella clears the top of frame at 2.9s, just before the cut."
+    },
+    {
+      "address": "video:shot.05",
+      "text": "She starts reaching for the handle at the very end — the hand-off itself is left to the cut."
+    },
+    {
+      "address": "video:shot.06",
+      "text": "Title fades in at 0.9s and holds to 3.4s before the fade to black, per your direction note."
+    }
+  ]
+}

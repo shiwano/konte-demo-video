@@ -1,0 +1,323 @@
+{
+  "mode": "animatic-preview",
+  "stage": "animatic",
+  "createdAt": "2000-01-01T00:04:10.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-k4n9jwwe"
+        },
+        "takes": {
+          "animatic:shot.01.vo": "v-k4n9jwwe"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-FKMBtfgE"
+        },
+        "takes": {
+          "animatic:shot.02.vo": "v-FKMBtfgE"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 5.5,
+        "duration": 5.5,
+        "variants": {
+          "vo": "v-pa9QbSOS"
+        },
+        "takes": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 11,
+        "duration": 2,
+        "variants": {
+          "vo": "v-w93YvYGh"
+        },
+        "takes": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 13,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-FNAkiZ7s"
+        },
+        "takes": {
+          "animatic:shot.05.vo": "v-FNAkiZ7s",
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 16.5,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 18.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-3GnK03Gi"
+        },
+        "takes": {
+          "animatic:shot.07.vo": "v-3GnK03Gi"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 21.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-2XpsDtxf"
+        },
+        "takes": {
+          "animatic:shot.08.vo": "v-2XpsDtxf",
+          "reference:icon": "v-NjizW5dk",
+          "reference:panel01": "v-m25AXgHS",
+          "reference:panel02": "v-9qJdraMj",
+          "reference:panel03": "v-zR4w6aCP",
+          "reference:panel04": "v-Tx70aEiy",
+          "reference:panel05": "v-mWGJP50M",
+          "reference:panel06": "v-znJ4sgzB"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 24.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-liwD6WL4"
+        },
+        "takes": {
+          "animatic:shot.09.vo": "v-liwD6WL4",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame03": "v-2kepDeyZ",
+          "reference:frame04": "v-fNI6mBNy"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 27.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-RTB2tcrw"
+        },
+        "takes": {
+          "animatic:shot.10.vo": "v-RTB2tcrw",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 30,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-igWn5vhX"
+        },
+        "takes": {
+          "animatic:shot.11.vo": "v-igWn5vhX",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 32.5,
+        "duration": 1.5,
+        "variants": {},
+        "takes": {
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 34,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-GE2VZrK5"
+        },
+        "takes": {
+          "animatic:shot.13.vo": "v-GE2VZrK5"
+        }
+      },
+      {
+        "shotId": "14",
+        "start": 36.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-ke59eNz1"
+        },
+        "takes": {
+          "animatic:shot.14.vo": "v-ke59eNz1",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05": "v-o8gMN6Fm"
+        }
+      },
+      {
+        "shotId": "15",
+        "start": 39,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-UhMOiNkk"
+        },
+        "takes": {
+          "animatic:shot.15.vo": "v-UhMOiNkk"
+        }
+      },
+      {
+        "shotId": "16",
+        "start": 42.5,
+        "duration": 3,
+        "variants": {},
+        "takes": {}
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {},
+    "contentHashes": {
+      "animatic:shot.01#composition": "2613876797f945e8dcd949cc020c603483eaaf534db5366bd139791ed06bd4ec",
+      "animatic:shot.02#composition": "e0222e88c44ac20d87f14cc86fd3b844a123d793ca4d81520438602cee0a1431",
+      "animatic:shot.03#composition": "05fb4d8cc687542b702bc12c32bd93b083f8887e6c6313dc2aee238f6a24bc76",
+      "animatic:shot.04#composition": "6a29fef431a3e5c7aef3b69071d66e62dc59bbc3dbbc77de17f7644c4b689ff1",
+      "animatic:shot.05#composition": "9e6c23bb76f61b442bfcf1f38b0bf0ee8aa30ba2a40c016f1028292349c0b6c4",
+      "animatic:shot.06#composition": "c5bbdef008e9abd4d9814f656f5cdf304408ea359bd885da7a53679091a28f6e",
+      "animatic:shot.07#composition": "65eed6ecd8a0027a250b3748c702d2f9edb8f1bcca12044f78ae6725e3aff35a",
+      "animatic:shot.08#composition": "fd71febd8aae5b246310f4e6f818ad1cc491351b689bdc8a895fe341c0bf2992",
+      "animatic:shot.09#composition": "a0c07a9cff51287f738b7a0cbe621f2918a8418c6633c0c85cc5954e89609c9a",
+      "animatic:shot.10#composition": "f5e0910feb732f6c413624aad21c40035c160989f3b7d5c07723885baa53f64f",
+      "animatic:shot.11#composition": "5a0fc2e37da26af2bee3148bdbda3111d50a56f23d5692c62982aa241acd3e05",
+      "animatic:shot.12#composition": "75d3571610ea6113b1f88912f178657b746303669aac1bec9279f9264a5d4941",
+      "animatic:shot.13#composition": "ac7b8ab2a994a3d859ef0591d6cec5e5e092118fbb3ba2e813b79fa103d45dcf",
+      "animatic:shot.14#composition": "550347046f14dae68f984204bb98cf1609388b650c63eef37fe8bf02cc1234d1",
+      "animatic:shot.15#composition": "257429155f0c0c654333fef66d59fb1632e7919fbf8acd1e23913bc1f0cdeb7f",
+      "animatic:shot.16#composition": "247ad4f956ec246d8c7ab56993a37a1e97619d7e315a987ef17ae17c9ab9251a",
+      "animatic:shot.01#narrationStem": "19236680df1c8efd82b7f0504783139d32e16f1f3dddc8471698f68528f6a254",
+      "animatic:shot.02#narrationStem": "876bfcd752ee52eb90000e7adc12a5dfe5e93e44e69071faff0de7725e4f37c4",
+      "animatic:shot.03#narrationStem": "079b74dcc499a950d5a0775a74fda15865a6fb1c5f17a94423175ad5bc635af7",
+      "animatic:shot.04#narrationStem": "7977a1f562dcae205df82d9b1cfd3731e6b1e38134fb87fff743f376632dd986",
+      "animatic:shot.05#narrationStem": "334a9e6611eebbde5e55c80ec3190e1f44dac38f2309d735b0b1b2588f9e4baa",
+      "animatic:shot.07#narrationStem": "54ec233372320fe31a4a795d3ccbb6013492ec23bf078122f146e71b2ed6a8e5",
+      "animatic:shot.08#narrationStem": "8bbde73bf6606c8e2416bbb5197cb8b304250994eeea958777b3814a0b46e237",
+      "animatic:shot.09#narrationStem": "97448c7c5f19f15443900325117986c88f6d5b6e5e871db646ec37ec0c7063d1",
+      "animatic:shot.10#narrationStem": "13038d04111ca3b3bbe75ed8a5a0e73a5a2b43f68c6764f87876547cd2e8af6e",
+      "animatic:shot.11#narrationStem": "c42ca9b42a5e5fd82fad62d474742da60b88d660420ca31fb1e4a0eb61e60f94",
+      "animatic:shot.13#narrationStem": "f5290d29b93fb7aaba1c3f3b7faf4e967d72a7771cefb37ecf7f39a86fe826fb",
+      "animatic:shot.14#narrationStem": "6068e3854d643eeaf4598f34a10086ee08d282ac971e5f327d940113e22b96fe",
+      "animatic:shot.15#narrationStem": "8bff22300ba34e1c71f55dfa2cdf65133ca06f7c37b1b549695823249c804f11"
+    }
+  },
+  "decisions": {
+    "02": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "animatic:shot.02#narrationStem",
+      "via": "animatic:shot.02"
+    },
+    {
+      "address": "animatic:shot.02#composition",
+      "via": "animatic:shot.02"
+    }
+  ],
+  "notes": [
+    {
+      "id": "fb-PYIk0kVq",
+      "time": 6.6,
+      "shotId": "03",
+      "address": "animatic:shot.03",
+      "x": 0.774,
+      "y": 0.919,
+      "text": "右下じゃない",
+      "displayedVariants": {
+        "animatic:shot.03.vo": "v-pa9QbSOS",
+        "reference:icon": "v-NjizW5dk"
+      }
+    },
+    {
+      "id": "fb-I27NP7tx",
+      "time": 9.266666666666667,
+      "shotId": "03",
+      "address": "animatic:shot.03",
+      "x": 0.711,
+      "y": 0.639,
+      "text": "このカーソルいらない",
+      "displayedVariants": {
+        "animatic:shot.03.vo": "v-pa9QbSOS",
+        "reference:icon": "v-NjizW5dk"
+      }
+    },
+    {
+      "id": "fb-2Gl3G4oC",
+      "time": 11.633333333333333,
+      "shotId": "04",
+      "address": "animatic:shot.04",
+      "x": 0.767,
+      "y": 0.91,
+      "text": "他の UI がズームしているのに、フローティングボタンがズームしてない",
+      "displayedVariants": {
+        "animatic:shot.04.vo": "v-w93YvYGh",
+        "reference:icon": "v-NjizW5dk",
+        "animatic:shot.04#composition": "v-va04O17i"
+      }
+    },
+    {
+      "id": "fb-ulLe1ACO",
+      "time": 12.3,
+      "shotId": "04",
+      "address": "animatic:shot.04",
+      "x": 0.782,
+      "y": 0.712,
+      "text": "スクロールしなくてもよさそう。",
+      "displayedVariants": {
+        "animatic:shot.04.vo": "v-w93YvYGh",
+        "reference:icon": "v-NjizW5dk",
+        "animatic:shot.04#composition": "v-va04O17i"
+      }
+    }
+  ],
+  "handoffId": "20000101T000409000",
+  "handoffSummary": "Submit ボタンを、画面右下に固定されたフローティングボタンにしました。03・04のスクロールは元に戻しています。",
+  "handoffNotes": [
+    {
+      "address": "animatic:shot.03",
+      "text": "スクロールを元に戻したので、台本の一覧が画面の中央に来ます。Submit ボタンは画面右下に固定していて、カメラが寄っても位置と大きさが変わりません。"
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "03と同じく、Submit ボタンを画面右下に固定しました。押す瞬間の見え方は前と同じです。ナレーション「You accept it.」も一緒にご確認ください。"
+    },
+    {
+      "address": "animatic:shot.02",
+      "text": "ご判断どおり、変更していません。"
+    }
+  ]
+}

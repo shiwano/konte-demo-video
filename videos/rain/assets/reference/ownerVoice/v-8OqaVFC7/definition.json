@@ -1,0 +1,64 @@
+{
+  "kind": "comfy",
+  "workflow": "audio_minimax_h3_r2a.json",
+  "inputs": {
+    "10.prompt": "integrated_multimodal_description: [Shot 1] 2D-animated. Medium shot of an elderly man in his seventies standing at a shop counter in the morning, wiping it with a cloth. He is a man (S1) with a low, warm voice with a little gravel in it, slow. He glances up toward a customer and says, <d>[English] The bread comes in at nine, so there's a little while yet.</d> His lips meet and he goes back to wiping the counter. The camera holds a static shot.\n\noverall_soundscape: A quiet shop, a cloth wiping a wooden counter, low room tone.\n\nnon_diegetic_music: N/A",
+    "10.width": 128,
+    "10.height": 128,
+    "10.length": 124,
+    "11.noise_seed": "__konte:seed__",
+    "13.steps": 20,
+    "1.unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "2.clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "3.vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+    "4.vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "prunedNodes": [
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "31",
+    "32",
+    "33"
+  ],
+  "models": [
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    },
+    {
+      "filename": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "10.prompt": "prompt",
+    "10.width": "width",
+    "10.height": "height",
+    "10.length": "length",
+    "11.noise_seed": "seed",
+    "13.steps": "steps",
+    "1.unet_name": "unetName",
+    "2.clip_name": "clipName",
+    "3.vae_name": "vaeName",
+    "4.vae_name": "audioVaeName"
+  }
+}

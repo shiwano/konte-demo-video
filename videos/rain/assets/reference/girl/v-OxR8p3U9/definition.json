@@ -1,0 +1,41 @@
+{
+  "kind": "comfy",
+  "workflow": "image_krea2_turbo_t2i.json",
+  "inputs": {
+    "52.text": "2D anime illustration with soft cel shading, clean thin dark-brown line art, gentle painterly gradients. Full-body character reference of a young woman in her early twenties standing straight and facing the viewer, arms relaxed at her sides. Shoulder-length straight black hair, the ends slightly damp and separated into strands, a few strands across her forehead. Calm dark-brown eyes, a small closed mouth, pale skin. She wears a navy duffle coat reaching mid-thigh with cream toggle buttons and an upturned hood, over a cream cable-knit sweater whose collar shows at the neck, a charcoal pleated skirt, black tights and brown leather loafers. Plain off-white background, even soft studio light, the figure centred and filling the height of the frame.",
+    "53.width": 832,
+    "53.height": 1248,
+    "54.seed": "__konte:seed__",
+    "54.steps": 8,
+    "58.vae_name": "qwen_image_vae.safetensors",
+    "57.clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+    "56.unet_name": "krea2_turbo_int8_convrot.safetensors"
+  },
+  "models": [
+    {
+      "filename": "krea2_turbo_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors"
+    },
+    {
+      "filename": "qwen_image_vae.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "52.text": "prompt",
+    "53.width": "width",
+    "53.height": "height",
+    "54.seed": "seed",
+    "54.steps": "steps",
+    "58.vae_name": "vaeName",
+    "57.clip_name": "clipName",
+    "56.unet_name": "unetName"
+  }
+}

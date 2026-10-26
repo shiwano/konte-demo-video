@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "animatic:shot.07": [
+      {
+        "id": "fb-fi6X8BCQ",
+        "displayedVariants": {
+          "animatic:shot.07.vo": "v-5nOVZbOx"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.07#composition": "64e41ff078ae",
+          "animatic:shot.07#narrationStem": "f1f007a2cf4a"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.509,
+          "y": 0.52
+        },
+        "text": "ここへこまない",
+        "time": 14.7,
+        "createdAt": "2000-01-01T00:06:09.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.08": [
+      {
+        "id": "fb-At9M6k1V",
+        "displayedVariants": {
+          "animatic:shot.08.vo": "v-mx94Itmp"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.08#composition": "c8c4f7aff652",
+          "animatic:shot.08#narrationStem": "d40fdfb0c654"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.341,
+          "y": 0.478
+        },
+        "text": "人間がタイプするところはもうちょっと間をとりたい",
+        "time": 17.5,
+        "createdAt": "2000-01-01T00:06:09.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.12": [
+      {
+        "id": "fb-5vE9zSE5",
+        "displayedVariants": {
+          "animatic:shot.12.vo": "v-L7j0H5ba"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.12#composition": "bed9a21d655b",
+          "animatic:shot.12#narrationStem": "5bbf6143c1be"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.571,
+          "y": 0.786
+        },
+        "text": "ここらへんも間をとりたい",
+        "time": 27.033333333333335,
+        "createdAt": "2000-01-01T00:06:09.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.16": [
+      {
+        "id": "fb-P8aIIpGM",
+        "displayedVariants": {
+          "animatic:shot.16.vo": "v-SpMprQbN"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.16#composition": "1df740bb819a",
+          "animatic:shot.16#narrationStem": "45dde616048f"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.258,
+          "y": 0.314
+        },
+        "text": "konte-workspace の + ボタンからセッションは開始したい",
+        "time": 35.233333333333334,
+        "createdAt": "2000-01-01T00:06:09.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-2aAPVqL9",
+        "displayedVariants": {
+          "animatic:shot.16.vo": "v-SpMprQbN"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.16#composition": "1df740bb819a",
+          "animatic:shot.16#narrationStem": "45dde616048f"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.564,
+          "y": 0.782
+        },
+        "text": "ここも間がほしい",
+        "time": 36.333333333333336,
+        "createdAt": "2000-01-01T00:06:09.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

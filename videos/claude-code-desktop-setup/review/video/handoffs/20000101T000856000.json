@@ -1,0 +1,10 @@
+{
+  "stage": "video",
+  "summary": "ショット07のナレーションを、選んでいただいた新しい音声に差し替えました。",
+  "notes": [
+    {
+      "address": "video:shot.07",
+      "text": "「from a repository」を新しい音声（v-GbfS7kfg）に差し替えています。"
+    }
+  ]
+}

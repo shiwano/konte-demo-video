@@ -1,0 +1,37 @@
+{
+  "outputHash": "8ee9d753d03e47ae016a517ac8fe54a73026dd7ea4f1ecd71fb443de4becf908",
+  "heard": [
+    {
+      "text": "op",
+      "startSec": 0.06
+    },
+    {
+      "text": "en",
+      "startSec": 0.18
+    },
+    {
+      "text": " a",
+      "startSec": 0.36
+    },
+    {
+      "text": " folder",
+      "startSec": 0.54
+    },
+    {
+      "text": " for",
+      "startSec": 0.9
+    },
+    {
+      "text": " your",
+      "startSec": 1.08
+    },
+    {
+      "text": " work",
+      "startSec": 1.26
+    },
+    {
+      "text": "space",
+      "startSec": 1.56
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "outputHash": "bb62e4df9dc3c3040714a1448fc42656d93e55d62d438d35e3b4dff7cc58cfef",
+  "heard": [
+    {
+      "text": "ad",
+      "startSec": 0.06
+    },
+    {
+      "text": "d",
+      "startSec": 0.12
+    },
+    {
+      "text": " your",
+      "startSec": 0.24
+    },
+    {
+      "text": " work",
+      "startSec": 0.42
+    },
+    {
+      "text": "space",
+      "startSec": 0.72
+    },
+    {
+      "text": " folder",
+      "startSec": 1.02
+    }
+  ]
+}

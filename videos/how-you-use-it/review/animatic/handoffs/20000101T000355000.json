@@ -1,0 +1,18 @@
+{
+  "stage": "animatic",
+  "summary": "README の文言変更（approve → accept）に合わせて、ナレーション3本を録り直しました。",
+  "notes": [
+    {
+      "address": "animatic:shot.04",
+      "text": "ナレーションを「You approve it.」から「You accept it.」に変えて録り直しました。"
+    },
+    {
+      "address": "animatic:shot.05",
+      "text": "ナレーションを「Next, approve the shared characters and places.」から「Next, accept …」に変えて録り直しました。"
+    },
+    {
+      "address": "animatic:shot.15",
+      "text": "ナレーションを「Approve the cut, …」から「Accept the cut, …」に変えて録り直しました。最初のテイクは3.8秒でショットの尺に収まらなかったので、3.1秒に収まるテイクを選んでいます。"
+    }
+  ]
+}

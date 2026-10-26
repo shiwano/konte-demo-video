@@ -1,0 +1,10 @@
+{
+  "stage": "video",
+  "summary": "7番のボタンを直しました。",
+  "notes": [
+    {
+      "address": "video:shot.07",
+      "text": "「Browse directory」のボタンを文字が収まる幅に広げました。下のメニューも「Add a marketplace」がはみ出さないよう広げています。"
+    }
+  ]
+}

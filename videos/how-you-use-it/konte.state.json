@@ -1,0 +1,3435 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "reference:konteVoice": {
+      "variants": {
+        "v-FCElFkeA": {
+          "status": "accepted",
+          "file": "assets/files/konte-voice.mp3",
+          "definitionHash": null,
+          "outputHash": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4",
+          "media": {
+            "kind": "audio",
+            "durationSec": 7.3,
+            "channels": 2,
+            "sampleRate": 32000,
+            "loudness": {
+              "integratedLufs": -14.9,
+              "truePeakDb": -1.2,
+              "leadInSec": 0.23,
+              "soundEndSec": 5.66
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:01.000Z",
+          "readyAt": "2000-01-01T00:00:01.000Z",
+          "decidedAt": "2000-01-01T00:00:27.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:icon": {
+      "variants": {
+        "v-NjizW5dk": {
+          "status": "accepted",
+          "file": "assets/files/konte-icon.png",
+          "definitionHash": null,
+          "outputHash": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+          "media": {
+            "kind": "image",
+            "width": 512,
+            "height": 512
+          },
+          "createdAt": "2000-01-01T00:00:02.000Z",
+          "readyAt": "2000-01-01T00:00:02.000Z",
+          "decidedAt": "2000-01-01T00:00:26.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:refGirl": {
+      "variants": {
+        "v-TtkREfFM": {
+          "status": "accepted",
+          "file": "assets/files/ref-girl.png",
+          "definitionHash": null,
+          "outputHash": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
+          "media": {
+            "kind": "image",
+            "width": 832,
+            "height": 1248
+          },
+          "createdAt": "2000-01-01T00:00:03.000Z",
+          "readyAt": "2000-01-01T00:00:03.000Z",
+          "decidedAt": "2000-01-01T00:00:33.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:refOwner": {
+      "variants": {
+        "v-kPB4Y64z": {
+          "status": "accepted",
+          "file": "assets/files/ref-owner.png",
+          "definitionHash": null,
+          "outputHash": "3b3bb146764bea6759f5631973d002b4b1a90393268673c121d5d8b11a5f2e1b",
+          "media": {
+            "kind": "image",
+            "width": 832,
+            "height": 1248
+          },
+          "createdAt": "2000-01-01T00:00:04.000Z",
+          "readyAt": "2000-01-01T00:00:04.000Z",
+          "decidedAt": "2000-01-01T00:00:34.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:refUmbrella": {
+      "variants": {
+        "v-o8BgUHdF": {
+          "status": "accepted",
+          "file": "assets/files/ref-umbrella.png",
+          "definitionHash": null,
+          "outputHash": "06e70db4e473ea597958442ca13d463bfa3634f9e5733cceb096d7879b6c63f8",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 1248
+          },
+          "createdAt": "2000-01-01T00:00:05.000Z",
+          "readyAt": "2000-01-01T00:00:05.000Z",
+          "decidedAt": "2000-01-01T00:00:34.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:refCafe": {
+      "variants": {
+        "v-aRJ5bTTN": {
+          "status": "accepted",
+          "file": "assets/files/ref-cafe.png",
+          "definitionHash": null,
+          "outputHash": "5e33a02fb7e52d2bf542536fe863a29a674b6417722c34a41b57c81199d72d09",
+          "media": {
+            "kind": "image",
+            "width": 2496,
+            "height": 1248
+          },
+          "createdAt": "2000-01-01T00:00:06.000Z",
+          "readyAt": "2000-01-01T00:00:06.000Z",
+          "decidedAt": "2000-01-01T00:00:32.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:panel01": {
+      "variants": {
+        "v-m25AXgHS": {
+          "status": "accepted",
+          "file": "assets/files/panel-01.png",
+          "definitionHash": null,
+          "outputHash": "c5808e9032be837d730ed919ffc9800762ec1b408a99606473e11b8fdbc4ac2a",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:07.000Z",
+          "readyAt": "2000-01-01T00:00:07.000Z",
+          "decidedAt": "2000-01-01T00:00:27.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:panel02": {
+      "variants": {
+        "v-9qJdraMj": {
+          "status": "accepted",
+          "file": "assets/files/panel-02.png",
+          "definitionHash": null,
+          "outputHash": "afca0e8bbcf47746d92bd29acf1117e1e085d3df9f2b31f73ccd1387dac1cb53",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:08.000Z",
+          "readyAt": "2000-01-01T00:00:08.000Z",
+          "decidedAt": "2000-01-01T00:00:28.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:panel03": {
+      "variants": {
+        "v-zR4w6aCP": {
+          "status": "accepted",
+          "file": "assets/files/panel-03.png",
+          "definitionHash": null,
+          "outputHash": "6dc94e852987b7b0d903854e1c4287c39f61c3fabe92134ac8e6a50ac01bcc28",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:09.000Z",
+          "readyAt": "2000-01-01T00:00:09.000Z",
+          "decidedAt": "2000-01-01T00:00:29.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:panel04": {
+      "variants": {
+        "v-Tx70aEiy": {
+          "status": "accepted",
+          "file": "assets/files/panel-04.png",
+          "definitionHash": null,
+          "outputHash": "beca4f2ec7ad447804275e7b66c0155801bb3223c3b055f89b9195aec16addc7",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:10.000Z",
+          "readyAt": "2000-01-01T00:00:10.000Z",
+          "decidedAt": "2000-01-01T00:00:29.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:panel05": {
+      "variants": {
+        "v-mWGJP50M": {
+          "status": "accepted",
+          "file": "assets/files/panel-05.png",
+          "definitionHash": null,
+          "outputHash": "306084e7e409b5973ae997b57f5b92c8c4c225b0b70347400266d6181757d7b7",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:11.000Z",
+          "readyAt": "2000-01-01T00:00:11.000Z",
+          "decidedAt": "2000-01-01T00:00:30.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:panel06": {
+      "variants": {
+        "v-znJ4sgzB": {
+          "status": "accepted",
+          "file": "assets/files/panel-06.png",
+          "definitionHash": null,
+          "outputHash": "5a126333d7b06d73eb0242c52f739987bdf3f277bb7e78fcd27b5da7ba0b8175",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:12.000Z",
+          "readyAt": "2000-01-01T00:00:12.000Z",
+          "decidedAt": "2000-01-01T00:00:31.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:frame05": {
+      "variants": {
+        "v-o8gMN6Fm": {
+          "status": "accepted",
+          "file": "assets/files/frame-05.png",
+          "definitionHash": null,
+          "outputHash": "a0be4b23eb1a32e913301cc8e1453aca629bf7cd37c7b4afbf1f006119210e77",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:13.000Z",
+          "readyAt": "2000-01-01T00:00:13.000Z",
+          "decidedAt": "2000-01-01T00:00:26.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip01": {
+      "variants": {
+        "v-z0M5R5Gs": {
+          "status": "accepted",
+          "file": "assets/files/clip-01.mp4",
+          "definitionHash": null,
+          "outputHash": "43a2c71941f7a7f1260b42c70f88382c197018ebec9874bf963c98eb544d2b3f",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 4.458333,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -28.5,
+                "truePeakDb": -4.6,
+                "leadInSec": 0.45,
+                "soundEndSec": 2.7699999999999996
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:14.000Z",
+          "readyAt": "2000-01-01T00:00:14.000Z",
+          "decidedAt": "2000-01-01T00:00:21.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip02": {
+      "variants": {
+        "v-oDrxG22I": {
+          "status": "accepted",
+          "file": "assets/files/clip-02.mp4",
+          "definitionHash": null,
+          "outputHash": "391b962b6aea569d87a569fc91805e7bb390e6d96fbd45366c4b497ccc92ff85",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 3.75,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -17.2,
+                "truePeakDb": -4.5,
+                "leadInSec": 1.38,
+                "soundEndSec": 2.73
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:15.000Z",
+          "readyAt": "2000-01-01T00:00:15.000Z",
+          "decidedAt": "2000-01-01T00:00:22.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip03": {
+      "variants": {
+        "v-VDRK02E4": {
+          "status": "accepted",
+          "file": "assets/files/clip-03.mp4",
+          "definitionHash": null,
+          "outputHash": "d7c85c0319725b18310bf5db0024b92d92f488df578cf61873a99005d9647be6",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 3.042,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -48.9,
+                "truePeakDb": -31.5,
+                "leadInSec": 0.02,
+                "soundEndSec": 3.03
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:16.000Z",
+          "readyAt": "2000-01-01T00:00:16.000Z",
+          "decidedAt": "2000-01-01T00:00:22.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip04": {
+      "variants": {
+        "v-m7jJFfyv": {
+          "status": "accepted",
+          "file": "assets/files/clip-04.mp4",
+          "definitionHash": null,
+          "outputHash": "a4e363821825301a2de7f3729d07ad3225cf419f3caadff79ec5e4ac45c00397",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 3.042,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -45.4,
+                "truePeakDb": -24.8,
+                "leadInSec": 0,
+                "soundEndSec": 3.05
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:17.000Z",
+          "readyAt": "2000-01-01T00:00:17.000Z",
+          "decidedAt": "2000-01-01T00:00:23.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip05Before": {
+      "variants": {
+        "v-GrCU0mAp": {
+          "status": "accepted",
+          "file": "assets/files/clip-05-before.mp4",
+          "definitionHash": null,
+          "outputHash": "2cb980ff516d3df3f1511ce17529bf0e414243e8c9c7f121db1aff03a8c01215",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 4.458333,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -16.9,
+                "truePeakDb": -3.9,
+                "leadInSec": 1.09,
+                "soundEndSec": 3.2899999999999996
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:18.000Z",
+          "readyAt": "2000-01-01T00:00:18.000Z",
+          "decidedAt": "2000-01-01T00:00:25.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip05": {
+      "variants": {
+        "v-rMkPLdvo": {
+          "status": "accepted",
+          "file": "assets/files/clip-05.mp4",
+          "definitionHash": null,
+          "outputHash": "9f389eee61c59642a2e863d4f56040690bd91e4cfad5c4f083327511076e9be4",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 4.458333,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -16.8,
+                "truePeakDb": -3.4,
+                "leadInSec": 1.09,
+                "soundEndSec": 3.2899999999999996
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:19.000Z",
+          "readyAt": "2000-01-01T00:00:19.000Z",
+          "decidedAt": "2000-01-01T00:00:24.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:clip06": {
+      "variants": {
+        "v-soEQpUot": {
+          "status": "accepted",
+          "file": "assets/files/clip-06.mp4",
+          "definitionHash": null,
+          "outputHash": "12a63d246e692b545b6b67d90dadc4d7f711bc9d792989bf88029c3dbe11b5fa",
+          "media": {
+            "kind": "video",
+            "width": 1248,
+            "height": 704,
+            "fps": 24,
+            "durationSec": 4.458333,
+            "audio": {
+              "channels": 2,
+              "sampleRate": 32000,
+              "loudness": {
+                "integratedLufs": -43.7,
+                "truePeakDb": -19.4,
+                "leadInSec": 0.03,
+                "soundEndSec": 4.4399999999999995
+              },
+              "silent": false
+            }
+          },
+          "createdAt": "2000-01-01T00:00:20.000Z",
+          "readyAt": "2000-01-01T00:00:20.000Z",
+          "decidedAt": "2000-01-01T00:00:25.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:frame03": {
+      "variants": {
+        "v-2kepDeyZ": {
+          "status": "accepted",
+          "file": "assets/files/frame-03.png",
+          "definitionHash": null,
+          "outputHash": "15b0cf9968479f65e94fa547aaccee4a4036d44a79457ead856df74da05fd547",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:35.000Z",
+          "readyAt": "2000-01-01T00:00:35.000Z",
+          "decidedAt": "2000-01-01T00:00:38.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:frame04": {
+      "variants": {
+        "v-fNI6mBNy": {
+          "status": "accepted",
+          "file": "assets/files/frame-04.png",
+          "definitionHash": null,
+          "outputHash": "d0d9b465e1ab8df0a8e488bd51e8e3b24797dc131732057cc17a40264066d5b9",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:36.000Z",
+          "readyAt": "2000-01-01T00:00:36.000Z",
+          "decidedAt": "2000-01-01T00:00:39.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "reference:frame05Before": {
+      "variants": {
+        "v-oc9EcJ9Y": {
+          "status": "accepted",
+          "file": "assets/files/frame-05-before.png",
+          "definitionHash": null,
+          "outputHash": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f",
+          "media": {
+            "kind": "image",
+            "width": 1248,
+            "height": 704
+          },
+          "createdAt": "2000-01-01T00:00:37.000Z",
+          "readyAt": "2000-01-01T00:00:37.000Z",
+          "decidedAt": "2000-01-01T00:00:39.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.01.vo": {
+      "variants": {
+        "v-hwTPsAAj": {
+          "status": "none",
+          "file": "assets/animatic/shot.01.vo/v-hwTPsAAj/ComfyUI_00334.mp3",
+          "definitionHash": "f521d3cae1cb",
+          "outputHash": "7283c371709dee4e010c90fae588d22ebb979bc77dc9b962d6793bdce44d6407",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.766259,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -17.1,
+              "truePeakDb": -1.6,
+              "leadInSec": 0.02,
+              "soundEndSec": 0.71
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:40.000Z",
+          "readyAt": "2000-01-01T00:00:45.000Z",
+          "decidedAt": null,
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "vouchedAt": "2000-01-01T00:28:50.000Z",
+          "seed": 3136010357,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "e485fcca-de46-43db-8646-db1013d037c7"
+          }
+        },
+        "v-u8rLSl70": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.01.vo/v-u8rLSl70/ComfyUI_00339.mp3",
+          "definitionHash": "d516ea64fc19",
+          "outputHash": "62afc8f8b83fb55d84ca3fcf421fa78d62bde76df2049940f1bb2b6259c140b8",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.172608,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -17.4,
+              "truePeakDb": -1.5,
+              "leadInSec": 0.03,
+              "soundEndSec": 1.18
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:52.000Z",
+          "readyAt": "2000-01-01T00:00:54.000Z",
+          "decidedAt": "2000-01-01T00:01:23.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 2563233142,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "0b713cd7-4a76-4b96-9c29-2842d54779e6"
+          }
+        },
+        "v-PW8JaUJS": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.01.vo/v-PW8JaUJS/ComfyUI_00347.mp3",
+          "definitionHash": "0c667da09d47",
+          "outputHash": "9a6ce3c0399e7d4adad453c531992c4a2d1e3b69920031007725a751754c46e1",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.808073,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -21.3,
+              "truePeakDb": -2.3,
+              "leadInSec": 0.01,
+              "soundEndSec": 3.44
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:10.000Z",
+          "readyAt": "2000-01-01T00:01:18.000Z",
+          "decidedAt": "2000-01-01T00:01:51.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 4127828595,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "3a667515-de0b-4315-b2f6-46e70f2b53f8"
+          }
+        },
+        "v-k4n9jwwe": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.01.vo/v-k4n9jwwe/ComfyUI_00357.mp3",
+          "definitionHash": "fee411631e51",
+          "outputHash": "836359c350a68ff4fff5ebe4a8632cedca38dff7aa37d99cd10d890117688c3b",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.404807,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -20.8,
+              "truePeakDb": -4.1,
+              "leadInSec": 0.02,
+              "soundEndSec": 1.35
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:30.000Z",
+          "readyAt": "2000-01-01T00:01:42.000Z",
+          "decidedAt": "2000-01-01T00:01:51.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3625354902,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "f918ff20-2309-4da8-9295-68cdf8c36760"
+          }
+        }
+      }
+    },
+    "animatic:shot.05.vo": {
+      "variants": {
+        "v-6tgLEFBU": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.05.vo/v-6tgLEFBU/ComfyUI_00335.mp3",
+          "definitionHash": "c051f6d10057",
+          "outputHash": "45cd9f50a771d7a0670fc5b6fbf9fe8d8451da83ad5e4d15ce01e445be6e50b8",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.928798,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -21.7,
+              "truePeakDb": -7.2,
+              "leadInSec": 0.17,
+              "soundEndSec": 0.93
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:41.000Z",
+          "readyAt": "2000-01-01T00:00:46.000Z",
+          "decidedAt": "2000-01-01T00:03:57.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 888990829,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "15a9c1e9-6c76-427a-9628-f8c9d195b1af"
+          }
+        },
+        "v-1s0y9sMh": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.05.vo/v-1s0y9sMh/ComfyUI_00340.mp3",
+          "definitionHash": "f7c561644bd3",
+          "outputHash": "479bef957cba902e365e24144744bff6ba461bc839c52871b0c789244a6b59cf",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.766259,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -24.3,
+              "truePeakDb": -8.9,
+              "leadInSec": 0.03,
+              "soundEndSec": 0.72
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:53.000Z",
+          "readyAt": "2000-01-01T00:00:55.000Z",
+          "decidedAt": "2000-01-01T00:01:24.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 1715182102,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "4044fab8-b670-43a1-96b5-5d9858e3f1ec"
+          }
+        },
+        "v-YKkgc7xE": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.05.vo/v-YKkgc7xE/ComfyUI_00348.mp3",
+          "definitionHash": "0be420504b13",
+          "outputHash": "6c05a60a78aeb2696389ea6378c2edb5c587b80242ed4c72d13a77477e28e694",
+          "media": {
+            "kind": "audio",
+            "durationSec": 4.272472,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -21,
+              "truePeakDb": -4.7,
+              "leadInSec": 0.02,
+              "soundEndSec": 4.109999999999999
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:11.000Z",
+          "readyAt": "2000-01-01T00:01:19.000Z",
+          "decidedAt": "2000-01-01T00:01:54.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 2762965910,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "46f442db-d31c-4bf0-b977-3d361a3cf64e"
+          }
+        },
+        "v-RVXhwjGM": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.05.vo/v-RVXhwjGM/ComfyUI_00359.mp3",
+          "definitionHash": "3dd209b25b29",
+          "outputHash": "07d3738f26f61e3f05574db8bd6d69ee7a2e828df89aa5445a98c305cd598eef",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.134694,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -21.6,
+              "truePeakDb": -4.7,
+              "leadInSec": 0.01,
+              "soundEndSec": 3.1399999999999997
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:32.000Z",
+          "readyAt": "2000-01-01T00:01:44.000Z",
+          "decidedAt": "2000-01-01T00:03:57.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 4010653163,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "03e70b70-c4c9-4965-bb84-34e0fcc960ae"
+          }
+        },
+        "v-FNAkiZ7s": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.05.vo/v-FNAkiZ7s/ComfyUI_00366.mp3",
+          "definitionHash": "803d863d9849",
+          "outputHash": "dd51e564606fb4ff2e92cc114a9b1209416e65aff68cc7567f6e48ca36c99da7",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.181134,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -22.7,
+              "truePeakDb": -4.9,
+              "leadInSec": 0.02,
+              "soundEndSec": 3.0999999999999996
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:03:45.000Z",
+          "readyAt": "2000-01-01T00:03:48.000Z",
+          "decidedAt": "2000-01-01T00:03:57.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 1603885574,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "68910522-936a-43a0-ab15-e1c670686dd0"
+          }
+        }
+      }
+    },
+    "animatic:shot.07.vo": {
+      "variants": {
+        "v-tLE5g5y2": {
+          "status": "none",
+          "file": "assets/animatic/shot.07.vo/v-tLE5g5y2/ComfyUI_00336.mp3",
+          "definitionHash": "538ef0f48572",
+          "outputHash": "8411af779abc7e0088a91630f2efd2355ee1b4cbacaab382e829b1768675e7fd",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.998458,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -24.2,
+              "truePeakDb": -4.4,
+              "leadInSec": 0.02,
+              "soundEndSec": 1
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:41.000Z",
+          "readyAt": "2000-01-01T00:00:44.000Z",
+          "decidedAt": null,
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3460842001,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "2a1f2ad2-a5da-4a7f-9f2b-2ca408b6a6ca"
+          },
+          "vouchedAt": "2000-01-01T00:28:51.000Z"
+        },
+        "v-NK6ylCIL": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.07.vo/v-NK6ylCIL/ComfyUI_00341.mp3",
+          "definitionHash": "d2cf7ed0cff7",
+          "outputHash": "9ccb0b90b03423ef288090e090406c96ee30c7e0e56944e1c87e78a4f74842f5",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.242268,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -23.4,
+              "truePeakDb": -4,
+              "leadInSec": 0.02,
+              "soundEndSec": 1.25
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:53.000Z",
+          "readyAt": "2000-01-01T00:00:56.000Z",
+          "decidedAt": "2000-01-01T00:01:25.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3915095811,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "7daa37a0-9d21-4626-aa28-be8158ae82aa"
+          }
+        },
+        "v-Aa52azu2": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.07.vo/v-Aa52azu2/ComfyUI_00349.mp3",
+          "definitionHash": "8fcd4418baed",
+          "outputHash": "08ebdca15fc20922294aa98ac72b6c1eab3616c5d59cdc48f504ac087838578a",
+          "media": {
+            "kind": "audio",
+            "durationSec": 4.632381,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -23,
+              "truePeakDb": -6.7,
+              "leadInSec": 0.05,
+              "soundEndSec": 4.569999999999999
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:12.000Z",
+          "readyAt": "2000-01-01T00:01:20.000Z",
+          "decidedAt": "2000-01-01T00:01:55.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 1829864745,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "75471746-c5df-452b-8ae6-78e3338481a4"
+          }
+        },
+        "v-AsWtt9tF": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.07.vo/v-AsWtt9tF/ComfyUI_00360.mp3",
+          "definitionHash": "fe7d51999fcc",
+          "outputHash": "8147e56de1d2e16433806923b99fa76c150096d1d55cfd9aef79945778bb8ef0",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.950476,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -19,
+              "truePeakDb": -2.7,
+              "leadInSec": 0.03,
+              "soundEndSec": 1.86
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:33.000Z",
+          "readyAt": "2000-01-01T00:01:45.000Z",
+          "decidedAt": "2000-01-01T00:01:55.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 2937442172,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "7545c074-8ca2-42ac-bba0-1407191d9c1e"
+          }
+        },
+        "v-3GnK03Gi": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.07.vo/v-3GnK03Gi/ComfyUI_00364.mp3",
+          "definitionHash": "fe7d51999fcc",
+          "outputHash": "8587ef01d78eee65aa2d909c7e92517173b4473368703e1091abc4eba4876a8c",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.345215,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -19.7,
+              "truePeakDb": -5.6,
+              "leadInSec": 0.01,
+              "soundEndSec": 2.32
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:49.000Z",
+          "readyAt": "2000-01-01T00:01:50.000Z",
+          "decidedAt": "2000-01-01T00:01:55.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3595309267,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "5f239af3-b2f9-4a80-ba61-8e47a2033658"
+          }
+        }
+      }
+    },
+    "animatic:shot.10.vo": {
+      "variants": {
+        "v-78aJXjOl": {
+          "status": "none",
+          "file": "assets/animatic/shot.10.vo/v-78aJXjOl/ComfyUI_00337.mp3",
+          "definitionHash": "5748765a9164",
+          "outputHash": "75045e4b403d733313a387b7bb3a2d8549d2d229f1648c42594e46c5e43745f3",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.323537,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -22.4,
+              "truePeakDb": -4.6,
+              "leadInSec": 0.03,
+              "soundEndSec": 1.33
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:41.000Z",
+          "readyAt": "2000-01-01T00:00:47.000Z",
+          "decidedAt": null,
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3200054864,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "7364bd34-0cd7-43a2-95d3-782f87ab5e0c"
+          }
+        },
+        "v-X6lTWgsj": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.10.vo/v-X6lTWgsj/ComfyUI_00342.mp3",
+          "definitionHash": "2fa59b8ad757",
+          "outputHash": "8c3779243f673a47ed4c69201c5f5d2986bea36488ee703aee2d77dc429050b2",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.567347,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -23.8,
+              "truePeakDb": -5.3,
+              "leadInSec": 0.1,
+              "soundEndSec": 1.46
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:53.000Z",
+          "readyAt": "2000-01-01T00:00:57.000Z",
+          "decidedAt": "2000-01-01T00:01:26.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 2311766053,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "56dcb286-937c-4648-804f-84fca8aaca02"
+          }
+        },
+        "v-EPhEOVmc": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.10.vo/v-EPhEOVmc/ComfyUI_00350.mp3",
+          "definitionHash": "3cf55ce0fac2",
+          "outputHash": "8d55d39802127c5a9a797c8f897faf30215ea19f48c4e4a7b6c8bfb8c55f4f92",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.123084,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -21.2,
+              "truePeakDb": -3.2,
+              "leadInSec": 0.01,
+              "soundEndSec": 2.98
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:13.000Z",
+          "readyAt": "2000-01-01T00:01:21.000Z",
+          "decidedAt": "2000-01-01T00:01:58.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 2525233456,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "eab4b8db-090b-4917-981b-5d37ab2512ac"
+          }
+        },
+        "v-RTB2tcrw": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.10.vo/v-RTB2tcrw/ComfyUI_00362.mp3",
+          "definitionHash": "0a0bc4bd5f61",
+          "outputHash": "517bb0576441049ace21e59dad18d3ac316c6063928f627f0b8ebab87a6f0e12",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.486077,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -23.2,
+              "truePeakDb": -8,
+              "leadInSec": 0.05,
+              "soundEndSec": 1.49
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:35.000Z",
+          "readyAt": "2000-01-01T00:01:47.000Z",
+          "decidedAt": "2000-01-01T00:01:58.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3644887995,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "9ab9f7ce-4f47-4d3d-8230-8d7004afcfc0"
+          }
+        }
+      }
+    },
+    "animatic:shot.15.vo": {
+      "variants": {
+        "v-IMogfP6e": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.15.vo/v-IMogfP6e/ComfyUI_00338.mp3",
+          "definitionHash": "76a4a3b350ec",
+          "outputHash": "8e4f7c4adbbbb2aad25e033c8a2a80024611821ed9d34b5d3e74dd43c717033e",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.567347,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -22,
+              "truePeakDb": -5.1,
+              "leadInSec": 0.05,
+              "soundEndSec": 1.57
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:41.000Z",
+          "readyAt": "2000-01-01T00:00:48.000Z",
+          "decidedAt": "2000-01-01T00:03:58.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3910070667,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "3381a2be-62b2-40bc-9714-3ac18a88b9d3"
+          }
+        },
+        "v-QAJRpP3w": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.15.vo/v-QAJRpP3w/ComfyUI_00343.mp3",
+          "definitionHash": "fe1c6562975e",
+          "outputHash": "a581bae51fd4c89c1eeeab91321cbee92a8d0e98353a353f185657951d9db840",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.799546,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -22.3,
+              "truePeakDb": -7.3,
+              "leadInSec": 0.02,
+              "soundEndSec": 1.72
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:53.000Z",
+          "readyAt": "2000-01-01T00:00:58.000Z",
+          "decidedAt": "2000-01-01T00:01:27.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 457019535,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "3b4779fc-e73c-44df-a08d-4284a0bb12b2"
+          }
+        },
+        "v-9Cl0wWPk": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.15.vo/v-9Cl0wWPk/ComfyUI_00351.mp3",
+          "definitionHash": "9187e796f87f",
+          "outputHash": "0de26513b73e8876bef315408d7370075a140b63f5504015a602ea0ed7f6276f",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.320454,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -25.1,
+              "truePeakDb": -7.2,
+              "leadInSec": 0.01,
+              "soundEndSec": 3.19
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:14.000Z",
+          "readyAt": "2000-01-01T00:01:22.000Z",
+          "decidedAt": "2000-01-01T00:03:58.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3715376659,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "a4a2deaf-2c02-461a-8843-3c00479c09e0"
+          }
+        },
+        "v-hQCX9qcv": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.15.vo/v-hQCX9qcv/ComfyUI_00367.mp3",
+          "definitionHash": "0ea30f71a8a5",
+          "outputHash": "94d15b208cd495e28c87724e5a1110f213c4cadb4f448b53eddf054f6bed9266",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.819683,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -26,
+              "truePeakDb": -7.8,
+              "leadInSec": 0.02,
+              "soundEndSec": 3.76
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:03:46.000Z",
+          "readyAt": "2000-01-01T00:03:49.000Z",
+          "decidedAt": "2000-01-01T00:03:54.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 1587581942,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "630bd0ee-85de-4b50-a88c-d7f75e60c4f2"
+          }
+        },
+        "v-UhMOiNkk": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.15.vo/v-UhMOiNkk/ComfyUI_00368.mp3",
+          "definitionHash": "0ea30f71a8a5",
+          "outputHash": "d9cd37b363d67c7fcb66a32f54de89d1d47de303ad1d07fe4dde6e4bd3877a19",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.088254,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -26.5,
+              "truePeakDb": -8.9,
+              "leadInSec": 0.04,
+              "soundEndSec": 3.09
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:03:50.000Z",
+          "readyAt": "2000-01-01T00:03:52.000Z",
+          "decidedAt": "2000-01-01T00:03:58.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3214400263,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "aa2f02dd-d6a8-4059-87d2-d93bbf3521df"
+          }
+        },
+        "v-TOqODt9p": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.15.vo/v-TOqODt9p/ComfyUI_00369.mp3",
+          "definitionHash": "0ea30f71a8a5",
+          "outputHash": "e0b3b37dd866866ca5b38159f6a28264fdc385fe6f28396be50ba355be602ff6",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.691973,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -26.9,
+              "truePeakDb": -7.6,
+              "leadInSec": 0.01,
+              "soundEndSec": 3.59
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:03:51.000Z",
+          "readyAt": "2000-01-01T00:03:53.000Z",
+          "decidedAt": "2000-01-01T00:03:54.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 1730198098,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "42dd7770-2e61-4c9a-ba07-629fe35cd444"
+          }
+        }
+      }
+    },
+    "reference:bgm": {
+      "variants": {
+        "v-t3fmOWZi": {
+          "status": "accepted",
+          "file": "assets/reference/bgm/v-t3fmOWZi/stable_audio_3_00037.mp3",
+          "definitionHash": "bf907a58c228",
+          "outputHash": "88e75cd4944117c24f6f4427263ff9372e818176db1db49fe058aaae66ea1b29",
+          "media": {
+            "kind": "audio",
+            "durationSec": 48.018866,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -13.7,
+              "truePeakDb": 0.9,
+              "leadInSec": 0,
+              "soundEndSec": 48
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:42.000Z",
+          "readyAt": "2000-01-01T00:00:50.000Z",
+          "decidedAt": "2000-01-01T00:00:59.000Z",
+          "inputFingerprints": {},
+          "seed": 281854685,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "84b7f5ac-caaa-4655-abd8-d623bbce8eda"
+          }
+        }
+      }
+    },
+    "reference:sfxClick": {
+      "variants": {
+        "v-w04rJkle": {
+          "status": "accepted",
+          "file": "assets/reference/sfxClick/v-w04rJkle/stable_audio_3_00038.mp3",
+          "definitionHash": "91c689e105bd",
+          "outputHash": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.021678,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -30.4,
+              "truePeakDb": -4.9,
+              "leadInSec": 0,
+              "soundEndSec": 0.17
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:43.000Z",
+          "readyAt": "2000-01-01T00:00:49.000Z",
+          "decidedAt": "2000-01-01T00:01:00.000Z",
+          "inputFingerprints": {},
+          "seed": 3744660684,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "5c381998-0ee6-4c5c-9e4b-dc7e21910525"
+          }
+        }
+      }
+    },
+    "reference:sfxTyping": {
+      "variants": {
+        "v-zaUWybZ5": {
+          "status": "accepted",
+          "file": "assets/reference/sfxTyping/v-zaUWybZ5/stable_audio_3_00039.mp3",
+          "definitionHash": "667d5999d68c",
+          "outputHash": "321b792bc0e530cb34012ede3fef4308dbdb1b4a33409be83875019ac0bbe015",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.972154,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -31.3,
+              "truePeakDb": -6.7,
+              "leadInSec": 0.03,
+              "soundEndSec": 1.05
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:00:43.000Z",
+          "readyAt": "2000-01-01T00:00:51.000Z",
+          "decidedAt": "2000-01-01T00:01:01.000Z",
+          "inputFingerprints": {},
+          "seed": 522230754,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "8413bd73-3771-40b3-ad5b-bcfbf3da48a6"
+          }
+        }
+      }
+    },
+    "animatic:shot.01#composition": {
+      "variants": {
+        "v-NWCqcru7": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.01#composition/v-NWCqcru7/composition.html",
+          "definitionHash": "8cbe4d693d32",
+          "outputHash": "cab1614af8da10b6b8cb0d9af69970db2c5b688a6f4fb09d5d72168b55c789b5",
+          "createdAt": "2000-01-01T00:03:29.000Z",
+          "readyAt": "2000-01-01T00:03:30.000Z",
+          "decidedAt": "2000-01-01T00:03:30.000Z",
+          "inputFingerprints": {
+            "animatic:shot.01.vo": "836359c350a68ff4fff5ebe4a8632cedca38dff7aa37d99cd10d890117688c3b"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.02#composition": {
+      "variants": {
+        "v-CzlR1AA2": {
+          "status": "none",
+          "file": "assets/animatic/shot.02#composition/v-CzlR1AA2/composition.html",
+          "definitionHash": "60923173dce7",
+          "outputHash": "d5b758de791efa4347fb0dbda86dd65ba3bdb96402a4808388f31a72c011426b",
+          "createdAt": "2000-01-01T00:02:06.000Z",
+          "readyAt": "2000-01-01T00:02:07.000Z",
+          "decidedAt": null,
+          "inputFingerprints": {
+            "animatic:shot.02.vo": "7d1c1c4bf12f25a9ce17f28e322467e84018a544cfc16d07659db876c09f35c6"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        },
+        "v-DjsdrbaE": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.02#composition/v-DjsdrbaE/composition.html",
+          "definitionHash": "81f475f9a918",
+          "outputHash": "c6cf0bd96855d8709d89b8fa5aaeb4ff2a9dbcdeb7358b8193731b1b8f0bf7b5",
+          "createdAt": "2000-01-01T00:04:12.000Z",
+          "readyAt": "2000-01-01T00:04:13.000Z",
+          "decidedAt": "2000-01-01T00:04:13.000Z",
+          "inputFingerprints": {
+            "animatic:shot.02.vo": "7d1c1c4bf12f25a9ce17f28e322467e84018a544cfc16d07659db876c09f35c6"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.03#composition": {
+      "variants": {
+        "v-XeSPAOEb": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.03#composition/v-XeSPAOEb/composition.html",
+          "definitionHash": "4605fcf9bbac",
+          "outputHash": "5c78f5391c4aca0ab4c3243aa695226b87a53274f06d386fb85893a883ce6cd9",
+          "createdAt": "2000-01-01T00:04:55.000Z",
+          "readyAt": "2000-01-01T00:04:56.000Z",
+          "decidedAt": "2000-01-01T00:04:56.000Z",
+          "inputFingerprints": {
+            "animatic:shot.03.vo": "5faf3ea974f0223a8c2c91638d87e092bbc2e90ff85b51c2794e99efd0385786",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.04#composition": {
+      "variants": {
+        "v-drOgqwct": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.04#composition/v-drOgqwct/composition.html",
+          "definitionHash": "57768bb7cc7c",
+          "outputHash": "7be222e198fb212b44566c2b7bfc194786e60bf190fa51e591103bd381d683bf",
+          "createdAt": "2000-01-01T00:04:22.000Z",
+          "readyAt": "2000-01-01T00:04:23.000Z",
+          "decidedAt": "2000-01-01T00:04:23.000Z",
+          "inputFingerprints": {
+            "animatic:shot.04.vo": "29241cbe13b53ecc9168a7ee7e62fc3be19847fed4222433d8d8bd0ba08341ba",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.05#composition": {
+      "variants": {
+        "v-5KNdVK2e": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.05#composition/v-5KNdVK2e/composition.html",
+          "definitionHash": "e0d1c682fc33",
+          "outputHash": "f842e3d6b9dfb6cbba5c9a322e0a91bfee6d4e4db4ad847003a2654347cd1b21",
+          "createdAt": "2000-01-01T00:04:01.000Z",
+          "readyAt": "2000-01-01T00:04:02.000Z",
+          "decidedAt": "2000-01-01T00:04:02.000Z",
+          "inputFingerprints": {
+            "animatic:shot.05.vo": "dd51e564606fb4ff2e92cc114a9b1209416e65aff68cc7567f6e48ca36c99da7",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
+            "reference:refOwner": "3b3bb146764bea6759f5631973d002b4b1a90393268673c121d5d8b11a5f2e1b",
+            "reference:refUmbrella": "06e70db4e473ea597958442ca13d463bfa3634f9e5733cceb096d7879b6c63f8",
+            "reference:refCafe": "5e33a02fb7e52d2bf542536fe863a29a674b6417722c34a41b57c81199d72d09"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.06#composition": {
+      "variants": {
+        "v-NN4OJ3xR": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.06#composition/v-NN4OJ3xR/composition.html",
+          "definitionHash": "94406d27bab4",
+          "outputHash": "dc38cc75912a63e0fd15b84b80e7b2b0b1d8458303869c4fe43688c7ad312770",
+          "createdAt": "2000-01-01T00:03:31.000Z",
+          "readyAt": "2000-01-01T00:03:32.000Z",
+          "decidedAt": "2000-01-01T00:03:32.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
+            "reference:refOwner": "3b3bb146764bea6759f5631973d002b4b1a90393268673c121d5d8b11a5f2e1b",
+            "reference:refUmbrella": "06e70db4e473ea597958442ca13d463bfa3634f9e5733cceb096d7879b6c63f8",
+            "reference:refCafe": "5e33a02fb7e52d2bf542536fe863a29a674b6417722c34a41b57c81199d72d09"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.07#composition": {
+      "variants": {
+        "v-fz8GGfFX": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.07#composition/v-fz8GGfFX/composition.html",
+          "definitionHash": "c7f32a249289",
+          "outputHash": "966636d99fd7b2ea55d38dd8c6e1b2deb0c129d4604324a604f389b2332c08cf",
+          "createdAt": "2000-01-01T00:02:12.000Z",
+          "readyAt": "2000-01-01T00:02:13.000Z",
+          "decidedAt": "2000-01-01T00:02:14.000Z",
+          "inputFingerprints": {
+            "animatic:shot.07.vo": "8587ef01d78eee65aa2d909c7e92517173b4473368703e1091abc4eba4876a8c"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.08#composition": {
+      "variants": {
+        "v-qpi9ZlPo": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.08#composition/v-qpi9ZlPo/composition.html",
+          "definitionHash": "60b432bfefe5",
+          "outputHash": "545c0e62a99c610399c8db4a16d5f57e0e0b2d49c3500eae684e6194e699676c",
+          "createdAt": "2000-01-01T00:04:07.000Z",
+          "readyAt": "2000-01-01T00:04:08.000Z",
+          "decidedAt": "2000-01-01T00:04:08.000Z",
+          "inputFingerprints": {
+            "animatic:shot.08.vo": "c5b395547174d69ddf4baead82b75c55b458d5b4b9acb46da3503989f590ee9d",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:panel01": "c5808e9032be837d730ed919ffc9800762ec1b408a99606473e11b8fdbc4ac2a",
+            "reference:panel02": "afca0e8bbcf47746d92bd29acf1117e1e085d3df9f2b31f73ccd1387dac1cb53",
+            "reference:panel03": "6dc94e852987b7b0d903854e1c4287c39f61c3fabe92134ac8e6a50ac01bcc28",
+            "reference:panel04": "beca4f2ec7ad447804275e7b66c0155801bb3223c3b055f89b9195aec16addc7",
+            "reference:panel05": "306084e7e409b5973ae997b57f5b92c8c4c225b0b70347400266d6181757d7b7",
+            "reference:panel06": "5a126333d7b06d73eb0242c52f739987bdf3f277bb7e78fcd27b5da7ba0b8175"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.09#composition": {
+      "variants": {
+        "v-RO5iqzlT": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.09#composition/v-RO5iqzlT/composition.html",
+          "definitionHash": "045ac3fb497f",
+          "outputHash": "7ddb7a8769642961db927b60b7e0e526f6216ec7d8afd68e00afc5b8312dd3de",
+          "createdAt": "2000-01-01T00:02:20.000Z",
+          "readyAt": "2000-01-01T00:02:21.000Z",
+          "decidedAt": "2000-01-01T00:02:22.000Z",
+          "inputFingerprints": {
+            "animatic:shot.09.vo": "16b5b7cb06d68039c7abae555760e969e51163806114bb09a6ebcfd0635fefec",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame03": "15b0cf9968479f65e94fa547aaccee4a4036d44a79457ead856df74da05fd547",
+            "reference:frame04": "d0d9b465e1ab8df0a8e488bd51e8e3b24797dc131732057cc17a40264066d5b9"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.10#composition": {
+      "variants": {
+        "v-lDgUtOTe": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.10#composition/v-lDgUtOTe/composition.html",
+          "definitionHash": "b9835cb97609",
+          "outputHash": "61336344a48a5bd9d12e6f489df618ba44745a4f80a34034928a9d75e60aa8c2",
+          "createdAt": "2000-01-01T00:02:26.000Z",
+          "readyAt": "2000-01-01T00:02:27.000Z",
+          "decidedAt": "2000-01-01T00:02:28.000Z",
+          "inputFingerprints": {
+            "animatic:shot.10.vo": "517bb0576441049ace21e59dad18d3ac316c6063928f627f0b8ebab87a6f0e12",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.11#composition": {
+      "variants": {
+        "v-EO2ey5a7": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.11#composition/v-EO2ey5a7/composition.html",
+          "definitionHash": "c863e03c3cfd",
+          "outputHash": "9d19ab6fcf94dbe0ddb7a7faaf7b879c27cf7e188477da990d4fe9e92c20d8cc",
+          "createdAt": "2000-01-01T00:02:32.000Z",
+          "readyAt": "2000-01-01T00:02:33.000Z",
+          "decidedAt": "2000-01-01T00:02:34.000Z",
+          "inputFingerprints": {
+            "animatic:shot.11.vo": "70604f1a61b0dbe27f2499f8caaf2db74ee4de63820d73254eafe0c3adf9411a",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.12#composition": {
+      "variants": {
+        "v-NNrLiXa6": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.12#composition/v-NNrLiXa6/composition.html",
+          "definitionHash": "43a182f89d3d",
+          "outputHash": "94f674a17d309693a804773d5c31f0c9499af811edcec2b99b4a2fef247dd9a8",
+          "createdAt": "2000-01-01T00:03:33.000Z",
+          "readyAt": "2000-01-01T00:03:34.000Z",
+          "decidedAt": "2000-01-01T00:03:34.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.13#composition": {
+      "variants": {
+        "v-FKpQVNkg": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.13#composition/v-FKpQVNkg/composition.html",
+          "definitionHash": "ed2961f287f2",
+          "outputHash": "852f942bc81842ed8bc649005237e9b7f899a5ec29a1909839ebe26df123f370",
+          "createdAt": "2000-01-01T00:02:38.000Z",
+          "readyAt": "2000-01-01T00:02:39.000Z",
+          "decidedAt": "2000-01-01T00:02:40.000Z",
+          "inputFingerprints": {
+            "animatic:shot.13.vo": "9485af06e6811dbfc0dbd28c71ff46d3928a401feb7aab872c266af21332b49b"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.14#composition": {
+      "variants": {
+        "v-N8sfsitS": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.14#composition/v-N8sfsitS/composition.html",
+          "definitionHash": "4ab033ee6a5b",
+          "outputHash": "913490316bbd5ab1bc2ab678c6b3392a791589dcdee0809ea5f7500b1e340dc7",
+          "createdAt": "2000-01-01T00:03:41.000Z",
+          "readyAt": "2000-01-01T00:03:42.000Z",
+          "decidedAt": "2000-01-01T00:03:43.000Z",
+          "inputFingerprints": {
+            "animatic:shot.14.vo": "f11dad9239132710e6fd789d57ada6adbb23c1e448e2b280585cc8b86b48c640",
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05": "a0be4b23eb1a32e913301cc8e1453aca629bf7cd37c7b4afbf1f006119210e77"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.15#composition": {
+      "variants": {
+        "v-O9tLfbXS": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.15#composition/v-O9tLfbXS/composition.html",
+          "definitionHash": "7a85b7704a92",
+          "outputHash": "969065427cd6cfcd58856f622c52f8d8d997aaba5e1e1f2f67b5672affc629d2",
+          "createdAt": "2000-01-01T00:04:43.000Z",
+          "readyAt": "2000-01-01T00:04:44.000Z",
+          "decidedAt": "2000-01-01T00:04:44.000Z",
+          "inputFingerprints": {
+            "animatic:shot.15.vo": "d9cd37b363d67c7fcb66a32f54de89d1d47de303ad1d07fe4dde6e4bd3877a19"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.01#narrationStem": {
+      "variants": {
+        "v-aKQhocNn": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.01#narrationStem/v-aKQhocNn/stem.wav",
+          "definitionHash": "5222f26cdaf2",
+          "outputHash": "ad07733a89b19f97c10c9a22874d15f30b7978d6c3d1b9b5fb639805c4f81f00",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.3,
+              "truePeakDb": -4.3,
+              "leadInSec": 0.28,
+              "soundEndSec": 1.6
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:03.000Z",
+          "readyAt": "2000-01-01T00:02:04.000Z",
+          "decidedAt": "2000-01-01T00:02:05.000Z",
+          "inputFingerprints": {
+            "animatic:shot.01.vo": "836359c350a68ff4fff5ebe4a8632cedca38dff7aa37d99cd10d890117688c3b"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.05#narrationStem": {
+      "variants": {
+        "v-oSURKJjL": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.05#narrationStem/v-oSURKJjL/stem.wav",
+          "definitionHash": "302137252b8e",
+          "outputHash": "33d39476dc8301ff55f3553df9754eaae80980f568f47c51882a3b5c4b2cfd79",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18,
+              "truePeakDb": -3.4,
+              "leadInSec": 0.23,
+              "soundEndSec": 3.3
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:03:59.000Z",
+          "readyAt": "2000-01-01T00:04:00.000Z",
+          "decidedAt": "2000-01-01T00:04:00.000Z",
+          "inputFingerprints": {
+            "animatic:shot.05.vo": "dd51e564606fb4ff2e92cc114a9b1209416e65aff68cc7567f6e48ca36c99da7"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.07#narrationStem": {
+      "variants": {
+        "v-59UFBdnU": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.07#narrationStem/v-59UFBdnU/stem.wav",
+          "definitionHash": "348638b8d329",
+          "outputHash": "c96f595b8ec1275e3f2211132b7d434379c0f6515c2ed3ef03de11d5e380fab6",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.3,
+              "truePeakDb": -6.9,
+              "leadInSec": 0.21,
+              "soundEndSec": 2.53
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:15.000Z",
+          "readyAt": "2000-01-01T00:02:16.000Z",
+          "decidedAt": "2000-01-01T00:02:17.000Z",
+          "inputFingerprints": {
+            "animatic:shot.07.vo": "8587ef01d78eee65aa2d909c7e92517173b4473368703e1091abc4eba4876a8c"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.10#narrationStem": {
+      "variants": {
+        "v-7CeMPXBI": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.10#narrationStem/v-7CeMPXBI/stem.wav",
+          "definitionHash": "fb40d423363f",
+          "outputHash": "a57b51a6f772e5027b25f9f5d72ebfb30ea6d3f585b15dc4c8620ed55e6ccf51",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -19.1,
+              "truePeakDb": -5.8,
+              "leadInSec": 0.21,
+              "soundEndSec": 1.64
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:29.000Z",
+          "readyAt": "2000-01-01T00:02:30.000Z",
+          "decidedAt": "2000-01-01T00:02:31.000Z",
+          "inputFingerprints": {
+            "animatic:shot.10.vo": "517bb0576441049ace21e59dad18d3ac316c6063928f627f0b8ebab87a6f0e12"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.15#narrationStem": {
+      "variants": {
+        "v-pgEcm3xO": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.15#narrationStem/v-pgEcm3xO/stem.wav",
+          "definitionHash": "312d891a1fd7",
+          "outputHash": "2713a6c0ff4c9a2f45703b7dcc896025356599bbef5f72b3a16fddce98e2872d",
+          "media": {
+            "kind": "audio",
+            "durationSec": 4,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.3,
+              "truePeakDb": -3.5,
+              "leadInSec": 0.24,
+              "soundEndSec": 3.2899999999999996
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:04:40.000Z",
+          "readyAt": "2000-01-01T00:04:41.000Z",
+          "decidedAt": "2000-01-01T00:04:42.000Z",
+          "inputFingerprints": {
+            "animatic:shot.15.vo": "d9cd37b363d67c7fcb66a32f54de89d1d47de303ad1d07fe4dde6e4bd3877a19"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.01#composition": {
+      "variants": {
+        "v-UsxglvLO": {
+          "status": "accepted",
+          "file": "assets/video/shot.01#composition/v-UsxglvLO/composition.html",
+          "definitionHash": "9ac8debd560c",
+          "outputHash": "40446f0300db98c6a5cab4887a0259e7d70ee0987d68ef3abf13cd2e87361c71",
+          "createdAt": "2000-01-01T00:03:12.000Z",
+          "readyAt": "2000-01-01T00:03:13.000Z",
+          "decidedAt": "2000-01-01T00:03:13.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.01#stem": {
+      "variants": {
+        "v-osueh7pW": {
+          "status": "accepted",
+          "file": "assets/video/shot.01#stem/v-osueh7pW/stem.json",
+          "definitionHash": "237229b4f3fb",
+          "outputHash": "9ff00ab5c4e0f5f7fa787f1e8688838b779b3f3c51936367709b32108613fab6",
+          "createdAt": "2000-01-01T00:02:51.000Z",
+          "readyAt": "2000-01-01T00:02:52.000Z",
+          "decidedAt": "2000-01-01T00:02:52.000Z",
+          "inputFingerprints": {
+            "reference:sfxTyping": "321b792bc0e530cb34012ede3fef4308dbdb1b4a33409be83875019ac0bbe015",
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f",
+            "animatic:shot.01#narrationStem": "ad07733a89b19f97c10c9a22874d15f30b7978d6c3d1b9b5fb639805c4f81f00"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.02#composition": {
+      "variants": {
+        "v-Rn6oCXPr": {
+          "status": "accepted",
+          "file": "assets/video/shot.02#composition/v-Rn6oCXPr/composition.html",
+          "definitionHash": "cdfef67e5dd3",
+          "outputHash": "153188d29a30aa0e12d3cf95b2a0a69451398cc08b4f3c0ae101ffd16ee71700",
+          "createdAt": "2000-01-01T00:03:14.000Z",
+          "readyAt": "2000-01-01T00:03:15.000Z",
+          "decidedAt": "2000-01-01T00:03:15.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.02#stem": {
+      "variants": {
+        "v-pujbj4Hz": {
+          "status": "accepted",
+          "file": "assets/video/shot.02#stem/v-pujbj4Hz/stem.json",
+          "definitionHash": "5a88c8166dbe",
+          "outputHash": "d3a11b2d3597555074f904c2f3bcc6877ce37fad36e7df9904a4263e3149ed26",
+          "createdAt": "2000-01-01T00:02:53.000Z",
+          "readyAt": "2000-01-01T00:02:54.000Z",
+          "decidedAt": "2000-01-01T00:02:54.000Z",
+          "inputFingerprints": {
+            "animatic:shot.02#narrationStem": "ce590bd3e86b351b4b2021bf9447329def67f34586317b4664c387c5b6a41347",
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.03#composition": {
+      "variants": {
+        "v-tDNyRYqE": {
+          "status": "accepted",
+          "file": "assets/video/shot.03#composition/v-tDNyRYqE/composition.html",
+          "definitionHash": "445a511d006b",
+          "outputHash": "49ae48f614a79f0f4b10effea82a0992ad987ca4e419e3827a9b055abbb275bb",
+          "createdAt": "2000-01-01T00:04:51.000Z",
+          "readyAt": "2000-01-01T00:04:52.000Z",
+          "decidedAt": "2000-01-01T00:04:52.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.04#composition": {
+      "variants": {
+        "v-N2rNWgf7": {
+          "status": "accepted",
+          "file": "assets/video/shot.04#composition/v-N2rNWgf7/composition.html",
+          "definitionHash": "a425f53bf94c",
+          "outputHash": "9860ce146079debd9a25c2bb9f03e982ae0dd7d257bf821db14081c3035bc4b7",
+          "createdAt": "2000-01-01T00:04:32.000Z",
+          "readyAt": "2000-01-01T00:04:33.000Z",
+          "decidedAt": "2000-01-01T00:04:33.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.04#stem": {
+      "variants": {
+        "v-enTHhssh": {
+          "status": "accepted",
+          "file": "assets/video/shot.04#stem/v-enTHhssh/stem.json",
+          "definitionHash": "35beb842a17c",
+          "outputHash": "6ee15b5d128acde546a5f2f2f62f1aa384b97b541c8ad219314a5cff8e1eb8cc",
+          "createdAt": "2000-01-01T00:04:27.000Z",
+          "readyAt": "2000-01-01T00:04:28.000Z",
+          "decidedAt": "2000-01-01T00:04:28.000Z",
+          "inputFingerprints": {
+            "animatic:shot.04#narrationStem": "01b13234b75f834a75c11ac84d337b58511683bb1e3bbbca5d5eadfc2d59991e",
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.05#composition": {
+      "variants": {
+        "v-UaNV1QaQ": {
+          "status": "accepted",
+          "file": "assets/video/shot.05#composition/v-UaNV1QaQ/composition.html",
+          "definitionHash": "d0e25ce8676e",
+          "outputHash": "597e692f4b9cdfe92d5f26a77706d4671d41bcca96fe19419132b32692d38db4",
+          "createdAt": "2000-01-01T00:04:34.000Z",
+          "readyAt": "2000-01-01T00:04:35.000Z",
+          "decidedAt": "2000-01-01T00:04:35.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
+            "reference:refOwner": "3b3bb146764bea6759f5631973d002b4b1a90393268673c121d5d8b11a5f2e1b",
+            "reference:refUmbrella": "06e70db4e473ea597958442ca13d463bfa3634f9e5733cceb096d7879b6c63f8",
+            "reference:refCafe": "5e33a02fb7e52d2bf542536fe863a29a674b6417722c34a41b57c81199d72d09"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.05#stem": {
+      "variants": {
+        "v-ASvJ6Yij": {
+          "status": "accepted",
+          "file": "assets/video/shot.05#stem/v-ASvJ6Yij/stem.json",
+          "definitionHash": "a35fec3a1d3b",
+          "outputHash": "a3257af4d55b9f059a78a940a312080f21b3388e81f95ce6954f68da4e2f36f1",
+          "createdAt": "2000-01-01T00:04:29.000Z",
+          "readyAt": "2000-01-01T00:04:30.000Z",
+          "decidedAt": "2000-01-01T00:04:30.000Z",
+          "inputFingerprints": {
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f",
+            "animatic:shot.05#narrationStem": "33d39476dc8301ff55f3553df9754eaae80980f568f47c51882a3b5c4b2cfd79"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.06#composition": {
+      "variants": {
+        "v-cUZrf0WO": {
+          "status": "accepted",
+          "file": "assets/video/shot.06#composition/v-cUZrf0WO/composition.html",
+          "definitionHash": "94406d27bab4",
+          "outputHash": "09a66c9c3fcde692f1726d72a0c4a27e4e87dfdceeb6736fccdddc320b5c4042",
+          "createdAt": "2000-01-01T00:03:16.000Z",
+          "readyAt": "2000-01-01T00:03:17.000Z",
+          "decidedAt": "2000-01-01T00:03:17.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
+            "reference:refOwner": "3b3bb146764bea6759f5631973d002b4b1a90393268673c121d5d8b11a5f2e1b",
+            "reference:refUmbrella": "06e70db4e473ea597958442ca13d463bfa3634f9e5733cceb096d7879b6c63f8",
+            "reference:refCafe": "5e33a02fb7e52d2bf542536fe863a29a674b6417722c34a41b57c81199d72d09"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.06#stem": {
+      "variants": {
+        "v-VxSFnO3g": {
+          "status": "accepted",
+          "file": "assets/video/shot.06#stem/v-VxSFnO3g/stem.json",
+          "definitionHash": "e35845e09eb4",
+          "outputHash": "1b0e796e7706d83e45c6c98286c5fcefd2a3742b35fe990ce8f7318ea5864a0d",
+          "createdAt": "2000-01-01T00:01:02.000Z",
+          "readyAt": "2000-01-01T00:01:03.000Z",
+          "decidedAt": "2000-01-01T00:02:57.000Z",
+          "inputFingerprints": {
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.07#composition": {
+      "variants": {
+        "v-mtonXktb": {
+          "status": "accepted",
+          "file": "assets/video/shot.07#composition/v-mtonXktb/composition.html",
+          "definitionHash": "33c2cbe4462b",
+          "outputHash": "622f49b84139193e376d24515fca23eb53f74247d1b81f9641ad7af2f0ebc058",
+          "createdAt": "2000-01-01T00:03:18.000Z",
+          "readyAt": "2000-01-01T00:03:19.000Z",
+          "decidedAt": "2000-01-01T00:03:19.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.07#stem": {
+      "variants": {
+        "v-UfSlfVgG": {
+          "status": "accepted",
+          "file": "assets/video/shot.07#stem/v-UfSlfVgG/stem.json",
+          "definitionHash": "a1f575343a1a",
+          "outputHash": "0ff113c6b40fe65559ab7eae37a703d805512c9c016cbc2cc83bc2be023dfab8",
+          "createdAt": "2000-01-01T00:02:58.000Z",
+          "readyAt": "2000-01-01T00:02:58.000Z",
+          "decidedAt": "2000-01-01T00:02:58.000Z",
+          "inputFingerprints": {
+            "animatic:shot.07#narrationStem": "c96f595b8ec1275e3f2211132b7d434379c0f6515c2ed3ef03de11d5e380fab6"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.08#composition": {
+      "variants": {
+        "v-wm441H5O": {
+          "status": "accepted",
+          "file": "assets/video/shot.08#composition/v-wm441H5O/composition.html",
+          "definitionHash": "64ffc046a4c8",
+          "outputHash": "6f4764da596ce8defdfcabe8681e10d685e58f397238d4acd76b759ee1fe19a5",
+          "createdAt": "2000-01-01T00:04:36.000Z",
+          "readyAt": "2000-01-01T00:04:37.000Z",
+          "decidedAt": "2000-01-01T00:04:37.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:panel01": "c5808e9032be837d730ed919ffc9800762ec1b408a99606473e11b8fdbc4ac2a",
+            "reference:panel02": "afca0e8bbcf47746d92bd29acf1117e1e085d3df9f2b31f73ccd1387dac1cb53",
+            "reference:panel03": "6dc94e852987b7b0d903854e1c4287c39f61c3fabe92134ac8e6a50ac01bcc28",
+            "reference:panel04": "beca4f2ec7ad447804275e7b66c0155801bb3223c3b055f89b9195aec16addc7",
+            "reference:panel05": "306084e7e409b5973ae997b57f5b92c8c4c225b0b70347400266d6181757d7b7",
+            "reference:panel06": "5a126333d7b06d73eb0242c52f739987bdf3f277bb7e78fcd27b5da7ba0b8175"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.08#stem": {
+      "variants": {
+        "v-Cd7izs2e": {
+          "status": "accepted",
+          "file": "assets/video/shot.08#stem/v-Cd7izs2e/stem.json",
+          "definitionHash": "d5e9dc269d3d",
+          "outputHash": "9d01acd97f7c6e0f2858c8530dbf411944de7239ad70e25b69cd5b222bbb7eeb",
+          "createdAt": "2000-01-01T00:02:59.000Z",
+          "readyAt": "2000-01-01T00:03:00.000Z",
+          "decidedAt": "2000-01-01T00:04:31.000Z",
+          "inputFingerprints": {
+            "animatic:shot.08#narrationStem": "5061effe29318518a0702485827f4d5be60f2dbfa34a09492bfe0532b571963c",
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.09#composition": {
+      "variants": {
+        "v-Z8WfdSOd": {
+          "status": "accepted",
+          "file": "assets/video/shot.09#composition/v-Z8WfdSOd/composition.html",
+          "definitionHash": "6010c5bf930d",
+          "outputHash": "8ec0aa55c62c8a974bafa189be95f8f5933b1e93e11cd53ca425e2d9aa220233",
+          "createdAt": "2000-01-01T00:03:20.000Z",
+          "readyAt": "2000-01-01T00:03:21.000Z",
+          "decidedAt": "2000-01-01T00:03:21.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:clip03": "d7c85c0319725b18310bf5db0024b92d92f488df578cf61873a99005d9647be6",
+            "reference:clip04": "a4e363821825301a2de7f3729d07ad3225cf419f3caadff79ec5e4ac45c00397"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.10#composition": {
+      "variants": {
+        "v-Bago8qtl": {
+          "status": "accepted",
+          "file": "assets/video/shot.10#composition/v-Bago8qtl/composition.html",
+          "definitionHash": "2bbf7f281ec1",
+          "outputHash": "435e7f08c03931b057638590d30b76e60fe9ce7be6695092cf716d8c0d9a766c",
+          "createdAt": "2000-01-01T00:03:22.000Z",
+          "readyAt": "2000-01-01T00:03:22.000Z",
+          "decidedAt": "2000-01-01T00:03:22.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.10#stem": {
+      "variants": {
+        "v-h3Rm8z2f": {
+          "status": "accepted",
+          "file": "assets/video/shot.10#stem/v-h3Rm8z2f/stem.json",
+          "definitionHash": "8408f5a5bf28",
+          "outputHash": "ea44f2ffb15b9e802ff1c09331401ba8e891e8464be0a09ce78e9fdaee980858",
+          "createdAt": "2000-01-01T00:03:03.000Z",
+          "readyAt": "2000-01-01T00:03:04.000Z",
+          "decidedAt": "2000-01-01T00:03:04.000Z",
+          "inputFingerprints": {
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f",
+            "animatic:shot.10#narrationStem": "a57b51a6f772e5027b25f9f5d72ebfb30ea6d3f585b15dc4c8620ed55e6ccf51"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.11#composition": {
+      "variants": {
+        "v-qC5ZBcio": {
+          "status": "accepted",
+          "file": "assets/video/shot.11#composition/v-qC5ZBcio/composition.html",
+          "definitionHash": "e7d10fa30189",
+          "outputHash": "24f1b7b79342e7b890b494de2b035000ee9a38a27619202cbc35caffd4d0c922",
+          "createdAt": "2000-01-01T00:03:23.000Z",
+          "readyAt": "2000-01-01T00:03:24.000Z",
+          "decidedAt": "2000-01-01T00:03:24.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.11#stem": {
+      "variants": {
+        "v-5imLe7fa": {
+          "status": "accepted",
+          "file": "assets/video/shot.11#stem/v-5imLe7fa/stem.json",
+          "definitionHash": "fcc4501e98c5",
+          "outputHash": "1563e51dbb21345efd10984f60e1cdfb7850c0a2b0c06d67239091e613e23020",
+          "createdAt": "2000-01-01T00:03:05.000Z",
+          "readyAt": "2000-01-01T00:03:06.000Z",
+          "decidedAt": "2000-01-01T00:03:06.000Z",
+          "inputFingerprints": {
+            "animatic:shot.11#narrationStem": "b55e01a9c38de40e6540d3e143061bcf39c35702a5085f05b6aa1b01e5bc25c3",
+            "reference:sfxTyping": "321b792bc0e530cb34012ede3fef4308dbdb1b4a33409be83875019ac0bbe015",
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.12#composition": {
+      "variants": {
+        "v-pcix9fkx": {
+          "status": "accepted",
+          "file": "assets/video/shot.12#composition/v-pcix9fkx/composition.html",
+          "definitionHash": "43a182f89d3d",
+          "outputHash": "8798e0232ed3f0718b18c4c71a4c48913f744d5ef4a8d94a8395004ab092a858",
+          "createdAt": "2000-01-01T00:03:25.000Z",
+          "readyAt": "2000-01-01T00:03:26.000Z",
+          "decidedAt": "2000-01-01T00:03:26.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.12#stem": {
+      "variants": {
+        "v-dVELU4lZ": {
+          "status": "accepted",
+          "file": "assets/video/shot.12#stem/v-dVELU4lZ/stem.json",
+          "definitionHash": "81966fbf8413",
+          "outputHash": "c53a6710e5a33a154dd21ce948fecb1db252a9e940a91bed36726dddcc9a410f",
+          "createdAt": "2000-01-01T00:01:04.000Z",
+          "readyAt": "2000-01-01T00:01:05.000Z",
+          "decidedAt": "2000-01-01T00:03:07.000Z",
+          "inputFingerprints": {
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.13#composition": {
+      "variants": {
+        "v-kHIv1PKA": {
+          "status": "accepted",
+          "file": "assets/video/shot.13#composition/v-kHIv1PKA/composition.html",
+          "definitionHash": "18ef7b0f46f9",
+          "outputHash": "3dfca5fb9feee0679097e70e49e96d75b006c78130c9bfb5e8f5dbab19b2bdb5",
+          "createdAt": "2000-01-01T00:03:27.000Z",
+          "readyAt": "2000-01-01T00:03:28.000Z",
+          "decidedAt": "2000-01-01T00:03:28.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.14#composition": {
+      "variants": {
+        "v-bq43UUtz": {
+          "status": "accepted",
+          "file": "assets/video/shot.14#composition/v-bq43UUtz/composition.html",
+          "definitionHash": "89f6b0ff4585",
+          "outputHash": "f28ffd63192410406f33db5774e63460ca2d35d5a69c7f0a772c7d3851a575d4",
+          "createdAt": "2000-01-01T00:03:39.000Z",
+          "readyAt": "2000-01-01T00:03:40.000Z",
+          "decidedAt": "2000-01-01T00:03:40.000Z",
+          "inputFingerprints": {
+            "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
+            "reference:clip05": "9f389eee61c59642a2e863d4f56040690bd91e4cfad5c4f083327511076e9be4"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.14#stem": {
+      "variants": {
+        "v-crbyoZoD": {
+          "status": "accepted",
+          "file": "assets/video/shot.14#stem/v-crbyoZoD/stem.json",
+          "definitionHash": "496186668eb5",
+          "outputHash": "3dab7f06fcf87d27637b7bad4d3fbfac842a93a8b802a21699237fc8524dc0fe",
+          "createdAt": "2000-01-01T00:03:10.000Z",
+          "readyAt": "2000-01-01T00:03:11.000Z",
+          "decidedAt": "2000-01-01T00:03:38.000Z",
+          "inputFingerprints": {
+            "animatic:shot.14#narrationStem": "ca7fc75e939a7eac984b5784a841abe92c375fbc72becdf1f5ab1b87c68f35ec",
+            "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.15#composition": {
+      "variants": {
+        "v-OqXjwxgE": {
+          "status": "accepted",
+          "file": "assets/video/shot.15#composition/v-OqXjwxgE/composition.html",
+          "definitionHash": "51e1ede4fb89",
+          "outputHash": "2de16afb28a9e76a674548dce81ae06a0fcaddc072fa551d94f6be50c31078a0",
+          "createdAt": "2000-01-01T00:04:53.000Z",
+          "readyAt": "2000-01-01T00:04:54.000Z",
+          "decidedAt": "2000-01-01T00:04:54.000Z",
+          "inputFingerprints": {},
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.15#stem": {
+      "variants": {
+        "v-qnr8tX1K": {
+          "status": "accepted",
+          "file": "assets/video/shot.15#stem/v-qnr8tX1K/stem.json",
+          "definitionHash": "05bc0350559d",
+          "outputHash": "3acca97ec369194bdb6497b92085c4093258d4cdae793f61f10c69fa2b2de44b",
+          "createdAt": "2000-01-01T00:04:49.000Z",
+          "readyAt": "2000-01-01T00:04:50.000Z",
+          "decidedAt": "2000-01-01T00:04:50.000Z",
+          "inputFingerprints": {
+            "animatic:shot.15#narrationStem": "2713a6c0ff4c9a2f45703b7dcc896025356599bbef5f72b3a16fddce98e2872d"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:timeline#stem": {
+      "variants": {
+        "v-IzlWz6FI": {
+          "status": "accepted",
+          "file": "assets/video/timeline#stem/v-IzlWz6FI/stem.json",
+          "definitionHash": "45b57e0c5e8e",
+          "outputHash": "c65d10cca149b149fda072ff126adde6b76f4a60868bd74929e4f8b1fa6cef2a",
+          "createdAt": "2000-01-01T00:04:57.000Z",
+          "readyAt": "2000-01-01T00:04:58.000Z",
+          "decidedAt": "2000-01-01T00:04:58.000Z",
+          "inputFingerprints": {
+            "reference:bgm": "88e75cd4944117c24f6f4427263ff9372e818176db1db49fe058aaae66ea1b29"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.03.vo": {
+      "variants": {
+        "v-IFzZI0sp": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.03.vo/v-IFzZI0sp/ComfyUI_00344.mp3",
+          "definitionHash": "1aa43e8af02c",
+          "outputHash": "1bbe4eb7b847644867470c23ed32b65599ba01c8a664d23ed6c858557d105743",
+          "media": {
+            "kind": "audio",
+            "durationSec": 5.491519,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -21.4,
+              "truePeakDb": -4,
+              "leadInSec": 0.04,
+              "soundEndSec": 5.5
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:07.000Z",
+          "readyAt": "2000-01-01T00:01:15.000Z",
+          "decidedAt": "2000-01-01T00:01:53.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 1335098425,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "da57ba62-1c29-47d3-a1e9-eb1bc434e541"
+          }
+        },
+        "v-pa9QbSOS": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.03.vo/v-pa9QbSOS/ComfyUI_00358.mp3",
+          "definitionHash": "2a0db78d5535",
+          "outputHash": "5faf3ea974f0223a8c2c91638d87e092bbc2e90ff85b51c2794e99efd0385786",
+          "media": {
+            "kind": "audio",
+            "durationSec": 5.24771,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -23.1,
+              "truePeakDb": -3.3,
+              "leadInSec": 0.03,
+              "soundEndSec": 5
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:31.000Z",
+          "readyAt": "2000-01-01T00:01:43.000Z",
+          "decidedAt": "2000-01-01T00:01:53.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 2075340359,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "c5edbed1-a488-4310-bf55-a57e8d8b5b63"
+          }
+        }
+      }
+    },
+    "animatic:shot.09.vo": {
+      "variants": {
+        "v-dlLum26P": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.09.vo/v-dlLum26P/ComfyUI_00345.mp3",
+          "definitionHash": "c664e1e1d1d6",
+          "outputHash": "6c9a7f257a3e2575dccb6e54b4a0de4c9408737e6075d46de9f0bb4fc755372d",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.567347,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -22.1,
+              "truePeakDb": -6.3,
+              "leadInSec": 0.02,
+              "soundEndSec": 1.37
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:08.000Z",
+          "readyAt": "2000-01-01T00:01:16.000Z",
+          "decidedAt": "2000-01-01T00:01:57.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3975371725,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "e1629abb-8011-4348-8a3a-b66a5a55a327"
+          }
+        },
+        "v-liwD6WL4": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.09.vo/v-liwD6WL4/ComfyUI_00361.mp3",
+          "definitionHash": "542e803594ce",
+          "outputHash": "16b5b7cb06d68039c7abae555760e969e51163806114bb09a6ebcfd0635fefec",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.648617,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -23.2,
+              "truePeakDb": -6.7,
+              "leadInSec": 0.01,
+              "soundEndSec": 1.65
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:34.000Z",
+          "readyAt": "2000-01-01T00:01:46.000Z",
+          "decidedAt": "2000-01-01T00:01:57.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3356763278,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "31677c11-2fb6-42f5-af1b-6ca627d66190"
+          }
+        }
+      }
+    },
+    "animatic:shot.13.vo": {
+      "variants": {
+        "v-Xt05pvsi": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.13.vo/v-Xt05pvsi/ComfyUI_00346.mp3",
+          "definitionHash": "5aaca18809e2",
+          "outputHash": "3cdf07de1aae3f1648c295865f8ccbd9cd9fb88678bfe3d8183d20353453c83b",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3.320454,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -26.3,
+              "truePeakDb": -10.8,
+              "leadInSec": 0.01,
+              "soundEndSec": 3.3299999999999996
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:09.000Z",
+          "readyAt": "2000-01-01T00:01:17.000Z",
+          "decidedAt": "2000-01-01T00:02:00.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3106881869,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "fa0a69da-6eff-4f19-a30b-0a184059f659"
+          }
+        },
+        "v-GE2VZrK5": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.13.vo/v-GE2VZrK5/ComfyUI_00363.mp3",
+          "definitionHash": "e1f571f3441c",
+          "outputHash": "9485af06e6811dbfc0dbd28c71ff46d3928a401feb7aab872c266af21332b49b",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.486077,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -24.6,
+              "truePeakDb": -7.1,
+              "leadInSec": 0.05,
+              "soundEndSec": 1.25
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:36.000Z",
+          "readyAt": "2000-01-01T00:01:48.000Z",
+          "decidedAt": "2000-01-01T00:02:00.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3656639721,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "dfe38562-8a02-46e0-b0e8-40831ca316dd"
+          }
+        }
+      }
+    },
+    "animatic:shot.02.vo": {
+      "variants": {
+        "v-FKMBtfgE": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.02.vo/v-FKMBtfgE/ComfyUI_00352.mp3",
+          "definitionHash": "936c5b4aa61b",
+          "outputHash": "7d1c1c4bf12f25a9ce17f28e322467e84018a544cfc16d07659db876c09f35c6",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.857596,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -22.8,
+              "truePeakDb": -5,
+              "leadInSec": 0.06,
+              "soundEndSec": 1.69
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:28.000Z",
+          "readyAt": "2000-01-01T00:01:37.000Z",
+          "decidedAt": "2000-01-01T00:01:52.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 4001594610,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "c12e0a71-82ec-4b77-a4fc-d9421e7b3d28"
+          }
+        }
+      }
+    },
+    "animatic:shot.04.vo": {
+      "variants": {
+        "v-AwExDv8L": {
+          "status": "dismissed",
+          "file": "assets/animatic/shot.04.vo/v-AwExDv8L/ComfyUI_00353.mp3",
+          "definitionHash": "efccc4d23233",
+          "outputHash": "2e0f91375d0d05c8cfd573f00bdb1f99dd3ea7ef8e4a6f57e10d151b3376ea76",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.986848,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -19.1,
+              "truePeakDb": -5,
+              "leadInSec": 0.02,
+              "soundEndSec": 0.76
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:29.000Z",
+          "readyAt": "2000-01-01T00:01:38.000Z",
+          "decidedAt": "2000-01-01T00:04:18.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 188768391,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "4198b70d-0b66-4f34-8115-b6cdac36c383"
+          }
+        },
+        "v-w93YvYGh": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.04.vo/v-w93YvYGh/ComfyUI_00365.mp3",
+          "definitionHash": "0f2e8bb7e248",
+          "outputHash": "29241cbe13b53ecc9168a7ee7e62fc3be19847fed4222433d8d8bd0ba08341ba",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.998458,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -19.6,
+              "truePeakDb": -1.5,
+              "leadInSec": 0.03,
+              "soundEndSec": 0.8200000000000001
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:03:44.000Z",
+          "readyAt": "2000-01-01T00:03:47.000Z",
+          "decidedAt": "2000-01-01T00:04:18.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3689033803,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "813987b1-2405-48d0-a56b-02666386738c"
+          }
+        }
+      }
+    },
+    "animatic:shot.08.vo": {
+      "variants": {
+        "v-2XpsDtxf": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.08.vo/v-2XpsDtxf/ComfyUI_00354.mp3",
+          "definitionHash": "c664e1e1d1d6",
+          "outputHash": "c5b395547174d69ddf4baead82b75c55b458d5b4b9acb46da3503989f590ee9d",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.333605,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -17.2,
+              "truePeakDb": -3.9,
+              "leadInSec": 0.01,
+              "soundEndSec": 2.1199999999999997
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:29.000Z",
+          "readyAt": "2000-01-01T00:01:39.000Z",
+          "decidedAt": "2000-01-01T00:01:56.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 3609149472,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "ae87e668-7622-439f-b6d1-6da5bb7dca1d"
+          }
+        }
+      }
+    },
+    "animatic:shot.11.vo": {
+      "variants": {
+        "v-igWn5vhX": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.11.vo/v-igWn5vhX/ComfyUI_00355.mp3",
+          "definitionHash": "05fdd2a91c50",
+          "outputHash": "70604f1a61b0dbe27f2499f8caaf2db74ee4de63820d73254eafe0c3adf9411a",
+          "media": {
+            "kind": "audio",
+            "durationSec": 1.160998,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -16.2,
+              "truePeakDb": -2.7,
+              "leadInSec": 0.03,
+              "soundEndSec": 1.1300000000000001
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:29.000Z",
+          "readyAt": "2000-01-01T00:01:40.000Z",
+          "decidedAt": "2000-01-01T00:01:59.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 236153126,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "f31eac1d-dd99-4923-ae5a-33914e51ec17"
+          }
+        }
+      }
+    },
+    "animatic:shot.14.vo": {
+      "variants": {
+        "v-ke59eNz1": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.14.vo/v-ke59eNz1/ComfyUI_00356.mp3",
+          "definitionHash": "db883925ee23",
+          "outputHash": "f11dad9239132710e6fd789d57ada6adbb23c1e448e2b280585cc8b86b48c640",
+          "media": {
+            "kind": "audio",
+            "durationSec": 0.998458,
+            "channels": 1,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -17.4,
+              "truePeakDb": -3.9,
+              "leadInSec": 0.03,
+              "soundEndSec": 0.77
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:01:29.000Z",
+          "readyAt": "2000-01-01T00:01:41.000Z",
+          "decidedAt": "2000-01-01T00:02:01.000Z",
+          "inputFingerprints": {
+            "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+          },
+          "seed": 662187907,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {
+            "promptId": "e1eea249-5df1-42ae-9554-bfff1876ae5f"
+          }
+        }
+      }
+    },
+    "animatic:shot.02#narrationStem": {
+      "variants": {
+        "v-6NTxFwtL": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.02#narrationStem/v-6NTxFwtL/stem.wav",
+          "definitionHash": "8dda3054f1c9",
+          "outputHash": "ce590bd3e86b351b4b2021bf9447329def67f34586317b4664c387c5b6a41347",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -17.8,
+              "truePeakDb": -3.4,
+              "leadInSec": 0.26,
+              "soundEndSec": 1.9
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:10.000Z",
+          "readyAt": "2000-01-01T00:02:11.000Z",
+          "decidedAt": "2000-01-01T00:04:11.000Z",
+          "inputFingerprints": {
+            "animatic:shot.02.vo": "7d1c1c4bf12f25a9ce17f28e322467e84018a544cfc16d07659db876c09f35c6"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.03#narrationStem": {
+      "variants": {
+        "v-1mqLSXyS": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.03#narrationStem/v-1mqLSXyS/stem.wav",
+          "definitionHash": "5a12e74e693b",
+          "outputHash": "53685202a24e36c096b1b2e08b1de70fb44848575436e8f8723d1627216aebd9",
+          "media": {
+            "kind": "audio",
+            "durationSec": 5.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.2,
+              "truePeakDb": -3.4,
+              "leadInSec": 0.23,
+              "soundEndSec": 5.2299999999999995
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:08.000Z",
+          "readyAt": "2000-01-01T00:02:09.000Z",
+          "decidedAt": "2000-01-01T00:04:19.000Z",
+          "inputFingerprints": {
+            "animatic:shot.03.vo": "5faf3ea974f0223a8c2c91638d87e092bbc2e90ff85b51c2794e99efd0385786"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.04#narrationStem": {
+      "variants": {
+        "v-04zdcTSL": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.04#narrationStem/v-04zdcTSL/stem.wav",
+          "definitionHash": "d4e2e2772ed5",
+          "outputHash": "01b13234b75f834a75c11ac84d337b58511683bb1e3bbbca5d5eadfc2d59991e",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.2,
+              "truePeakDb": -3.4,
+              "leadInSec": 0.23,
+              "soundEndSec": 1.02
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:04:20.000Z",
+          "readyAt": "2000-01-01T00:04:21.000Z",
+          "decidedAt": "2000-01-01T00:04:21.000Z",
+          "inputFingerprints": {
+            "animatic:shot.04.vo": "29241cbe13b53ecc9168a7ee7e62fc3be19847fed4222433d8d8bd0ba08341ba"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.08#narrationStem": {
+      "variants": {
+        "v-ATR118YR": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.08#narrationStem/v-ATR118YR/stem.wav",
+          "definitionHash": "981d45db4fd6",
+          "outputHash": "5061effe29318518a0702485827f4d5be60f2dbfa34a09492bfe0532b571963c",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.6,
+              "truePeakDb": -7.7,
+              "leadInSec": 0.22,
+              "soundEndSec": 2.3299999999999996
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:18.000Z",
+          "readyAt": "2000-01-01T00:02:19.000Z",
+          "decidedAt": "2000-01-01T00:04:06.000Z",
+          "inputFingerprints": {
+            "animatic:shot.08.vo": "c5b395547174d69ddf4baead82b75c55b458d5b4b9acb46da3503989f590ee9d"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.09#narrationStem": {
+      "variants": {
+        "v-QB6uYgL0": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.09#narrationStem/v-QB6uYgL0/stem.wav",
+          "definitionHash": "8871f13fb94f",
+          "outputHash": "01a56a8c51646d64f27724d073dfd19382078b068f7f2ae06b7ef85032a3ea2b",
+          "media": {
+            "kind": "audio",
+            "durationSec": 3,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.4,
+              "truePeakDb": -4.5,
+              "leadInSec": 0.22,
+              "soundEndSec": 1.77
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:23.000Z",
+          "readyAt": "2000-01-01T00:02:24.000Z",
+          "decidedAt": "2000-01-01T00:02:25.000Z",
+          "inputFingerprints": {
+            "animatic:shot.09.vo": "16b5b7cb06d68039c7abae555760e969e51163806114bb09a6ebcfd0635fefec"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.11#narrationStem": {
+      "variants": {
+        "v-Zw45IUD8": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.11#narrationStem/v-Zw45IUD8/stem.wav",
+          "definitionHash": "09ccd551e286",
+          "outputHash": "b55e01a9c38de40e6540d3e143061bcf39c35702a5085f05b6aa1b01e5bc25c3",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -18.4,
+              "truePeakDb": -7.5,
+              "leadInSec": 0.23,
+              "soundEndSec": 1.33
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:35.000Z",
+          "readyAt": "2000-01-01T00:02:36.000Z",
+          "decidedAt": "2000-01-01T00:02:37.000Z",
+          "inputFingerprints": {
+            "animatic:shot.11.vo": "70604f1a61b0dbe27f2499f8caaf2db74ee4de63820d73254eafe0c3adf9411a"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.13#narrationStem": {
+      "variants": {
+        "v-BJNByqXK": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.13#narrationStem/v-BJNByqXK/stem.wav",
+          "definitionHash": "139d16e4c0b1",
+          "outputHash": "cf1f1b92de1c5ee50d15954baf27235fe36998d14b76b3c3d88f6759a608a3a3",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -17.1,
+              "truePeakDb": -3.5,
+              "leadInSec": 0.25,
+              "soundEndSec": 1.45
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:41.000Z",
+          "readyAt": "2000-01-01T00:02:42.000Z",
+          "decidedAt": "2000-01-01T00:02:43.000Z",
+          "inputFingerprints": {
+            "animatic:shot.13.vo": "9485af06e6811dbfc0dbd28c71ff46d3928a401feb7aab872c266af21332b49b"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "animatic:shot.14#narrationStem": {
+      "variants": {
+        "v-SHnqIELd": {
+          "status": "accepted",
+          "file": "assets/animatic/shot.14#narrationStem/v-SHnqIELd/stem.wav",
+          "definitionHash": "575c76e2da88",
+          "outputHash": "ca7fc75e939a7eac984b5784a841abe92c375fbc72becdf1f5ab1b87c68f35ec",
+          "media": {
+            "kind": "audio",
+            "durationSec": 2.5,
+            "channels": 2,
+            "sampleRate": 44100,
+            "loudness": {
+              "integratedLufs": -19.1,
+              "truePeakDb": -7.6,
+              "leadInSec": 0.24,
+              "soundEndSec": 0.98
+            },
+            "silent": false
+          },
+          "createdAt": "2000-01-01T00:02:44.000Z",
+          "readyAt": "2000-01-01T00:02:45.000Z",
+          "decidedAt": "2000-01-01T00:02:46.000Z",
+          "inputFingerprints": {
+            "animatic:shot.14.vo": "f11dad9239132710e6fd789d57ada6adbb23c1e448e2b280585cc8b86b48c640"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.03#stem": {
+      "variants": {
+        "v-NwIn9Zse": {
+          "status": "accepted",
+          "file": "assets/video/shot.03#stem/v-NwIn9Zse/stem.json",
+          "definitionHash": "e24cfea6bb1f",
+          "outputHash": "c714ea752b6be93490aed58a28b8ce0cfb67dd68940d8930f4cdf81c85d1daaa",
+          "createdAt": "2000-01-01T00:02:55.000Z",
+          "readyAt": "2000-01-01T00:02:56.000Z",
+          "decidedAt": "2000-01-01T00:04:48.000Z",
+          "inputFingerprints": {
+            "animatic:shot.03#narrationStem": "53685202a24e36c096b1b2e08b1de70fb44848575436e8f8723d1627216aebd9"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.09#stem": {
+      "variants": {
+        "v-rNjffIAK": {
+          "status": "accepted",
+          "file": "assets/video/shot.09#stem/v-rNjffIAK/stem.json",
+          "definitionHash": "952ffc037835",
+          "outputHash": "6bde6e0eac61ea477bf8baad04d706002d8825e4704d156f041aebe3a2848f69",
+          "createdAt": "2000-01-01T00:03:01.000Z",
+          "readyAt": "2000-01-01T00:03:02.000Z",
+          "decidedAt": "2000-01-01T00:03:02.000Z",
+          "inputFingerprints": {
+            "animatic:shot.09#narrationStem": "01a56a8c51646d64f27724d073dfd19382078b068f7f2ae06b7ef85032a3ea2b"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    },
+    "video:shot.13#stem": {
+      "variants": {
+        "v-CcRe4IQ4": {
+          "status": "accepted",
+          "file": "assets/video/shot.13#stem/v-CcRe4IQ4/stem.json",
+          "definitionHash": "b3f4021fa252",
+          "outputHash": "d425199fa3a769c8356e5f92de2f534b279f7a05b1ee81494197a5b5b562a400",
+          "createdAt": "2000-01-01T00:03:08.000Z",
+          "readyAt": "2000-01-01T00:03:09.000Z",
+          "decidedAt": "2000-01-01T00:03:09.000Z",
+          "inputFingerprints": {
+            "animatic:shot.13#narrationStem": "cf1f1b92de1c5ee50d15954baf27235fe36998d14b76b3c3d88f6759a608a3a3"
+          },
+          "seed": null,
+          "derivedFrom": null,
+          "patchHash": null,
+          "metadata": {}
+        }
+      }
+    }
+  },
+  "directionAcceptance": {
+    "parts": {
+      "direction:sequence": {
+        "partHash": "ae3f8b3a13c2",
+        "acceptedAt": "2000-01-01T00:04:45.000Z"
+      },
+      "direction:brief.logline": {
+        "partHash": "01490e77d551",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:brief.hook": {
+        "partHash": "03f9aa6dd5ad",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:brief.audience": {
+        "partHash": "2ce8f59a3607",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:brief.tone": {
+        "partHash": "30fbfc937bdf",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:brief.look": {
+        "partHash": "40e8af5c0e35",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:brief.outOfScope": {
+        "partHash": "e4f2d6aeaf12",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:brief.tolerances": {
+        "partHash": "4f53cda18c2b",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:policy.format": {
+        "partHash": "78cc3f194f8b",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:policy.lang": {
+        "partHash": "50eac10e7966",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:policy.fonts": {
+        "partHash": "c83e08d7a75e",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:policy.speech": {
+        "partHash": "83f6b6204ca5",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:sequence.shots.01": {
+        "partHash": "d8ac63edf7b6",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.02": {
+        "partHash": "5619cfe55456",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.03": {
+        "partHash": "7d284a6cb3c9",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.04": {
+        "partHash": "27622c12dd56",
+        "acceptedAt": "2000-01-01T00:04:24.000Z"
+      },
+      "direction:sequence.shots.05": {
+        "partHash": "a1f3230c54f2",
+        "acceptedAt": "2000-01-01T00:04:03.000Z"
+      },
+      "direction:sequence.shots.06": {
+        "partHash": "5d415dab5afa",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:sequence.shots.07": {
+        "partHash": "f1d5e01b836b",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.08": {
+        "partHash": "2d414ba594c4",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.09": {
+        "partHash": "38d1e99fbdcb",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.10": {
+        "partHash": "be37f791aa13",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.11": {
+        "partHash": "cdf940dac07d",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.12": {
+        "partHash": "173bc9731e70",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      },
+      "direction:sequence.shots.13": {
+        "partHash": "87830c61fbf1",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.14": {
+        "partHash": "ed362881b854",
+        "acceptedAt": "2000-01-01T00:02:02.000Z"
+      },
+      "direction:sequence.shots.15": {
+        "partHash": "062f406c453b",
+        "acceptedAt": "2000-01-01T00:04:45.000Z"
+      },
+      "direction:narrator": {
+        "partHash": "63372b65279e",
+        "acceptedAt": "2000-01-01T00:00:00.000Z"
+      }
+    },
+    "whole": {
+      "hash": "64eb6a92361d",
+      "acceptedAt": "2000-01-01T00:00:00.000Z"
+    }
+  }
+}

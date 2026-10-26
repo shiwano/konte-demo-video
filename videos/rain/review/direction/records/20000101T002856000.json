@@ -1,0 +1,68 @@
+{
+  "mode": "direction-preview",
+  "stage": "direction",
+  "createdAt": "2000-01-01T00:28:56.000Z",
+  "context": {
+    "shots": [],
+    "directionParts": {
+      "direction:sequence": "895eb621cc9c",
+      "direction:brief.logline": "b65f02a18128",
+      "direction:brief.hook": "39634c997965",
+      "direction:brief.audience": "5ab291a3729a",
+      "direction:brief.tone": "4cb9c4b2ad32",
+      "direction:brief.look": "1e93592f0185",
+      "direction:brief.outOfScope": "fd319166b612",
+      "direction:brief.tolerances": "90ec5463c292",
+      "direction:policy.format": "0ada616adc30",
+      "direction:policy.lang": "50eac10e7966",
+      "direction:policy.fonts": "eeaf34eefc55",
+      "direction:waivers.opening-key_02": "f7615f6fe082",
+      "direction:waivers.opening-key_05": "66f980865bbb",
+      "direction:sequence.shots.01": "49738446389f",
+      "direction:sequence.shots.02": "2b17305286f6",
+      "direction:sequence.shots.03": "fe402caadcde",
+      "direction:sequence.shots.04": "40a9b997db83",
+      "direction:sequence.shots.05": "b0d3a0eb18e0",
+      "direction:sequence.shots.06": "12a7b2350b0d",
+      "direction:characters.girl": "c0d6401a1b3c",
+      "direction:characters.girl.voice": "ebca17c9474f",
+      "direction:characters.owner": "c739ad2b36eb",
+      "direction:characters.owner.voice": "6b0a42727245",
+      "direction:props.umbrella": "f02d91c55c06",
+      "direction:locations.cafe": "de2f1f032f4a",
+      "direction:setups.cafeWide": "9bf6c09e2bbe",
+      "direction:setups.tableMedium": "96e201a6b7b4",
+      "direction:setups.girlClose": "953bf4738f47",
+      "direction:setups.counterMedium": "d7b2925ba461",
+      "direction:setups.standInsert": "318f64504513",
+      "direction:setups.windowOut": "9a3e304eec47"
+    }
+  },
+  "decisions": [],
+  "directionDecisions": {
+    "brief": "accepted",
+    "policy": "accepted",
+    "characters": "accepted",
+    "props": "accepted",
+    "locations": "accepted",
+    "shots": "accepted",
+    "waivers": "accepted"
+  },
+  "directionGate": {
+    "open": true,
+    "blocking": 0,
+    "total": 31
+  },
+  "handoffId": "20000101T002855000",
+  "handoffSummary": "konte 0.3.5 に合わせ、旧方式のテイクを保つために2カットめ・5カットめの見逃し扱いを追加しました。承認をお願いします。",
+  "handoffNotes": [
+    {
+      "address": "direction:waivers.opening-key_02",
+      "text": "旧konteで作ったテイクはキーフレームから始まる旧方式のため、この指摘を見逃し扱いにしました。今のテイクはそのまま残しています。"
+    },
+    {
+      "address": "direction:waivers.opening-key_05",
+      "text": "旧konteで作ったテイクはキーフレームから始まる旧方式のため、この指摘を見逃し扱いにしました。今のテイクはそのまま残しています。"
+    }
+  ]
+}

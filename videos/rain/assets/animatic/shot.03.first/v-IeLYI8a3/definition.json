@@ -1,0 +1,68 @@
+{
+  "kind": "comfy",
+  "workflow": "image_minimax_h3_r2i.json",
+  "inputs": {
+    "21.image": "__konte:reference:cafe__",
+    "22.image": "__konte:reference:owner__",
+    "23.image": "__konte:reference:umbrella__",
+    "10.prompt": "subject_definitions: <Subject 1> is the corner café in <Picture 1>: the dark wooden café counter, the coffee siphon, the clean cups, the glass-panelled door and the brass umbrella stand.\n<Subject 2> is the elderly man in a gray cardigan and brown apron, short white hair, round thin gold wire glasses, a white collared shirt under the gray wool cardigan, a long brown canvas apron, as in <Picture 2>.\n<Subject 3> is the yellow umbrella, a worn mustard-yellow long umbrella with a curved bamboo crook handle, as in <Picture 3>.\n\nsummary: [reference generation] A medium still behind the counter: the owner pauses mid-task and looks across the room.\n\nretention_analysis: <Subject 1> (appears in [Shot 1]): attribute_transfer - the counter, the door, the umbrella stand and the amber light are carried to a reverse camera position looking back at the counter.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, glasses, hair, cardigan and apron are kept.\n<Subject 3> (appears in [Shot 1]): fully_preserved - its colour, furled canopy and bamboo handle are kept.\n\ndetailed_description: 2D-animated, painterly anime background art with soft cel-shaded figures and clean thin dark-brown line art. [Shot 1] A medium shot from the window table looking back at the counter, at standing eye level. The dark wooden café counter crosses the lower third of the frame from the left edge to the right, a glass coffee siphon on it at the left and a row of clean white cups beside it. Behind the counter, just left of centre, <Subject 2> is seen from the waist up, torso facing the camera, a white cup in his left hand at chest height and a folded cloth pressed inside it by his right hand, both hands paused. His head is turned slightly toward screen right and lifted, his eyes behind the round gold glasses looking past the camera's right side toward the window table off-frame, his mouth closed, brows a little raised. At the right end of the counter, beside the glass-panelled door, stands a dented brass umbrella stand; in it, among two dark umbrellas, <Subject 3> leans with its bamboo crook handle above the rim, the one yellow thing in the frame. The pendant lamps above the counter light him warm amber; the door's glass shows the blue rainy street.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",
+    "10.width": 1248,
+    "10.height": 704,
+    "10.ref_image_size": "max",
+    "11.noise_seed": "__konte:seed__",
+    "13.steps": 20,
+    "1.unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "2.clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "3.vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+    "4.vae_name": "minimax_h3_audio_vae_fp32.safetensors",
+    "10.length": 5,
+    "17.batch_index": 0
+  },
+  "prunedNodes": [
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29"
+  ],
+  "models": [
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    },
+    {
+      "filename": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "21.image": "image1",
+    "22.image": "image2",
+    "23.image": "image3",
+    "10.prompt": "prompt",
+    "10.width": "width",
+    "10.height": "height",
+    "10.ref_image_size": "refImageSize",
+    "11.noise_seed": "seed",
+    "13.steps": "steps",
+    "1.unet_name": "unetName",
+    "2.clip_name": "clipName",
+    "3.vae_name": "vaeName",
+    "4.vae_name": "audioVaeName",
+    "10.length": "length",
+    "17.batch_index": "frameIndex"
+  }
+}

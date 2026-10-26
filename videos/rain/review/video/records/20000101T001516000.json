@@ -1,0 +1,225 @@
+{
+  "mode": "video-preview",
+  "stage": "video",
+  "createdAt": "2000-01-01T00:15:16.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 4,
+        "variants": {
+          "motion": "v-FEVr63No"
+        },
+        "takes": {
+          "video:shot.01.motion": "v-FEVr63No"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 4,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-7fADlkye"
+        },
+        "takes": {
+          "video:shot.02.motion": "v-7fADlkye"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 7.5,
+        "duration": 3,
+        "variants": {
+          "motion": "v-28KLNzY5"
+        },
+        "takes": {
+          "video:shot.03.motion": "v-28KLNzY5"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 10.5,
+        "duration": 2.5,
+        "variants": {
+          "motion": "v-TScUmzZN"
+        },
+        "takes": {
+          "video:shot.04.motion": "v-TScUmzZN"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 13,
+        "duration": 4,
+        "variants": {
+          "motion": "v-UoYck1Nt"
+        },
+        "takes": {
+          "video:shot.05.motion": "v-UoYck1Nt"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 17,
+        "duration": 4,
+        "variants": {
+          "motion": "v-zy2o8KOE"
+        },
+        "takes": {
+          "video:shot.06.motion": "v-zy2o8KOE"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {
+      "reference:rain": "v-4JA5x6eZ",
+      "reference:bgm": "v-qJ92L1ze"
+    },
+    "contentHashes": {
+      "video:shot.01#composition": "c842bccf3905d5cfb63f048932029a3d52d2fa001c0de260adc5980667d76aa1",
+      "video:shot.02#composition": "efcce64fa81edde6bd7696cefd642dc511860b662533d4e41f96f7e532d38cfe",
+      "video:shot.03#composition": "52c3caea20a8ca393b7c453e559e9e110784bd52f045d8b110b41c6da81beed3",
+      "video:shot.04#composition": "3d4759644719554efde307706bda28927dc0b341c4a28719ac11b36f049fb37f",
+      "video:shot.05#composition": "cd24bab9ba137359fd4aa21454e6e73cf194e49e0e6e292f716308467ac45cac",
+      "video:shot.06#composition": "e8027a88af74c76494cb1adcc7a50c4e1b1f98425e44d074c07c6f57241e1979",
+      "video:shot.01#stem": "c01a6819313cbf34d9179b8c88086750ee01d156556728df1184dc48e641e126",
+      "video:shot.02#stem": "7a5f3c6555e275853cf5f8649bc6422a3c04670533de7ed527a685d8a4ded222",
+      "video:shot.03#stem": "3f33df192e3f5bbdeb0939d93ab48143ed7f0046d7af6313fb599002fe3b9415",
+      "video:shot.04#stem": "8829bd40d0f6c05d00515018a257f6eaaf81851d90a6cf0a6e614ba3dfdc206c",
+      "video:shot.05#stem": "7b93f5db1255ea4c927dbabe05642e926dba085e838e7938d483601161dd5d9a",
+      "video:shot.06#stem": "c0f67d9e6fca758355ad660d46c4a71b643ce90494ec044108999b6696e815d7",
+      "video:timeline#stem": "1e1b0f8521334a41166962e75d6b6d0e8e11177337ff3739d83b0bf28714e8db"
+    }
+  },
+  "decisions": {
+    "01": "accepted",
+    "03": "accepted",
+    "04": "accepted",
+    "05": "accepted",
+    "06": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "video:shot.01#stem",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "video:shot.03#stem",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "video:shot.04#stem",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "video:shot.05#stem",
+      "via": "video:shot.05"
+    },
+    {
+      "address": "video:shot.06#stem",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "video:shot.01#composition",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "video:shot.03#composition",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "video:shot.04#composition",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "video:shot.05#composition",
+      "via": "video:shot.05"
+    },
+    {
+      "address": "video:shot.06#composition",
+      "via": "video:shot.06"
+    }
+  ],
+  "notes": [
+    {
+      "id": "fb-uKBQP65q",
+      "time": 6.8,
+      "shotId": "02",
+      "address": "video:shot.02",
+      "x": 0.47,
+      "y": 0.32,
+      "text": "By the end she's turned almost fully away from us. Keep her in three-quarter toward the glass so we still catch her eyes.",
+      "displayedVariants": {
+        "video:shot.02.motion": "v-7fADlkye"
+      }
+    },
+    {
+      "id": "fb-iDJp9pMd",
+      "time": 16.4,
+      "shotId": "05",
+      "address": "video:shot.05",
+      "x": 0.62,
+      "y": 0.55,
+      "text": "Accepting this, but could we see one where her hands actually reach the handle before the cut?",
+      "displayedVariants": {
+        "video:shot.05.motion": "v-UoYck1Nt"
+      }
+    },
+    {
+      "id": "fb-inG8d0ZT",
+      "time": 12.3,
+      "shotId": "04",
+      "address": "video:shot.04",
+      "text": "The umbrella sliding out is lovely. No changes.",
+      "displayedVariants": {
+        "video:shot.04.motion": "v-TScUmzZN"
+      }
+    },
+    {
+      "id": "fb-PWoNaGop",
+      "time": 0.4,
+      "shotId": "01",
+      "address": "video:shot.01",
+      "text": "Could the fade from black be a touch shorter? It eats the hook.",
+      "displayedVariants": {
+        "video:shot.01.motion": "v-FEVr63No"
+      }
+    },
+    {
+      "id": "fb-o6TAQ0vv",
+      "time": 19,
+      "shotId": "06",
+      "address": "video:shot.06",
+      "text": "Title is perfect over the umbrella.",
+      "displayedVariants": {
+        "video:shot.06.motion": "v-zy2o8KOE"
+      }
+    }
+  ],
+  "overallComment": "Really close. 02's turn and one more take on 05, then I think we're done.",
+  "handoffId": "20000101T001514000",
+  "handoffSummary": "First motion pass on all six shots, about 21 seconds. Both lines are lip-synced from the board's stems; rain runs under the whole piece and the piano enters at 03.",
+  "handoffNotes": [
+    {
+      "address": "video:shot.01",
+      "text": "Held wide, only the owner's hands and the rain moving. Opens from black over 1.2s."
+    },
+    {
+      "address": "video:shot.02",
+      "text": "Slow push in while she speaks. Check the mouth closes on 'is it?'."
+    },
+    {
+      "address": "video:shot.04",
+      "text": "The umbrella clears the top of frame at 2.9s, just before the cut."
+    },
+    {
+      "address": "video:shot.05",
+      "text": "She starts reaching for the handle at the very end — the hand-off itself is left to the cut."
+    },
+    {
+      "address": "video:shot.06",
+      "text": "Title fades in at 0.9s and holds to 3.4s before the fade to black, per your direction note."
+    }
+  ]
+}

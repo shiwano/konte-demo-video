@@ -1,0 +1,18 @@
+{
+  "stage": "video",
+  "summary": "03の Submit ボタンを消し、15と16を1ショットにまとめて締めくくりを4秒にしました。",
+  "notes": [
+    {
+      "address": "video:shot.03",
+      "text": "Submit ボタンを消しました。"
+    },
+    {
+      "address": "video:shot.15",
+      "text": "16の完了通知を取り込んで1ショットにし、4秒にしました。動画全体は約43秒です。"
+    },
+    {
+      "address": "video:timeline#stem",
+      "text": "締めくくりが短くなったので、BGM が最後のショットの終わりでフェードアウトするように合わせ直しました。"
+    }
+  ]
+}

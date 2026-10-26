@@ -1,0 +1,10 @@
+{
+  "kind": "local",
+  "operation": "retime",
+  "mediaType": "audio",
+  "inputs": {
+    "source": "__konte:animatic:shot.01.vo__",
+    "duration": 1.9
+  },
+  "deterministic": true
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "reference:stickyNote": [
+      {
+        "id": "fb-fLvItcjf",
+        "displayedVariants": {
+          "reference:stickyNote": "v-mfbFTbAn"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.433,
+          "y": 0.507
+        },
+        "text": "何も書いてないほうがいいかなあ",
+        "createdAt": "2000-01-01T00:16:21.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

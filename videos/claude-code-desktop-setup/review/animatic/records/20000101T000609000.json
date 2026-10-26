@@ -1,0 +1,311 @@
+{
+  "mode": "animatic-preview",
+  "stage": "animatic",
+  "createdAt": "2000-01-01T00:06:09.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2,
+        "variants": {
+          "voFit": "v-o571YMeZ"
+        },
+        "takes": {
+          "animatic:shot.01.voFit": "v-o571YMeZ"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "03",
+        "start": 4.5,
+        "duration": 2,
+        "variants": {
+          "vo": "v-XvMgufHo"
+        },
+        "takes": {
+          "animatic:shot.03.vo": "v-XvMgufHo"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 6.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-4kFj9VER"
+        },
+        "takes": {
+          "animatic:shot.04.vo": "v-4kFj9VER"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 9,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-1i9p8xI3"
+        },
+        "takes": {
+          "animatic:shot.05.vo": "v-1i9p8xI3"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 11.5,
+        "duration": 2,
+        "variants": {
+          "vo": "v-4yiRaXba"
+        },
+        "takes": {
+          "animatic:shot.06.vo": "v-4yiRaXba"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 13.5,
+        "duration": 2,
+        "variants": {
+          "vo": "v-5nOVZbOx"
+        },
+        "takes": {
+          "animatic:shot.07.vo": "v-5nOVZbOx"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 15.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-mx94Itmp"
+        },
+        "takes": {
+          "animatic:shot.08.vo": "v-mx94Itmp"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 18,
+        "duration": 2,
+        "variants": {
+          "vo": "v-umG4N0N2"
+        },
+        "takes": {
+          "animatic:shot.09.vo": "v-umG4N0N2"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 20,
+        "duration": 3,
+        "variants": {
+          "vo": "v-jsroNZQA"
+        },
+        "takes": {
+          "animatic:shot.10.vo": "v-jsroNZQA"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 23,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-Uy2YZZDP"
+        },
+        "takes": {
+          "animatic:shot.11.vo": "v-Uy2YZZDP"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 25.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-L7j0H5ba"
+        },
+        "takes": {
+          "animatic:shot.12.vo": "v-L7j0H5ba"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 28,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-lh5lkul0"
+        },
+        "takes": {
+          "animatic:shot.13.vo": "v-lh5lkul0"
+        }
+      },
+      {
+        "shotId": "14",
+        "start": 30.5,
+        "duration": 2,
+        "variants": {
+          "voFit": "v-DfcMIKIs"
+        },
+        "takes": {
+          "animatic:shot.14.voFit": "v-DfcMIKIs"
+        }
+      },
+      {
+        "shotId": "15",
+        "start": 32.5,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "16",
+        "start": 35,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-SpMprQbN"
+        },
+        "takes": {
+          "animatic:shot.16.vo": "v-SpMprQbN"
+        }
+      },
+      {
+        "shotId": "17",
+        "start": 37.5,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-79d1Fe4n"
+        },
+        "takes": {
+          "animatic:shot.17.vo": "v-79d1Fe4n"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {},
+    "contentHashes": {
+      "animatic:shot.01#composition": "71e6a35f35ae9ce4c5fd7d5849bf0423fb68e6e326f3a71ed41ac34f09e6063e",
+      "animatic:shot.02#composition": "2c50e238715f714ee1ca4e45603018c409d0ea1f750c2b6930e8c5680a6acfcb",
+      "animatic:shot.03#composition": "b93eb543187f2f63761984e59ffb79a706f5a671200e6151e62193db8a979db1",
+      "animatic:shot.04#composition": "8e39350dd06f8395406eff6ad9d1d820a9753c22538c66a8f48dcf5c4efc6902",
+      "animatic:shot.05#composition": "14491f6b8cebb28437e9cc1fa3c916ac3d2e57879c3b6586fcb00868bb7b6139",
+      "animatic:shot.06#composition": "02932212f738a3be504f55affa93ae14cd8167290daef4c7332f994dcc9299aa",
+      "animatic:shot.07#composition": "46d098cb2d190e5b82e4ac906fa8a72da723a9511a522302924a4e7598c181ec",
+      "animatic:shot.08#composition": "7ef75e3b5d5409266bae9bb81d5b8bd990ec5f5e33c23673a3c8c4abb357e7a4",
+      "animatic:shot.09#composition": "a71d0b16d9a1162d02b996c05e778e81435fb7d088b413ff526fd1abc714b350",
+      "animatic:shot.10#composition": "4bb282fd605f9e76afcd371cb13ca7df360e9f8821f609b0e8e4c153d2673bd5",
+      "animatic:shot.11#composition": "4df5995698f9eeba16d1e15b1a1a14d4c0bb1dbaf852f43aba582a6d2fb6b5f9",
+      "animatic:shot.12#composition": "c73c25c2a29eaaf9cb2ca020e25d9b6faf6a36f4224abe1fc9defc1af103e46c",
+      "animatic:shot.13#composition": "53ada0ac6405c90c426404c36842605e7d853472b3841c9fc1fea26e0f97a9ee",
+      "animatic:shot.14#composition": "2bdd41b0eb35cd4dc40e57c34b37460204ca00b800b00ad74a01cd58ff47e3bb",
+      "animatic:shot.15#composition": "d9654811d93bff6e83855a7bffa8dceeb4c8fe1e61974a69753598032e219acf",
+      "animatic:shot.16#composition": "fd1a76088dbe9413cee24efa5a9eda32c0c5de61e8a24531b2e3cb9fd65f7869",
+      "animatic:shot.17#composition": "1feaca5356819ebd74494dee3e75bc5f56994827699f4df0c7c52ce5fa3d233a",
+      "animatic:shot.01#narrationStem": "c9c8f757b2497b068b0124ae4647c9c32defe866e0ead13959cab3aa092174c1",
+      "animatic:shot.03#narrationStem": "896c05bf47f46aa8ba57c867d46bd59c282f793ff12331938915d692cef322b1",
+      "animatic:shot.04#narrationStem": "d832c41699ebb16395218242400a220c14d2dbff0a68158c2b7d379ef33ac232",
+      "animatic:shot.05#narrationStem": "d7b39b0cc8b4f6bafd4fbcb6e62f153c87d5091ca155678252e39f8fe472c572",
+      "animatic:shot.06#narrationStem": "790b0800fd18f9d5becd33994dcb39713de5bdaad8c9a92e22d9501dd1eb097a",
+      "animatic:shot.07#narrationStem": "2c9bd685dda1ed4e2ca2a0d48bbcb0c5df94647d4dfe167eb43b43511304a332",
+      "animatic:shot.08#narrationStem": "b388acf48fb7bac98425ad1db1d3ee05e44b81f632952279e47099a518baec5c",
+      "animatic:shot.09#narrationStem": "e432a27ece8931f4437c3b6507e989c861f1411e0a21b8ba19abd94be79f457c",
+      "animatic:shot.10#narrationStem": "3bfd6df59b6719ed5263a0375748a0874a08b6996b58626773ee0acb443ca3ee",
+      "animatic:shot.11#narrationStem": "a775b079e919ae141354ed4cf790bb4d5f4118ecba7916f04058bc8ef74e8427",
+      "animatic:shot.12#narrationStem": "70acc55576a715a7a118a6ceeb577e0e7bd5b09f24ca8187d008883527d57722",
+      "animatic:shot.13#narrationStem": "bb7900fd31643cd860459ea0aca4b7affe034b92eacc38ace130534c2860b7d1",
+      "animatic:shot.14#narrationStem": "3f1454b16f9115393a959951f44bf7348c403ff8ed4ee7495e6e530045a75262",
+      "animatic:shot.16#narrationStem": "d7d20b15bb733821b3bb3d3c962e2251afb158fd71144cc7c4b34d1b1b39902c",
+      "animatic:shot.17#narrationStem": "812a4d5cdb7c725e40ec68673ba91994a7178b639a1821c925477a30411f4b27"
+    }
+  },
+  "decisions": {},
+  "notes": [
+    {
+      "id": "fb-fi6X8BCQ",
+      "time": 14.7,
+      "shotId": "07",
+      "address": "animatic:shot.07",
+      "x": 0.509,
+      "y": 0.52,
+      "text": "ここへこまない",
+      "displayedVariants": {
+        "animatic:shot.07.vo": "v-5nOVZbOx"
+      }
+    },
+    {
+      "id": "fb-At9M6k1V",
+      "time": 17.5,
+      "shotId": "08",
+      "address": "animatic:shot.08",
+      "x": 0.341,
+      "y": 0.478,
+      "text": "人間がタイプするところはもうちょっと間をとりたい",
+      "displayedVariants": {
+        "animatic:shot.08.vo": "v-mx94Itmp"
+      }
+    },
+    {
+      "id": "fb-5vE9zSE5",
+      "time": 27.033333333333335,
+      "shotId": "12",
+      "address": "animatic:shot.12",
+      "x": 0.571,
+      "y": 0.786,
+      "text": "ここらへんも間をとりたい",
+      "displayedVariants": {
+        "animatic:shot.12.vo": "v-L7j0H5ba"
+      }
+    },
+    {
+      "id": "fb-P8aIIpGM",
+      "time": 35.233333333333334,
+      "shotId": "16",
+      "address": "animatic:shot.16",
+      "x": 0.258,
+      "y": 0.314,
+      "text": "konte-workspace の + ボタンからセッションは開始したい",
+      "displayedVariants": {
+        "animatic:shot.16.vo": "v-SpMprQbN"
+      }
+    },
+    {
+      "id": "fb-2aAPVqL9",
+      "time": 36.333333333333336,
+      "shotId": "16",
+      "address": "animatic:shot.16",
+      "x": 0.564,
+      "y": 0.782,
+      "text": "ここも間がほしい",
+      "displayedVariants": {
+        "animatic:shot.16.vo": "v-SpMprQbN"
+      }
+    }
+  ],
+  "handoffId": "20000101T000608000",
+  "handoffSummary": "全17ショット・約42秒の絵コンテです。画面の動きはすべて JSX で作った完成形で、ナレーションも入っています（BGM・効果音・字幕は次の video 段階で重ねます）。",
+  "handoffNotes": [
+    {
+      "address": "animatic:shot.12",
+      "text": "「konte setup」の発音が崩れやすかったので、6回引き直して聞き取れるテイクを選びました。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "「konte checkin」も同じく引き直し済みです。最後に Enter で送信して入力欄が空になるところまで見せます。"
+    },
+    {
+      "address": "animatic:shot.01",
+      "text": "ナレーションが尺をわずかにはみ出したので、約5%速めて収めています。"
+    },
+    {
+      "address": "animatic:shot.14",
+      "text": "同じく約8%速めています。"
+    },
+    {
+      "address": "animatic:shot.15",
+      "text": "アプリの終了は「左上のメニュー → File → Exit」で描いています。実際の操作と違えば教えてください。"
+    }
+  ]
+}

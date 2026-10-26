@@ -1,0 +1,30 @@
+{
+  "stage": "animatic",
+  "summary": "The whole board, six panels and both lines. Shots 01, 05 and 06 have a second take — the compositions are close, so pick on faces and light.",
+  "notes": [
+    {
+      "address": "animatic:shot.01",
+      "text": "The upturned chairs read in both takes. The first take keeps the owner a little smaller, which leaves the window to the girl."
+    },
+    {
+      "address": "animatic:shot.02",
+      "text": "Cut along the wide's axis from 01's panel, so her place at the window carries across. The line lands at 0.6s."
+    },
+    {
+      "address": "animatic:shot.03",
+      "text": "He is looking past camera right, toward her table. The umbrella is planted in the stand by the door, right of frame."
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "Insert at the stand. The hand enters from the upper right, the same side he stood on in 03."
+    },
+    {
+      "address": "animatic:shot.05",
+      "text": "The handle points at her so the offer reads before he speaks."
+    },
+    {
+      "address": "animatic:shot.06",
+      "text": "Last image: the only warm colour outside is the umbrella. The title will sit over this hold."
+    }
+  ]
+}

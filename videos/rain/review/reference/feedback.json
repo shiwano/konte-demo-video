@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "reference:owner": [
+      {
+        "id": "fb-V1ZLlMFi",
+        "displayedVariants": {
+          "reference:owner": "v-ftQ0baSX"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.5,
+          "y": 0.12
+        },
+        "text": "These glasses are perfect — keep them this thin and round in every shot.",
+        "createdAt": "2000-01-01T00:14:04.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "reference:girl": [
+      {
+        "id": "fb-lSIv00Ek",
+        "displayedVariants": {
+          "reference:girl": "v-OxR8p3U9"
+        },
+        "annotation": null,
+        "text": "This one. Her eyes are a little more tired than the others, which is exactly where she is tonight.",
+        "createdAt": "2000-01-01T00:14:04.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "reference:bgm": [
+      {
+        "id": "fb-vT7ZJAxz",
+        "displayedVariants": {
+          "reference:bgm": "v-qJ92L1ze"
+        },
+        "annotation": null,
+        "text": "Good, but keep it very low under the rain — the rain is the real score.",
+        "createdAt": "2000-01-01T00:14:04.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

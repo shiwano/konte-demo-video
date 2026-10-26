@@ -1,0 +1,1156 @@
+{
+  "mode": "video-preview",
+  "stage": "video",
+  "createdAt": "2000-01-01T00:25:38.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-ksgxQkoM"
+        },
+        "takes": {
+          "video:shot.01.motion": "v-ksgxQkoM"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 1.5,
+        "duration": 4,
+        "variants": {
+          "motion": "v-WxpEZMzT"
+        },
+        "takes": {
+          "video:shot.02.motion": "v-WxpEZMzT"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 5.5,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-SGTlQk8f"
+        },
+        "takes": {
+          "video:shot.03.motion": "v-SGTlQk8f"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 7,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-mlP3WrpU"
+        },
+        "takes": {
+          "video:shot.04.motion": "v-mlP3WrpU"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 10.5,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-UFQpD9fR"
+        },
+        "takes": {
+          "video:shot.06.motion": "v-UFQpD9fR"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 14,
+        "duration": 5,
+        "variants": {
+          "motion": "v-gtsFRy1t"
+        },
+        "takes": {
+          "video:shot.07.motion": "v-gtsFRy1t"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 19,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-ZSRJ5kmv"
+        },
+        "takes": {
+          "video:shot.08.motion": "v-ZSRJ5kmv"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 20.5,
+        "duration": 2.5,
+        "variants": {
+          "motion": "v-VWTgqJ4I"
+        },
+        "takes": {
+          "video:shot.09.motion": "v-VWTgqJ4I"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 23,
+        "duration": 4,
+        "variants": {
+          "motion": "v-K15E5Hur"
+        },
+        "takes": {
+          "video:shot.10.motion": "v-K15E5Hur"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 27,
+        "duration": 4.5,
+        "variants": {
+          "motion": "v-6AnDZqqK"
+        },
+        "takes": {
+          "video:shot.11.motion": "v-6AnDZqqK"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 31.5,
+        "duration": 1,
+        "variants": {
+          "motion": "v-tLEXYl2P"
+        },
+        "takes": {
+          "video:shot.12.motion": "v-tLEXYl2P"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 32.5,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-9EX1z8Ez"
+        },
+        "takes": {
+          "video:shot.13.motion": "v-9EX1z8Ez"
+        }
+      },
+      {
+        "shotId": "14",
+        "start": 36,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-nyCmy4h4"
+        },
+        "takes": {
+          "video:shot.14.motion": "v-nyCmy4h4"
+        }
+      },
+      {
+        "shotId": "15",
+        "start": 39.5,
+        "duration": 3,
+        "variants": {
+          "motion": "v-nuNCihuE"
+        },
+        "takes": {
+          "video:shot.15.motion": "v-nuNCihuE"
+        }
+      },
+      {
+        "shotId": "16",
+        "start": 42.5,
+        "duration": 2.5,
+        "variants": {
+          "motion": "v-IlQmC0G8"
+        },
+        "takes": {
+          "video:shot.16.motion": "v-IlQmC0G8"
+        }
+      },
+      {
+        "shotId": "17",
+        "start": 45,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-Ku43MqFo"
+        },
+        "takes": {
+          "video:shot.17.motion": "v-Ku43MqFo"
+        }
+      },
+      {
+        "shotId": "18",
+        "start": 46.5,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-r4ZGDLIQ"
+        },
+        "takes": {
+          "video:shot.18.motion": "v-r4ZGDLIQ"
+        }
+      },
+      {
+        "shotId": "19",
+        "start": 50,
+        "duration": 2.5,
+        "variants": {
+          "motion": "v-3DRfbA45"
+        },
+        "takes": {
+          "video:shot.19.motion": "v-3DRfbA45"
+        }
+      },
+      {
+        "shotId": "20",
+        "start": 52.5,
+        "duration": 1,
+        "variants": {
+          "motion": "v-ZjGve1Xm"
+        },
+        "takes": {
+          "video:shot.20.motion": "v-ZjGve1Xm"
+        }
+      },
+      {
+        "shotId": "21",
+        "start": 53.5,
+        "duration": 2,
+        "variants": {
+          "motion": "v-veBC2Aor"
+        },
+        "takes": {
+          "video:shot.21.motion": "v-veBC2Aor"
+        }
+      },
+      {
+        "shotId": "22",
+        "start": 55.5,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-onvkuAB3"
+        },
+        "takes": {
+          "video:shot.22.motion": "v-onvkuAB3"
+        }
+      },
+      {
+        "shotId": "23",
+        "start": 57,
+        "duration": 2.5,
+        "variants": {
+          "motion": "v-78RixLXz"
+        },
+        "takes": {
+          "video:shot.23.motion": "v-78RixLXz"
+        }
+      },
+      {
+        "shotId": "24",
+        "start": 59.5,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-msQrrfsL"
+        },
+        "takes": {
+          "video:shot.24.motion": "v-msQrrfsL"
+        }
+      },
+      {
+        "shotId": "25",
+        "start": 61,
+        "duration": 3,
+        "variants": {
+          "motion": "v-MVK5m1qf"
+        },
+        "takes": {
+          "video:shot.25.motion": "v-MVK5m1qf"
+        }
+      },
+      {
+        "shotId": "26",
+        "start": 64,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-XHGODqwf"
+        },
+        "takes": {
+          "video:shot.26.motion": "v-XHGODqwf"
+        }
+      },
+      {
+        "shotId": "27",
+        "start": 65.5,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-oALC9pjm"
+        },
+        "takes": {
+          "video:shot.27.motion": "v-oALC9pjm"
+        }
+      },
+      {
+        "shotId": "28",
+        "start": 69,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-k28JnpHO"
+        },
+        "takes": {
+          "video:shot.28.motion": "v-k28JnpHO"
+        }
+      },
+      {
+        "shotId": "29",
+        "start": 70.5,
+        "duration": 3,
+        "variants": {
+          "motion": "v-UEnfDEAF"
+        },
+        "takes": {
+          "video:shot.29.motion": "v-UEnfDEAF"
+        }
+      },
+      {
+        "shotId": "30",
+        "start": 73.5,
+        "duration": 4.5,
+        "variants": {
+          "motion": "v-rDIUV0Pd"
+        },
+        "takes": {
+          "video:shot.30.motion": "v-rDIUV0Pd"
+        }
+      },
+      {
+        "shotId": "31",
+        "start": 78,
+        "duration": 1.5,
+        "variants": {
+          "motion": "v-LgPnqpCq"
+        },
+        "takes": {
+          "video:shot.31.motion": "v-LgPnqpCq"
+        }
+      },
+      {
+        "shotId": "32",
+        "start": 79.5,
+        "duration": 2.5,
+        "variants": {
+          "motion": "v-8qwn1D54"
+        },
+        "takes": {
+          "video:shot.32.motion": "v-8qwn1D54"
+        }
+      },
+      {
+        "shotId": "33",
+        "start": 82,
+        "duration": 4.5,
+        "variants": {
+          "motion": "v-ryPNA7Rl",
+          "cheer": "v-d5Fr9JwW"
+        },
+        "takes": {
+          "video:shot.33.motion": "v-ryPNA7Rl",
+          "video:shot.33.cheer": "v-d5Fr9JwW"
+        }
+      },
+      {
+        "shotId": "34",
+        "start": 86.5,
+        "duration": 3.5,
+        "variants": {
+          "motion": "v-4fwtcAMZ"
+        },
+        "takes": {
+          "video:shot.34.motion": "v-4fwtcAMZ"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {
+      "reference:bgm": "v-jrxKHQyO"
+    },
+    "contentHashes": {
+      "video:shot.01#composition": "51d586adfa195f0bc9180c8189468b64e5e3541e9e13b48d08590f75e9861459",
+      "video:shot.02#composition": "49fdbe22e78f2907ebb914867cac5168b1520273c5ecc5db1dac5e7cf4f60ba7",
+      "video:shot.03#composition": "9f6bbce8a16f420730cabbec77194bfecfe81ed50fb0fa28986847f612a39124",
+      "video:shot.04#composition": "c99c9b21054013ef05600837dad42e71b1559fc90f19f52099b84d9ab9dc6903",
+      "video:shot.06#composition": "e233a76413d0790495babff9bac06183a85e729eed028a9e587eb18b6a7ff654",
+      "video:shot.07#composition": "7f468d1cd8f0155e0590809255524c33dd62ec6d362e4d6459fa47b2abb4155c",
+      "video:shot.08#composition": "a103d30b903c9c20151b8e50806c3e663b2c3ef4cc5dc9918b232e197276dfc9",
+      "video:shot.09#composition": "e828231d1718d8151d410d37815d97d56542abfc05acd55acd9f9cc5ed3e1ea6",
+      "video:shot.10#composition": "28d46fd32c14d6dd8cc9d9bf2a8e6609be1f4d4eb024642add57f9b22ab08544",
+      "video:shot.11#composition": "1877522bab8380961514825ecd2518f0d7d4518beef7175d4105782550fdd2f2",
+      "video:shot.12#composition": "8c487ef3f0dfc6f16e149b085b97c30771c07f463df3d63b1e3f823f43a2bc09",
+      "video:shot.13#composition": "5b77f66bd8050672aba1891f4a3cb95299f75f14efb9526cb0d578590a4fbcb0",
+      "video:shot.14#composition": "28ba9e255ee07f5d83bc76ea9011b4ad493ab2f11788641e29b4e7e051c6728b",
+      "video:shot.15#composition": "e235b82ebae60d87877b5d3007593f5c29229661a103137b524684e28276d4b2",
+      "video:shot.16#composition": "373e9c89cc9efbe4ad52b94579a0f7c44f4fe57cca299956ba70a74912d33d40",
+      "video:shot.17#composition": "060055069b5569ca4ad4ffb01d2926fd7229a051cbde5854b7df5c37a959572a",
+      "video:shot.18#composition": "5bd9527687544ecca04515b5878e675fa379612126b6d7079d17ad123a31ba82",
+      "video:shot.19#composition": "33df7d867a0d6008f93181cdb406b58a754281a2998a3870dadd0baf04bdf194",
+      "video:shot.20#composition": "cb3e1e7c19fbc95a2beeef69b046d9a47e7eb11fae82810d31c4f4ec35c8940b",
+      "video:shot.21#composition": "34c8193b6f61b26095f5157f28c5c969da5fbdc90dbe31e47781f39faf718ff5",
+      "video:shot.22#composition": "212dd53f91ba6e6d3dc4d8701a21782f1ced26a8a25398cd87f501706c906c42",
+      "video:shot.23#composition": "59245aefb8138afe07d4ba6f7bb31562e0c347f0423a5cef52577206be006bec",
+      "video:shot.24#composition": "795293426391bc9403a877b934821f7ca5f1652f332b4c42d4a488f09c1b9565",
+      "video:shot.25#composition": "ff3df7a5c57134500f734ea5c7981060daca557f09af18d8b630613b9ea6460b",
+      "video:shot.26#composition": "5ce3469220ed10c3caff6c80023182d0bdea32f0a8319790c191a7755fb72b0b",
+      "video:shot.27#composition": "89513e79beee15a9709feadc58aa5c3c1749aae9b7bad9fe8f0350e19f51da98",
+      "video:shot.28#composition": "8ecaceb467c2ae889d5e982730f308cc0233a8065118d3babe4e0c46e9b27fb7",
+      "video:shot.29#composition": "b1b6d68792533d66a53e92a5353a27d9b22d1136945f30ca2d539da18b4546bc",
+      "video:shot.30#composition": "3f8a715dbdf08e13d619f044c98177c7004b01b2fa3e95b45f2149bef106b36b",
+      "video:shot.31#composition": "e3c0da9686d1143bea9fc95c8ba1181fe502c878e452b75895f8178346caaee7",
+      "video:shot.32#composition": "7d40924301b46f85e983baaeb147c70dff9770aceeb42664452beb98d5965a52",
+      "video:shot.33#composition": "37bdc2027d2cbd24d8ac52e1a4826a132fb8e22ca9f3edaba4bac5562c2148a6",
+      "video:shot.34#composition": "88edb1366bc601f7f219e58290f24bf9896d4b5bf1ad70ad76b9166531c63c2e",
+      "video:shot.01#stem": "e7e1f78205e66a40c1e197033216aba1e1fa30ebd4ec6ff1ddd9c15e964ee711",
+      "video:shot.02#stem": "b492f0cfe08f7fb45f3e90cd7123c3da2001df1811b36ccce60dfe88a2c5082b",
+      "video:shot.03#stem": "9b8918d60767c44ecddbb10fc75c2cdeb8162f28b72cf6f69bfaf1fb70aa6a7b",
+      "video:shot.04#stem": "6d01a290b7e694c7063fdbdb2fe8ccaae1a869ea685ab7835a3ca05feafce685",
+      "video:shot.06#stem": "8033528beacac62cb68bbc6da724e2ba5ae18bcb68968f9a2931f4e62a213953",
+      "video:shot.07#stem": "ddf21ccdfa667d88b8d04488b9dbd9676b30c9613d4a94a4a459df936fb2351f",
+      "video:shot.08#stem": "6403b5a92ac34bd99db88db2aa23b7a01e450cd80f56a3a085d9eb0d48c70ba2",
+      "video:shot.09#stem": "ba525f63dd3afa0cda82b5a8403cf7234bde3aa8781cfe6de05324f109baab1e",
+      "video:shot.10#stem": "20db7a75dddf9926f3dee6b4e6c815ccfc46a91d4b44c77cec50d40f7265954e",
+      "video:shot.11#stem": "aee9a04c3298e0f98fdaf98d0f5d8089e4a65ff0bb139a90aef9d5e9ff7af8aa",
+      "video:shot.12#stem": "93b2c54ae6212d2d093fdc89358bc33cecbce36bb47242a0dedbf116150163a0",
+      "video:shot.13#stem": "7286d2a7ad4458a4c54f435bf498ccf83600f7252011a84b3c41409177ef6583",
+      "video:shot.14#stem": "a44593d2ee6c7ab3b62253040926ceeb8020675730bcfb197e26cbd7b0e30ff8",
+      "video:shot.15#stem": "339160d3930e7522de452bf0b1698cfdbf743419834ca6947bb6a00a83090a10",
+      "video:shot.16#stem": "c6426a6604debc904febd3e61ae524f3ff8c127a69610ceb78fd006721f45ab4",
+      "video:shot.17#stem": "3d8a651a3880448e3c2879e35d199618d25fd75f4d1dd76d4475dc176165af3b",
+      "video:shot.18#stem": "58f50683206934fff6c7e9c88a2686b95b896460c1a877a9d8a8fc4da1e92d27",
+      "video:shot.19#stem": "8f7036cad58ea6b429e2c8785d312c4ee938ed2f2ddf357dddcec28125a69565",
+      "video:shot.20#stem": "6507cc4b75d1d4b163d816f1ff303775fc67fd3ba9b181e806551641d81b340e",
+      "video:shot.21#stem": "799bf250762b57f14322523359436f2086cafc15b3a53744ccf0e60f08c0f2c1",
+      "video:shot.22#stem": "527a3f66c0c98f1dea1a227b374a4b554cb7c907bb72820279fc4513d6825d00",
+      "video:shot.23#stem": "556e3805194d0d13c56549528fa842847c928ebc132b751c9d758181e33c4952",
+      "video:shot.24#stem": "01029773625db9a976422a530173d275e3c891bf51e32ca43cb0654f92524994",
+      "video:shot.26#stem": "0ea5affb13bd9eb6d9be890dff5055c5c055dd947dc4756a5cd0e612e19548b9",
+      "video:shot.27#stem": "d442b852d37cbd83052c3e1796766e00d62e6634d172d90d87bca207e0cd6837",
+      "video:shot.28#stem": "989bb8f787f103ba6f57b08f5a565819117c2727c90045204ade0aa76379993e",
+      "video:shot.29#stem": "50bb1821abf05931a098335aeb3cfe3a1fa907c1fca90ab2d39df8d347b49f19",
+      "video:shot.30#stem": "fe6bd5ddf614592ad901420033157e9fb6bc4928dbd0e9014462d52378014763",
+      "video:shot.31#stem": "95f76b029682cb6bbd24e33ac96c1fe1aba4d2c938327bb61ba4cd097c9576e2",
+      "video:shot.32#stem": "9856f23ce4c681947276444f259aadae5785caf6a0b74639b52a100e7667ea0d",
+      "video:shot.33#stem": "514f6c8bc002e07c6825870548ff103616c69a9f1692f3c2899540a50eed5586",
+      "video:shot.34#stem": "d9b9340efbf208860e4d4d44e5ca98cdf16db12a270a6919a7a176867f1ce1fe",
+      "video:timeline#stem": "ed426d16c15a9c3d36c6fb54f8d7e560be746689de88b00945d3d27ff3427d7b"
+    }
+  },
+  "decisions": {
+    "10": "accepted",
+    "11": "accepted",
+    "12": "accepted",
+    "13": "accepted",
+    "14": "accepted",
+    "15": "accepted",
+    "16": "accepted",
+    "17": "accepted",
+    "18": "accepted",
+    "19": "accepted",
+    "20": "accepted",
+    "21": "accepted",
+    "22": "accepted",
+    "23": "accepted",
+    "24": "accepted",
+    "25": "accepted",
+    "26": "accepted",
+    "27": "accepted",
+    "28": "accepted",
+    "29": "accepted",
+    "30": "accepted",
+    "31": "accepted",
+    "32": "accepted",
+    "33": "accepted",
+    "34": "accepted",
+    "01": "accepted",
+    "02": "accepted",
+    "03": "accepted",
+    "04": "accepted",
+    "06": "accepted",
+    "07": "accepted",
+    "08": "accepted",
+    "09": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "video:shot.01#stem",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "video:shot.02#stem",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "video:shot.03#stem",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "video:shot.04#stem",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "video:shot.06#stem",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "video:shot.07#stem",
+      "via": "video:shot.07"
+    },
+    {
+      "address": "video:shot.08#stem",
+      "via": "video:shot.08"
+    },
+    {
+      "address": "video:shot.09#stem",
+      "via": "video:shot.09"
+    },
+    {
+      "address": "video:shot.10#stem",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "video:shot.11#stem",
+      "via": "video:shot.11"
+    },
+    {
+      "address": "video:shot.12#stem",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "video:shot.13#stem",
+      "via": "video:shot.13"
+    },
+    {
+      "address": "video:shot.14#stem",
+      "via": "video:shot.14"
+    },
+    {
+      "address": "video:shot.15#stem",
+      "via": "video:shot.15"
+    },
+    {
+      "address": "video:shot.16#stem",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "video:shot.17#stem",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "video:shot.18#stem",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "video:shot.19#stem",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "video:shot.20#stem",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "video:shot.21#stem",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "video:shot.22#stem",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "video:shot.23#stem",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "video:shot.24#stem",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "video:shot.26#stem",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "video:shot.27#stem",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "video:shot.28#stem",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "video:shot.29#stem",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "video:shot.30#stem",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "video:shot.31#stem",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "video:shot.32#stem",
+      "via": "video:shot.32"
+    },
+    {
+      "address": "video:shot.33#stem",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "video:shot.34#stem",
+      "via": "video:shot.34"
+    },
+    {
+      "address": "video:shot.01#composition",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "video:shot.02#composition",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "video:shot.03#composition",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "video:shot.04#composition",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "video:shot.06#composition",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "video:shot.07#composition",
+      "via": "video:shot.07"
+    },
+    {
+      "address": "video:shot.08#composition",
+      "via": "video:shot.08"
+    },
+    {
+      "address": "video:shot.09#composition",
+      "via": "video:shot.09"
+    },
+    {
+      "address": "video:shot.10#composition",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "video:shot.11#composition",
+      "via": "video:shot.11"
+    },
+    {
+      "address": "video:shot.12#composition",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "video:shot.13#composition",
+      "via": "video:shot.13"
+    },
+    {
+      "address": "video:shot.14#composition",
+      "via": "video:shot.14"
+    },
+    {
+      "address": "video:shot.15#composition",
+      "via": "video:shot.15"
+    },
+    {
+      "address": "video:shot.16#composition",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "video:shot.17#composition",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "video:shot.18#composition",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "video:shot.19#composition",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "video:shot.20#composition",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "video:shot.21#composition",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "video:shot.22#composition",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "video:shot.23#composition",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "video:shot.24#composition",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "video:shot.25#composition",
+      "via": "video:shot.25"
+    },
+    {
+      "address": "video:shot.26#composition",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "video:shot.27#composition",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "video:shot.28#composition",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "video:shot.29#composition",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "video:shot.30#composition",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "video:shot.31#composition",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "video:shot.32#composition",
+      "via": "video:shot.32"
+    },
+    {
+      "address": "video:shot.33#composition",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "video:shot.34#composition",
+      "via": "video:shot.34"
+    },
+    {
+      "address": "animatic:shot.01#composition",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "animatic:shot.02#composition",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "animatic:shot.03#composition",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "animatic:shot.04#composition",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "animatic:shot.06#composition",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "animatic:shot.07#composition",
+      "via": "video:shot.07"
+    },
+    {
+      "address": "animatic:shot.08#composition",
+      "via": "video:shot.08"
+    },
+    {
+      "address": "animatic:shot.09#composition",
+      "via": "video:shot.09"
+    },
+    {
+      "address": "animatic:shot.10#composition",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "animatic:shot.11#composition",
+      "via": "video:shot.11"
+    },
+    {
+      "address": "animatic:shot.12#composition",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "animatic:shot.13#composition",
+      "via": "video:shot.13"
+    },
+    {
+      "address": "animatic:shot.14#composition",
+      "via": "video:shot.14"
+    },
+    {
+      "address": "animatic:shot.15#composition",
+      "via": "video:shot.15"
+    },
+    {
+      "address": "animatic:shot.16#composition",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "animatic:shot.17#composition",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "animatic:shot.18#composition",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "animatic:shot.19#composition",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "animatic:shot.20#composition",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "animatic:shot.21#composition",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "animatic:shot.22#composition",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "animatic:shot.23#composition",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "animatic:shot.24#composition",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "animatic:shot.25#composition",
+      "via": "video:shot.25"
+    },
+    {
+      "address": "animatic:shot.26#composition",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "animatic:shot.27#composition",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "animatic:shot.28#composition",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "animatic:shot.29#composition",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "animatic:shot.30#composition",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "animatic:shot.31#composition",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "animatic:shot.32#composition",
+      "via": "video:shot.32"
+    },
+    {
+      "address": "animatic:shot.33#composition",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "animatic:shot.34#composition",
+      "via": "video:shot.34"
+    },
+    {
+      "address": "direction:sequence.shots.01",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "direction:setups.konteClose",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "direction:waivers.opening-key_01",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "direction:sequence.shots.02",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "direction:setups.roomWide",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "direction:waivers.opening-key_02",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "direction:sequence.shots.03",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "direction:props.stickyNote",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "direction:waivers.opening-key_03",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "direction:sequence.shots.04",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "direction:sequence.shots.06",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "direction:setups.konteMedium",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "direction:waivers.opening-key_06",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "direction:sequence.shots.07",
+      "via": "video:shot.07"
+    },
+    {
+      "address": "direction:sequence.shots.08",
+      "via": "video:shot.08"
+    },
+    {
+      "address": "direction:sequence.shots.09",
+      "via": "video:shot.09"
+    },
+    {
+      "address": "direction:sequence.shots.10",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "direction:waivers.opening-key_10",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "direction:sequence.shots.11",
+      "via": "video:shot.11"
+    },
+    {
+      "address": "direction:sequence.shots.12",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "direction:waivers.opening-key_12",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "direction:sequence.shots.13",
+      "via": "video:shot.13"
+    },
+    {
+      "address": "direction:sequence.shots.14",
+      "via": "video:shot.14"
+    },
+    {
+      "address": "direction:waivers.opening-key_14",
+      "via": "video:shot.14"
+    },
+    {
+      "address": "direction:sequence.shots.15",
+      "via": "video:shot.15"
+    },
+    {
+      "address": "direction:sequence.shots.16",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "direction:waivers.opening-key_16",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "direction:sequence.shots.17",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "direction:setups.deskInsert",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "direction:props.storyboardSheet",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "direction:waivers.opening-key_17",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "direction:sequence.shots.18",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "direction:setups.deskMedium",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "direction:waivers.opening-key_18",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "direction:sequence.shots.19",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "direction:waivers.opening-key_19",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "direction:sequence.shots.20",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "direction:waivers.opening-key_20",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "direction:sequence.shots.21",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "direction:props.clapperboard",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "direction:waivers.opening-key_21",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "direction:sequence.shots.22",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "direction:waivers.opening-key_22",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "direction:sequence.shots.23",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "direction:props.tablet",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "direction:waivers.opening-key_23",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "direction:sequence.shots.24",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "direction:waivers.opening-key_24",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "direction:sequence.shots.25",
+      "via": "video:shot.25"
+    },
+    {
+      "address": "direction:waivers.opening-key_25",
+      "via": "video:shot.25"
+    },
+    {
+      "address": "direction:sequence.shots.26",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "direction:waivers.opening-key_26",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "direction:sequence.shots.27",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "direction:waivers.opening-key_27",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "direction:sequence.shots.28",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "direction:waivers.opening-key_28",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "direction:sequence.shots.29",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "direction:waivers.opening-key_29",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "direction:sequence.shots.30",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "direction:waivers.opening-key_30",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "direction:sequence.shots.31",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "direction:waivers.opening-key_31",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "direction:sequence.shots.32",
+      "via": "video:shot.32"
+    },
+    {
+      "address": "direction:sequence.shots.33",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "direction:waivers.opening-key_33",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "direction:sequence.shots.34",
+      "via": "video:shot.34"
+    },
+    {
+      "address": "direction:waivers.opening-key_34",
+      "via": "video:shot.34"
+    }
+  ],
+  "handoffId": "20000101T002537000",
+  "handoffSummary": "旧konte(0.0.1)からの移植です。絵と音は承認済みのテイクをそのまま使っていて、作り直したショットはありません。konteの更新で全ショットがstale表示になったので、合成をもう一度確認して承認をお願いします。",
+  "handoffNotes": [
+    {
+      "address": "video:shot.31",
+      "text": "新しい konte の指摘に合わせて、motion を 0.12秒目からではなく先頭から再生するように変えました。32 とのつなぎ目が揃います。"
+    },
+    {
+      "address": "video:shot.26",
+      "text": "プロンプトの否定表現『Almost nothing moves』を削りました。テイクは前のままです。"
+    }
+  ]
+}
+

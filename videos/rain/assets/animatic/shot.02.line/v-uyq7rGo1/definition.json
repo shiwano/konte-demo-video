@@ -1,0 +1,66 @@
+{
+  "kind": "comfy",
+  "workflow": "audio_minimax_h3_r2a.json",
+  "inputs": {
+    "21.image": "__konte:reference:girl__",
+    "31.audio": "__konte:reference:girlVoice__",
+    "10.prompt": "subject_definitions: <Subject 1> is the young woman in a navy duffle coat with cream toggle buttons over a cream cable-knit sweater, shoulder-length straight black hair with the ends damp and separated into strands, as in <Picture 1>; she is the speaker (S1).\n<Audio 1> is the voice-timbre reference for <Subject 1> (S1).\n\nsummary: [reference generation + audio reference] A young woman alone at a café window table murmurs one line to herself while watching the rain.\n\nretention_analysis: <Subject 1> (appears in [Shot 1]): weak_reference - only the speaker's age and presence are taken.\n<Audio 1>: weak_reference - the speaker follows its soft, slightly husky timbre.\n\ndetailed_description: 2D-animated, painterly anime background art with soft cel-shaded figures and clean thin dark-brown line art. [Shot 1] Close shot of <Subject 1> (S1), a woman in her early twenties with a soft, slightly husky voice, sitting alone at a small window table in an empty café at closing time, both hands around an empty cup, watching the rain run down the glass. She lets out a slow breath and, barely above a whisper, half to herself, resigned and quietly content, says, <d>[English] It's not going to stop, is it?</d> Her lips meet and she goes on watching the rain, still.\n\noverall_soundscape: Steady rain against a large window close by, soft drips, the faint hum of a quiet café after closing.\n\nnon_diegetic_music: N/A",
+    "10.width": 128,
+    "10.height": 128,
+    "10.length": 56,
+    "11.noise_seed": "__konte:seed__",
+    "13.steps": 20,
+    "1.unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "2.clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "3.vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+    "4.vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "prunedNodes": [
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "32",
+    "33"
+  ],
+  "models": [
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    },
+    {
+      "filename": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "21.image": "image1",
+    "31.audio": "audio1",
+    "10.prompt": "prompt",
+    "10.width": "width",
+    "10.height": "height",
+    "10.length": "length",
+    "11.noise_seed": "seed",
+    "13.steps": "steps",
+    "1.unet_name": "unetName",
+    "2.clip_name": "clipName",
+    "3.vae_name": "vaeName",
+    "4.vae_name": "audioVaeName"
+  }
+}

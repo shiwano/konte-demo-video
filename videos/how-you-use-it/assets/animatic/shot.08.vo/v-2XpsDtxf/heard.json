@@ -1,0 +1,29 @@
+{
+  "outputHash": "c5b395547174d69ddf4baead82b75c55b458d5b4b9acb46da3503989f590ee9d",
+  "heard": [
+    {
+      "text": "you",
+      "startSec": 0.06
+    },
+    {
+      "text": " review",
+      "startSec": 0.3
+    },
+    {
+      "text": " it",
+      "startSec": 0.78
+    },
+    {
+      "text": " in",
+      "startSec": 1.14
+    },
+    {
+      "text": " your",
+      "startSec": 1.32
+    },
+    {
+      "text": " browser",
+      "startSec": 1.68
+    }
+  ]
+}

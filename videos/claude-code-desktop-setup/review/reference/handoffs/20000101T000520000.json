@@ -1,0 +1,22 @@
+{
+  "stage": "reference",
+  "summary": "ナレーションの声と、BGM・クリック音・タイピング音です。各1つずつ選んでください。ここで選んだものが動画全体に使われます。",
+  "notes": [
+    {
+      "address": "reference:konteVoice",
+      "text": "参考作品と同じ女の子の声です。この声でナレーションを読み上げます。"
+    },
+    {
+      "address": "reference:bgm",
+      "text": "約42秒の動画全体を覆えるよう60秒で作りました。おすすめは最後まで音量が落ちない v-zADqPORH です。もう一方は前半が少し静かめです。"
+    },
+    {
+      "address": "reference:sfxTyping",
+      "text": "打鍵音は約1秒です。いちばん長い入力（ショット08、1.25秒）でもほぼ足ります。抑揚のある v-h97tpDIf がおすすめです。"
+    },
+    {
+      "address": "reference:sfxClick",
+      "text": "短く乾いたクリック音です。"
+    }
+  ]
+}

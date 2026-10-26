@@ -1,0 +1,213 @@
+{
+  "mode": "animatic-preview",
+  "stage": "animatic",
+  "createdAt": "2000-01-01T00:14:36.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 4,
+        "variants": {
+          "first": "v-hypKU7St"
+        },
+        "takes": {
+          "animatic:shot.01.first": "v-hypKU7St"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 4,
+        "duration": 3.5,
+        "variants": {
+          "first": "v-5kwVlnwq",
+          "line": "v-uyq7rGo1"
+        },
+        "takes": {
+          "animatic:shot.02.first": "v-5kwVlnwq",
+          "animatic:shot.02.line": "v-uyq7rGo1"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 7.5,
+        "duration": 3,
+        "variants": {
+          "first": "v-IeLYI8a3"
+        },
+        "takes": {
+          "animatic:shot.03.first": "v-IeLYI8a3"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 10.5,
+        "duration": 2.5,
+        "variants": {
+          "first": "v-vN5msM5L"
+        },
+        "takes": {
+          "animatic:shot.04.first": "v-vN5msM5L"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 13,
+        "duration": 4,
+        "variants": {
+          "first": "v-1gHeNpO7",
+          "line": "v-jEBIybAB"
+        },
+        "takes": {
+          "animatic:shot.05.first": "v-1gHeNpO7",
+          "animatic:shot.05.line": "v-jEBIybAB"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 17,
+        "duration": 4,
+        "variants": {
+          "first": "v-2wVjCZvB"
+        },
+        "takes": {
+          "animatic:shot.06.first": "v-2wVjCZvB"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {},
+    "contentHashes": {
+      "animatic:shot.01#composition": "77ca9d754bcf369ab03842376d980ba3d28b09267089af173a536fe394cf8553",
+      "animatic:shot.02#composition": "226fbe7dac801b71a84db3a683f5973e22d7b65e4a9387fbde5410df35be022c",
+      "animatic:shot.03#composition": "da2ddf3d63beb0a1aff964b80f0bcdce724ebdb76ef9c1f1c007e4f40981dc00",
+      "animatic:shot.04#composition": "603304fa2a44e8b212f3936e6a9cb7ac4661482aaa6d3be2049b93042ca00f01",
+      "animatic:shot.05#composition": "aa094e1365d1454d96b3f3eadb6919719ae683c6ff74d4a6c2bb43f47ac3f97a",
+      "animatic:shot.06#composition": "8c68acad499be36fc322a0b0b1aa4451c259bf001994778e4f90e9e692d8711a",
+      "animatic:shot.02#stem": "17a96add5285c73afc4e36b347d7bbba6bc2851fa756bb6b4216123de1f14852",
+      "animatic:shot.05#stem": "4963aa07fcf0c80b9e974d6ef0e0310494aaec344ed60a58835d8ffdfd45ad3c"
+    }
+  },
+  "decisions": {
+    "01": "accepted",
+    "02": "accepted",
+    "03": "accepted",
+    "05": "accepted",
+    "06": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "animatic:shot.02.line",
+      "via": "animatic:shot.02#stem"
+    },
+    {
+      "address": "animatic:shot.05.line",
+      "via": "animatic:shot.05#stem"
+    },
+    {
+      "address": "animatic:shot.02#stem",
+      "via": "animatic:shot.02"
+    },
+    {
+      "address": "animatic:shot.05#stem",
+      "via": "animatic:shot.05"
+    },
+    {
+      "address": "animatic:shot.01#composition",
+      "via": "animatic:shot.01"
+    },
+    {
+      "address": "animatic:shot.02#composition",
+      "via": "animatic:shot.02"
+    },
+    {
+      "address": "animatic:shot.03#composition",
+      "via": "animatic:shot.03"
+    },
+    {
+      "address": "animatic:shot.05#composition",
+      "via": "animatic:shot.05"
+    },
+    {
+      "address": "animatic:shot.06#composition",
+      "via": "animatic:shot.06"
+    }
+  ],
+  "notes": [
+    {
+      "id": "fb-roFOGkAT",
+      "time": 11.3,
+      "shotId": "04",
+      "address": "animatic:shot.04",
+      "x": 0.78,
+      "y": 0.2,
+      "text": "This hand reads twenty years too young. Give it his age — thin knuckles, a few spots, the cardigan cuff hanging loose.",
+      "displayedVariants": {
+        "animatic:shot.04.first": "v-vN5msM5L"
+      }
+    },
+    {
+      "id": "fb-FNQ0Kx2n",
+      "time": 5.6,
+      "shotId": "02",
+      "address": "animatic:shot.02",
+      "text": "Her line is right. Keep the breath before it.",
+      "displayedVariants": {
+        "animatic:shot.02.first": "v-5kwVlnwq",
+        "animatic:shot.02.line": "v-uyq7rGo1"
+      }
+    },
+    {
+      "id": "fb-st2DDvN7",
+      "time": 15,
+      "shotId": "05",
+      "address": "animatic:shot.05",
+      "x": 0.55,
+      "y": 0.52,
+      "text": "The handle pointing at her is what makes this. Keep it.",
+      "displayedVariants": {
+        "animatic:shot.05.first": "v-1gHeNpO7",
+        "animatic:shot.05.line": "v-jEBIybAB"
+      }
+    },
+    {
+      "id": "fb-OLSgs8E4",
+      "time": 1,
+      "shotId": "01",
+      "address": "animatic:shot.01",
+      "text": "Picked the first take — the owner smaller, the window hers.",
+      "displayedVariants": {
+        "animatic:shot.01.first": "v-hypKU7St"
+      }
+    }
+  ],
+  "overallComment": "Board is nearly there. Only 04's hand needs another pass.",
+  "handoffId": "20000101T001434000",
+  "handoffSummary": "The whole board, six panels and both lines. Shots 01, 05 and 06 have a second take — the compositions are close, so pick on faces and light.",
+  "handoffNotes": [
+    {
+      "address": "animatic:shot.01",
+      "text": "The upturned chairs read in both takes. The first take keeps the owner a little smaller, which leaves the window to the girl."
+    },
+    {
+      "address": "animatic:shot.02",
+      "text": "Cut along the wide's axis from 01's panel, so her place at the window carries across. The line lands at 0.6s."
+    },
+    {
+      "address": "animatic:shot.03",
+      "text": "He is looking past camera right, toward her table. The umbrella is planted in the stand by the door, right of frame."
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "Insert at the stand. The hand enters from the upper right, the same side he stood on in 03."
+    },
+    {
+      "address": "animatic:shot.05",
+      "text": "The handle points at her so the offer reads before he speaks."
+    },
+    {
+      "address": "animatic:shot.06",
+      "text": "Last image: the only warm colour outside is the umbrella. The title will sit over this hold."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+<div id="stage"><style>
+.scr{position:absolute;inset:0;overflow:hidden;background:radial-gradient(120% 90% at 50% 40%,#f4f1ea 0%,#e6e0d4 60%,#d9d1c3 100%);font-family:"Inter",system-ui,sans-serif;color:#1d1d1f;-webkit-font-smoothing:antialiased;}
+.cam{position:absolute;left:0;top:0;width:1920px;height:1088px;transform-origin:0 0;}
+.win{position:absolute;left:221.875px;top:40.25px;width:1181px;height:806px;transform:scale(1.25);transform-origin:0 0;background:#edf0f5;border:1px solid #c4c8cf;border-radius:8px;overflow:hidden;box-shadow:0 30px 80px rgba(60,45,25,.25),0 6px 18px rgba(60,45,25,.12);font-size:14px;}
+.off{visibility:hidden;opacity:0;}
+.abs{position:absolute;}
+.full{position:absolute;inset:0;}
+.cursor{position:absolute;left:0;top:0;z-index:80;pointer-events:none;}
+.cursor-ring{position:absolute;left:-24px;top:-24px;width:48px;height:48px;border-radius:50%;border:3px solid rgba(47,111,235,.95);opacity:0;}
+.step{position:absolute;left:64px;top:44px;z-index:90;display:flex;align-items:center;gap:20px;padding:14px 36px 14px 16px;border-radius:999px;background:rgba(29,29,31,.94);box-shadow:0 14px 40px rgba(40,30,20,.35);color:#fafafa;font-size:44px;font-weight:700;letter-spacing:-.015em;}
+.step-n{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:#2f6feb;color:#fff;font-size:34px;font-weight:800;}
+.blackout{position:absolute;inset:0;z-index:70;background:#0c0c0c;}
+
+.t{position:absolute;white-space:nowrap;display:flex;align-items:center;gap:8px;}
+.ic{position:absolute;color:#3c3c41;}
+.panel{position:absolute;left:52px;top:44px;right:4px;bottom:4px;border-radius:10px;background:#fff;border:1px solid #e2e5ea;overflow:hidden;}
+.sidebg{position:absolute;left:52px;top:44px;width:289px;bottom:4px;border-radius:10px 0 0 10px;background:#f8f9fb;border-right:1px solid #e6e8ec;}
+.rail-sel{position:absolute;left:8px;width:36px;height:36px;border-radius:10px;background:#dfe3ea;}
+.row{position:absolute;left:60px;width:272px;height:30px;border-radius:8px;}
+.row.sel{background:#e9ebef;}
+.mute{color:#8a8a90;}
+.faint{color:#b2b2b8;}
+
+.pbar{position:absolute;left:405px;top:650px;width:708px;height:46px;border-radius:14px 14px 0 0;background:#eeeff2;}
+.comp{position:absolute;left:391px;top:688px;width:736px;height:98px;border:1px solid #dcdde1;border-radius:20px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.04);}
+.cin{font-size:14px;color:#1d1d1f;white-space:pre;}
+.pick{color:#2462d6;font-weight:600;align-items:center;gap:5px;}
+.caret{display:inline-block;width:1.5px;height:17px;background:#1d1d1f;vertical-align:-3px;margin-left:1px;}
+.round{position:absolute;width:28px;height:28px;border-radius:50%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;}
+.sq{width:9px;height:9px;border-radius:2px;background:#fff;}
+
+.dimmer{position:absolute;inset:0;background:rgba(20,20,24,.16);}
+.modal{position:absolute;background:#fafafa;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.06);}
+.btn{position:absolute;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:9px;font-size:14px;font-weight:500;}
+.btn.dark{background:#1b1b1f;color:#fff;}
+.btn.dis{background:#a3a3a8;color:#f4f4f5;}
+.btn.line{border:1px solid #dcdde1;background:#fff;color:#1d1d1f;}
+.btn.flat{color:#7a7a80;}
+.field{position:absolute;border:1px solid #dcdde1;border-radius:9px;background:#fff;display:flex;align-items:center;padding:0 10px;font-size:14px;}
+
+.menu{position:absolute;background:#fff;border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.15),0 0 0 1px rgba(0,0,0,.06);}
+.mi{position:absolute;left:6px;right:6px;height:30px;border-radius:8px;display:flex;align-items:center;gap:10px;padding:0 10px;font-size:14px;white-space:nowrap;}
+.mi .k{margin-left:auto;color:#8a8a90;font-size:13.5px;}
+.msep{position:absolute;left:14px;right:14px;height:1px;background:#ececef;}
+
+.card{position:absolute;border:1px solid #e3e4e8;border-radius:14px;background:#fff;}
+.tog{position:absolute;width:32px;height:20px;border-radius:999px;background:#3b82f6;}
+.tog::after{content:"";position:absolute;right:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#fff;}
+.tog.lite{background:#93b8f5;}
+.sel-box{position:absolute;height:28px;border:1px solid #dcdde1;border-radius:8px;display:flex;align-items:center;gap:8px;padding:0 10px;font-size:13.5px;background:#fff;}
+
+.xp{position:absolute;background:#fff;border:1px solid #b7b7b7;box-shadow:0 18px 50px rgba(0,0,0,.25);font-family:"Inter",system-ui,sans-serif;font-size:13px;color:#1b1b1b;}
+.xp-row{display:flex;align-items:center;height:28px;}
+.xp-sel{background:#cce8ff;}
+
+.bubble{position:absolute;height:42px;border-radius:21px;background:#111;color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;padding:0 16px;}
+.work{position:absolute;left:391px;width:736px;height:22px;border-bottom:1px solid #e6e7ea;padding-bottom:12px;color:#8a8a90;font-size:14px;display:flex;align-items:center;gap:6px;}
+.para{position:absolute;left:391px;width:736px;font-size:14px;line-height:22px;color:#1d1d1f;}
+.cmd{position:absolute;left:391px;display:flex;align-items:center;gap:8px;color:#9a9aa0;font-size:13.5px;white-space:nowrap;}
+.mark{background-image:linear-gradient(rgba(47,111,235,.22),rgba(47,111,235,.22));background-repeat:no-repeat;background-size:100% 100%;}
+.skill{display:inline-flex;align-items:center;gap:4px;color:#2462d6;font-weight:600;}
+.qopt{position:absolute;left:408px;display:flex;align-items:center;gap:10px;font-size:14px;}
+.qn{width:20px;height:20px;border-radius:5px;background:#f0f0f2;border:1px solid #e3e4e8;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:#6b6b70;}
+</style><div class="scr"><div class="cam" id="cam"><div class="win"><div class="ic" style="left:12px;top:10px;color:#9b9ba1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></div><div class="ic" style="left:46px;top:10px;color:#c2c2c7"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></div><div class="ic" style="left:80px;top:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM9 4v16"></path></svg></div><div class="abs" id="file-hl" style="left:113px;top:6px;width:40px;height:25px;border-radius:6px;background:rgba(0,0,0,0)"></div><div class="t" style="left:123px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">File</div><div class="t" style="left:168px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">Edit</div><div class="t" style="left:216px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">View</div><div class="t" style="left:269px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">Help</div><div class="abs" style="left:1060px;top:18px;width:12px;height:1px;background:#3c3c41"></div><div class="abs" style="left:1107px;top:13px;width:10px;height:10px;border:1px solid #3c3c41"></div><div class="ic" style="left:1150.5px;top:10.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 6l12 12M18 6L6 18"></path></svg></div><div class="rail-sel" style="top:52px"></div><div class="ic" style="left:17px;top:61px;color:#1d1d1f"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"></path></svg></div><div class="ic" style="left:17px;top:105px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M8 4h11v14H8zM5 7v13h11"></path></svg></div><div class="ic" style="left:17px;top:149px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM12 7v5l3 2"></path></svg></div><div class="ic" style="left:17px;top:193px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1"></path></svg></div><div class="ic" style="left:17px;top:237px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h.01M12 12h.01M19 12h.01"></path></svg></div><div class="abs" style="left:14px;top:272px;width:24px;height:1px;background:#d4d7dd"></div><div class="ic" style="left:17px;top:289px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM6 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM18 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM6 8v8M18 10c0 4-6 3-12 6"></path></svg></div><div class="ic" style="left:17px;top:334px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></svg></div><div class="round" style="left:14px;top:724px;width:24px;height:24px;background:#2f80f6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"></path></svg></div><div class="round" id="avatar" style="left:14px;top:768px;width:24px;height:24px;background:#8a8f98;font-size:9.5px;font-weight:600">AL</div><div class="sidebg"></div><div class="t" style="left:68px;top:57px;height:26px;font-size:17px;font-weight:600">Codex <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></div><div class="ic" style="left:272px;top:62px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"></path></svg></div><div class="ic" style="left:306px;top:62px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM20 20l-4-4"></path></svg></div><div class="ic" style="left:68.5px;top:104.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 20h4L19 9l-4-4L4 16zM13 7l4 4"></path></svg></div><div class="t" style="left:92px;top:101.5px;height:21px;font-size:14px;font-weight:400">New chat</div><div class="t" style="left:68px;top:174.5px;height:21px;font-size:14px;font-weight:400;color:#6b6b70">Projects</div><div class="row sel" style="top:204px"></div><div class="ic" style="left:68.5px;top:211.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v1M3 7v10a2 2 0 0 0 2 2h12l3-8H7l-3 8"></path></svg></div><div class="t" style="left:92px;top:208.5px;height:21px;font-size:14px;font-weight:400">konte-workspace</div><div><div class="row sel" style="top:234px"></div><div class="t" style="left:92px;top:238.5px;height:21px;font-size:14px;font-weight:400">Set up Konte</div></div><div class="t" style="left:68px;top:285.5px;height:21px;font-size:14px;font-weight:400;color:#6b6b70">Recents <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 18l6-6-6-6"></path></svg></div><div class="full" id="s-main"><div class="panel" style="left:341px;border-radius:0 10px 10px 0;border-left:none"></div><div class="t" style="left:360px;top:59.5px;height:21px;font-size:14px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>Set up Konte</div><div class="ic" style="left:1067.5px;top:61.5px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h.01M12 12h.01M19 12h.01"></path></svg></div><div class="ic" style="left:1102px;top:62px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 6h2M9 6h11M4 12h2M9 12h11M4 18h2M9 18h11"></path></svg></div><div class="abs" style="left:1131px;top:60px;width:1px;height:20px;background:#e2e3e7"></div><div class="ic" style="left:1143.5px;top:62.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM12 8v8M8 12h8"></path></svg></div><div class="bubble" id="s-bubble" style="left:1011px;top:128px">$konte:setup</div><div class="full off" id="s-reply"><div class="work" style="top:219px">Worked for 58s <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 18l6-6-6-6"></path></svg></div><div class="para" style="top:260px">konte setup is complete.</div><div class="para" style="top:286px;padding-left:28px;width:708px"><b style="position:absolute;left:8px">1.</b><span class="mark" id="s-mark" style="background-size:0% 100%">Fully quit the Codex app and restart it. Opening a new chat isn't enough.</span></div><div class="para" style="top:310px;padding-left:28px;width:708px"><b style="position:absolute;left:8px">2.</b>Open this workspace, and trust the project settings if asked.</div><div class="para" style="top:333px;padding-left:28px;width:708px"><b style="position:absolute;left:8px">3.</b>Run <span class="skill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9"></path></svg> Konte Checkin</span>.</div><div class="abs" style="left:392px;top:366px;display:flex;gap:16px;color:#7a7a80"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M8 8h12v12H8zM4 16V4h12"></path></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 9h4l5-4v14l-5-4H4zM16 9a4 4 0 0 1 0 6"></path></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M7 11v9H4v-9zM7 11l4-8a2 2 0 0 1 2 2v4h6a2 2 0 0 1 2 2l-2 7a2 2 0 0 1-2 1H7"></path></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h.01M12 12h.01M19 12h.01"></path></svg></div></div><div class="comp" id="s-c-comp"></div><div class="abs" style="left:403px;top:701px;height:22px;display:flex;align-items:center;font-size:14px"><span class="mute" id="s-c-ph">Work with Codex</span><span class="caret off" id="s-c-caret"></span></div><div class="ic" style="left:404px;top:755px;color:#1d1d1f"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 5v14M5 12h14"></path></svg></div><div class="t" style="left:440px;top:754px;height:20px;font-size:13.5px;font-weight:400;color:#7a7a80"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4h14v16H5zM9 10l2 2 4-4"></path></svg>Approve for me</div><div class="t" style="left:908px;top:754px;height:20px;font-size:13px;font-weight:400">GPT-6.1 Sol <span class="mute">Medium</span> <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8a8a90" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></div><div class="ic" style="left:1060.5px;top:755.5px;color:#1d1d1f"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"></path></svg></div><div class="round" id="s-c-wave" style="left:1091px;top:750px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 10v4M8.5 7v10M12 9v6M15.5 5v14M19 10v4"></path></svg></div><div class="round off" id="s-c-send" style="left:1091px;top:750px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></div><div class="round off" id="s-c-stop" style="left:1091px;top:750px"><span class="sq"></span></div></div></div></div></div><script>(function () {
+window.__timelines = window.__timelines || {};
+var shotTl = window.__timelines["shot-14"];
+if (!shotTl) {
+  shotTl = gsap.timeline({ paused: true });
+  window.__timelines["shot-14"] = shotTl;
+}
+var tl = gsap.timeline();
+shotTl.add(tl, 0);
+var split = function (selector, options) {
+  var result = SplitText.create(document.querySelectorAll(selector), options);
+  return { chars: result.chars, words: result.words };
+};
+try {
+(({ timeline, split, data }) => {
+  const { ev, w, h } = data;
+  for (const e of ev) {
+    const d = e.d ?? 0.5, ease = e.ease ?? "power3.inOut";
+    if (e.cam) {
+      const [cx, cy, s] = e.cam, clamp = (v, lo) => Math.min(0, Math.max(lo, v)), v = { x: clamp(w / 2 - cx * s, w - w * s), y: clamp(h / 2 - cy * s, h - h * s), scale: s };
+      if (d === 0)
+        timeline.set("#cam", v, e.t);
+      else
+        timeline.to("#cam", { ...v, duration: d, ease }, e.t);
+    }
+    if (e.cur) {
+      const v = { x: e.cur[0], y: e.cur[1] };
+      if (d === 0)
+        timeline.set("#cursor", v, e.t);
+      else
+        timeline.to("#cursor", { ...v, duration: d, ease: e.ease ?? "power2.inOut" }, e.t);
+    }
+    if (e.click) {
+      timeline.to("#cursor-arrow", { scale: 0.82, duration: 0.07, yoyo: !0, repeat: 1, transformOrigin: "0% 0%" }, e.t);
+      timeline.fromTo("#cursor-ring", { scale: 0.2, opacity: 0.9 }, { scale: 1.6, opacity: 0, duration: 0.45, ease: "power2.out", immediateRender: !1 }, e.t);
+    }
+    if (e.show)
+      timeline.set(e.show, { autoAlpha: 1 }, e.t);
+    if (e.hide)
+      timeline.set(e.hide, { autoAlpha: 0 }, e.t);
+    if (e.pop)
+      timeline.fromTo(e.pop, { autoAlpha: 0, y: 8, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1, duration: e.d ?? 0.22, ease: "power3.out", immediateRender: !1 }, e.t);
+    if (e.vanish)
+      timeline.to(e.vanish, { autoAlpha: 0, scale: 0.98, duration: e.d ?? 0.15, ease: "power2.in" }, e.t);
+    if (e.type) {
+      const s = split(e.type, { type: "chars" });
+      timeline.set(s.chars, { display: "none" }, 0);
+      timeline.to(s.chars, { display: "inline", duration: 0.001, stagger: { amount: d } }, e.t);
+    }
+    if (e.press)
+      timeline.to(e.press, { scale: 0.95, duration: 0.08, yoyo: !0, repeat: 1, ease: "power2.out" }, e.t);
+    if (e.pulse)
+      timeline.fromTo(e.pulse, { boxShadow: "0 0 0 0px rgba(47,111,235,0.55)" }, { boxShadow: "0 0 0 10px rgba(47,111,235,0)", duration: 0.8, ease: "power2.out", immediateRender: !1 }, e.t);
+    if (e.y)
+      timeline.to(e.y[0], { y: e.y[1], duration: d, ease }, e.t);
+    if (e.spin)
+      timeline.to(e.spin[0], { rotation: 360 * e.spin[1], duration: d, ease: "none", transformOrigin: "50% 50%" }, e.t);
+    if (e.count) {
+      const [sel, from, to] = e.count, o = { v: from };
+      timeline.to(o, {
+        v: to,
+        duration: d,
+        ease: "none",
+        onUpdate: () => {
+          document.querySelectorAll(sel).forEach((el) => {
+            el.textContent = `${Math.round(o.v)}s`;
+          });
+        }
+      }, e.t);
+    }
+    if (e.wipe)
+      timeline.to(e.wipe, { backgroundSize: "100% 100%", duration: d, ease: "power2.inOut" }, e.t);
+    if (e.on)
+      timeline.set(e.on, { display: "inline" }, e.t);
+    if (e.off)
+      timeline.set(e.off, { display: "none" }, e.t);
+    if (e.bg)
+      timeline.set(e.bg, { backgroundColor: "rgba(0,0,0,0.06)" }, e.t);
+    if (e.unbg)
+      timeline.set(e.unbg, { backgroundColor: "rgba(0,0,0,0)" }, e.t);
+    if (e.dim)
+      timeline.to(e.dim[0], { autoAlpha: e.dim[1], duration: d, ease: "power2.inOut" }, e.t);
+  }
+})({ timeline: tl, split: split, data: JSON.parse("{\"ev\":[{\"t\":0,\"d\":0,\"cam\":[1146.875,415.25,1.8]},{\"t\":0.1,\"pop\":\"#s-reply\",\"d\":0.35},{\"t\":0.4,\"d\":0.6,\"cam\":[1021.875,415.25,2.3]},{\"t\":1,\"d\":0.55,\"wipe\":\"#s-mark\"}],\"w\":1920,\"h\":1088}") });
+} catch (err) {
+  var msg = (err && err.message) ? err.message : String(err);
+  window.__konteAnimateErrors = window.__konteAnimateErrors || [];
+  window.__konteAnimateErrors.push({ shotId: "14", message: msg });
+  console.error("[konte] <Animate> script threw in shot " + "14" + ": " + msg +
+    " — every tween after the throw is missing. The script is serialized and run in the browser, so it cannot reference anything outside itself.");
+  var host=document.querySelector("[data-composition-id=\"shot-14\"]");if(host&&host.tagName==="META")host=null;host=host||document.getElementById("stage")||document.body;if(host){var box=document.createElement("div");box.setAttribute("data-konte-animate-error","shot-14");box.style.cssText="position:absolute;left:0;right:0;bottom:0;z-index:2147483647;background:#b00020;color:#fff;font:600 14px/1.4 ui-monospace,monospace;padding:10px 14px;white-space:pre-wrap;word-break:break-word;";box.textContent="konte: <Animate> script failed in "+"shot-14"+"\n"+msg;host.appendChild(box);}
+}
+})();</script><audio data-duration="2.124626" src="konte://asset/animatic/shot.14.vo/v-LqDlswLD/ComfyUI_00407.mp3" data-konte-track="sound" data-start="0.1" data-volume="1.717908387157588"></audio></div><script>(function(){var g=window.gsap;if(!g||!g.timeline)return;window.__timelines=window.__timelines||{};var key="shot-14";var tl=window.__timelines[key];if(!tl||typeof tl.set!=="function"){tl=g.timeline({paused:true});window.__timelines[key]=tl;}tl.set({},{},2.5);})()</script>

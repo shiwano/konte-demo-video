@@ -1,0 +1,426 @@
+<div id="stage"><style>
+.scr{position:absolute;inset:0;overflow:hidden;background:#0b0c0f;--font-term:"JetBrains Mono",ui-monospace,monospace;}
+.cam{position:absolute;left:0;top:0;width:1920px;height:1088px;transform-origin:0 0;}
+.st{position:absolute;left:0;top:0;width:1920px;height:1088px;}
+.off{visibility:hidden;opacity:0;}
+.cursor{position:absolute;left:0;top:0;z-index:50;pointer-events:none;}
+.cursor-ring{position:absolute;left:-22px;top:-22px;width:44px;height:44px;border-radius:50%;border:3px solid rgba(169,159,255,.9);opacity:0;}
+.step{position:absolute;right:56px;top:44px;z-index:60;display:flex;align-items:center;gap:22px;padding:16px 40px 16px 18px;border-radius:999px;background:rgba(21,22,29,.94);border:2px solid #4c5166;box-shadow:0 16px 44px rgba(0,0,0,.6);color:#f0f1f7;font-size:50px;font-weight:700;letter-spacing:-.015em;}
+.step-n{display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:#6e62f5;color:#fff;font-size:38px;font-weight:800;}
+.term{position:absolute;inset:0;background:#101012;color:#e8e8ea;font-family:var(--font-term);font-size:29px;line-height:1.5;display:flex;flex-direction:column;padding:48px 84px 40px;}
+.term-log{flex:0 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;gap:2px;}
+.tl{display:flex;white-space:pre-wrap;}
+.tl.hid{display:none;}
+.tl-b{flex:none;width:2ch;}
+.tl-body{flex:1;min-width:0;}
+.tl.text .tl-b{color:#e8e8ea;}
+.tl.tool .tl-b{color:#4eba65;}
+.tl.tool b{font-weight:700;}
+.tl.out{color:#8e8e96;}
+.tl.user{color:#b9b9c0;background:#232327;margin:10px 0;padding:2px 0;}
+.tl.spin{color:#d97757;}
+.tl.gap{height:14px;}
+.tl.head{color:#e8e8ea;}
+.tl.head .mascot{color:#d97757;}
+.tl.dim{color:#8e8e96;}
+.tl.cont{color:#e8e8ea;}
+.g1{display:inline-block;width:1ch;}
+.mascot{display:block;flex:none;}
+.tl.q-title{color:#e8e8ea;}
+.tl.q-opt{color:#e8e8ea;}
+.tl.q-opt.sel{color:#b1b9f9;}
+.tl.q-desc{color:#8e8e96;}
+.tl.q-hint{color:#8e8e96;font-size:24px;}
+.tl.q-rule{color:#56565e;}
+.term-in{margin-top:18px;border-top:2px solid #4a4a52;border-bottom:2px solid #4a4a52;padding:10px 0;display:flex;gap:1ch;}
+.term-in-p{color:#e8e8ea;}
+.term-caret{display:inline-block;width:.6em;height:1.15em;vertical-align:-.2em;background:#e8e8ea;}
+.term-hint{color:#6e6e76;font-size:24px;padding-top:8px;}
+</style><div class="scr"><div class="cam" id="cam"><div class="st" id="e2"><div style="zoom:1"><style>
+.kr{--font-title:"Cormorant Garamond",Georgia,serif;--font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--bg-app:#0b0c0f;--bg-panel:#15161d;--bg-elevated:#1d1f29;--bg-hover:#282b38;--border:#2b2d3b;--border-strong:#414557;--text-primary:#f0f1f7;--text-secondary:#b3b8c9;--text-muted:#9299ae;--accent:#6e62f5;--accent-hover:#a99fff;--accent-soft:rgba(110,98,245,.15);--green:#30c98e;--green-soft:rgba(48,201,142,.14);--orange:#f59e4b;--yellow:#e8c558;--yellow-soft:rgba(232,197,88,.14);--red:#f25c5c;
+  position:relative;width:1920px;height:1080px;overflow:hidden;background:var(--bg-app);color:var(--text-primary);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased;}
+.kr *{box-sizing:border-box;}
+:where(.kr button){font:inherit;color:inherit;cursor:pointer;background:transparent;border:0 solid;padding:0;}
+.kr svg{display:block;flex:none;}
+.kr-header{z-index:5;position:absolute;inset:0 0 auto 0;height:52px;border-bottom:1px solid var(--border);background:rgba(11,12,15,.85);}
+.kr-header-in{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1600px;margin:0 auto;padding:0 20px;}
+.kr-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:-.01em;}
+.kr-brand-sep{width:1px;height:18px;background:var(--border-strong);}
+.kr-brand-stage{font-weight:500;color:var(--text-primary);font-size:14px;}
+.kr-hright{display:flex;align-items:center;gap:10px;}
+.kr-toggle{display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:13px;margin-right:6px;}
+.kr-switch{position:relative;width:30px;height:16px;border-radius:999px;background:var(--bg-hover);border:1px solid var(--border-strong);}
+.kr-switch::after{content:"";position:absolute;top:2px;left:2px;width:10px;height:10px;border-radius:50%;background:var(--text-muted);}
+.kr-switch.on{background:var(--accent);border-color:var(--accent);}
+.kr-switch.on::after{left:16px;background:#fff;}
+.kr-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;padding:0 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg-elevated);color:var(--text-primary);font-size:13px;font-weight:500;white-space:nowrap;}
+.kr-btn.ghost{background:transparent;color:var(--text-muted);opacity:.7;}
+.kr-btn.icon{width:34px;padding:0;}
+.kr-btn.ok{background:var(--green-soft);border-color:rgba(48,201,142,.5);color:var(--green);}
+.kr-btn .count{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--accent-soft);color:var(--accent-hover);font-size:11px;font-weight:600;}
+.kr-main{position:absolute;top:68px;left:0;right:0;bottom:0;max-width:1600px;margin:0 auto;padding:0 20px;}
+.kr-handoff{display:flex;align-items:flex-start;gap:12px;padding:13px 18px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;background:var(--bg-panel);color:var(--text-primary);font-size:13.5px;margin-bottom:16px;}
+.kr-handoff svg{color:var(--accent-hover);margin-top:2px;}
+.kr-panel{background:var(--bg-panel);border:1px solid var(--border);border-radius:14px;}
+.kr-label{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-secondary);}
+.kr-submit{z-index:6;position:absolute;right:180px;bottom:24px;display:flex;align-items:center;gap:10px;height:44px;padding:0 50px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(110,98,245,.45);}
+.kr-kbd{display:inline-block;padding:1px 6px;border-radius:4px;border:1px solid rgba(255,255,255,.45);font-size:10.5px;font-weight:600;color:rgba(255,255,255,.85);}
+.kr-note{border:1px solid var(--border);border-radius:10px;background:var(--bg-elevated);padding:10px 14px;font-size:13px;}
+.kr-note.agent{background:rgba(110,98,245,.12);border-color:rgba(110,98,245,.35);display:flex;gap:10px;align-items:flex-start;}
+.kr-note.agent svg{color:var(--accent-hover);margin-top:3px;}
+.kr-note.human{display:flex;gap:10px;align-items:flex-start;background:var(--bg-elevated);}
+.kr-note.human.stale .kr-note-text{text-decoration:line-through;color:var(--text-muted);}
+.kr-note.human.stale{opacity:.75;}
+.kr-note-meta{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:30px;}
+.kr-note-time{font-family:var(--font-mono,ui-monospace);font-size:10.5px;color:var(--text-muted);background:var(--bg-panel);border:1px solid var(--border);border-radius:4px;padding:0 4px;}
+.kr-pin{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--yellow);color:#14151b;font-size:11px;font-weight:700;}
+.kr-pin span{transform:rotate(45deg);}
+.kr-add{width:100%;display:flex;align-items:center;justify-content:center;gap:6px;height:30px;border:1px dashed var(--border-strong);border-radius:8px;color:var(--text-muted);font-size:13px;}
+.kr-empty{color:var(--text-muted);font-size:12.5px;}
+.kr-kv{display:grid;grid-template-columns:76px 1fr;gap:8px 10px;align-items:start;}
+.kr-kv-k{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);padding-top:2px;}
+.kr-kv-v{font-size:13px;color:var(--text-primary);}
+.kr-line{display:flex;gap:8px;align-items:flex-start;font-size:13px;}
+.kr b{font-weight:600;}
+.kr i{color:var(--text-muted);}
+.kr-accept{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:999px;border:1px solid var(--border-strong);color:var(--text-primary);font-size:13px;font-weight:600;background:transparent;}
+.kr-accept.on{background:var(--green);border-color:var(--green);color:#0b2a1e;}
+.kr-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:5px;font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;}
+.kr-badge.changed{background:var(--accent-soft);color:var(--accent-hover);}
+.kr-badge.new{background:var(--green-soft);color:var(--green);}
+.kr-dot{width:6px;height:6px;border-radius:50%;background:var(--green);}
+.kr-player{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--border);background:#000;}
+.kr-player-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-title);font-style:italic;font-weight:500;letter-spacing:.06em;text-shadow:0 4px 18px rgba(0,0,0,.6);}
+.kr-pinmark{position:absolute;transform:translate(-50%,-100%);}
+.kr-pin.draft{background:var(--orange);box-shadow:0 0 0 2px rgba(60,30,0,.55);}
+.kr-note.human.draft{background:rgba(245,158,75,.13);border-color:rgba(245,158,75,.45);}
+.kr-note-tools{margin-left:auto;display:flex;gap:10px;color:var(--text-muted);padding-top:2px;}
+.kr-composer{display:flex;gap:8px;align-items:flex-start;}
+.kr-composer-box{flex:1;min-height:52px;padding:8px 12px;border-radius:10px;border:1px solid var(--accent);box-shadow:0 0 0 3px rgba(110,98,245,.18);background:var(--bg-app);font-size:13px;line-height:1.5;}
+.kr-caret{display:inline-block;width:1px;height:15px;margin-left:1px;vertical-align:-2px;background:var(--text-primary);}
+.kr-composer-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;border:1px solid var(--border-strong);color:var(--text-secondary);}
+.kr-composer-btn.ok{border-color:rgba(48,201,142,.55);color:var(--green);}
+.kr-pinmark .kr-pin{width:22px;height:22px;font-size:12px;box-shadow:0 4px 12px rgba(0,0,0,.5);}
+.kr-transport{display:flex;align-items:center;gap:8px;padding:10px;}
+.kr-tbtn{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid var(--border);background:var(--bg-elevated);color:var(--text-secondary);}
+.kr-tbtn.play{width:44px;background:var(--accent);border-color:var(--accent);color:#fff;}
+.kr-tbtn.wide{width:auto;padding:0 12px;gap:6px;font-size:13px;}
+.kr-tbtn.notes{width:auto;padding:0 12px;gap:6px;font-size:13px;color:var(--accent-hover);background:var(--accent-soft);border-color:rgba(110,98,245,.4);}
+.kr-time{margin-left:auto;font-family:var(--font-mono,ui-monospace);font-size:13px;color:var(--text-secondary);letter-spacing:.04em;padding-right:4px;}
+.kr-tl{position:relative;}
+.kr-tl-row{position:absolute;left:0;right:0;}
+.kr-tl-label{position:absolute;left:0;width:84px;display:flex;align-items:center;gap:7px;padding-left:10px;color:var(--text-secondary);font-size:12px;}
+.kr-tl-track{position:absolute;left:86px;right:0;}
+.kr-clip{position:absolute;display:flex;align-items:center;gap:6px;padding:0 6px;border-radius:5px;border:1px solid;font-size:10.5px;overflow:hidden;white-space:nowrap;}
+.kr-clip.shot{background:#1a1c26;border-color:#30334a;color:var(--text-primary);}
+.kr-clip.shot.acc{background:rgba(48,201,142,.08);border-color:rgba(48,201,142,.28);}
+.kr-clip.shot.sel{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:rgba(110,98,245,.16);}
+.kr-clip.video{background:rgba(70,140,230,.13);border-color:rgba(90,150,240,.45);color:#cfe0ff;}
+.kr-clip.image{background:rgba(232,197,88,.12);border-color:rgba(232,197,88,.45);color:#f3e2a8;}
+.kr-clip.audio{background:rgba(245,110,75,.12);border-color:rgba(245,110,75,.45);color:#ffd2c4;}
+.kr-clip.line{background:rgba(242,92,92,.16);border-color:rgba(242,92,92,.55);color:#ffd0d0;}
+.kr-clip.sel{box-shadow:inset 0 0 0 1px var(--accent);border-color:var(--accent);}
+.kr-chip{display:inline-flex;align-items:center;gap:3px;color:inherit;opacity:.85;}
+.kr-chip.ok{color:var(--green);opacity:1;}
+.kr-chip.stale{color:var(--yellow);opacity:1;}
+.kr-chip.new{color:var(--green);opacity:1;font-weight:600;}
+.kr-shotcard{padding:12px 13px;border:1px solid var(--border);border-radius:10px;background:var(--bg-elevated);}
+.kr-shotcard.sel{border-color:var(--accent-hover);background:rgba(110,98,245,.13);box-shadow:inset 3px 0 0 var(--accent);}
+.kr-shotcard-head{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;}
+.kr-shotcard-c{display:inline-flex;align-items:center;gap:3px;color:var(--text-muted);font-weight:500;font-size:11.5px;}
+.kr-shotcard-action{margin-top:8px;color:var(--text-secondary);font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.kr-progress{height:4px;border-radius:999px;background:var(--bg-hover);overflow:hidden;}
+.kr-progress div{height:100%;background:var(--green);}
+.kr-table{border:1px solid var(--border);border-radius:14px;background:var(--bg-panel);overflow:hidden;}
+.kr-thead{display:grid;padding:12px 16px;background:var(--bg-elevated);border-bottom:1px solid var(--border);}
+.kr-row{display:grid;gap:18px;padding:14px 16px;border-bottom:1px solid var(--border);}
+.kr-row.sel{background:rgba(110,98,245,.12);box-shadow:inset 3px 0 0 var(--accent);}
+.kr-media{position:relative;border-radius:10px;overflow:hidden;background:#000;}
+.kr-media-tag{position:absolute;top:10px;left:10px;padding:2px 8px;border-radius:6px;background:rgba(0,0,0,.6);font-size:11px;font-weight:600;}
+.kr-media-tools{position:absolute;top:10px;right:10px;display:flex;gap:6px;}
+.kr-media-tool{display:flex;align-items:center;gap:5px;height:28px;padding:0 8px;border-radius:7px;background:rgba(15,16,20,.75);border:1px solid rgba(255,255,255,.12);font-size:11.5px;color:var(--text-secondary);}
+.kr-audio{position:absolute;left:10px;right:10px;bottom:12px;height:28px;display:flex;align-items:center;gap:12px;padding:0 14px;border-radius:999px;background:#f1f3f4;}
+.kr-audio-time{font-size:12px;color:#222;}
+.kr-audio-bar{flex:1;height:4px;border-radius:999px;background:#c8c8c8;overflow:hidden;}
+.kr-audio-bar div{height:100%;background:#555;}
+.kr-audio-more{color:#333;font-weight:700;font-size:15px;}
+.kr-roster{border:1px solid var(--border);border-radius:10px;padding:10px 14px;background:var(--bg-elevated);}
+.kr-roster-k{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);}
+.kr-section{border:1px solid var(--border);border-radius:14px;background:var(--bg-panel);overflow:hidden;margin-bottom:22px;}
+.kr-section.sel{border-color:rgba(110,98,245,.7);box-shadow:0 0 0 1px rgba(110,98,245,.35);}
+.kr-section-head{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--border);}
+.kr-section.sel .kr-section-head{background:rgba(110,98,245,.13);}
+.kr-section-title{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-secondary);}
+.kr-section-body{padding:12px 13px 14px;}
+.kr-dgrid{display:grid;grid-template-columns:108px 1fr 318px;column-gap:16px;}
+.kr-dhead{background:var(--bg-elevated);padding:9px 12px;border-radius:6px 6px 0 0;}
+.kr-drow{padding:10px 12px;border-bottom:1px solid var(--border);}
+.kr-drow:last-child{border-bottom:none;}
+.kr-dfield{font-weight:600;font-size:14px;}
+.kr-dvalue{font-size:14px;color:var(--text-secondary);}
+.kr ul{margin:0;padding-left:18px;list-style:disc;}
+.kr li{margin-bottom:3px;}
+.kr li::marker{color:var(--text-secondary);}
+.kr-dnotes{display:flex;flex-direction:column;gap:8px;}
+.kr-tp-title{display:flex;align-items:center;justify-content:space-between;}
+.kr-takes{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg-elevated);color:var(--text-secondary);font-size:11.5px;}
+.kr-tag-new{color:var(--green);font-weight:600;}
+.kr-tp-head{display:flex;align-items:center;gap:7px;margin-top:4px;}
+.kr-tp-count{min-width:20px;padding:1px 7px;border-radius:999px;background:var(--bg-elevated);border:1px solid var(--border-strong);color:var(--text-secondary);font-size:11px;font-weight:600;text-align:center;}
+.kr-clip-open{display:inline-flex;align-items:center;gap:4px;flex:none;padding:1px 5px;border:1px solid var(--border);border-radius:3px;background:rgba(0,0,0,.35);color:var(--text-secondary);font-size:10px;}
+.kr-sc{margin-top:24px;line-height:1.7;}
+.kr-sc-row{display:flex;gap:0 20px;}
+.kr-sc-gutter{flex:none;width:88px;padding-top:11px;text-align:right;font-size:11.8px;line-height:1.5;color:var(--text-muted);}
+.kr-sc-id{display:block;font-size:13px;font-weight:700;color:var(--text-primary);}
+.kr-sc-body{flex:1;min-width:0;margin:0;padding:10px 0 10px 35px;border-left:3px solid transparent;}
+.kr-sc-notes{flex:none;width:288px;padding:10px 0;display:flex;flex-direction:column;gap:6px;}
+.kr-sc-scene{padding-top:26px;padding-bottom:3px;font-size:16px;font-weight:700;letter-spacing:.02em;}
+.kr-sc-join{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);}
+.kr-sc-action{position:relative;margin:0;font-size:14px;}
+.kr-sc-chev{position:absolute;left:-34px;top:-2px;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:6px;color:var(--text-muted);}
+.kr-sc-chev.open{background:var(--bg-elevated);color:var(--text-primary);}
+.kr-sc-chev.open svg{transform:rotate(90deg);}
+.kr-sc-line{display:flex;flex-direction:column;margin:8px 0 2px 3em;max-width:30em;}
+.kr-sc-speaker{font-size:11.8px;font-weight:600;letter-spacing:.04em;color:var(--accent-hover);}
+.kr-sc-acting{font-size:12.8px;color:var(--text-muted);}
+.kr-sc-text{font-size:16px;}
+.kr-sc-aside{margin:6px 0 0;font-size:13px;color:var(--text-secondary);}
+.kr-sc-label{margin-right:8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);}
+.kr-sc-staging{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:8px 0 0;padding:10px 12px;background:var(--bg-app);border:1px solid var(--border);border-radius:8px;font-size:12.8px;}
+.kr-sc-staging dt{color:var(--text-muted);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px;}
+.kr-sc-staging dd{margin:0;}
+</style><div class="kr"><div class="kr-header"><div class="kr-header-in"><div class="kr-brand"><img src="konte://asset/reference/icon/v-NjizW5dk/konte-icon.png" alt="" style="width:22px;height:22px;border-radius:5px" data-start="0" data-duration="2.5" />konte<div class="kr-brand-sep"></div><span class="kr-brand-stage">Video</span></div><div class="kr-hright"><div class="kr-toggle"><div class="kr-switch"></div>Needs review</div><div class="kr-toggle"><div class="kr-switch on"></div>Hide stale notes</div><button class="kr-btn icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6M12 17.2h.01"></path></svg></button><button class="kr-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accept all</button><button class="kr-btn ghost"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg> Reset</button></div></div></div><div class="kr-main"><div style="margin-top:0px"><div class="kr-handoff"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg><span>Every shot is in motion now. Play it through; pin anything that should change on the frame itself.</span></div><div style="display:flex;gap:17px"><div style="width:823px;display:flex;flex-direction:column;gap:12px"><div class="kr-player" style="width:823px;height:462.9375px"><img src="konte://asset/reference/frame05Before/v-oc9EcJ9Y/frame-05-before.png" alt="" class="konte-clip" data-start="0" data-duration="2.5" /><div class="kr-pinmark" style="left:63%;top:64%"><span class="kr-pin draft"><span>+</span></span></div></div><div class="kr-panel kr-transport"><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4h2.5v16H5zM20 4.5v15L9 12z"></path></svg></button><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2.5v14H6zM19 5v14l-9-7z"></path></svg></button><button class="kr-tbtn play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12.5-7.5z"></path></svg></button><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 5H18v14h-2.5zM5 5v14l9-7z"></path></svg></button><button class="kr-tbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg></button><button class="kr-tbtn wide" style="width:62px;justify-content:space-between">1×<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"></path></svg></button><button class="kr-tbtn notes"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5z"></path></svg> Notes</button><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></button><div class="kr-time"><span class="kr-time-now">0:16.3</span> / 0:21.0</div></div><div class="kr-panel kr-tl" style="height:178px;overflow:hidden"><div class="kr-tl-track" style="top:6px;height:26px;right:8px;border-bottom:1px solid var(--border-strong)"><div style="position:absolute;left:0px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:00</div><div style="position:absolute;left:173.57142857142856px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:05</div><div style="position:absolute;left:347.1428571428571px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:10</div><div style="position:absolute;left:520.7142857142858px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:15</div><div style="position:absolute;left:694.2857142857142px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:20</div></div><div class="kr-tl-label" style="top:40px;height:26px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7.5" height="7.5" rx="1"></rect><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"></rect><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"></rect><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"></rect></svg> Shot</div><div class="kr-tl-track" style="top:0;bottom:0;right:8px"><div class="kr-clip shot acc " style="left:1px;width:136.85714285714286px;top:40px;height:26px"><b>01</b><span style="color:var(--text-muted)">4s</span></div><div class="kr-clip shot acc " style="left:139.85714285714286px;width:119.50000000000003px;top:40px;height:26px"><b>02</b><span style="color:var(--text-muted)">3.5s</span></div><div class="kr-clip shot acc " style="left:261.3571428571429px;width:102.14285714285711px;top:40px;height:26px"><b>03</b><span style="color:var(--text-muted)">3s</span></div><div class="kr-clip shot acc " style="left:365.5px;width:84.78571428571428px;top:40px;height:26px"><b>04</b><span style="color:var(--text-muted)">2.5s</span></div><div class="kr-clip shot  sel" style="left:452.2857142857143px;width:136.85714285714283px;top:40px;height:26px"><b>05</b><span style="color:var(--text-muted)">4s</span></div><div class="kr-clip shot acc " style="left:591.1428571428571px;width:136.8571428571429px;top:40px;height:26px"><b>06</b><span style="color:var(--text-muted)">4s</span></div><div class="kr-clip video" style="left:1px;width:136.85714285714286px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:139.85714285714286px;width:119.50000000000003px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:261.3571428571429px;width:102.14285714285711px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:365.5px;width:84.78571428571428px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video sel" style="left:452.2857142857143px;width:136.85714285714283px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:591.1428571428571px;width:136.8571428571429px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip audio" style="left:1px;width:727px;top:108px;height:26px"><span>rain</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip audio" style="left:1px;width:727px;top:142px;height:26px"><span>bgm</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 2<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-playhead" style="position:absolute;left:565.8428571428572px;top:6px;bottom:4px;width:2px;background:#fff"><div style="position:absolute;top:-2px;left:-6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--accent)"></div></div></div><div class="kr-tl-label" style="top:74px;height:26px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 3v18M16 3v18M4 8h4M4 16h4M16 8h4M16 16h4"></path></svg> Video</div><div class="kr-tl-label" style="top:108px;height:60px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"></path></svg> Audio</div><div style="position:absolute;right:16px;bottom:8px;display:flex;gap:6px"><button class="kr-tbtn" style="width:26px;height:26px;border-radius:50%"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"></path></svg></button><button class="kr-tbtn" style="width:26px;height:26px;border-radius:50%"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></button><button class="kr-tbtn" style="width:26px;height:26px;border-radius:50%"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></button></div></div></div><div style="width:445px"><div class="kr-panel" style="padding:14px;display:flex;flex-direction:column;gap:10px"><div class="kr-tp-title"><span class="kr-label">Shot 05</span><button class="kr-takes"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> Takes</button></div><div class="kr-note"><div class="kr-line"><span style="color:var(--text-muted);margin-top:2px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"></path></svg></span><span><b>the old café owner:</b> Take it. Bring it back whenever. <i>Low and unhurried, a small smile in it, as if it were nothing at all.</i></span></div></div><div class="kr-note"><div class="kr-kv"><div class="kr-kv-k" style="display:flex;gap:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 3v18M16 3v18M4 8h4M4 16h4M16 8h4M16 16h4"></path></svg> Blocking</div><div class="kr-kv-v">He holds the umbrella a little further toward her; she looks up at him and her hands leave the cup.</div><div class="kr-kv-k" style="display:flex;gap:6px"><span style="width:11px"></span> Camera</div><div class="kr-kv-v">fixed</div></div></div><div class="kr-tp-head"><span class="kr-label" style="font-size:10.5px;color:var(--text-muted)">Feedback</span></div><div class="kr-empty" style="margin-top:-5px">No notes on this shot yet. Add one below, or click the frame to pin one.</div><div class="kr-composer"><div class="kr-composer-box">She should take the umbrella here.<span class="kr-caret"></span></div><button class="kr-composer-btn ok"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></button><button class="kr-composer-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div></div><div style="width:258px;display:flex;flex-direction:column;gap:14px"><div class="kr-panel" style="padding:14px;height:98px"><div class="kr-label" style="margin-bottom:12px">Soundtrack</div><div style="display:flex;justify-content:center"><button class="kr-accept on" style="width:100%;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div><div class="kr-panel" style="padding:14px;height:723px;overflow:hidden;display:flex;flex-direction:column;gap:10px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="kr-label">Shots</span><button class="kr-btn" style="height:30px;font-size:12px">Next to review <span class="count">1</span></button></div><div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--text-secondary)"><span>5 of 6 accepted</span><span>83%</span></div><div class="kr-progress"><div style="width:83%"></div></div><div class="kr-shotcard"><div class="kr-shotcard-head"><span class="kr-dot"></span>Shot 03</div><div class="kr-shotcard-action">Behind the counter, the old café owner stops drying a cup and looks over at the girl in the navy coat.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept on"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div><div class="kr-shotcard"><div class="kr-shotcard-head"><span class="kr-dot"></span>Shot 04</div><div class="kr-shotcard-action">The old café owner's hand lifts the yellow umbrella out of the umbrella stand.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept on"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div><div class="kr-shotcard sel"><div class="kr-shotcard-head">Shot 05</div><div class="kr-shotcard-action">At the window table, the old café owner holds the yellow umbrella out to the girl in the navy coat.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accept</button></div></div><div class="kr-shotcard"><div class="kr-shotcard-head"><span class="kr-dot"></span>Shot 06</div><div class="kr-shotcard-action">Beyond the rain-streaked window, the girl in the navy coat walks away down the street under the open yellow umbrella.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept on"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div></div></div></div></div></div><button class="kr-submit">Submit Review <span class="kr-kbd">Ctrl+⏎</span></button></div></div></div><div class="st off" id="e3"><div style="zoom:1"><style>
+.kr{--font-title:"Cormorant Garamond",Georgia,serif;--font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--bg-app:#0b0c0f;--bg-panel:#15161d;--bg-elevated:#1d1f29;--bg-hover:#282b38;--border:#2b2d3b;--border-strong:#414557;--text-primary:#f0f1f7;--text-secondary:#b3b8c9;--text-muted:#9299ae;--accent:#6e62f5;--accent-hover:#a99fff;--accent-soft:rgba(110,98,245,.15);--green:#30c98e;--green-soft:rgba(48,201,142,.14);--orange:#f59e4b;--yellow:#e8c558;--yellow-soft:rgba(232,197,88,.14);--red:#f25c5c;
+  position:relative;width:1920px;height:1080px;overflow:hidden;background:var(--bg-app);color:var(--text-primary);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased;}
+.kr *{box-sizing:border-box;}
+:where(.kr button){font:inherit;color:inherit;cursor:pointer;background:transparent;border:0 solid;padding:0;}
+.kr svg{display:block;flex:none;}
+.kr-header{z-index:5;position:absolute;inset:0 0 auto 0;height:52px;border-bottom:1px solid var(--border);background:rgba(11,12,15,.85);}
+.kr-header-in{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1600px;margin:0 auto;padding:0 20px;}
+.kr-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:-.01em;}
+.kr-brand-sep{width:1px;height:18px;background:var(--border-strong);}
+.kr-brand-stage{font-weight:500;color:var(--text-primary);font-size:14px;}
+.kr-hright{display:flex;align-items:center;gap:10px;}
+.kr-toggle{display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:13px;margin-right:6px;}
+.kr-switch{position:relative;width:30px;height:16px;border-radius:999px;background:var(--bg-hover);border:1px solid var(--border-strong);}
+.kr-switch::after{content:"";position:absolute;top:2px;left:2px;width:10px;height:10px;border-radius:50%;background:var(--text-muted);}
+.kr-switch.on{background:var(--accent);border-color:var(--accent);}
+.kr-switch.on::after{left:16px;background:#fff;}
+.kr-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;padding:0 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg-elevated);color:var(--text-primary);font-size:13px;font-weight:500;white-space:nowrap;}
+.kr-btn.ghost{background:transparent;color:var(--text-muted);opacity:.7;}
+.kr-btn.icon{width:34px;padding:0;}
+.kr-btn.ok{background:var(--green-soft);border-color:rgba(48,201,142,.5);color:var(--green);}
+.kr-btn .count{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--accent-soft);color:var(--accent-hover);font-size:11px;font-weight:600;}
+.kr-main{position:absolute;top:68px;left:0;right:0;bottom:0;max-width:1600px;margin:0 auto;padding:0 20px;}
+.kr-handoff{display:flex;align-items:flex-start;gap:12px;padding:13px 18px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;background:var(--bg-panel);color:var(--text-primary);font-size:13.5px;margin-bottom:16px;}
+.kr-handoff svg{color:var(--accent-hover);margin-top:2px;}
+.kr-panel{background:var(--bg-panel);border:1px solid var(--border);border-radius:14px;}
+.kr-label{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-secondary);}
+.kr-submit{z-index:6;position:absolute;right:180px;bottom:24px;display:flex;align-items:center;gap:10px;height:44px;padding:0 50px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(110,98,245,.45);}
+.kr-kbd{display:inline-block;padding:1px 6px;border-radius:4px;border:1px solid rgba(255,255,255,.45);font-size:10.5px;font-weight:600;color:rgba(255,255,255,.85);}
+.kr-note{border:1px solid var(--border);border-radius:10px;background:var(--bg-elevated);padding:10px 14px;font-size:13px;}
+.kr-note.agent{background:rgba(110,98,245,.12);border-color:rgba(110,98,245,.35);display:flex;gap:10px;align-items:flex-start;}
+.kr-note.agent svg{color:var(--accent-hover);margin-top:3px;}
+.kr-note.human{display:flex;gap:10px;align-items:flex-start;background:var(--bg-elevated);}
+.kr-note.human.stale .kr-note-text{text-decoration:line-through;color:var(--text-muted);}
+.kr-note.human.stale{opacity:.75;}
+.kr-note-meta{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:30px;}
+.kr-note-time{font-family:var(--font-mono,ui-monospace);font-size:10.5px;color:var(--text-muted);background:var(--bg-panel);border:1px solid var(--border);border-radius:4px;padding:0 4px;}
+.kr-pin{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--yellow);color:#14151b;font-size:11px;font-weight:700;}
+.kr-pin span{transform:rotate(45deg);}
+.kr-add{width:100%;display:flex;align-items:center;justify-content:center;gap:6px;height:30px;border:1px dashed var(--border-strong);border-radius:8px;color:var(--text-muted);font-size:13px;}
+.kr-empty{color:var(--text-muted);font-size:12.5px;}
+.kr-kv{display:grid;grid-template-columns:76px 1fr;gap:8px 10px;align-items:start;}
+.kr-kv-k{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);padding-top:2px;}
+.kr-kv-v{font-size:13px;color:var(--text-primary);}
+.kr-line{display:flex;gap:8px;align-items:flex-start;font-size:13px;}
+.kr b{font-weight:600;}
+.kr i{color:var(--text-muted);}
+.kr-accept{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:999px;border:1px solid var(--border-strong);color:var(--text-primary);font-size:13px;font-weight:600;background:transparent;}
+.kr-accept.on{background:var(--green);border-color:var(--green);color:#0b2a1e;}
+.kr-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:5px;font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;}
+.kr-badge.changed{background:var(--accent-soft);color:var(--accent-hover);}
+.kr-badge.new{background:var(--green-soft);color:var(--green);}
+.kr-dot{width:6px;height:6px;border-radius:50%;background:var(--green);}
+.kr-player{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--border);background:#000;}
+.kr-player-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-title);font-style:italic;font-weight:500;letter-spacing:.06em;text-shadow:0 4px 18px rgba(0,0,0,.6);}
+.kr-pinmark{position:absolute;transform:translate(-50%,-100%);}
+.kr-pin.draft{background:var(--orange);box-shadow:0 0 0 2px rgba(60,30,0,.55);}
+.kr-note.human.draft{background:rgba(245,158,75,.13);border-color:rgba(245,158,75,.45);}
+.kr-note-tools{margin-left:auto;display:flex;gap:10px;color:var(--text-muted);padding-top:2px;}
+.kr-composer{display:flex;gap:8px;align-items:flex-start;}
+.kr-composer-box{flex:1;min-height:52px;padding:8px 12px;border-radius:10px;border:1px solid var(--accent);box-shadow:0 0 0 3px rgba(110,98,245,.18);background:var(--bg-app);font-size:13px;line-height:1.5;}
+.kr-caret{display:inline-block;width:1px;height:15px;margin-left:1px;vertical-align:-2px;background:var(--text-primary);}
+.kr-composer-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;border:1px solid var(--border-strong);color:var(--text-secondary);}
+.kr-composer-btn.ok{border-color:rgba(48,201,142,.55);color:var(--green);}
+.kr-pinmark .kr-pin{width:22px;height:22px;font-size:12px;box-shadow:0 4px 12px rgba(0,0,0,.5);}
+.kr-transport{display:flex;align-items:center;gap:8px;padding:10px;}
+.kr-tbtn{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid var(--border);background:var(--bg-elevated);color:var(--text-secondary);}
+.kr-tbtn.play{width:44px;background:var(--accent);border-color:var(--accent);color:#fff;}
+.kr-tbtn.wide{width:auto;padding:0 12px;gap:6px;font-size:13px;}
+.kr-tbtn.notes{width:auto;padding:0 12px;gap:6px;font-size:13px;color:var(--accent-hover);background:var(--accent-soft);border-color:rgba(110,98,245,.4);}
+.kr-time{margin-left:auto;font-family:var(--font-mono,ui-monospace);font-size:13px;color:var(--text-secondary);letter-spacing:.04em;padding-right:4px;}
+.kr-tl{position:relative;}
+.kr-tl-row{position:absolute;left:0;right:0;}
+.kr-tl-label{position:absolute;left:0;width:84px;display:flex;align-items:center;gap:7px;padding-left:10px;color:var(--text-secondary);font-size:12px;}
+.kr-tl-track{position:absolute;left:86px;right:0;}
+.kr-clip{position:absolute;display:flex;align-items:center;gap:6px;padding:0 6px;border-radius:5px;border:1px solid;font-size:10.5px;overflow:hidden;white-space:nowrap;}
+.kr-clip.shot{background:#1a1c26;border-color:#30334a;color:var(--text-primary);}
+.kr-clip.shot.acc{background:rgba(48,201,142,.08);border-color:rgba(48,201,142,.28);}
+.kr-clip.shot.sel{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:rgba(110,98,245,.16);}
+.kr-clip.video{background:rgba(70,140,230,.13);border-color:rgba(90,150,240,.45);color:#cfe0ff;}
+.kr-clip.image{background:rgba(232,197,88,.12);border-color:rgba(232,197,88,.45);color:#f3e2a8;}
+.kr-clip.audio{background:rgba(245,110,75,.12);border-color:rgba(245,110,75,.45);color:#ffd2c4;}
+.kr-clip.line{background:rgba(242,92,92,.16);border-color:rgba(242,92,92,.55);color:#ffd0d0;}
+.kr-clip.sel{box-shadow:inset 0 0 0 1px var(--accent);border-color:var(--accent);}
+.kr-chip{display:inline-flex;align-items:center;gap:3px;color:inherit;opacity:.85;}
+.kr-chip.ok{color:var(--green);opacity:1;}
+.kr-chip.stale{color:var(--yellow);opacity:1;}
+.kr-chip.new{color:var(--green);opacity:1;font-weight:600;}
+.kr-shotcard{padding:12px 13px;border:1px solid var(--border);border-radius:10px;background:var(--bg-elevated);}
+.kr-shotcard.sel{border-color:var(--accent-hover);background:rgba(110,98,245,.13);box-shadow:inset 3px 0 0 var(--accent);}
+.kr-shotcard-head{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;}
+.kr-shotcard-c{display:inline-flex;align-items:center;gap:3px;color:var(--text-muted);font-weight:500;font-size:11.5px;}
+.kr-shotcard-action{margin-top:8px;color:var(--text-secondary);font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.kr-progress{height:4px;border-radius:999px;background:var(--bg-hover);overflow:hidden;}
+.kr-progress div{height:100%;background:var(--green);}
+.kr-table{border:1px solid var(--border);border-radius:14px;background:var(--bg-panel);overflow:hidden;}
+.kr-thead{display:grid;padding:12px 16px;background:var(--bg-elevated);border-bottom:1px solid var(--border);}
+.kr-row{display:grid;gap:18px;padding:14px 16px;border-bottom:1px solid var(--border);}
+.kr-row.sel{background:rgba(110,98,245,.12);box-shadow:inset 3px 0 0 var(--accent);}
+.kr-media{position:relative;border-radius:10px;overflow:hidden;background:#000;}
+.kr-media-tag{position:absolute;top:10px;left:10px;padding:2px 8px;border-radius:6px;background:rgba(0,0,0,.6);font-size:11px;font-weight:600;}
+.kr-media-tools{position:absolute;top:10px;right:10px;display:flex;gap:6px;}
+.kr-media-tool{display:flex;align-items:center;gap:5px;height:28px;padding:0 8px;border-radius:7px;background:rgba(15,16,20,.75);border:1px solid rgba(255,255,255,.12);font-size:11.5px;color:var(--text-secondary);}
+.kr-audio{position:absolute;left:10px;right:10px;bottom:12px;height:28px;display:flex;align-items:center;gap:12px;padding:0 14px;border-radius:999px;background:#f1f3f4;}
+.kr-audio-time{font-size:12px;color:#222;}
+.kr-audio-bar{flex:1;height:4px;border-radius:999px;background:#c8c8c8;overflow:hidden;}
+.kr-audio-bar div{height:100%;background:#555;}
+.kr-audio-more{color:#333;font-weight:700;font-size:15px;}
+.kr-roster{border:1px solid var(--border);border-radius:10px;padding:10px 14px;background:var(--bg-elevated);}
+.kr-roster-k{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);}
+.kr-section{border:1px solid var(--border);border-radius:14px;background:var(--bg-panel);overflow:hidden;margin-bottom:22px;}
+.kr-section.sel{border-color:rgba(110,98,245,.7);box-shadow:0 0 0 1px rgba(110,98,245,.35);}
+.kr-section-head{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--border);}
+.kr-section.sel .kr-section-head{background:rgba(110,98,245,.13);}
+.kr-section-title{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-secondary);}
+.kr-section-body{padding:12px 13px 14px;}
+.kr-dgrid{display:grid;grid-template-columns:108px 1fr 318px;column-gap:16px;}
+.kr-dhead{background:var(--bg-elevated);padding:9px 12px;border-radius:6px 6px 0 0;}
+.kr-drow{padding:10px 12px;border-bottom:1px solid var(--border);}
+.kr-drow:last-child{border-bottom:none;}
+.kr-dfield{font-weight:600;font-size:14px;}
+.kr-dvalue{font-size:14px;color:var(--text-secondary);}
+.kr ul{margin:0;padding-left:18px;list-style:disc;}
+.kr li{margin-bottom:3px;}
+.kr li::marker{color:var(--text-secondary);}
+.kr-dnotes{display:flex;flex-direction:column;gap:8px;}
+.kr-tp-title{display:flex;align-items:center;justify-content:space-between;}
+.kr-takes{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg-elevated);color:var(--text-secondary);font-size:11.5px;}
+.kr-tag-new{color:var(--green);font-weight:600;}
+.kr-tp-head{display:flex;align-items:center;gap:7px;margin-top:4px;}
+.kr-tp-count{min-width:20px;padding:1px 7px;border-radius:999px;background:var(--bg-elevated);border:1px solid var(--border-strong);color:var(--text-secondary);font-size:11px;font-weight:600;text-align:center;}
+.kr-clip-open{display:inline-flex;align-items:center;gap:4px;flex:none;padding:1px 5px;border:1px solid var(--border);border-radius:3px;background:rgba(0,0,0,.35);color:var(--text-secondary);font-size:10px;}
+.kr-sc{margin-top:24px;line-height:1.7;}
+.kr-sc-row{display:flex;gap:0 20px;}
+.kr-sc-gutter{flex:none;width:88px;padding-top:11px;text-align:right;font-size:11.8px;line-height:1.5;color:var(--text-muted);}
+.kr-sc-id{display:block;font-size:13px;font-weight:700;color:var(--text-primary);}
+.kr-sc-body{flex:1;min-width:0;margin:0;padding:10px 0 10px 35px;border-left:3px solid transparent;}
+.kr-sc-notes{flex:none;width:288px;padding:10px 0;display:flex;flex-direction:column;gap:6px;}
+.kr-sc-scene{padding-top:26px;padding-bottom:3px;font-size:16px;font-weight:700;letter-spacing:.02em;}
+.kr-sc-join{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);}
+.kr-sc-action{position:relative;margin:0;font-size:14px;}
+.kr-sc-chev{position:absolute;left:-34px;top:-2px;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:6px;color:var(--text-muted);}
+.kr-sc-chev.open{background:var(--bg-elevated);color:var(--text-primary);}
+.kr-sc-chev.open svg{transform:rotate(90deg);}
+.kr-sc-line{display:flex;flex-direction:column;margin:8px 0 2px 3em;max-width:30em;}
+.kr-sc-speaker{font-size:11.8px;font-weight:600;letter-spacing:.04em;color:var(--accent-hover);}
+.kr-sc-acting{font-size:12.8px;color:var(--text-muted);}
+.kr-sc-text{font-size:16px;}
+.kr-sc-aside{margin:6px 0 0;font-size:13px;color:var(--text-secondary);}
+.kr-sc-label{margin-right:8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);}
+.kr-sc-staging{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:8px 0 0;padding:10px 12px;background:var(--bg-app);border:1px solid var(--border);border-radius:8px;font-size:12.8px;}
+.kr-sc-staging dt{color:var(--text-muted);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px;}
+.kr-sc-staging dd{margin:0;}
+</style><div class="kr"><div class="kr-header"><div class="kr-header-in"><div class="kr-brand"><img src="konte://asset/reference/icon/v-NjizW5dk/konte-icon.png" alt="" style="width:22px;height:22px;border-radius:5px" data-start="0" data-duration="2.5" />konte<div class="kr-brand-sep"></div><span class="kr-brand-stage">Video</span></div><div class="kr-hright"><div class="kr-toggle"><div class="kr-switch"></div>Needs review</div><div class="kr-toggle"><div class="kr-switch on"></div>Hide stale notes</div><button class="kr-btn icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6M12 17.2h.01"></path></svg></button><button class="kr-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accept all</button><button class="kr-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg> Reset</button></div></div></div><div class="kr-main"><div style="margin-top:0px"><div class="kr-handoff"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg><span>Every shot is in motion now. Play it through; pin anything that should change on the frame itself.</span></div><div style="display:flex;gap:17px"><div style="width:823px;display:flex;flex-direction:column;gap:12px"><div class="kr-player" style="width:823px;height:462.9375px"><img src="konte://asset/reference/frame05Before/v-oc9EcJ9Y/frame-05-before.png" alt="" class="konte-clip" data-start="0" data-duration="2.5" /><div class="kr-pinmark" style="left:63%;top:64%"><span class="kr-pin draft"><span>1</span></span></div></div><div class="kr-panel kr-transport"><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4h2.5v16H5zM20 4.5v15L9 12z"></path></svg></button><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2.5v14H6zM19 5v14l-9-7z"></path></svg></button><button class="kr-tbtn play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12.5-7.5z"></path></svg></button><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 5H18v14h-2.5zM5 5v14l9-7z"></path></svg></button><button class="kr-tbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg></button><button class="kr-tbtn wide" style="width:62px;justify-content:space-between">1×<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"></path></svg></button><button class="kr-tbtn notes"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5z"></path></svg> Notes</button><button class="kr-tbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></button><div class="kr-time"><span class="kr-time-now">0:16.3</span> / 0:21.0</div></div><div class="kr-panel kr-tl" style="height:178px;overflow:hidden"><div class="kr-tl-track" style="top:6px;height:26px;right:8px;border-bottom:1px solid var(--border-strong)"><div style="position:absolute;left:0px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:00</div><div style="position:absolute;left:173.57142857142856px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:05</div><div style="position:absolute;left:347.1428571428571px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:10</div><div style="position:absolute;left:520.7142857142858px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:15</div><div style="position:absolute;left:694.2857142857142px;top:4px;font-size:10.5px;color:var(--text-muted);font-family:var(--font-mono)">0:20</div></div><div class="kr-tl-label" style="top:40px;height:26px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7.5" height="7.5" rx="1"></rect><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"></rect><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"></rect><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"></rect></svg> Shot</div><div class="kr-tl-track" style="top:0;bottom:0;right:8px"><div class="kr-clip shot acc " style="left:1px;width:136.85714285714286px;top:40px;height:26px"><b>01</b><span style="color:var(--text-muted)">4s</span></div><div class="kr-clip shot acc " style="left:139.85714285714286px;width:119.50000000000003px;top:40px;height:26px"><b>02</b><span style="color:var(--text-muted)">3.5s</span></div><div class="kr-clip shot acc " style="left:261.3571428571429px;width:102.14285714285711px;top:40px;height:26px"><b>03</b><span style="color:var(--text-muted)">3s</span></div><div class="kr-clip shot acc " style="left:365.5px;width:84.78571428571428px;top:40px;height:26px"><b>04</b><span style="color:var(--text-muted)">2.5s</span></div><div class="kr-clip shot  sel" style="left:452.2857142857143px;width:136.85714285714283px;top:40px;height:26px"><b>05</b><span style="color:var(--text-muted)">4s</span></div><div class="kr-clip shot acc " style="left:591.1428571428571px;width:136.8571428571429px;top:40px;height:26px"><b>06</b><span style="color:var(--text-muted)">4s</span></div><div class="kr-clip video" style="left:1px;width:136.85714285714286px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:139.85714285714286px;width:119.50000000000003px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:261.3571428571429px;width:102.14285714285711px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:365.5px;width:84.78571428571428px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video sel" style="left:452.2857142857143px;width:136.85714285714283px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip video" style="left:591.1428571428571px;width:136.8571428571429px;top:74px;height:26px"><span>motion</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip audio" style="left:1px;width:727px;top:108px;height:26px"><span>rain</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 1<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-clip audio" style="left:1px;width:727px;top:142px;height:26px"><span>bgm</span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> 2<span class="kr-chip ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span><span class="kr-clip-open"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6M12 7.5h.01"></path></svg></span></div><div class="kr-playhead" style="position:absolute;left:565.8428571428572px;top:6px;bottom:4px;width:2px;background:#fff"><div style="position:absolute;top:-2px;left:-6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--accent)"></div></div></div><div class="kr-tl-label" style="top:74px;height:26px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 3v18M16 3v18M4 8h4M4 16h4M16 8h4M16 16h4"></path></svg> Video</div><div class="kr-tl-label" style="top:108px;height:60px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"></path></svg> Audio</div><div style="position:absolute;right:16px;bottom:8px;display:flex;gap:6px"><button class="kr-tbtn" style="width:26px;height:26px;border-radius:50%"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"></path></svg></button><button class="kr-tbtn" style="width:26px;height:26px;border-radius:50%"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></button><button class="kr-tbtn" style="width:26px;height:26px;border-radius:50%"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></button></div></div></div><div style="width:445px"><div class="kr-panel" style="padding:14px;display:flex;flex-direction:column;gap:10px"><div class="kr-tp-title"><span class="kr-label">Shot 05</span><button class="kr-takes"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg> Takes</button></div><div class="kr-note"><div class="kr-line"><span style="color:var(--text-muted);margin-top:2px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"></path></svg></span><span><b>the old café owner:</b> Take it. Bring it back whenever. <i>Low and unhurried, a small smile in it, as if it were nothing at all.</i></span></div></div><div class="kr-note"><div class="kr-kv"><div class="kr-kv-k" style="display:flex;gap:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 3v18M16 3v18M4 8h4M4 16h4M16 8h4M16 16h4"></path></svg> Blocking</div><div class="kr-kv-v">He holds the umbrella a little further toward her; she looks up at him and her hands leave the cup.</div><div class="kr-kv-k" style="display:flex;gap:6px"><span style="width:11px"></span> Camera</div><div class="kr-kv-v">fixed</div></div></div><div class="kr-tp-head"><span class="kr-label" style="font-size:10.5px;color:var(--text-muted)">Feedback</span><span class="kr-tp-count">1</span></div><div class="kr-note human  draft"><div class="kr-note-meta"><span class="kr-pin draft"><span>1</span></span><span class="kr-note-time">0:03</span></div><span class="kr-note-text">She should take the umbrella here.</span><span class="kr-note-tools"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4L8 20H4v-4z"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></span></div><button class="kr-add"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg> Add note</button></div></div><div style="width:258px;display:flex;flex-direction:column;gap:14px"><div class="kr-panel" style="padding:14px;height:98px"><div class="kr-label" style="margin-bottom:12px">Soundtrack</div><div style="display:flex;justify-content:center"><button class="kr-accept on" style="width:100%;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div><div class="kr-panel" style="padding:14px;height:723px;overflow:hidden;display:flex;flex-direction:column;gap:10px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="kr-label">Shots</span><button class="kr-btn" style="height:30px;font-size:12px">Next to review <span class="count">1</span></button></div><div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--text-secondary)"><span>5 of 6 accepted</span><span>83%</span></div><div class="kr-progress"><div style="width:83%"></div></div><div class="kr-shotcard"><div class="kr-shotcard-head"><span class="kr-dot"></span>Shot 03</div><div class="kr-shotcard-action">Behind the counter, the old café owner stops drying a cup and looks over at the girl in the navy coat.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept on"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div><div class="kr-shotcard"><div class="kr-shotcard-head"><span class="kr-dot"></span>Shot 04</div><div class="kr-shotcard-action">The old café owner's hand lifts the yellow umbrella out of the umbrella stand.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept on"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div><div class="kr-shotcard sel"><div class="kr-shotcard-head">Shot 05</div><div class="kr-shotcard-action">At the window table, the old café owner holds the yellow umbrella out to the girl in the navy coat.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accept</button></div></div><div class="kr-shotcard"><div class="kr-shotcard-head"><span class="kr-dot"></span>Shot 06</div><div class="kr-shotcard-action">Beyond the rain-streaked window, the girl in the navy coat walks away down the street under the open yellow umbrella.</div><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="kr-accept on"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> Accepted</button></div></div></div></div></div></div></div><button class="kr-submit">Submit Review <span class="kr-kbd">Ctrl+⏎</span></button></div></div></div><div class="cursor" id="cursor"><div class="cursor-ring" id="cursor-ring"></div><svg id="cursor-arrow" width="34" height="48" viewBox="0 0 17 24" style="display:block"><path d="M1 1 L1 19 L5.6 14.8 L8.6 21.6 L11.4 20.4 L8.5 13.8 L14.6 13.8 Z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"></path></svg></div></div></div><script>(function () {
+window.__timelines = window.__timelines || {};
+var shotTl = window.__timelines["shot-11"];
+if (!shotTl) {
+  shotTl = gsap.timeline({ paused: true });
+  window.__timelines["shot-11"] = shotTl;
+}
+var tl = gsap.timeline();
+shotTl.add(tl, 0);
+var split = function (selector, options) {
+  var result = SplitText.create(document.querySelectorAll(selector), options);
+  return { chars: result.chars, words: result.words };
+};
+try {
+(({ timeline, split, data }) => {
+  const { ev: evs, w, h } = data, fmt = (v) => {
+    const m = Math.floor(v / 60), s = v - m * 60;
+    return `${m}:${s < 10 ? "0" : ""}${s.toFixed(1)}`;
+  };
+  for (const e of evs) {
+    const d = e.d ?? 0.5, ease = e.ease ?? "power3.inOut";
+    if (e.cam) {
+      const [cx, cy, s] = e.cam, clamp = (v, lo) => Math.min(0, Math.max(lo, v)), v = { x: clamp(w / 2 - cx * s, w - w * s), y: clamp(h / 2 - cy * s, h - h * s), scale: s };
+      if (d === 0)
+        timeline.set("#cam", v, e.t);
+      else
+        timeline.to("#cam", { ...v, duration: d, ease }, e.t);
+    }
+    if (e.cur) {
+      const v = { x: e.cur[0], y: e.cur[1] };
+      if (d === 0)
+        timeline.set("#cursor", v, e.t);
+      else
+        timeline.to("#cursor", { ...v, duration: d, ease: e.ease ?? "power2.inOut" }, e.t);
+    }
+    if (e.click) {
+      timeline.to("#cursor-arrow", { scale: 0.8, duration: 0.07, yoyo: !0, repeat: 1, transformOrigin: "0% 0%" }, e.t);
+      timeline.fromTo("#cursor-ring", { scale: 0.2, opacity: 0.9 }, { scale: 1.5, opacity: 0, duration: 0.45, ease: "power2.out", immediateRender: !1 }, e.t);
+    }
+    if (e.show)
+      timeline.set(e.show, { autoAlpha: 1 }, e.t);
+    if (e.hide)
+      timeline.set(e.hide, { autoAlpha: 0 }, e.t);
+    if (e.on)
+      timeline.set(e.on, { display: "flex" }, e.t);
+    if (e.off)
+      timeline.set(e.off, { display: "none" }, e.t);
+    if (e.type) {
+      const s = split(e.type, { type: "words,chars" });
+      timeline.set(s.chars, { display: "none" }, 0);
+      timeline.to(s.chars, { display: "inline-block", duration: 0.001, stagger: { amount: d } }, e.t);
+    }
+    if (e.y)
+      timeline.to(e.y[0], { y: e.y[1], duration: d, ease }, e.t);
+    if (e.x)
+      timeline.to(e.x[0], { x: e.x[1], duration: d, ease: e.ease ?? "none" }, e.t);
+    if (e.clock) {
+      const o = { v: e.clock[0] };
+      timeline.to(o, {
+        v: e.clock[1],
+        duration: d,
+        ease: "none",
+        onUpdate: () => {
+          document.querySelectorAll(".kr-time-now").forEach((el) => {
+            el.textContent = fmt(o.v);
+          });
+        }
+      }, e.t);
+    }
+    if (e.press)
+      timeline.to(e.press, { scale: 0.94, opacity: 0.6, duration: 0.12, ease: "power2.out" }, e.t);
+  }
+})({ timeline: tl, split: split, data: JSON.parse("{\"ev\":[{\"t\":0,\"d\":0,\"cam\":[1140,560,1.75]},{\"t\":0,\"d\":0,\"cur\":[698.49,426.32]},{\"t\":0.2,\"d\":0.4,\"cur\":[1180,700]},{\"t\":0.25,\"d\":1.5,\"type\":\"#e2 .kr-composer-box\"},{\"t\":1.75,\"d\":0.35,\"cur\":[1391,468]},{\"t\":2.15,\"click\":true},{\"t\":2.17,\"hide\":\"#e2\"},{\"t\":2.17,\"show\":\"#e3\"}],\"w\":1920,\"h\":1088}") });
+} catch (err) {
+  var msg = (err && err.message) ? err.message : String(err);
+  window.__konteAnimateErrors = window.__konteAnimateErrors || [];
+  window.__konteAnimateErrors.push({ shotId: "11", message: msg });
+  console.error("[konte] <Animate> script threw in shot " + "11" + ": " + msg +
+    " — every tween after the throw is missing. The script is serialized and run in the browser, so it cannot reference anything outside itself.");
+  var host=document.querySelector("[data-composition-id=\"shot-11\"]");if(host&&host.tagName==="META")host=null;host=host||document.getElementById("stage")||document.body;if(host){var box=document.createElement("div");box.setAttribute("data-konte-animate-error","shot-11");box.style.cssText="position:absolute;left:0;right:0;bottom:0;z-index:2147483647;background:#b00020;color:#fff;font:600 14px/1.4 ui-monospace,monospace;padding:10px 14px;white-space:pre-wrap;word-break:break-word;";box.textContent="konte: <Animate> script failed in "+"shot-11"+"\n"+msg;host.appendChild(box);}
+}
+})();</script><audio data-duration="1.160998" src="konte://asset/animatic/shot.11.vo/v-igWn5vhX/ComfyUI_00355.mp3" data-konte-track="sound" data-start="0.2" data-volume="0.8128305161640992"></audio></div><script>(function(){var g=window.gsap;if(!g||!g.timeline)return;window.__timelines=window.__timelines||{};var key="shot-11";var tl=window.__timelines[key];if(!tl||typeof tl.set!=="function"){tl=g.timeline({paused:true});window.__timelines[key]=tl;}tl.set({},{},2.5);})()</script>

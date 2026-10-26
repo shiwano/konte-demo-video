@@ -1,0 +1,29 @@
+<div id="stage"><video src="konte://asset/video/shot.10.motion/v-K15E5Hur/MiniMax_H3_00113_.mp4" muted playsinline class="konte-clip" data-start="0" data-duration="4" data-has-audio="true" data-volume="0.716143410212902"></video><div class="konte-clip konte-subtitle text-[2.1vmax] font-bold text-white [text-shadow:0_0_0.35vmax_rgba(0,0,0,0.55),0_0.08vmax_0.2vmax_rgba(0,0,0,0.6)]" data-start="0.5" data-duration="3.5" data-track-index="10"><span>Okay. Slow. ...I'm calm.</span></div><div id="take" class="absolute left-[3%] top-[8%] rounded-md bg-black/85 text-[3.4vmax] font-extrabold tracking-widest text-white" style="padding-left:3vmax;padding-right:3vmax;padding-top:0.6vmax;padding-bottom:0.6vmax">TAKE 3</div><script>(function () {
+window.__timelines = window.__timelines || {};
+var shotTl = window.__timelines["shot-10"];
+if (!shotTl) {
+  shotTl = gsap.timeline({ paused: true });
+  window.__timelines["shot-10"] = shotTl;
+}
+var tl = gsap.timeline();
+shotTl.add(tl, 0);
+var split = function (selector, options) {
+  var result = SplitText.create(document.querySelectorAll(selector), options);
+  return { chars: result.chars, words: result.words };
+};
+try {
+(({ timeline }) => {
+              timeline.set("#take", { opacity: 0 }, 0);
+              timeline.fromTo("#take", { opacity: 0, scale: 1.8 }, { opacity: 1, scale: 1, duration: 0.15, ease: "power3.out" }, 0);
+              timeline.to("#take", { opacity: 0, duration: 0.2 }, 1.3);
+            })({ timeline: tl, split: split });
+} catch (err) {
+  var msg = (err && err.message) ? err.message : String(err);
+  window.__konteAnimateErrors = window.__konteAnimateErrors || [];
+  window.__konteAnimateErrors.push({ shotId: "10", message: msg });
+  console.error("[konte] <Animate> script threw in shot " + "10" + ": " + msg +
+    " — every tween after the throw is missing. The script is serialized and run in the browser, so it cannot reference anything outside itself.");
+  var host=document.querySelector("[data-composition-id=\"shot-10\"]");if(host&&host.tagName==="META")host=null;host=host||document.getElementById("stage")||document.body;if(host){var box=document.createElement("div");box.setAttribute("data-konte-animate-error","shot-10");box.style.cssText="position:absolute;left:0;right:0;bottom:0;z-index:2147483647;background:#b00020;color:#fff;font:600 14px/1.4 ui-monospace,monospace;padding:10px 14px;white-space:pre-wrap;word-break:break-word;";box.textContent="konte: <Animate> script failed in "+"shot-10"+"\n"+msg;host.appendChild(box);}
+}
+})();</script></div><div id="embedded-audio" style="display:none;"><audio data-konte-track="embedded" src="konte://asset/video/shot.10.motion/v-K15E5Hur/MiniMax_H3_00113_.mp4" data-start="0" data-duration="4" data-volume="0.716143410212902"></audio></div>
+<script>(function(){var g=window.gsap;if(!g||!g.timeline)return;window.__timelines=window.__timelines||{};var key="shot-10";var tl=window.__timelines[key];if(!tl||typeof tl.set!=="function"){tl=g.timeline({paused:true});window.__timelines[key]=tl;}tl.set({},{},4);})()</script>

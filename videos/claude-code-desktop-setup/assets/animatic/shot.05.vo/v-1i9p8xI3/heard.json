@@ -1,0 +1,21 @@
+{
+  "outputHash": "84c013bef8485d80d4ec644fb1fe0f5b1eee2b832df84901b53ca1c7118e1ffa",
+  "heard": [
+    {
+      "text": "go",
+      "startSec": 0.06
+    },
+    {
+      "text": " to",
+      "startSec": 0.18
+    },
+    {
+      "text": " plugin",
+      "startSec": 0.36
+    },
+    {
+      "text": "s",
+      "startSec": 0.72
+    }
+  ]
+}

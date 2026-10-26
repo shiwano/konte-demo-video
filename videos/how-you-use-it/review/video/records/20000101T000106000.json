@@ -1,0 +1,316 @@
+{
+  "mode": "video-preview",
+  "stage": "video",
+  "createdAt": "2000-01-01T00:01:06.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxTyping": "v-zaUWybZ5",
+          "reference:sfxClick": "v-w04rJkle"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2.5,
+        "duration": 3,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 5.5,
+        "duration": 3,
+        "variants": {},
+        "takes": {
+          "reference:icon": "v-NjizW5dk"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 8.5,
+        "duration": 1.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 10,
+        "duration": 3,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 13,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 15,
+        "duration": 3,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "08",
+        "start": 18,
+        "duration": 3,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:panel01": "v-m25AXgHS",
+          "reference:panel02": "v-9qJdraMj",
+          "reference:panel03": "v-zR4w6aCP",
+          "reference:panel04": "v-Tx70aEiy",
+          "reference:panel05": "v-mWGJP50M",
+          "reference:panel06": "v-znJ4sgzB"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 21,
+        "duration": 3,
+        "variants": {},
+        "takes": {
+          "reference:icon": "v-NjizW5dk",
+          "reference:clip03": "v-VDRK02E4",
+          "reference:clip04": "v-m7jJFfyv"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 24,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 26,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxTyping": "v-zaUWybZ5",
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 28.5,
+        "duration": 1.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 30,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "14",
+        "start": 32.5,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-w04rJkle",
+          "reference:icon": "v-NjizW5dk",
+          "reference:clip05": "v-rMkPLdvo"
+        }
+      },
+      {
+        "shotId": "15",
+        "start": 34.5,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "16",
+        "start": 37,
+        "duration": 3,
+        "variants": {},
+        "takes": {}
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {
+      "reference:bgm": "v-t3fmOWZi"
+    },
+    "contentHashes": {
+      "video:shot.01#composition": "607c45714b5f14dedb83c857c8f3cecf86a52212dbba103cf5bd172633ef57fe",
+      "video:shot.02#composition": "a54ee81930c11748335a559fc5f3d845d41744a8ed1ab4bf821e704203d55cd8",
+      "video:shot.03#composition": "fdf9f6c3a305b59260ff1810b502adbd699a777cf68619f166586866af33b839",
+      "video:shot.04#composition": "67e64c97a73a6bd36fe9f16de56e404796ab9c9e31ae941925db5e85660515b6",
+      "video:shot.05#composition": "c54ff3da220fb61a524f2e5c105f83478b9c449ade32efa406fdad633324b8cb",
+      "video:shot.06#composition": "92b0031150b1bb82dfd0f4aba92b4dca669268ca695ba450d06e908285b6569d",
+      "video:shot.07#composition": "a890b3a90d4b83f6231e71fb55fd4eb8cb4d31fd18467013437729c79a78fa20",
+      "video:shot.08#composition": "476f861515b47d9ddb8956a2e984fac2de3738353c65850ca883e7c9ce610679",
+      "video:shot.09#composition": "c06db613b543a920ca7cf6762c7e366f16ccc34da31e2c3171046cabc20e92cc",
+      "video:shot.10#composition": "7ff2f07ad62aa6c0c8dc80002dfca886a3d694b24f55a7d5fcdc208f9570c47c",
+      "video:shot.11#composition": "a164a04fc20bd75bd77ff49d19f0914fc2457d0d28af11db536ab2939714b782",
+      "video:shot.12#composition": "6e71332a3d19d1df5c710923b1ecc081c6558b91fc0ff121f6e53ed65e66b842",
+      "video:shot.13#composition": "a13c8e104ca170d670421cd51ab1435981a7a0ac07bd15acdb8b00e7d90a3387",
+      "video:shot.14#composition": "c38af8dd0a3471925264f662644de608630225c04ee5456baf7ce0cbca3e86b9",
+      "video:shot.15#composition": "796706389174d8f164ca7189b7cd64bfd682dd1b17c28fa6c9e6b51fa495386c",
+      "video:shot.16#composition": "dfadbbf65c8d908501a5fb9389835a078c6b9de028b5744353cba9b28ba7a7e1",
+      "video:shot.01#stem": "234869cdd1a1019c35983533b436b11f7533b53e0c02fd1fa92486847f426f55",
+      "video:shot.02#stem": "85b05a3f4fba286718176ef301a982267183feb79fe5f30c9420a252671997cf",
+      "video:shot.04#stem": "e7cba09f5b8fb5316a4dde14ae8f9c7389125f02d79a6cb44b299b6171057499",
+      "video:shot.05#stem": "d6c1faf0bba5891d1a1aab49e24c2a257eba76c66e005343be2975fd12217d1a",
+      "video:shot.06#stem": "50f326f33b7b78324e68c2ea784ae3031ae01df4b7fe452a216cc2ca820be861",
+      "video:shot.07#stem": "22ab4c644181e81bfddb7e01a87b592447428024c2d071ec003774f8d1dd59e1",
+      "video:shot.08#stem": "1e1764755106edf0bed7e2145a8140a700247ffa7320c9a1ecb7ecdf1b8f35e9",
+      "video:shot.10#stem": "4318330733c6b2f0f8003fa3ce8746d9885afe1bdd66b355064be1420661cab6",
+      "video:shot.11#stem": "aa8c204bbdaa9e839284ad55c2b834b500a304c259aadbf766b32b64e2d3df18",
+      "video:shot.12#stem": "6f0390869f2e4e83af36b3bfe555c58956889f7d7232fd0fc88667d2255553b9",
+      "video:shot.14#stem": "3ea45d7c5b953b1cc07417a785875617b760a8bf59e9fb66217014e7e19f30bb",
+      "video:shot.15#stem": "5181ae6d267a1a758f265ffc7d53c151e5ae12b35392cf736ce362b093a1d02c",
+      "video:timeline#stem": "a0fc2c879d7510252a4f2877d96b8512b329a34ed7b48d84ce21752bc18fe75b"
+    }
+  },
+  "decisions": {
+    "10": "none",
+    "11": "none",
+    "12": "none",
+    "13": "none",
+    "14": "none",
+    "15": "none",
+    "16": "none",
+    "01": "none",
+    "02": "none",
+    "03": "none",
+    "04": "none",
+    "05": "none",
+    "06": "none",
+    "07": "none",
+    "08": "none",
+    "09": "none"
+  },
+  "timelineStemDecision": "none",
+  "notes": [
+    {
+      "id": "fb-cikE4egE",
+      "time": 0,
+      "shotId": "01",
+      "address": "video:shot.01",
+      "x": 0.119,
+      "y": 0.082,
+      "text": "claude code のアイコンが崩れてる",
+      "displayedVariants": {
+        "reference:sfxTyping": "v-zaUWybZ5",
+        "reference:sfxClick": "v-w04rJkle",
+        "animatic:shot.01#narrationStem": "v-hm4tH399",
+        "video:shot.01#composition": "v-SNNaoxrb"
+      }
+    },
+    {
+      "id": "fb-5IH2AYHO",
+      "time": 1.8,
+      "shotId": "01",
+      "address": "video:shot.01",
+      "text": "字幕が全体的にほしい",
+      "displayedVariants": {
+        "reference:sfxTyping": "v-zaUWybZ5",
+        "reference:sfxClick": "v-w04rJkle",
+        "animatic:shot.01#narrationStem": "v-hm4tH399",
+        "video:shot.01#composition": "v-SNNaoxrb"
+      }
+    },
+    {
+      "id": "fb-CAURFRgq",
+      "time": 5.733333333333333,
+      "shotId": "03",
+      "address": "video:shot.03",
+      "text": "direction の説明もほしい",
+      "displayedVariants": {
+        "reference:icon": "v-NjizW5dk",
+        "video:shot.03#composition": "v-qUIbVNeZ"
+      }
+    },
+    {
+      "id": "fb-koO3Ttl6",
+      "time": 11.266666666666667,
+      "shotId": "05",
+      "address": "video:shot.05",
+      "x": 0.916,
+      "y": 0.052,
+      "text": "テロップが小さくて分かりにくい",
+      "displayedVariants": {
+        "reference:sfxClick": "v-w04rJkle",
+        "animatic:shot.05#narrationStem": "v-CawaQLFk",
+        "reference:icon": "v-NjizW5dk",
+        "reference:refGirl": "v-TtkREfFM",
+        "reference:refOwner": "v-kPB4Y64z",
+        "reference:refUmbrella": "v-o8BgUHdF",
+        "reference:refCafe": "v-aRJ5bTTN",
+        "video:shot.05#composition": "v-GZRnkIa4"
+      }
+    },
+    {
+      "id": "fb-PhotL9jg",
+      "time": 17.5,
+      "shotId": "07",
+      "address": "video:shot.07",
+      "x": 0.115,
+      "y": 0.363,
+      "text": "スペース一個ずれてる",
+      "displayedVariants": {
+        "animatic:shot.07#narrationStem": "v-ZzjDDnsP",
+        "video:shot.07#composition": "v-F0HFLHQr"
+      }
+    },
+    {
+      "id": "fb-JkPhtQvt",
+      "time": 35.86666666666667,
+      "shotId": "15",
+      "address": "video:shot.15",
+      "x": 0.274,
+      "y": 0.346,
+      "text": "こういうゲージはclaudecodeで出ないので勝手に出さないでほしい。\n出力を捏造しないで",
+      "displayedVariants": {
+        "animatic:shot.15#narrationStem": "v-wU5Egnr2",
+        "video:shot.15#composition": "v-zliyxIup"
+      }
+    }
+  ],
+  "overallComment": "あと全体的にセリフがわかりにくい。もっとちゃんとした説明にして。"
+}

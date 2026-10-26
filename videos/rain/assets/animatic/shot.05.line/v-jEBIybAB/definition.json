@@ -1,0 +1,66 @@
+{
+  "kind": "comfy",
+  "workflow": "audio_minimax_h3_r2a.json",
+  "inputs": {
+    "21.image": "__konte:reference:owner__",
+    "31.audio": "__konte:reference:ownerVoice__",
+    "10.prompt": "subject_definitions: <Subject 1> is the elderly man in a gray cardigan and brown apron, short white hair, round thin gold wire glasses, a white collared shirt under the gray wool cardigan, a long brown canvas apron, as in <Picture 1>; he is the speaker (S1).\n<Audio 1> is the voice-timbre reference for <Subject 1> (S1).\n\nsummary: [reference generation + audio reference] An old café owner offers his umbrella to the last customer at closing time, lightly and kindly.\n\nretention_analysis: <Subject 1> (appears in [Shot 1]): weak_reference - only the speaker's age and presence are taken.\n<Audio 1>: weak_reference - the speaker follows its low, warm, slightly gravelly timbre.\n\ndetailed_description: 2D-animated, painterly anime background art with soft cel-shaded figures and clean thin dark-brown line art. [Shot 1] Medium shot of <Subject 1> (S1), a man in his seventies with a low, warm voice with a little gravel in it, standing beside a small window table in an empty café at closing time, holding a furled umbrella out to a young woman seated there. Low and unhurried, a small smile in his voice, light and offhand as though handing over a spare napkin, he says, <d>[English] Take it. Bring it back whenever.</d> His lips meet and he waits, the umbrella still held out.\n\noverall_soundscape: Steady rain against a large window close by, the faint creak of a wooden floor under a step, a quiet café after closing.\n\nnon_diegetic_music: N/A",
+    "10.width": 128,
+    "10.height": 128,
+    "10.length": 73,
+    "11.noise_seed": "__konte:seed__",
+    "13.steps": 20,
+    "1.unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "2.clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "3.vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+    "4.vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "prunedNodes": [
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "32",
+    "33"
+  ],
+  "models": [
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    },
+    {
+      "filename": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "21.image": "image1",
+    "31.audio": "audio1",
+    "10.prompt": "prompt",
+    "10.width": "width",
+    "10.height": "height",
+    "10.length": "length",
+    "11.noise_seed": "seed",
+    "13.steps": "steps",
+    "1.unet_name": "unetName",
+    "2.clip_name": "clipName",
+    "3.vae_name": "vaeName",
+    "4.vae_name": "audioVaeName"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "reference",
+  "summary": "The cast, the umbrella, the café and the sound bed — three takes each for the two faces and voices. Pick one per asset; everything downstream is drawn from these.",
+  "notes": [
+    {
+      "address": "reference:girl",
+      "text": "Three takes, same outfit. The first holds the damp hair ends best; the toggles read clearly on all three."
+    },
+    {
+      "address": "reference:owner",
+      "text": "The round gold glasses and the long apron hold across takes. The first take stoops a little more, which suits him."
+    },
+    {
+      "address": "reference:umbrella",
+      "text": "Mustard rather than lemon yellow, so it sits inside the amber palette and still pops against the blue street."
+    },
+    {
+      "address": "reference:cafe",
+      "text": "Both masters keep the counter left and the window table right, matching the wide setup. The second has a busier window."
+    },
+    {
+      "address": "reference:girlVoice",
+      "text": "Designed from the roster description alone. Listen for the husk; the second take is the most present."
+    },
+    {
+      "address": "reference:bgm",
+      "text": "Sparse felt piano at 66 bpm. It ducks under both lines."
+    }
+  ]
+}

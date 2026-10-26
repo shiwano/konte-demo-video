@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "animatic:shot.04": [
+      {
+        "id": "fb-OfunkMbg",
+        "displayedVariants": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.04#composition": "v-va04O17i"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "8f16139e211d",
+          "animatic:shot.04#narrationStem": "d4e2e2772ed5"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.766,
+          "y": 0.74
+        },
+        "time": 12.3,
+        "text": "Submit ボタンとテーブルの間のマージンが大きすぎなので直したい",
+        "createdAt": "2000-01-01T00:03:56.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-PdTudchD",
+        "displayedVariants": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.04#composition": "v-va04O17i"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "d51ff1c1a5df",
+          "animatic:shot.04#narrationStem": "d4e2e2772ed5"
+        },
+        "annotation": null,
+        "time": 11,
+        "text": "submit ボタンはフローティングボタンだから03と合わせて",
+        "createdAt": "2000-01-01T00:04:05.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-2Gl3G4oC",
+        "displayedVariants": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.04#composition": "v-va04O17i"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "23ae15f5ab5a",
+          "animatic:shot.04#narrationStem": "d4e2e2772ed5"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.767,
+          "y": 0.91
+        },
+        "time": 11.633333333333333,
+        "text": "他の UI がズームしているのに、フローティングボタンがズームしてない",
+        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-ulLe1ACO",
+        "displayedVariants": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.04#composition": "v-va04O17i"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "23ae15f5ab5a",
+          "animatic:shot.04#narrationStem": "d4e2e2772ed5"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.782,
+          "y": 0.712
+        },
+        "time": 12.3,
+        "text": "スクロールしなくてもよさそう。",
+        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-qGzI9OEQ",
+        "displayedVariants": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.04#composition": "v-va04O17i"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "ffbc9207a128",
+          "animatic:shot.04#narrationStem": "d4e2e2772ed5"
+        },
+        "annotation": null,
+        "time": 11,
+        "text": "等倍にしないで、みにくいから",
+        "createdAt": "2000-01-01T00:04:15.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-iOEiL5kp",
+        "displayedVariants": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.04#composition": "v-va04O17i"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.04#composition": "ffbc9207a128",
+          "animatic:shot.04#narrationStem": "d4e2e2772ed5"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.818,
+          "y": 0.752
+        },
+        "time": 11,
+        "text": "マージンが広すぎ",
+        "createdAt": "2000-01-01T00:04:15.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.08": [
+      {
+        "id": "fb-d9V7jnJ5",
+        "displayedVariants": {
+          "animatic:shot.08.vo": "v-2XpsDtxf",
+          "reference:icon": "v-NjizW5dk",
+          "reference:panel01": "v-m25AXgHS",
+          "reference:panel02": "v-9qJdraMj",
+          "reference:panel03": "v-zR4w6aCP",
+          "reference:panel04": "v-Tx70aEiy",
+          "reference:panel05": "v-mWGJP50M",
+          "reference:panel06": "v-znJ4sgzB",
+          "animatic:shot.08#composition": "v-zntfg3bf"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.08#composition": "8a4f295e4320",
+          "animatic:shot.08#narrationStem": "981d45db4fd6"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.256,
+          "y": 0.747
+        },
+        "time": 22.6,
+        "text": "タイムラインのshotが変わってないのに、絵が切り変わっているのがおかしい。\nタイミングを合わせてほしい。",
+        "createdAt": "2000-01-01T00:03:56.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.03": [
+      {
+        "id": "fb-mUkpIIo9",
+        "displayedVariants": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.03#composition": "v-K8ZWSLD9"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.03#composition": "8b682d59631e",
+          "animatic:shot.03#narrationStem": "5a12e74e693b"
+        },
+        "annotation": null,
+        "time": 5.5,
+        "text": "スクロールは減らさないでほしい。\nshots の画面が中央に来るようにしたいから。\nあと、submit ボタンって右下に常時でてるフローティングボタンだから、そういう感じにして",
+        "createdAt": "2000-01-01T00:04:05.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-PYIk0kVq",
+        "displayedVariants": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.03#composition": "756190423086",
+          "animatic:shot.03#narrationStem": "5a12e74e693b"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.774,
+          "y": 0.919
+        },
+        "time": 6.6,
+        "text": "右下じゃない",
+        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-I27NP7tx",
+        "displayedVariants": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.03#composition": "756190423086",
+          "animatic:shot.03#narrationStem": "5a12e74e693b"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.711,
+          "y": 0.639
+        },
+        "time": 9.266666666666667,
+        "text": "このカーソルいらない",
+        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-ffoFugIl",
+        "displayedVariants": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.03#composition": "689e14438c4c",
+          "animatic:shot.03#narrationStem": "5a12e74e693b"
+        },
+        "annotation": null,
+        "time": 8.9,
+        "text": "characters とか props の画面消えてない？",
+        "createdAt": "2000-01-01T00:04:15.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "animatic:shot.02": [
+      {
+        "id": "fb-GVHe5gym",
+        "displayedVariants": {
+          "animatic:shot.02.vo": "v-FKMBtfgE",
+          "animatic:shot.02#composition": "v-CzlR1AA2"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.02#composition": "60923173dce7",
+          "animatic:shot.02#narrationStem": "8dda3054f1c9"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.194,
+          "y": 0.738
+        },
+        "time": 2.5,
+        "text": "こういう選択肢、konte-checkin のスキルで出る？",
+        "createdAt": "2000-01-01T00:04:05.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

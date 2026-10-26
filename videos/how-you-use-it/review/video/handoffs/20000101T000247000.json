@@ -1,0 +1,34 @@
+{
+  "stage": "video",
+  "summary": "コメントを反映しました。ナレーションを README の手順に沿った説明に書き直し、ショットごとの短い一文に分けて全編に字幕を付けています（全体 約45秒）。ターミナルは実際の Claude Code のログの形に合わせ、進捗ゲージや架空の完了行を外しました。手順の見出しも大きくしています。",
+  "notes": [
+    {
+      "address": "video:shot.01",
+      "text": "Claude Code のアイコンを図形で描き直しました。字幕「Start with one command.」を付けています。"
+    },
+    {
+      "address": "video:shot.03",
+      "text": "direction の説明のナレーション「It writes the direction: the story, the look, and every shot.」を追加し、読み切れるようショットを5.5秒に延ばしました。"
+    },
+    {
+      "address": "video:shot.05",
+      "text": "手順の見出しを大きくしました（文字 30px → 50px）。"
+    },
+    {
+      "address": "video:shot.07",
+      "text": "記号の幅ずれを直しました。ジョブの完了行は、実際の Claude Code の出力（Running in the background → Background command … completed → job wait の集計行）に差し替えています。"
+    },
+    {
+      "address": "video:shot.13",
+      "text": "作り物の生成中表示と完了行を外し、実際の出力の形にしました。"
+    },
+    {
+      "address": "video:shot.15",
+      "text": "進捗ゲージを外しました。export-guide の読み込みと konte export のバックグラウンド実行だけを見せています。"
+    },
+    {
+      "address": "video:shot.16",
+      "text": "完了通知のあと、エージェントがパスと仕様を報告する、実際の流れにしました。"
+    }
+  ]
+}

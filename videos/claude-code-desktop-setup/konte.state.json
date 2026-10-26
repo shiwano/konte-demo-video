@@ -1,0 +1,2819 @@
+{
+ "schemaVersion": 1,
+ "assets": {
+  "reference:konteVoice": {
+   "variants": {
+    "v-FbySlqKj": {
+     "status": "accepted",
+     "file": "assets/files/konte-voice.mp3",
+     "definitionHash": null,
+     "outputHash": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4",
+     "media": {
+      "kind": "audio",
+      "durationSec": 7.3,
+      "channels": 2,
+      "sampleRate": 32000,
+      "loudness": {
+       "integratedLufs": -14.9,
+       "truePeakDb": -1.2,
+       "leadInSec": 0.23,
+       "soundEndSec": 5.66
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:02.000Z",
+     "readyAt": "2000-01-01T00:05:02.000Z",
+     "decidedAt": "2000-01-01T00:05:22.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "reference:bgm": {
+   "variants": {
+    "v-yrP9YJhq": {
+     "status": "dismissed",
+     "file": "assets/reference/bgm/v-yrP9YJhq/stable_audio_3_00040.mp3",
+     "definitionHash": "7ed93f1b3c15",
+     "outputHash": "406f1d9849823c9d3020d73907c65113cee58325c1303b4ad48b45654cf98ef4",
+     "media": {
+      "kind": "audio",
+      "durationSec": 48.018866,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -12.7,
+       "truePeakDb": 0.4,
+       "leadInSec": 0,
+       "soundEndSec": 46.85
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:03.000Z",
+     "readyAt": "2000-01-01T00:05:07.000Z",
+     "decidedAt": "2000-01-01T00:05:19.000Z",
+     "inputFingerprints": {},
+     "seed": 3641747496,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "bbaf442e-d975-4905-bf73-6162af49dc37"
+     }
+    },
+    "v-HwN43t8A": {
+     "status": "dismissed",
+     "file": "assets/reference/bgm/v-HwN43t8A/stable_audio_3_00043.mp3",
+     "definitionHash": "7ed93f1b3c15",
+     "outputHash": "c79f393f83706c1e9ae292a8f610a21f684d79a080147b1f6422b147df3d290f",
+     "media": {
+      "kind": "audio",
+      "durationSec": 48.018866,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -13,
+       "truePeakDb": 0.2,
+       "leadInSec": 0,
+       "soundEndSec": 45.07
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:09.000Z",
+     "readyAt": "2000-01-01T00:05:12.000Z",
+     "decidedAt": "2000-01-01T00:05:19.000Z",
+     "inputFingerprints": {},
+     "seed": 392135121,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "650c9870-d677-4038-a598-58816152a73a"
+     }
+    },
+    "v-KRu7sfOq": {
+     "status": "dismissed",
+     "file": "assets/reference/bgm/v-KRu7sfOq/stable_audio_3_00044.mp3",
+     "definitionHash": "7ed93f1b3c15",
+     "outputHash": "c449a70faa7074e9b66bdfbd7a34413d44462d79f492af06b18ad3dc918ce2a6",
+     "media": {
+      "kind": "audio",
+      "durationSec": 48.018866,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -12.6,
+       "truePeakDb": 0.2,
+       "leadInSec": 0,
+       "soundEndSec": 45.97
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:10.000Z",
+     "readyAt": "2000-01-01T00:05:13.000Z",
+     "decidedAt": "2000-01-01T00:05:19.000Z",
+     "inputFingerprints": {},
+     "seed": 9078451,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "0ffd7a20-0ad6-4150-a148-0cb49805a360"
+     }
+    },
+    "v-HkJx84SS": {
+     "status": "dismissed",
+     "file": "assets/reference/bgm/v-HkJx84SS/stable_audio_3_00046.mp3",
+     "definitionHash": "96cc611f1e3f",
+     "outputHash": "4b9b0b3bd824d91701d1d5913bf10b30c0d68d74c8196d9a143bee4f1f8fe8c0",
+     "media": {
+      "kind": "audio",
+      "durationSec": 60.000363,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -12.7,
+       "truePeakDb": 0.3,
+       "leadInSec": 0.79,
+       "soundEndSec": 56.64
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:15.000Z",
+     "readyAt": "2000-01-01T00:05:17.000Z",
+     "decidedAt": "2000-01-01T00:05:23.000Z",
+     "inputFingerprints": {},
+     "seed": 2749422992,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "a9673635-5d91-45d5-94f1-4cf423d79c69"
+     }
+    },
+    "v-zADqPORH": {
+     "status": "accepted",
+     "file": "assets/reference/bgm/v-zADqPORH/stable_audio_3_00047.mp3",
+     "definitionHash": "96cc611f1e3f",
+     "outputHash": "c1ab0ccb3b118c8fbddf538035cc4678b03883c12b0949a82712048c21e82252",
+     "media": {
+      "kind": "audio",
+      "durationSec": 60.000363,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -12.7,
+       "truePeakDb": 0.6,
+       "leadInSec": 0,
+       "soundEndSec": 56.05
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:16.000Z",
+     "readyAt": "2000-01-01T00:05:18.000Z",
+     "decidedAt": "2000-01-01T00:05:23.000Z",
+     "inputFingerprints": {},
+     "seed": 2508298776,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "74ce1f6c-9146-4e49-b80f-5a78a53f7255"
+     }
+    }
+   }
+  },
+  "reference:sfxClick": {
+   "variants": {
+    "v-rP7AHaR5": {
+     "status": "accepted",
+     "file": "assets/reference/sfxClick/v-rP7AHaR5/stable_audio_3_00041.mp3",
+     "definitionHash": "91c689e105bd",
+     "outputHash": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.021678,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -29.5,
+       "truePeakDb": -3.1,
+       "leadInSec": 0.07,
+       "soundEndSec": 0.09
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:04.000Z",
+     "readyAt": "2000-01-01T00:05:06.000Z",
+     "decidedAt": "2000-01-01T00:05:24.000Z",
+     "inputFingerprints": {},
+     "seed": 3945499041,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "6b8d8a20-b95e-4dd1-a4f2-61362becca83"
+     }
+    }
+   }
+  },
+  "reference:sfxTyping": {
+   "variants": {
+    "v-h97tpDIf": {
+     "status": "dismissed",
+     "file": "assets/reference/sfxTyping/v-h97tpDIf/stable_audio_3_00042.mp3",
+     "definitionHash": "667d5999d68c",
+     "outputHash": "19931914acef0f0b67a7d6f0c65adcc89bccec6c231e91b4fc8c5d8b0e49491c",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.972154,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -31.6,
+       "truePeakDb": -11.8,
+       "leadInSec": 0.02,
+       "soundEndSec": 1.07
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:05.000Z",
+     "readyAt": "2000-01-01T00:05:08.000Z",
+     "decidedAt": "2000-01-01T00:05:25.000Z",
+     "inputFingerprints": {},
+     "seed": 4098147788,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "d0e48089-ad8c-47a4-bb64-e9b46a1f6d10"
+     }
+    },
+    "v-gYcLJdIw": {
+     "status": "accepted",
+     "file": "assets/reference/sfxTyping/v-gYcLJdIw/stable_audio_3_00045.mp3",
+     "definitionHash": "667d5999d68c",
+     "outputHash": "c2dab78f7962f321ef8897955920d9b0f6ed07ea3915929411767b9a85148a88",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.972154,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -32.7,
+       "truePeakDb": -4.8,
+       "leadInSec": 0.03,
+       "soundEndSec": 0.95
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:11.000Z",
+     "readyAt": "2000-01-01T00:05:14.000Z",
+     "decidedAt": "2000-01-01T00:05:25.000Z",
+     "inputFingerprints": {},
+     "seed": 11443206,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "5f5ff84c-3164-420a-948d-994d6920b4f5"
+     }
+    }
+   }
+  },
+  "animatic:shot.01.vo": {
+   "variants": {
+    "v-dSwUMHOT": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.01.vo/v-dSwUMHOT/ComfyUI_00370.mp3",
+     "definitionHash": "dd7f64252290",
+     "outputHash": "8ee9d753d03e47ae016a517ac8fe54a73026dd7ea4f1ecd71fb443de4becf908",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.008526,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -22.2,
+       "truePeakDb": -6.2,
+       "leadInSec": 0.02,
+       "soundEndSec": 1.85
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:26.000Z",
+     "readyAt": "2000-01-01T00:05:33.000Z",
+     "decidedAt": "2000-01-01T00:06:13.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3139327879,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "92c7a1c0-5798-41dc-b51c-d515704c469b"
+     }
+    }
+   }
+  },
+  "animatic:shot.03.vo": {
+   "variants": {
+    "v-XvMgufHo": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.03.vo/v-XvMgufHo/ComfyUI_00371.mp3",
+     "definitionHash": "e1504b963ab1",
+     "outputHash": "761f1ecf72cb3b142fc56b12028744f56c78f83cf2cec8d23bb30f22c804daf2",
+     "media": {
+      "kind": "audio",
+      "durationSec": 0.777868,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -23.5,
+       "truePeakDb": -4.9,
+       "leadInSec": 0.01,
+       "soundEndSec": 0.49
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:27.000Z",
+     "readyAt": "2000-01-01T00:05:36.000Z",
+     "decidedAt": "2000-01-01T00:06:13.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 526721629,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "11449044-6ae4-46e9-bb9b-bab9b956b493"
+     }
+    }
+   }
+  },
+  "animatic:shot.04.vo": {
+   "variants": {
+    "v-4kFj9VER": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.04.vo/v-4kFj9VER/ComfyUI_00372.mp3",
+     "definitionHash": "b52464270dc3",
+     "outputHash": "799afbc8ed56b761862c561a8cef4a25dea08efc6e9872771cea5226feae1256",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.184218,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.9,
+       "truePeakDb": -0.8,
+       "leadInSec": 0.03,
+       "soundEndSec": 0.96
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:27.000Z",
+     "readyAt": "2000-01-01T00:05:35.000Z",
+     "decidedAt": "2000-01-01T00:06:14.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 2661584371,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "dd33be5b-905b-4e7f-9c2f-533826599c8b"
+     }
+    }
+   }
+  },
+  "animatic:shot.05.vo": {
+   "variants": {
+    "v-1i9p8xI3": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.05.vo/v-1i9p8xI3/ComfyUI_00373.mp3",
+     "definitionHash": "db69c648d4bb",
+     "outputHash": "84c013bef8485d80d4ec644fb1fe0f5b1eee2b832df84901b53ca1c7118e1ffa",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.079728,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -22.7,
+       "truePeakDb": -6.8,
+       "leadInSec": 0.03,
+       "soundEndSec": 0.81
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:27.000Z",
+     "readyAt": "2000-01-01T00:05:34.000Z",
+     "decidedAt": "2000-01-01T00:06:15.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 1364063789,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "4d7c85c2-00f3-4de7-96a2-13b4888b5ad4"
+     }
+    }
+   }
+  },
+  "animatic:shot.06.vo": {
+   "variants": {
+    "v-4yiRaXba": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.06.vo/v-4yiRaXba/ComfyUI_00374.mp3",
+     "definitionHash": "a0c979fbdaa3",
+     "outputHash": "0f94d673e19c7f155790ac0fbb6c07250ee73705abb503cf0d89500055803c2b",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.486077,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -20,
+       "truePeakDb": -4.6,
+       "leadInSec": 0.04,
+       "soundEndSec": 1.49
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:28.000Z",
+     "readyAt": "2000-01-01T00:05:37.000Z",
+     "decidedAt": "2000-01-01T00:06:16.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3025919915,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "20f58754-8d01-4339-b26a-e1867ef37f68"
+     }
+    }
+   }
+  },
+  "animatic:shot.07.vo": {
+   "variants": {
+    "v-5nOVZbOx": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.07.vo/v-5nOVZbOx/ComfyUI_00375.mp3",
+     "definitionHash": "d437597be9e9",
+     "outputHash": "ed3d3c9485799bdb6a51c3e8a246a3e80dd1b88a170f8361d2dbaf0bc6dedb1c",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.160998,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -24.7,
+       "truePeakDb": -8.4,
+       "leadInSec": 0.08,
+       "soundEndSec": 1.09
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:28.000Z",
+     "readyAt": "2000-01-01T00:05:38.000Z",
+     "decidedAt": "2000-01-01T00:08:49.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 2359847178,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "af2b39af-9a0a-438d-9fd8-eb9440e3dd8a"
+     }
+    },
+    "v-GRq9ghQe": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.07.vo/v-GRq9ghQe/ComfyUI_00392.mp3",
+     "definitionHash": "d437597be9e9",
+     "outputHash": "9bdfc4aeab24ae9e163e4e29fd81cf3dab2d1271ef1dfb1ce20d8ff204fb2652",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.323537,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -23.8,
+       "truePeakDb": -4.1,
+       "leadInSec": 0.1,
+       "soundEndSec": 1.05
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:08:41.000Z",
+     "readyAt": "2000-01-01T00:08:44.000Z",
+     "decidedAt": "2000-01-01T00:08:49.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 1776236042,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "41d1dfdc-d537-4967-8737-f881415a6c36"
+     }
+    },
+    "v-ymCWiXRw": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.07.vo/v-ymCWiXRw/ComfyUI_00393.mp3",
+     "definitionHash": "d437597be9e9",
+     "outputHash": "2d94cffd34cc4bbc61a3bb8e0fbc62e9a3679a6066166e107f9939bb55557922",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.242268,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.1,
+       "truePeakDb": -3.2,
+       "leadInSec": 0.05,
+       "soundEndSec": 1.16
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:08:42.000Z",
+     "readyAt": "2000-01-01T00:08:45.000Z",
+     "decidedAt": "2000-01-01T00:08:49.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 2786525461,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "fcb9d17a-8ef8-4b9a-9e49-d2e0eda2b00e"
+     }
+    },
+    "v-GbfS7kfg": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.07.vo/v-GbfS7kfg/ComfyUI_00394.mp3",
+     "definitionHash": "d437597be9e9",
+     "outputHash": "da9237e9d2f246b7d37a206010238cf94396cb089cc98731eb8ccc7d58dba18a",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.242268,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -21.3,
+       "truePeakDb": -6.9,
+       "leadInSec": 0.04,
+       "soundEndSec": 1.14
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:08:43.000Z",
+     "readyAt": "2000-01-01T00:08:46.000Z",
+     "decidedAt": "2000-01-01T00:08:49.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 918397881,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "ee0e3481-e427-4e7c-ac2b-7442566e134c"
+     }
+    }
+   }
+  },
+  "animatic:shot.08.vo": {
+   "variants": {
+    "v-mx94Itmp": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.08.vo/v-mx94Itmp/ComfyUI_00376.mp3",
+     "definitionHash": "c2b57ccd92f2",
+     "outputHash": "6b7a64cbd6c3614e59808861d1983d76d13adeafae6f4c2e236d04f43769cd14",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.648617,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -22.8,
+       "truePeakDb": -6.5,
+       "leadInSec": 0.03,
+       "soundEndSec": 1.57
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:28.000Z",
+     "readyAt": "2000-01-01T00:05:39.000Z",
+     "decidedAt": "2000-01-01T00:06:17.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 205099813,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "665c953c-86b5-4429-9d09-fcb61518fcb8"
+     }
+    }
+   }
+  },
+  "animatic:shot.09.vo": {
+   "variants": {
+    "v-umG4N0N2": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.09.vo/v-umG4N0N2/ComfyUI_00377.mp3",
+     "definitionHash": "a155f7cf7340",
+     "outputHash": "8ed4ddaabe50cb1ce5b8d50cf92a8fa3d86ba543ee8162ee960547b796de03a5",
+     "media": {
+      "kind": "audio",
+      "durationSec": 0.684989,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -24.7,
+       "truePeakDb": -10.3,
+       "leadInSec": 0.02,
+       "soundEndSec": 0.61
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:29.000Z",
+     "readyAt": "2000-01-01T00:05:40.000Z",
+     "decidedAt": "2000-01-01T00:06:18.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 68648726,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "1a70f58d-acfb-4a19-b8ff-b52c060e01f8"
+     }
+    }
+   }
+  },
+  "animatic:shot.10.vo": {
+   "variants": {
+    "v-jsroNZQA": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.10.vo/v-jsroNZQA/ComfyUI_00378.mp3",
+     "definitionHash": "8571eafdcce4",
+     "outputHash": "2ac6b8d5baa7d7a191e0255eb7a53e58c95d91f36fffeb662e12b1252d8cac21",
+     "media": {
+      "kind": "audio",
+      "durationSec": 0.708209,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -19.6,
+       "truePeakDb": -0.4,
+       "leadInSec": 0.04,
+       "soundEndSec": 0.66
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:29.000Z",
+     "readyAt": "2000-01-01T00:05:41.000Z",
+     "decidedAt": "2000-01-01T00:06:19.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 1829792067,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "2d06b48d-7be4-4e05-a15d-4bf5aa103f48"
+     }
+    }
+   }
+  },
+  "animatic:shot.11.vo": {
+   "variants": {
+    "v-Uy2YZZDP": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.11.vo/v-Uy2YZZDP/ComfyUI_00379.mp3",
+     "definitionHash": "0ecc2719c467",
+     "outputHash": "886272e7b8a00e31b5c129f3d2c41787e82d9b9ecac09aa7f507008fddf37b99",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.033288,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.9,
+       "truePeakDb": -6.7,
+       "leadInSec": 0.03,
+       "soundEndSec": 0.96
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:30.000Z",
+     "readyAt": "2000-01-01T00:05:42.000Z",
+     "decidedAt": "2000-01-01T00:06:20.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 4089164367,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "a2faa3c9-9827-46d4-984e-c1ce4b7454fd"
+     }
+    }
+   }
+  },
+  "animatic:shot.12.vo": {
+   "variants": {
+    "v-YgzE0k4x": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.12.vo/v-YgzE0k4x/ComfyUI_00380.mp3",
+     "definitionHash": "677e46a1c622",
+     "outputHash": "731595758e8a1cfeb7d028c3a9d6a8da4c81670b8b52dbe9aa64b70a6065889f",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.253878,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -23.3,
+       "truePeakDb": -7.5,
+       "leadInSec": 0.01,
+       "soundEndSec": 1.1300000000000001
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:30.000Z",
+     "readyAt": "2000-01-01T00:05:43.000Z",
+     "decidedAt": "2000-01-01T00:06:03.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3911391890,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "b1ffe0c5-05cf-4faf-9cbf-b1f31ae67076"
+     }
+    },
+    "v-ieWU88Ep": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.12.vo/v-ieWU88Ep/ComfyUI_00385.mp3",
+     "definitionHash": "677e46a1c622",
+     "outputHash": "3b70e204e6a101bd2881afc0027ee361a26387cc5c5e5baedfc22b222ca7bb97",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.242268,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -23.4,
+       "truePeakDb": -5.9,
+       "leadInSec": 0.01,
+       "soundEndSec": 1.04
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:48.000Z",
+     "readyAt": "2000-01-01T00:05:52.000Z",
+     "decidedAt": "2000-01-01T00:06:03.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3730131756,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "ac628862-6afb-43a1-ba55-65a78acc863a"
+     }
+    },
+    "v-vodr9CSG": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.12.vo/v-vodr9CSG/ComfyUI_00386.mp3",
+     "definitionHash": "677e46a1c622",
+     "outputHash": "5457da6958aed4a37668491b6f2c80a2c2115e0ee930011e6db4fc18e1abce97",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.242268,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -22.9,
+       "truePeakDb": -5.6,
+       "leadInSec": 0.04,
+       "soundEndSec": 1.05
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:49.000Z",
+     "readyAt": "2000-01-01T00:05:53.000Z",
+     "decidedAt": "2000-01-01T00:06:03.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 2170323548,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "aee1f11e-8ec2-42ee-903d-22aa855a71a6"
+     }
+    },
+    "v-GqfaCGQ9": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.12.vo/v-GqfaCGQ9/ComfyUI_00389.mp3",
+     "definitionHash": "677e46a1c622",
+     "outputHash": "46272d81200b78c7540ea802a363465fc5fed6186ea81404bfd0327fb640a833",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.149388,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -24,
+       "truePeakDb": -7,
+       "leadInSec": 0.02,
+       "soundEndSec": 1
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:57.000Z",
+     "readyAt": "2000-01-01T00:06:00.000Z",
+     "decidedAt": "2000-01-01T00:06:03.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 2211534774,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "c588a784-29c2-4f26-84a1-a8e2d1507588"
+     }
+    },
+    "v-JWU6reBs": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.12.vo/v-JWU6reBs/ComfyUI_00390.mp3",
+     "definitionHash": "677e46a1c622",
+     "outputHash": "bb7646062bb0a8fb79ac90eafe6d0d49e84fabf4b9382b0ca7ec7bad53b3fb83",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.648617,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -24.2,
+       "truePeakDb": -5.2,
+       "leadInSec": 0.01,
+       "soundEndSec": 1.45
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:58.000Z",
+     "readyAt": "2000-01-01T00:06:01.000Z",
+     "decidedAt": "2000-01-01T00:06:03.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3733333631,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "f08cd796-5fa1-4899-b930-9ac2ed2c6b6a"
+     }
+    },
+    "v-L7j0H5ba": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.12.vo/v-L7j0H5ba/ComfyUI_00391.mp3",
+     "definitionHash": "677e46a1c622",
+     "outputHash": "6fdb83a29ec5cd6abf550cdc2ba86feabcdce6de350fddf35d9e07ba1df7ec3b",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.648617,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -24.2,
+       "truePeakDb": -4.6,
+       "leadInSec": 0.02,
+       "soundEndSec": 1.44
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:59.000Z",
+     "readyAt": "2000-01-01T00:06:02.000Z",
+     "decidedAt": "2000-01-01T00:06:21.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3179219328,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "9a458557-3165-4771-9cf1-41b3d7863ea2"
+     }
+    }
+   }
+  },
+  "animatic:shot.13.vo": {
+   "variants": {
+    "v-lh5lkul0": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.13.vo/v-lh5lkul0/ComfyUI_00381.mp3",
+     "definitionHash": "ad563940b669",
+     "outputHash": "ffe10dc71a5645432a19158792a828dbcaa7b1779eea9892aba9386ab956a21e",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.729887,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.4,
+       "truePeakDb": -3,
+       "leadInSec": 0.03,
+       "soundEndSec": 1.72
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:31.000Z",
+     "readyAt": "2000-01-01T00:05:44.000Z",
+     "decidedAt": "2000-01-01T00:06:22.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 4235906949,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "849ac6c0-f535-4321-9efb-225255d5a972"
+     }
+    }
+   }
+  },
+  "animatic:shot.14.vo": {
+   "variants": {
+    "v-jjV9idWr": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.14.vo/v-jjV9idWr/ComfyUI_00382.mp3",
+     "definitionHash": "90b22c275032",
+     "outputHash": "3ad0e220688f27e37830094a58a8c1f1f154a82706c9abaa50cae1f29a391336",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.054966,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.3,
+       "truePeakDb": -4.3,
+       "leadInSec": 0.08,
+       "soundEndSec": 2.01
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:31.000Z",
+     "readyAt": "2000-01-01T00:05:45.000Z",
+     "decidedAt": "2000-01-01T00:06:24.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 3474624708,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "e018d739-38e6-4301-9ae3-99777cadedd6"
+     }
+    }
+   }
+  },
+  "animatic:shot.16.vo": {
+   "variants": {
+    "v-1k3ty9Xv": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.16.vo/v-1k3ty9Xv/ComfyUI_00383.mp3",
+     "definitionHash": "13e531370ca3",
+     "outputHash": "1986a8eaae8f53e23441b784ca83a85514a908014a259b783419596d9d674249",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.486077,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.2,
+       "truePeakDb": -2.1,
+       "leadInSec": 0.02,
+       "soundEndSec": 1.43
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:32.000Z",
+     "readyAt": "2000-01-01T00:05:46.000Z",
+     "decidedAt": "2000-01-01T00:05:56.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 247944763,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "6997f82b-2ef7-4c4b-bf01-d4c0bd958cb6"
+     }
+    },
+    "v-R1j6HHUv": {
+     "status": "dismissed",
+     "file": "assets/animatic/shot.16.vo/v-R1j6HHUv/ComfyUI_00387.mp3",
+     "definitionHash": "13e531370ca3",
+     "outputHash": "603953147f1166a8f5448cc4dd485be9abf1e0576e9d3e5c2de49f4497ef5fbe",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.124626,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -20.7,
+       "truePeakDb": -6.6,
+       "leadInSec": 0.01,
+       "soundEndSec": 2.13
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:50.000Z",
+     "readyAt": "2000-01-01T00:05:54.000Z",
+     "decidedAt": "2000-01-01T00:05:56.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 299588197,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "34be25db-e06f-4648-85a9-d369d6c8e55d"
+     }
+    },
+    "v-SpMprQbN": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.16.vo/v-SpMprQbN/ComfyUI_00388.mp3",
+     "definitionHash": "13e531370ca3",
+     "outputHash": "85bffd3f254c9aedda3d4ae19d556203370825bab08948b678d66eec2fd93228",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.544127,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -21.2,
+       "truePeakDb": -5.7,
+       "leadInSec": 0.03,
+       "soundEndSec": 1.55
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:51.000Z",
+     "readyAt": "2000-01-01T00:05:55.000Z",
+     "decidedAt": "2000-01-01T00:06:24.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 1165394115,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "c78a3c19-a9a0-4212-aafb-32b7a0ad00f4"
+     }
+    }
+   }
+  },
+  "animatic:shot.17.vo": {
+   "variants": {
+    "v-79d1Fe4n": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.17.vo/v-79d1Fe4n/ComfyUI_00384.mp3",
+     "definitionHash": "2221b8f0ce2c",
+     "outputHash": "0322a716a5e5b75bbd2303a463ec8c70e0a21e9d5b1378a53efa7d9ffa731e05",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.799546,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -19.9,
+       "truePeakDb": -4.8,
+       "leadInSec": 0.02,
+       "soundEndSec": 1.73
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:05:32.000Z",
+     "readyAt": "2000-01-01T00:05:47.000Z",
+     "decidedAt": "2000-01-01T00:06:25.000Z",
+     "inputFingerprints": {
+      "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
+     },
+     "seed": 2601768855,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {
+      "promptId": "92b02555-1ed9-4f1f-8857-44617a06fcde"
+     }
+    }
+   }
+  },
+  "animatic:shot.01.voFit": {
+   "variants": {
+    "v-o571YMeZ": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.01.voFit/v-o571YMeZ/output.mp3",
+     "definitionHash": "7f2e9ecba70b",
+     "outputHash": "a951f4481ddae4de01f6d5dd92290ee98e4be19bdf9a8d5d8b62a72a4a5dff2a",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.9,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -22.5,
+       "truePeakDb": -6.6,
+       "leadInSec": 0.01,
+       "soundEndSec": 1.76
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:04.000Z",
+     "readyAt": "2000-01-01T00:06:06.000Z",
+     "decidedAt": "2000-01-01T00:06:12.000Z",
+     "inputFingerprints": {
+      "animatic:shot.01.vo": "8ee9d753d03e47ae016a517ac8fe54a73026dd7ea4f1ecd71fb443de4becf908"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.14.voFit": {
+   "variants": {
+    "v-DfcMIKIs": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.14.voFit/v-DfcMIKIs/output.mp3",
+     "definitionHash": "46980137e03a",
+     "outputHash": "028f850847d5d297190b3b736d09b7f316c9c5e150b4f0ffae286790a272ebc1",
+     "media": {
+      "kind": "audio",
+      "durationSec": 1.9,
+      "channels": 1,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.8,
+       "truePeakDb": -4.9,
+       "leadInSec": 0.07,
+       "soundEndSec": 1.87
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:05.000Z",
+     "readyAt": "2000-01-01T00:06:07.000Z",
+     "decidedAt": "2000-01-01T00:06:23.000Z",
+     "inputFingerprints": {
+      "animatic:shot.14.vo": "3ad0e220688f27e37830094a58a8c1f1f154a82706c9abaa50cae1f29a391336"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.01#narrationStem": {
+   "variants": {
+    "v-j7tn7KoP": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.01#narrationStem/v-j7tn7KoP/stem.wav",
+     "definitionHash": "1260fa4af341",
+     "outputHash": "859e1bd7284b43b1be384d69c45b16de8dcfdc17af86fa0a8865c7b89dbf61d9",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.9,
+       "truePeakDb": -5.1,
+       "leadInSec": 0.12,
+       "soundEndSec": 1.86
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:26.000Z",
+     "readyAt": "2000-01-01T00:06:27.000Z",
+     "decidedAt": "2000-01-01T00:06:27.000Z",
+     "inputFingerprints": {
+      "animatic:shot.01.voFit": "a951f4481ddae4de01f6d5dd92290ee98e4be19bdf9a8d5d8b62a72a4a5dff2a"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.03#narrationStem": {
+   "variants": {
+    "v-AMrraRYD": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.03#narrationStem/v-AMrraRYD/stem.wav",
+     "definitionHash": "257e7a65b41e",
+     "outputHash": "fbdd5a1aca92353aadad61d3db5d31892073404d4dfab1b24da93aa67736c383",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.5,
+       "truePeakDb": -3.4,
+       "leadInSec": 0.11,
+       "soundEndSec": 0.6
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:28.000Z",
+     "readyAt": "2000-01-01T00:06:28.000Z",
+     "decidedAt": "2000-01-01T00:06:28.000Z",
+     "inputFingerprints": {
+      "animatic:shot.03.vo": "761f1ecf72cb3b142fc56b12028744f56c78f83cf2cec8d23bb30f22c804daf2"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.04#narrationStem": {
+   "variants": {
+    "v-xCegoIov": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.04#narrationStem/v-xCegoIov/stem.wav",
+     "definitionHash": "a21b86d6af47",
+     "outputHash": "5e75feab4164ddd617f34dd55fc6f127ebabbe7a798efd2fe5b946ce3f8ead7e",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.7,
+       "truePeakDb": -3.4,
+       "leadInSec": 0.14,
+       "soundEndSec": 1.06
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:29.000Z",
+     "readyAt": "2000-01-01T00:06:30.000Z",
+     "decidedAt": "2000-01-01T00:06:30.000Z",
+     "inputFingerprints": {
+      "animatic:shot.04.vo": "799afbc8ed56b761862c561a8cef4a25dea08efc6e9872771cea5226feae1256"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.05#narrationStem": {
+   "variants": {
+    "v-yDvIZ5vT": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.05#narrationStem/v-yDvIZ5vT/stem.wav",
+     "definitionHash": "7e5bbf9bbb01",
+     "outputHash": "7cc4feaf65a8505e11a28befbc1d4da5cc4aa04024243fa0b8eb836beeb5cdcd",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.7,
+       "truePeakDb": -5.1,
+       "leadInSec": 0.14,
+       "soundEndSec": 0.92
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:31.000Z",
+     "readyAt": "2000-01-01T00:06:31.000Z",
+     "decidedAt": "2000-01-01T00:06:32.000Z",
+     "inputFingerprints": {
+      "animatic:shot.05.vo": "84c013bef8485d80d4ec644fb1fe0f5b1eee2b832df84901b53ca1c7118e1ffa"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.06#narrationStem": {
+   "variants": {
+    "v-Dy9ZrA2m": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.06#narrationStem/v-Dy9ZrA2m/stem.wav",
+     "definitionHash": "69f4c28b7452",
+     "outputHash": "3cf594168ec93ca2627a497e4c75cc043fe9d4805e598d038c9ba595a675b71e",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.8,
+       "truePeakDb": -5.6,
+       "leadInSec": 0.14,
+       "soundEndSec": 1.59
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:33.000Z",
+     "readyAt": "2000-01-01T00:06:34.000Z",
+     "decidedAt": "2000-01-01T00:06:34.000Z",
+     "inputFingerprints": {
+      "animatic:shot.06.vo": "0f94d673e19c7f155790ac0fbb6c07250ee73705abb503cf0d89500055803c2b"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.07#narrationStem": {
+   "variants": {
+    "v-Itg4sDHn": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.07#narrationStem/v-Itg4sDHn/stem.wav",
+     "definitionHash": "f1f007a2cf4a",
+     "outputHash": "7b7ee69234b60b8ed4d32147f3f003b496f756a752d3a3ee148b2e6983a266ca",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.8,
+       "truePeakDb": -6.6,
+       "leadInSec": 0.14,
+       "soundEndSec": 1.25
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:08:50.000Z",
+     "readyAt": "2000-01-01T00:08:51.000Z",
+     "decidedAt": "2000-01-01T00:08:52.000Z",
+     "inputFingerprints": {
+      "animatic:shot.07.vo": "da9237e9d2f246b7d37a206010238cf94396cb089cc98731eb8ccc7d58dba18a"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.08#narrationStem": {
+   "variants": {
+    "v-jlo9TYJT": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.08#narrationStem/v-jlo9TYJT/stem.wav",
+     "definitionHash": "181398d308f7",
+     "outputHash": "1a2d080fa59c4029eda1243cad2514fb640d96b2dc54a7abf8a8df2f1862631d",
+     "media": {
+      "kind": "audio",
+      "durationSec": 3.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.8,
+       "truePeakDb": -4.7,
+       "leadInSec": 0.13,
+       "soundEndSec": 1.68
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:35.000Z",
+     "readyAt": "2000-01-01T00:06:36.000Z",
+     "decidedAt": "2000-01-01T00:06:36.000Z",
+     "inputFingerprints": {
+      "animatic:shot.08.vo": "6b7a64cbd6c3614e59808861d1983d76d13adeafae6f4c2e236d04f43769cd14"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.09#narrationStem": {
+   "variants": {
+    "v-YJPpR1l2": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.09#narrationStem/v-YJPpR1l2/stem.wav",
+     "definitionHash": "beceac8f3287",
+     "outputHash": "aa040ec60114084d30409a710f1d5fd530a47b6927c81bf02c5c6c7793c0e887",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -19.3,
+       "truePeakDb": -6.6,
+       "leadInSec": 0.13,
+       "soundEndSec": 0.72
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:37.000Z",
+     "readyAt": "2000-01-01T00:06:37.000Z",
+     "decidedAt": "2000-01-01T00:06:38.000Z",
+     "inputFingerprints": {
+      "animatic:shot.09.vo": "8ed4ddaabe50cb1ce5b8d50cf92a8fa3d86ba543ee8162ee960547b796de03a5"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.10#narrationStem": {
+   "variants": {
+    "v-kmIAhyoe": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.10#narrationStem/v-kmIAhyoe/stem.wav",
+     "definitionHash": "54a1e5adb017",
+     "outputHash": "b37e3e643c60bcfa24a7d5a273680286e2a87203fc57fdb0bf0028f9090d4410",
+     "media": {
+      "kind": "audio",
+      "durationSec": 3,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.6,
+       "truePeakDb": -3.4,
+       "leadInSec": 0.14,
+       "soundEndSec": 0.77
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:39.000Z",
+     "readyAt": "2000-01-01T00:06:39.000Z",
+     "decidedAt": "2000-01-01T00:06:40.000Z",
+     "inputFingerprints": {
+      "animatic:shot.10.vo": "2ac6b8d5baa7d7a191e0255eb7a53e58c95d91f36fffeb662e12b1252d8cac21"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.11#narrationStem": {
+   "variants": {
+    "v-CnCcLWR7": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.11#narrationStem/v-CnCcLWR7/stem.wav",
+     "definitionHash": "25089d3ae379",
+     "outputHash": "384ad22789ccd0a2b37f6418bb5e9ba87a3f7d9a22cf6b4ca390c947cb604f42",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18,
+       "truePeakDb": -8.8,
+       "leadInSec": 0.14,
+       "soundEndSec": 1.06
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:41.000Z",
+     "readyAt": "2000-01-01T00:06:41.000Z",
+     "decidedAt": "2000-01-01T00:06:41.000Z",
+     "inputFingerprints": {
+      "animatic:shot.11.vo": "886272e7b8a00e31b5c129f3d2c41787e82d9b9ecac09aa7f507008fddf37b99"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.12#narrationStem": {
+   "variants": {
+    "v-6ROxK0km": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.12#narrationStem/v-6ROxK0km/stem.wav",
+     "definitionHash": "5c51027fd1b1",
+     "outputHash": "8818fa8e83a5a4d82d47d04dcfd3d2e88f32b2d6a35b689882df15ea0f39c27a",
+     "media": {
+      "kind": "audio",
+      "durationSec": 3.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.8,
+       "truePeakDb": -3.4,
+       "leadInSec": 0.12,
+       "soundEndSec": 1.55
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:42.000Z",
+     "readyAt": "2000-01-01T00:06:43.000Z",
+     "decidedAt": "2000-01-01T00:06:43.000Z",
+     "inputFingerprints": {
+      "animatic:shot.12.vo": "6fdb83a29ec5cd6abf550cdc2ba86feabcdce6de350fddf35d9e07ba1df7ec3b"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.13#narrationStem": {
+   "variants": {
+    "v-DUMdHsqQ": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.13#narrationStem/v-DUMdHsqQ/stem.wav",
+     "definitionHash": "534bea2227a4",
+     "outputHash": "787a34969955955b92f0343bc62d8a4b6cae9e22384358a1cd98e0f23472456a",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.5,
+       "truePeakDb": -5.6,
+       "leadInSec": 0.14,
+       "soundEndSec": 1.82
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:44.000Z",
+     "readyAt": "2000-01-01T00:06:44.000Z",
+     "decidedAt": "2000-01-01T00:06:45.000Z",
+     "inputFingerprints": {
+      "animatic:shot.13.vo": "ffe10dc71a5645432a19158792a828dbcaa7b1779eea9892aba9386ab956a21e"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.14#narrationStem": {
+   "variants": {
+    "v-3Rmy5qXP": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.14#narrationStem/v-3Rmy5qXP/stem.wav",
+     "definitionHash": "d1b698c7af97",
+     "outputHash": "8a19ca4824d65667044d6e6766e078d3e4ed11f772b273c8ebc30b9ba4cc72c4",
+     "media": {
+      "kind": "audio",
+      "durationSec": 2,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.9,
+       "truePeakDb": -7.1,
+       "leadInSec": 0.17,
+       "soundEndSec": 1.97
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:46.000Z",
+     "readyAt": "2000-01-01T00:06:47.000Z",
+     "decidedAt": "2000-01-01T00:06:47.000Z",
+     "inputFingerprints": {
+      "animatic:shot.14.voFit": "028f850847d5d297190b3b736d09b7f316c9c5e150b4f0ffae286790a272ebc1"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.16#narrationStem": {
+   "variants": {
+    "v-PQnwW7AV": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.16#narrationStem/v-PQnwW7AV/stem.wav",
+     "definitionHash": "62a10a46310f",
+     "outputHash": "a4e18c54b92f3d57562f21d49c193a79c3ce7659abe45f003fd32fa3fd8e1180",
+     "media": {
+      "kind": "audio",
+      "durationSec": 4,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -17.7,
+       "truePeakDb": -5.5,
+       "leadInSec": 1.14,
+       "soundEndSec": 2.65
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:48.000Z",
+     "readyAt": "2000-01-01T00:06:49.000Z",
+     "decidedAt": "2000-01-01T00:06:50.000Z",
+     "inputFingerprints": {
+      "animatic:shot.16.vo": "85bffd3f254c9aedda3d4ae19d556203370825bab08948b678d66eec2fd93228"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.17#narrationStem": {
+   "variants": {
+    "v-Axf4OZGf": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.17#narrationStem/v-Axf4OZGf/stem.wav",
+     "definitionHash": "f3ba933b15d8",
+     "outputHash": "0792630155f199f7a7ce8c403c1048a638c6ebade1628b220c0c0ddd44e47599",
+     "media": {
+      "kind": "audio",
+      "durationSec": 3.5,
+      "channels": 2,
+      "sampleRate": 44100,
+      "loudness": {
+       "integratedLufs": -18.3,
+       "truePeakDb": -5.9,
+       "leadInSec": 0.13,
+       "soundEndSec": 1.83
+      },
+      "silent": false
+     },
+     "createdAt": "2000-01-01T00:06:51.000Z",
+     "readyAt": "2000-01-01T00:06:52.000Z",
+     "decidedAt": "2000-01-01T00:06:52.000Z",
+     "inputFingerprints": {
+      "animatic:shot.17.vo": "0322a716a5e5b75bbd2303a463ec8c70e0a21e9d5b1378a53efa7d9ffa731e05"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.01#composition": {
+   "variants": {
+    "v-aADufkDf": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.01#composition/v-aADufkDf/composition.html",
+     "definitionHash": "26da402507fc",
+     "outputHash": "1be97b87d82d47e8b49365333842a1de3bf148b1ffa91d7808093fe2fa1a5d1d",
+     "createdAt": "2000-01-01T00:06:53.000Z",
+     "readyAt": "2000-01-01T00:06:54.000Z",
+     "decidedAt": "2000-01-01T00:06:54.000Z",
+     "inputFingerprints": {
+      "animatic:shot.01.voFit": "a951f4481ddae4de01f6d5dd92290ee98e4be19bdf9a8d5d8b62a72a4a5dff2a"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.02#composition": {
+   "variants": {
+    "v-jsuf8z8T": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.02#composition/v-jsuf8z8T/composition.html",
+     "definitionHash": "8b018fc70cf1",
+     "outputHash": "f7429fa28ce38a9dde441fd8832ef5f06767d832d63f37d54cddb946f591d5b1",
+     "createdAt": "2000-01-01T00:06:55.000Z",
+     "readyAt": "2000-01-01T00:06:56.000Z",
+     "decidedAt": "2000-01-01T00:06:56.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.03#composition": {
+   "variants": {
+    "v-Ma8vgEfr": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.03#composition/v-Ma8vgEfr/composition.html",
+     "definitionHash": "02374fec3218",
+     "outputHash": "13c9dab4c2103469e19a3683796ddc3377027cec69f2f34037196041b9f7ee61",
+     "createdAt": "2000-01-01T00:06:57.000Z",
+     "readyAt": "2000-01-01T00:06:58.000Z",
+     "decidedAt": "2000-01-01T00:06:58.000Z",
+     "inputFingerprints": {
+      "animatic:shot.03.vo": "761f1ecf72cb3b142fc56b12028744f56c78f83cf2cec8d23bb30f22c804daf2"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.04#composition": {
+   "variants": {
+    "v-QqzFX4IW": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.04#composition/v-QqzFX4IW/composition.html",
+     "definitionHash": "50ee7530f51c",
+     "outputHash": "a44665782c1ac24b858d8ee044f837eaf47985f7bc33e9483227003d8a2666b9",
+     "createdAt": "2000-01-01T00:06:59.000Z",
+     "readyAt": "2000-01-01T00:07:00.000Z",
+     "decidedAt": "2000-01-01T00:07:00.000Z",
+     "inputFingerprints": {
+      "animatic:shot.04.vo": "799afbc8ed56b761862c561a8cef4a25dea08efc6e9872771cea5226feae1256"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.05#composition": {
+   "variants": {
+    "v-gCJPKgAC": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.05#composition/v-gCJPKgAC/composition.html",
+     "definitionHash": "bfd41c4841a1",
+     "outputHash": "adc32e0af58ce33caf27468bc4043bc55982e035938f5503f9f54d18939758c7",
+     "createdAt": "2000-01-01T00:07:01.000Z",
+     "readyAt": "2000-01-01T00:07:02.000Z",
+     "decidedAt": "2000-01-01T00:07:02.000Z",
+     "inputFingerprints": {
+      "animatic:shot.05.vo": "84c013bef8485d80d4ec644fb1fe0f5b1eee2b832df84901b53ca1c7118e1ffa"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.06#composition": {
+   "variants": {
+    "v-V7NB42Fg": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.06#composition/v-V7NB42Fg/composition.html",
+     "definitionHash": "510b76073892",
+     "outputHash": "613a97d434b5e2cae8d7c0240fa4a9840c39703b9d4132220292dc12545a3623",
+     "createdAt": "2000-01-01T00:07:03.000Z",
+     "readyAt": "2000-01-01T00:07:04.000Z",
+     "decidedAt": "2000-01-01T00:07:04.000Z",
+     "inputFingerprints": {
+      "animatic:shot.06.vo": "0f94d673e19c7f155790ac0fbb6c07250ee73705abb503cf0d89500055803c2b"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.07#composition": {
+   "variants": {
+    "v-UARB14MZ": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.07#composition/v-UARB14MZ/composition.html",
+     "definitionHash": "d12b06ef3363",
+     "outputHash": "4668288d67a201fbe9cc9b9ba58dd7fff9b64919f590cc139c590a1b2a82959d",
+     "createdAt": "2000-01-01T00:08:53.000Z",
+     "readyAt": "2000-01-01T00:08:54.000Z",
+     "decidedAt": "2000-01-01T00:08:55.000Z",
+     "inputFingerprints": {
+      "animatic:shot.07.vo": "da9237e9d2f246b7d37a206010238cf94396cb089cc98731eb8ccc7d58dba18a"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.08#composition": {
+   "variants": {
+    "v-mA3TvGWJ": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.08#composition/v-mA3TvGWJ/composition.html",
+     "definitionHash": "aba4f22693ab",
+     "outputHash": "a295fc559a309ed54ad19706f5158c2f199b332a2f8289a711ddaa209d1fff7e",
+     "createdAt": "2000-01-01T00:07:05.000Z",
+     "readyAt": "2000-01-01T00:07:06.000Z",
+     "decidedAt": "2000-01-01T00:07:06.000Z",
+     "inputFingerprints": {
+      "animatic:shot.08.vo": "6b7a64cbd6c3614e59808861d1983d76d13adeafae6f4c2e236d04f43769cd14"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.09#composition": {
+   "variants": {
+    "v-WsMBaKzU": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.09#composition/v-WsMBaKzU/composition.html",
+     "definitionHash": "90a105dffae1",
+     "outputHash": "9e8a91eef819c4b1cf2a8a17dc64204d504795e1904371c8320238fabe12b8ab",
+     "createdAt": "2000-01-01T00:07:07.000Z",
+     "readyAt": "2000-01-01T00:07:08.000Z",
+     "decidedAt": "2000-01-01T00:07:08.000Z",
+     "inputFingerprints": {
+      "animatic:shot.09.vo": "8ed4ddaabe50cb1ce5b8d50cf92a8fa3d86ba543ee8162ee960547b796de03a5"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.10#composition": {
+   "variants": {
+    "v-st8yAJaj": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.10#composition/v-st8yAJaj/composition.html",
+     "definitionHash": "2b9aabaa4983",
+     "outputHash": "ef640748e80afa53007c06b40f334965f0d925c8eb4e533968946291fc5d62e6",
+     "createdAt": "2000-01-01T00:07:09.000Z",
+     "readyAt": "2000-01-01T00:07:10.000Z",
+     "decidedAt": "2000-01-01T00:07:10.000Z",
+     "inputFingerprints": {
+      "animatic:shot.10.vo": "2ac6b8d5baa7d7a191e0255eb7a53e58c95d91f36fffeb662e12b1252d8cac21"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.11#composition": {
+   "variants": {
+    "v-bIsZzdSL": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.11#composition/v-bIsZzdSL/composition.html",
+     "definitionHash": "f2a4219290e9",
+     "outputHash": "7d66d2a14a08a38de5bc5a8eecbeecde0a6b03348f880767c4790cb1b76a8cde",
+     "createdAt": "2000-01-01T00:07:11.000Z",
+     "readyAt": "2000-01-01T00:07:12.000Z",
+     "decidedAt": "2000-01-01T00:07:12.000Z",
+     "inputFingerprints": {
+      "animatic:shot.11.vo": "886272e7b8a00e31b5c129f3d2c41787e82d9b9ecac09aa7f507008fddf37b99"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.12#composition": {
+   "variants": {
+    "v-XtlIQ2xc": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.12#composition/v-XtlIQ2xc/composition.html",
+     "definitionHash": "e451545a47d1",
+     "outputHash": "9c030a25970249b224f5f0a44aa222923046fc6277cc410ec457dfb2e0c9161b",
+     "createdAt": "2000-01-01T00:07:13.000Z",
+     "readyAt": "2000-01-01T00:07:14.000Z",
+     "decidedAt": "2000-01-01T00:07:15.000Z",
+     "inputFingerprints": {
+      "animatic:shot.12.vo": "6fdb83a29ec5cd6abf550cdc2ba86feabcdce6de350fddf35d9e07ba1df7ec3b"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.13#composition": {
+   "variants": {
+    "v-uVdBQgjq": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.13#composition/v-uVdBQgjq/composition.html",
+     "definitionHash": "8387650bc6eb",
+     "outputHash": "a4a6953445d724943217a801ea2ddfb07a29ddc54eb01e6c98bfde4c0b25ccef",
+     "createdAt": "2000-01-01T00:07:16.000Z",
+     "readyAt": "2000-01-01T00:07:17.000Z",
+     "decidedAt": "2000-01-01T00:07:17.000Z",
+     "inputFingerprints": {
+      "animatic:shot.13.vo": "ffe10dc71a5645432a19158792a828dbcaa7b1779eea9892aba9386ab956a21e"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.14#composition": {
+   "variants": {
+    "v-gs4rWuur": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.14#composition/v-gs4rWuur/composition.html",
+     "definitionHash": "893d23552ef9",
+     "outputHash": "79af2626336864c1d9276cfffb39361374fb99c23890e550fa36d4ce3ccbf367",
+     "createdAt": "2000-01-01T00:07:18.000Z",
+     "readyAt": "2000-01-01T00:07:19.000Z",
+     "decidedAt": "2000-01-01T00:07:19.000Z",
+     "inputFingerprints": {
+      "animatic:shot.14.voFit": "028f850847d5d297190b3b736d09b7f316c9c5e150b4f0ffae286790a272ebc1"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.15#composition": {
+   "variants": {
+    "v-BhdrvXpV": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.15#composition/v-BhdrvXpV/composition.html",
+     "definitionHash": "b87f4922e197",
+     "outputHash": "b063e2efede5327ebe94010449230f4a1c9da5bf55b15893a3e80a1f33a1d46d",
+     "createdAt": "2000-01-01T00:07:20.000Z",
+     "readyAt": "2000-01-01T00:07:21.000Z",
+     "decidedAt": "2000-01-01T00:07:21.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.16#composition": {
+   "variants": {
+    "v-zeKItMQU": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.16#composition/v-zeKItMQU/composition.html",
+     "definitionHash": "4a9cf77882c2",
+     "outputHash": "31fc13d33ea24dcea833d6d701a9307b5e27698381e8e04ec30af5eb8c26934a",
+     "createdAt": "2000-01-01T00:07:22.000Z",
+     "readyAt": "2000-01-01T00:07:23.000Z",
+     "decidedAt": "2000-01-01T00:07:23.000Z",
+     "inputFingerprints": {
+      "animatic:shot.16.vo": "85bffd3f254c9aedda3d4ae19d556203370825bab08948b678d66eec2fd93228"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "animatic:shot.17#composition": {
+   "variants": {
+    "v-8k80SLBO": {
+     "status": "accepted",
+     "file": "assets/animatic/shot.17#composition/v-8k80SLBO/composition.html",
+     "definitionHash": "8914ece94be3",
+     "outputHash": "8f611b2fd0aa356d6102c1263ba5ee492da4c44079a6609562db9bcaa6f24d39",
+     "createdAt": "2000-01-01T00:07:24.000Z",
+     "readyAt": "2000-01-01T00:07:25.000Z",
+     "decidedAt": "2000-01-01T00:07:25.000Z",
+     "inputFingerprints": {
+      "animatic:shot.17.vo": "0322a716a5e5b75bbd2303a463ec8c70e0a21e9d5b1378a53efa7d9ffa731e05"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.02#composition": {
+   "variants": {
+    "v-SZK3DJwi": {
+     "status": "accepted",
+     "file": "assets/video/shot.02#composition/v-SZK3DJwi/composition.html",
+     "definitionHash": "8b018fc70cf1",
+     "outputHash": "37fd8a198ba001aebdfe6741dbc0acf16f133009dc41a70835818805b232a809",
+     "createdAt": "2000-01-01T00:07:26.000Z",
+     "readyAt": "2000-01-01T00:07:27.000Z",
+     "decidedAt": "2000-01-01T00:08:11.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.15#composition": {
+   "variants": {
+    "v-pOJinwzN": {
+     "status": "accepted",
+     "file": "assets/video/shot.15#composition/v-pOJinwzN/composition.html",
+     "definitionHash": "b87f4922e197",
+     "outputHash": "b5da82d0f82ec89f1d62deaf0c6d7818f6d9effe68828cd9f3fda36907f22306",
+     "createdAt": "2000-01-01T00:07:28.000Z",
+     "readyAt": "2000-01-01T00:07:29.000Z",
+     "decidedAt": "2000-01-01T00:08:34.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.01#stem": {
+   "variants": {
+    "v-GrFj0eVP": {
+     "status": "accepted",
+     "file": "assets/video/shot.01#stem/v-GrFj0eVP/stem.json",
+     "definitionHash": "b4f363857a40",
+     "outputHash": "26cbc28a129391657f5a4b423f3cca17d2091449108722e577df28e6046ffe29",
+     "createdAt": "2000-01-01T00:07:36.000Z",
+     "readyAt": "2000-01-01T00:07:37.000Z",
+     "decidedAt": "2000-01-01T00:07:38.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.01#narrationStem": "859e1bd7284b43b1be384d69c45b16de8dcfdc17af86fa0a8865c7b89dbf61d9"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.02#stem": {
+   "variants": {
+    "v-EN9pLO8T": {
+     "status": "accepted",
+     "file": "assets/video/shot.02#stem/v-EN9pLO8T/stem.json",
+     "definitionHash": "a08c3b679f9a",
+     "outputHash": "4f8bb8dc291e11cf9e72216b03498826221e4a7dade5722939de69bfcc4c207f",
+     "createdAt": "2000-01-01T00:07:39.000Z",
+     "readyAt": "2000-01-01T00:07:40.000Z",
+     "decidedAt": "2000-01-01T00:07:40.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.03#stem": {
+   "variants": {
+    "v-xx8ZBApU": {
+     "status": "accepted",
+     "file": "assets/video/shot.03#stem/v-xx8ZBApU/stem.json",
+     "definitionHash": "8e6d8e6caf06",
+     "outputHash": "8f64081951b99eb0669545a8a215aed613f7c05a80839c39176a19156d0ab60d",
+     "createdAt": "2000-01-01T00:07:41.000Z",
+     "readyAt": "2000-01-01T00:07:42.000Z",
+     "decidedAt": "2000-01-01T00:07:42.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.03#narrationStem": "fbdd5a1aca92353aadad61d3db5d31892073404d4dfab1b24da93aa67736c383"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.04#stem": {
+   "variants": {
+    "v-kKQH7qcI": {
+     "status": "accepted",
+     "file": "assets/video/shot.04#stem/v-kKQH7qcI/stem.json",
+     "definitionHash": "b6024786689c",
+     "outputHash": "04a71b733429dbb08c7abc20d62260d242f4fe0df139f85ab56d7dcf14053d33",
+     "createdAt": "2000-01-01T00:07:43.000Z",
+     "readyAt": "2000-01-01T00:07:44.000Z",
+     "decidedAt": "2000-01-01T00:07:44.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.04#narrationStem": "5e75feab4164ddd617f34dd55fc6f127ebabbe7a798efd2fe5b946ce3f8ead7e"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.05#stem": {
+   "variants": {
+    "v-RJofsozz": {
+     "status": "accepted",
+     "file": "assets/video/shot.05#stem/v-RJofsozz/stem.json",
+     "definitionHash": "69b086e4b36a",
+     "outputHash": "37665c9e6eb251c6253ddc1b94ac8a356e0fb49e3164c376b85cfe38781c11eb",
+     "createdAt": "2000-01-01T00:07:45.000Z",
+     "readyAt": "2000-01-01T00:07:46.000Z",
+     "decidedAt": "2000-01-01T00:07:46.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.05#narrationStem": "7cc4feaf65a8505e11a28befbc1d4da5cc4aa04024243fa0b8eb836beeb5cdcd"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.06#stem": {
+   "variants": {
+    "v-PeWOHly0": {
+     "status": "accepted",
+     "file": "assets/video/shot.06#stem/v-PeWOHly0/stem.json",
+     "definitionHash": "ff9bd779f4ac",
+     "outputHash": "94049ca2762e01c2c8e6637c835854d52c503e546d54fba1269e6e7080c6ac4d",
+     "createdAt": "2000-01-01T00:07:47.000Z",
+     "readyAt": "2000-01-01T00:07:47.000Z",
+     "decidedAt": "2000-01-01T00:07:47.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.06#narrationStem": "3cf594168ec93ca2627a497e4c75cc043fe9d4805e598d038c9ba595a675b71e"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.08#stem": {
+   "variants": {
+    "v-Kmnzfico": {
+     "status": "accepted",
+     "file": "assets/video/shot.08#stem/v-Kmnzfico/stem.json",
+     "definitionHash": "5617496efff6",
+     "outputHash": "206ce32d7c0fadb68771a7e70b96d240a0bdf2fe677a1a71eade1b29b688d5fb",
+     "createdAt": "2000-01-01T00:07:48.000Z",
+     "readyAt": "2000-01-01T00:07:49.000Z",
+     "decidedAt": "2000-01-01T00:07:49.000Z",
+     "inputFingerprints": {
+      "reference:sfxTyping": "c2dab78f7962f321ef8897955920d9b0f6ed07ea3915929411767b9a85148a88",
+      "animatic:shot.08#narrationStem": "1a2d080fa59c4029eda1243cad2514fb640d96b2dc54a7abf8a8df2f1862631d"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.09#stem": {
+   "variants": {
+    "v-Yu21wgdZ": {
+     "status": "accepted",
+     "file": "assets/video/shot.09#stem/v-Yu21wgdZ/stem.json",
+     "definitionHash": "762e3ddf7685",
+     "outputHash": "fd68e6b390e335e818badd0f216dcc9409257c956251f2c01be1ae05233f1262",
+     "createdAt": "2000-01-01T00:07:50.000Z",
+     "readyAt": "2000-01-01T00:07:51.000Z",
+     "decidedAt": "2000-01-01T00:07:51.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.09#narrationStem": "aa040ec60114084d30409a710f1d5fd530a47b6927c81bf02c5c6c7793c0e887"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.10#stem": {
+   "variants": {
+    "v-IKIlfRVf": {
+     "status": "accepted",
+     "file": "assets/video/shot.10#stem/v-IKIlfRVf/stem.json",
+     "definitionHash": "0d2204b6f5b3",
+     "outputHash": "f1e49b06ee8de31cfb1435a0a315f1cb5c1cc8fd4312fb99cbb348ffd3c800a3",
+     "createdAt": "2000-01-01T00:07:52.000Z",
+     "readyAt": "2000-01-01T00:07:53.000Z",
+     "decidedAt": "2000-01-01T00:07:53.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.10#narrationStem": "b37e3e643c60bcfa24a7d5a273680286e2a87203fc57fdb0bf0028f9090d4410"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.11#stem": {
+   "variants": {
+    "v-3mMPTjGz": {
+     "status": "accepted",
+     "file": "assets/video/shot.11#stem/v-3mMPTjGz/stem.json",
+     "definitionHash": "52f6010fbf82",
+     "outputHash": "a45b1c157d266579a231a4d1d491e29ef97c392be39695dbe84ac2462f4f90f5",
+     "createdAt": "2000-01-01T00:07:54.000Z",
+     "readyAt": "2000-01-01T00:07:55.000Z",
+     "decidedAt": "2000-01-01T00:07:55.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.11#narrationStem": "384ad22789ccd0a2b37f6418bb5e9ba87a3f7d9a22cf6b4ca390c947cb604f42"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.12#stem": {
+   "variants": {
+    "v-mOZZRQoD": {
+     "status": "accepted",
+     "file": "assets/video/shot.12#stem/v-mOZZRQoD/stem.json",
+     "definitionHash": "37c56d6e852b",
+     "outputHash": "57efa262dcbc03179d23d1f8654e4af734e61a72587ec5aef07fa52dd63f7a17",
+     "createdAt": "2000-01-01T00:07:56.000Z",
+     "readyAt": "2000-01-01T00:07:57.000Z",
+     "decidedAt": "2000-01-01T00:07:57.000Z",
+     "inputFingerprints": {
+      "reference:sfxTyping": "c2dab78f7962f321ef8897955920d9b0f6ed07ea3915929411767b9a85148a88",
+      "animatic:shot.12#narrationStem": "8818fa8e83a5a4d82d47d04dcfd3d2e88f32b2d6a35b689882df15ea0f39c27a"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.13#stem": {
+   "variants": {
+    "v-vHhZHuO3": {
+     "status": "accepted",
+     "file": "assets/video/shot.13#stem/v-vHhZHuO3/stem.json",
+     "definitionHash": "b3f4021fa252",
+     "outputHash": "251513153f2704020c794ba18506358cc8d2e0b9adb4a05169637fa4240887db",
+     "createdAt": "2000-01-01T00:07:58.000Z",
+     "readyAt": "2000-01-01T00:07:59.000Z",
+     "decidedAt": "2000-01-01T00:08:00.000Z",
+     "inputFingerprints": {
+      "animatic:shot.13#narrationStem": "787a34969955955b92f0343bc62d8a4b6cae9e22384358a1cd98e0f23472456a"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.14#stem": {
+   "variants": {
+    "v-QXipt2gT": {
+     "status": "accepted",
+     "file": "assets/video/shot.14#stem/v-QXipt2gT/stem.json",
+     "definitionHash": "7d01cc5b317b",
+     "outputHash": "11dcb8bb4af2440d8135fdc58f6c48ffe46082352c7e1f2e0880a68c39ac8abd",
+     "createdAt": "2000-01-01T00:08:01.000Z",
+     "readyAt": "2000-01-01T00:08:02.000Z",
+     "decidedAt": "2000-01-01T00:08:02.000Z",
+     "inputFingerprints": {
+      "animatic:shot.14#narrationStem": "8a19ca4824d65667044d6e6766e078d3e4ed11f772b273c8ebc30b9ba4cc72c4"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.15#stem": {
+   "variants": {
+    "v-Sfqq24m3": {
+     "status": "accepted",
+     "file": "assets/video/shot.15#stem/v-Sfqq24m3/stem.json",
+     "definitionHash": "687ae9c0eade",
+     "outputHash": "ebf5cf007a16cdd38a35a809f13a0eeb31660a84f6f0786bcda2e21500abe376",
+     "createdAt": "2000-01-01T00:08:03.000Z",
+     "readyAt": "2000-01-01T00:08:04.000Z",
+     "decidedAt": "2000-01-01T00:08:04.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.16#stem": {
+   "variants": {
+    "v-ALMEAvhU": {
+     "status": "accepted",
+     "file": "assets/video/shot.16#stem/v-ALMEAvhU/stem.json",
+     "definitionHash": "af6c7735eac4",
+     "outputHash": "fe7b4ce22ab5fd17bb73e7f47d73d15467fc9ef27aa39e3145f48b7fa02f3227",
+     "createdAt": "2000-01-01T00:08:05.000Z",
+     "readyAt": "2000-01-01T00:08:05.000Z",
+     "decidedAt": "2000-01-01T00:08:05.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "reference:sfxTyping": "c2dab78f7962f321ef8897955920d9b0f6ed07ea3915929411767b9a85148a88",
+      "animatic:shot.16#narrationStem": "a4e18c54b92f3d57562f21d49c193a79c3ce7659abe45f003fd32fa3fd8e1180"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.17#stem": {
+   "variants": {
+    "v-hdCwacLC": {
+     "status": "accepted",
+     "file": "assets/video/shot.17#stem/v-hdCwacLC/stem.json",
+     "definitionHash": "b5bedb0e1ce3",
+     "outputHash": "6c1496e8f13fe20cc13f010b841271c7f80e9a76f0b13bab69b1de5c9edadf8a",
+     "createdAt": "2000-01-01T00:08:06.000Z",
+     "readyAt": "2000-01-01T00:08:07.000Z",
+     "decidedAt": "2000-01-01T00:08:07.000Z",
+     "inputFingerprints": {
+      "animatic:shot.17#narrationStem": "0792630155f199f7a7ce8c403c1048a638c6ebade1628b220c0c0ddd44e47599"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.01#composition": {
+   "variants": {
+    "v-FdVJMpLX": {
+     "status": "accepted",
+     "file": "assets/video/shot.01#composition/v-FdVJMpLX/composition.html",
+     "definitionHash": "6371cf651385",
+     "outputHash": "771d4cff31059280ac7cbadc6fd8a265d58e0870da61d413722768d8a5b4b2ff",
+     "createdAt": "2000-01-01T00:08:08.000Z",
+     "readyAt": "2000-01-01T00:08:09.000Z",
+     "decidedAt": "2000-01-01T00:08:10.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.03#composition": {
+   "variants": {
+    "v-AkhLjzO6": {
+     "status": "accepted",
+     "file": "assets/video/shot.03#composition/v-AkhLjzO6/composition.html",
+     "definitionHash": "311fd5e8526d",
+     "outputHash": "fbdfe93dc6079415a405ac0a70941b26f9937abb58f37478d74d6508ce6c3685",
+     "createdAt": "2000-01-01T00:08:12.000Z",
+     "readyAt": "2000-01-01T00:08:13.000Z",
+     "decidedAt": "2000-01-01T00:08:13.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.04#composition": {
+   "variants": {
+    "v-weNvaBMp": {
+     "status": "accepted",
+     "file": "assets/video/shot.04#composition/v-weNvaBMp/composition.html",
+     "definitionHash": "65c1e60c51a1",
+     "outputHash": "d515e6d02b1caeeb4c24d9ad3919268e3b3b5e1206b4a9c1ad8c34c84396e701",
+     "createdAt": "2000-01-01T00:08:14.000Z",
+     "readyAt": "2000-01-01T00:08:15.000Z",
+     "decidedAt": "2000-01-01T00:08:15.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.05#composition": {
+   "variants": {
+    "v-Godzj40n": {
+     "status": "accepted",
+     "file": "assets/video/shot.05#composition/v-Godzj40n/composition.html",
+     "definitionHash": "2909308b9a9f",
+     "outputHash": "614c268a03de4c206f124c4a751fd4b826d4461c6ddc8d9881bff47b71957857",
+     "createdAt": "2000-01-01T00:08:16.000Z",
+     "readyAt": "2000-01-01T00:08:17.000Z",
+     "decidedAt": "2000-01-01T00:08:17.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.06#composition": {
+   "variants": {
+    "v-Nxn2m27o": {
+     "status": "accepted",
+     "file": "assets/video/shot.06#composition/v-Nxn2m27o/composition.html",
+     "definitionHash": "d36ec70d300d",
+     "outputHash": "0ba9174fc74294271b6e0f6e3c4f0cbb1e63fb0cca289913540dc1f2b18bd85a",
+     "createdAt": "2000-01-01T00:08:18.000Z",
+     "readyAt": "2000-01-01T00:08:19.000Z",
+     "decidedAt": "2000-01-01T00:08:19.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.08#composition": {
+   "variants": {
+    "v-YYE0IuRm": {
+     "status": "accepted",
+     "file": "assets/video/shot.08#composition/v-YYE0IuRm/composition.html",
+     "definitionHash": "7f67dee8ab8f",
+     "outputHash": "c9984421945d9716fe6b3fcf05585488c73618f7484c0f7a962f8059ec1a9384",
+     "createdAt": "2000-01-01T00:08:20.000Z",
+     "readyAt": "2000-01-01T00:08:21.000Z",
+     "decidedAt": "2000-01-01T00:08:21.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.09#composition": {
+   "variants": {
+    "v-L1wiISuL": {
+     "status": "accepted",
+     "file": "assets/video/shot.09#composition/v-L1wiISuL/composition.html",
+     "definitionHash": "9e2e8deec1a1",
+     "outputHash": "0c1013550d1cf9bcc5a28a6a8e4d839e96ffe9e4edfa82ad245c6be9ad8ed154",
+     "createdAt": "2000-01-01T00:08:22.000Z",
+     "readyAt": "2000-01-01T00:08:23.000Z",
+     "decidedAt": "2000-01-01T00:08:23.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.10#composition": {
+   "variants": {
+    "v-s4j6KZFZ": {
+     "status": "accepted",
+     "file": "assets/video/shot.10#composition/v-s4j6KZFZ/composition.html",
+     "definitionHash": "159e0c2fd5b3",
+     "outputHash": "ef0af065eec65e99e9d7c5a191ae0bc313d18045c580d420d569508cf2637213",
+     "createdAt": "2000-01-01T00:08:24.000Z",
+     "readyAt": "2000-01-01T00:08:25.000Z",
+     "decidedAt": "2000-01-01T00:08:25.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.11#composition": {
+   "variants": {
+    "v-g6IYWaDx": {
+     "status": "accepted",
+     "file": "assets/video/shot.11#composition/v-g6IYWaDx/composition.html",
+     "definitionHash": "83872cd66e04",
+     "outputHash": "8f97029a7228cce7925d720ceb229b2cab743a9ba20a414243543c690def5e60",
+     "createdAt": "2000-01-01T00:08:26.000Z",
+     "readyAt": "2000-01-01T00:08:27.000Z",
+     "decidedAt": "2000-01-01T00:08:27.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.12#composition": {
+   "variants": {
+    "v-iMUZNmOY": {
+     "status": "accepted",
+     "file": "assets/video/shot.12#composition/v-iMUZNmOY/composition.html",
+     "definitionHash": "0ff455de02ee",
+     "outputHash": "b91969bf27b4653f7d6471f20b4de65fa8215c39f345c1d79ef5c71a8369f25a",
+     "createdAt": "2000-01-01T00:08:28.000Z",
+     "readyAt": "2000-01-01T00:08:29.000Z",
+     "decidedAt": "2000-01-01T00:08:29.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.13#composition": {
+   "variants": {
+    "v-OCgSLNv0": {
+     "status": "accepted",
+     "file": "assets/video/shot.13#composition/v-OCgSLNv0/composition.html",
+     "definitionHash": "cf3e820b2b7e",
+     "outputHash": "95cccdf9a58a1dd4dcb200d3ee4801fbe779ae51ff3f5771c3d041384f574997",
+     "createdAt": "2000-01-01T00:08:30.000Z",
+     "readyAt": "2000-01-01T00:08:31.000Z",
+     "decidedAt": "2000-01-01T00:08:31.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.14#composition": {
+   "variants": {
+    "v-Uz4klHEO": {
+     "status": "accepted",
+     "file": "assets/video/shot.14#composition/v-Uz4klHEO/composition.html",
+     "definitionHash": "d24fd6e57a41",
+     "outputHash": "f84bdcb97ef9a4247c2e20ec308980351de157b15635f010e9cab6d797dc10ad",
+     "createdAt": "2000-01-01T00:08:32.000Z",
+     "readyAt": "2000-01-01T00:08:33.000Z",
+     "decidedAt": "2000-01-01T00:08:33.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.16#composition": {
+   "variants": {
+    "v-fcq6FDKp": {
+     "status": "accepted",
+     "file": "assets/video/shot.16#composition/v-fcq6FDKp/composition.html",
+     "definitionHash": "ab723b90d750",
+     "outputHash": "01d1e3c5151da4cd46bc680f3a31ea490d1b03bf524fb5447f97018d9962a7ea",
+     "createdAt": "2000-01-01T00:08:35.000Z",
+     "readyAt": "2000-01-01T00:08:36.000Z",
+     "decidedAt": "2000-01-01T00:08:36.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.17#composition": {
+   "variants": {
+    "v-AS2D6Kfb": {
+     "status": "accepted",
+     "file": "assets/video/shot.17#composition/v-AS2D6Kfb/composition.html",
+     "definitionHash": "0158a89dfb3d",
+     "outputHash": "ecd758c16a965be4b9268b05768b8f7f39e9b2cc234afd49028086afb055c1db",
+     "createdAt": "2000-01-01T00:08:37.000Z",
+     "readyAt": "2000-01-01T00:08:38.000Z",
+     "decidedAt": "2000-01-01T00:08:38.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:timeline#stem": {
+   "variants": {
+    "v-RG3qLSSO": {
+     "status": "accepted",
+     "file": "assets/video/timeline#stem/v-RG3qLSSO/stem.json",
+     "definitionHash": "b9c4cf893872",
+     "outputHash": "01265a72f669f46245467f0f06262e9b24b9e13cd7b06ecdac53c9fd28101ffd",
+     "createdAt": "2000-01-01T00:08:39.000Z",
+     "readyAt": "2000-01-01T00:08:40.000Z",
+     "decidedAt": "2000-01-01T00:08:40.000Z",
+     "inputFingerprints": {
+      "reference:bgm": "c1ab0ccb3b118c8fbddf538035cc4678b03883c12b0949a82712048c21e82252"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.07#stem": {
+   "variants": {
+    "v-rceGA02o": {
+     "status": "accepted",
+     "file": "assets/video/shot.07#stem/v-rceGA02o/stem.json",
+     "definitionHash": "173de433d09a",
+     "outputHash": "1dd10ea0fd7b85c7bc240ef77d82c629c072e38262aff28e189e4ef698e60642",
+     "createdAt": "2000-01-01T00:08:58.000Z",
+     "readyAt": "2000-01-01T00:08:59.000Z",
+     "decidedAt": "2000-01-01T00:08:59.000Z",
+     "inputFingerprints": {
+      "reference:sfxClick": "bbd307d45b7a1c48277a01800d5354b69a9bd6f75238c622b76f66e85f7342fc",
+      "animatic:shot.07#narrationStem": "7b7ee69234b60b8ed4d32147f3f003b496f756a752d3a3ee148b2e6983a266ca"
+     },
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  },
+  "video:shot.07#composition": {
+   "variants": {
+    "v-wRKYd1Ls": {
+     "status": "accepted",
+     "file": "assets/video/shot.07#composition/v-wRKYd1Ls/composition.html",
+     "definitionHash": "b70b886fbb8c",
+     "outputHash": "089cc756891e391ba63a0d9fde91e5327230725f68c6b0c4be5f904648c32446",
+     "createdAt": "2000-01-01T00:09:00.000Z",
+     "readyAt": "2000-01-01T00:09:01.000Z",
+     "decidedAt": "2000-01-01T00:09:01.000Z",
+     "inputFingerprints": {},
+     "seed": null,
+     "derivedFrom": null,
+     "patchHash": null,
+     "metadata": {}
+    }
+   }
+  }
+ },
+ "directionAcceptance": {
+  "parts": {
+   "direction:sequence": {
+    "partHash": "aad841c2a1a7",
+    "acceptedAt": "2000-01-01T00:07:30.000Z"
+   },
+   "direction:brief.logline": {
+    "partHash": "733a44fe4d7a",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:brief.hook": {
+    "partHash": "c17e4b4f82c0",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:brief.audience": {
+    "partHash": "757c03e88de9",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:brief.tone": {
+    "partHash": "6a28349b11cb",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:brief.look": {
+    "partHash": "8b87845afda9",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:brief.outOfScope": {
+    "partHash": "e398110a5a19",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:brief.tolerances": {
+    "partHash": "4f53cda18c2b",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:policy.format": {
+    "partHash": "78cc3f194f8b",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:policy.lang": {
+    "partHash": "50eac10e7966",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:policy.fonts": {
+    "partHash": "9ed7e743ec15",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:policy.speech": {
+    "partHash": "83f6b6204ca5",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.01": {
+    "partHash": "fcbe9c685054",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.02": {
+    "partHash": "33a8075ea5ac",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.03": {
+    "partHash": "fe9dd0ab0182",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.04": {
+    "partHash": "7c2aee4973f9",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.05": {
+    "partHash": "ff7f057f0adf",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.06": {
+    "partHash": "65d808750903",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.07": {
+    "partHash": "63da673b9022",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.08": {
+    "partHash": "fb3189a9591b",
+    "acceptedAt": "2000-01-01T00:07:31.000Z"
+   },
+   "direction:sequence.shots.09": {
+    "partHash": "d0ab9a9edf78",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.10": {
+    "partHash": "4773c8507293",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.11": {
+    "partHash": "bfe9a7017192",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.12": {
+    "partHash": "f9b47305350c",
+    "acceptedAt": "2000-01-01T00:07:32.000Z"
+   },
+   "direction:sequence.shots.13": {
+    "partHash": "13e4ab4039d9",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.14": {
+    "partHash": "043cc352d58c",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.15": {
+    "partHash": "7f20e14d8ba0",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:sequence.shots.16": {
+    "partHash": "3b542dd92da1",
+    "acceptedAt": "2000-01-01T00:07:33.000Z"
+   },
+   "direction:sequence.shots.17": {
+    "partHash": "cfa9e171324f",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   },
+   "direction:narrator": {
+    "partHash": "c824fa5108c9",
+    "acceptedAt": "2000-01-01T00:05:01.000Z"
+   }
+  },
+  "whole": {
+   "hash": "86f2ac5fc6bd",
+   "acceptedAt": "2000-01-01T00:05:01.000Z"
+  }
+ }
+}

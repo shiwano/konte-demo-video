@@ -1,0 +1,10 @@
+{
+  "stage": "video",
+  "summary": "12番のナレーションを録り直しました。",
+  "notes": [
+    {
+      "address": "video:shot.12",
+      "text": "「setup」の語尾が弱かったため、台詞を「and run konte setup.」にして5本録り直し、「konte」と「setup」がはっきり聞こえるものを選びました。"
+    }
+  ]
+}

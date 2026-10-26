@@ -1,0 +1,188 @@
+<div id="stage"><style>
+.scr{position:absolute;inset:0;overflow:hidden;background:radial-gradient(120% 90% at 50% 40%,#f4f1ea 0%,#e6e0d4 60%,#d9d1c3 100%);font-family:"Inter",system-ui,sans-serif;color:#1f1f1e;-webkit-font-smoothing:antialiased;}
+.cam{position:absolute;left:0;top:0;width:1920px;height:1088px;transform-origin:0 0;}
+.win{position:absolute;left:208.75px;top:43.375px;width:1202px;height:801px;transform:scale(1.25);transform-origin:0 0;background:#fff;border:1px solid #c9c9cc;border-radius:8px;overflow:hidden;box-shadow:0 30px 80px rgba(60,45,25,.25),0 6px 18px rgba(60,45,25,.12);font-size:14px;}
+.off{visibility:hidden;opacity:0;}
+.abs{position:absolute;}
+.cursor{position:absolute;left:0;top:0;z-index:80;pointer-events:none;}
+.cursor-ring{position:absolute;left:-24px;top:-24px;width:48px;height:48px;border-radius:50%;border:3px solid rgba(217,119,87,.95);opacity:0;}
+.step{position:absolute;left:64px;top:44px;z-index:90;display:flex;align-items:center;gap:20px;padding:14px 36px 14px 16px;border-radius:999px;background:rgba(31,30,29,.94);box-shadow:0 14px 40px rgba(40,30,20,.35);color:#faf9f5;font-size:44px;font-weight:700;letter-spacing:-.015em;}
+.step-n{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:#d97757;color:#fff;font-size:34px;font-weight:800;}
+.blackout{position:absolute;inset:0;z-index:70;background:#0c0c0c;}
+
+.side{position:absolute;left:0;top:0;bottom:0;width:289px;background:#f8f8f7;border-right:1px solid #e6e6e4;}
+.side-top{position:absolute;left:18px;top:8px;right:10px;height:22px;display:flex;align-items:center;gap:14px;color:#3d3d3a;}
+.seg{margin-left:auto;display:flex;background:#ececea;border-radius:7px;padding:2px;gap:2px;}
+.seg span{display:flex;width:30px;height:24px;align-items:center;justify-content:center;border-radius:5px;}
+.seg span.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.1);}
+.nav{position:absolute;left:9px;right:11px;top:44px;display:flex;flex-direction:column;gap:2px;}
+.nav-i{display:flex;align-items:center;gap:12px;height:32px;padding:0 10px;border-radius:7px;color:#1f1f1e;font-size:14px;}
+.nav-i.sel{background:#e6e6e3;}
+.beta{font-size:11px;border:1px solid #d6d6d3;border-radius:999px;padding:0 6px;line-height:18px;margin-left:-2px;}
+.sess{position:absolute;left:9px;right:11px;top:268px;display:flex;flex-direction:column;}
+.grp{display:flex;align-items:center;gap:6px;height:36px;padding:0 10px;color:#6b6b66;font-size:12px;font-weight:500;}
+.si{display:flex;align-items:center;height:34px;padding:0 10px;border-radius:7px;font-size:14px;color:#1f1f1e;white-space:nowrap;overflow:hidden;}
+.si.sel{background:#e6e6e3;}
+.acct{position:absolute;left:0;right:0;bottom:0;height:50px;border-top:1px solid #e6e6e4;display:flex;align-items:center;gap:9px;padding:0 16px 0 17px;font-size:14px;}
+.avatar{width:20px;height:20px;border-radius:50%;background:#e3e2de;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#3d3d3a;}
+.plan{color:#6b6b66;font-size:13px;}
+
+.main{position:absolute;left:289px;top:0;right:0;bottom:0;background:#fff;}
+.titlebar{position:absolute;left:19px;right:0;top:0;height:36px;display:flex;align-items:center;color:#6b6b66;font-size:14px;}
+.title-b{color:#1f1f1e;display:flex;align-items:center;gap:6px;}
+.tb-r{margin-left:auto;display:flex;align-items:center;gap:20px;padding-right:20px;color:#3d3d3a;}
+.tb-r .on{background:#e9e9e7;border-radius:5px;padding:3px;}
+.wctl{display:flex;gap:30px;margin-left:16px;color:#3d3d3a;}
+.composer{position:absolute;height:44px;border:1px solid #d9d9d6;border-radius:13px;background:#fff;display:flex;align-items:center;gap:12px;padding:0 14px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.ph{color:#8b8b86;font-size:15px;}
+.cin{font-size:15px;color:#1f1f1e;white-space:pre;}
+.cin.cmd{color:#2b63d9;}
+.caret{display:inline-block;width:1.5px;height:18px;background:#1f1f1e;vertical-align:-3px;margin-left:1px;}
+.crow{position:absolute;display:flex;align-items:center;gap:6px;font-size:13px;color:#3d3d3a;}
+.chip{display:flex;align-items:center;gap:6px;padding:2px 4px;border-radius:6px;}
+.mute{color:#8b8b86;}
+.critter{position:absolute;}
+
+.dimmer{position:absolute;inset:0;background:rgba(20,20,19,.38);}
+.modal{position:absolute;background:#fff;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.25),0 0 0 1px rgba(0,0,0,.05);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:28px;padding:0 10px;border-radius:7px;font-size:14px;font-weight:500;}
+.btn.dark{background:#1f1f1e;color:#fff;}
+.btn.ghost{background:#f1f1ef;color:#1f1f1e;}
+.btn.dis{background:#f4f4f2;color:#b6b6b1;}
+.btn.line{border:1px solid #d9d9d6;background:#fff;}
+
+.menu{position:absolute;background:#fff;border-radius:12px;box-shadow:0 12px 36px rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.06);padding:6px 0;}
+.mi{display:flex;align-items:center;gap:12px;height:28px;padding:0 16px;margin:0 6px;border-radius:6px;font-size:14px;color:#1f1f1e;white-space:nowrap;}
+.mi.hl{background:#f0f0ee;}
+.mi .k{margin-left:auto;color:#8b8b86;font-size:13px;}
+.msep{height:1px;background:#ececea;margin:5px 16px;}
+
+.set{position:absolute;left:89px;top:36px;width:1024px;height:728px;background:#fff;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.22),0 0 0 1px rgba(0,0,0,.05);overflow:hidden;}
+.set-h{position:absolute;left:0;right:0;top:0;height:44px;border-bottom:1px solid #ececea;display:flex;align-items:center;padding:0 16px;font-size:15px;font-weight:500;}
+.set-nav{position:absolute;left:0;top:44px;bottom:0;width:211px;border-right:1px solid #ececea;overflow:hidden;}
+.set-search{position:absolute;left:16px;top:16px;width:178px;height:28px;border:1px solid #d9d9d6;border-radius:8px;display:flex;align-items:center;gap:10px;padding:0 10px;color:#8b8b86;font-size:14px;z-index:2;background:#fff;}
+.set-list{position:absolute;left:16px;right:15px;top:44px;}
+.set-list .grp{padding:0;height:52px;align-items:flex-end;padding-bottom:12px;box-sizing:border-box;}
+.set-i{display:flex;align-items:center;gap:12px;height:33px;padding:0 12px;border-radius:7px;font-size:14px;}
+.set-i.sel{background:#e9e9e7;}
+.set-body{position:absolute;left:212px;top:44px;right:0;bottom:0;}
+.tog{width:36px;height:20px;border-radius:999px;background:#2f6feb;position:relative;}
+.tog::after{content:"";position:absolute;right:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#fff;}
+.seg2{display:flex;background:#f1f1ef;border-radius:8px;padding:2px;}
+.seg2 span{padding:3px 11px;border-radius:6px;font-size:14px;}
+.seg2 span.on{background:#fff;box-shadow:0 0 0 1px #e0e0dd;}
+.field{border:1px solid #d9d9d6;border-radius:8px;display:flex;align-items:center;gap:10px;padding:0 10px;font-size:14px;}
+.toast{position:absolute;left:825px;top:740px;width:360px;height:44px;background:#fff;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.06);display:flex;align-items:center;gap:12px;padding:0 16px;font-size:14px;font-weight:500;}
+
+.xp{position:absolute;background:#fff;border:1px solid #b7b7b7;box-shadow:0 18px 50px rgba(0,0,0,.25);font-family:"Inter",system-ui,sans-serif;font-size:13px;color:#1b1b1b;}
+.xp-row{display:flex;align-items:center;height:28px;}
+.xp-sel{background:#cce8ff;}
+
+.sv-meta{position:absolute;left:58px;top:68px;color:#8b8b86;font-size:13px;}
+.sv-meta u{text-decoration:underline;text-underline-offset:2px;}
+.bubble{position:absolute;right:345px;padding:12px 18px;background:#f1f1ef;border-radius:12px;font-size:15px;color:#2b63d9;}
+.todo{position:absolute;left:58px;width:509px;border:1px solid #e3e3e0;border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:14px;}
+.td{display:flex;align-items:center;gap:8px;height:20px;}
+.dot{width:14px;height:14px;border-radius:50%;flex:none;}
+.dot.done{background:#5b5b57;display:flex;align-items:center;justify-content:center;}
+.dot.wait{border:1.5px dashed #9b9b96;}
+.td.done span{color:#6b6b66;}
+.status{position:absolute;left:62px;display:flex;align-items:center;gap:10px;color:#6b6b66;font-size:15px;}
+.reply{position:absolute;left:58px;width:520px;font-size:15px;line-height:1.6;color:#1f1f1e;}
+.reply code{font-family:"JetBrains Mono",monospace;font-size:13.5px;background:#f1f1ef;border-radius:4px;padding:1px 5px;}
+.mark{background-image:linear-gradient(rgba(217,119,87,.25),rgba(217,119,87,.25));background-repeat:no-repeat;background-size:100% 100%;}
+.rp{position:absolute;left:625px;width:280px;border:1px solid #e3e3e0;border-radius:12px;padding:0 18px;font-size:14px;}
+.rp-row{display:flex;align-items:center;gap:10px;height:34px;white-space:nowrap;}
+</style><div class="scr"><div class="cam" id="cam"><div class="win"><div class="side"><div class="side-top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM9 4v16"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M15 18l-6-6 6-6"></path></svg><span style="color:#b6b6b1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 18l6-6-6-6"></path></svg></span><div class="seg"><span class="on"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 5h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H9l-4 3V6a1 1 0 0 1 1-1zM15 15a3 3 0 1 1 6 0 3 3 0 0 1-6 0zM20.5 17.5L22 19"></path></svg></span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"></path></svg></span></div></div><div class="nav"><div class="nav-i sel" id="nav-new"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 5v14M5 12h14"></path></svg>New</div><div class="nav-i"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM20 20l-4-4"></path></svg>Search</div><div class="nav-i"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 4h12M5 7.5h14M5 11h14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1z"></path></svg>Projects <span class="beta">Beta</span></div><div class="nav-i"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 3h10a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM5 7v13a1 1 0 0 0 1 1h10"></path></svg>Artifacts</div><div class="nav-i"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 8h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zM9 8V5h6v3"></path></svg>Customize</div><div class="nav-i"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h.01M12 12h.01M19 12h.01"></path></svg>More</div></div><div class="sess"><div class="grp">my-app <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4l6 16 2.4-6.6L20 11z"></path></svg> <span style="font-size:9px">▶</span></div><div class="grp">Remote Control <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4l6 16 2.4-6.6L20 11z"></path></svg> <span style="font-size:9px">▼</span></div><div class="si">Fix flaky login test</div><div class="si">Refactor the billing module</div><div class="si">Draft the release notes</div><div class="si">Add a dark mode toggle</div><div class="si">Investigate the slow build</div><div class="si">Write the API docs</div><div class="si">Clean up old branches</div><div class="si">Review the onboarding flow</div><div class="si">Update dependencies</div><div class="si">Prototype the search page</div></div><div class="acct" style="background:#f8f8f7"><span class="avatar">A</span>Alex <span class="plan">· Max</span><span class="mute"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></span><span style="margin-left:auto;color:#3d3d3a"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 7a3 3 0 0 1 6 0M8 9h8v6a4 4 0 0 1-8 0zM4 12h4M16 12h4M5 7l3 2M19 7l-3 2M5 19l3-2.5M19 19l-3-2.5"></path></svg></span></div></div><div class="main" id="h-main"><div class="titlebar">New session<div class="tb-r"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 8l4 4-4 4M12 16h7"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><div class="wctl"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M1 6h10" stroke="#3d3d3a" stroke-width="1"></path></svg><svg width="12" height="12" viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9" fill="none" stroke="#3d3d3a" stroke-width="1"></rect></svg><svg width="12" height="12" viewBox="0 0 12 12"><path d="M1.5 1.5l9 9M10.5 1.5l-9 9" stroke="#3d3d3a" stroke-width="1"></path></svg></div></div></div><div class="critter" style="left:797px;top:689px"><svg width="36" height="27" viewBox="0 0 32 24" shape-rendering="crispEdges" style="display:block"><g fill="#d97757"><rect x="5" y="3" width="22" height="13"></rect><rect x="0" y="8" width="5" height="4"></rect><rect x="27" y="8" width="5" height="4"></rect><rect x="7" y="16" width="3" height="6"></rect><rect x="12" y="16" width="3" height="6"></rect><rect x="17" y="16" width="3" height="6"></rect><rect x="22" y="16" width="3" height="6"></rect></g><rect x="10" y="7" width="3" height="3" fill="#2b1810"></rect><rect x="19" y="7" width="3" height="3" fill="#2b1810"></rect></svg></div><div class="composer" id="h-comp" style="left:71px;top:715px;width:770px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 5v14M5 12h14"></path></svg><span class="caret off" id="h-caret"></span><span class="ph" id="h-ph">Describe a task or ask a question</span><span style="margin-left:auto;display:flex;gap:16px;align-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"></path></svg></span></div><div class="crow" style="left:87px;top:771px"><span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 5h14a1 1 0 0 1 1 1v10H4V6a1 1 0 0 1 1-1zM2 19h20"></path></svg> This computer</span><span class="chip" id="h-folder" style="margin-left:6px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span id="h-folder-a">konte-workspace</span></span><span style="margin-left:10px">Auto</span></div><div class="crow" style="left:689px;top:771px">Opus 5.5 <span class="mute" style="margin-left:4px">Medium</span><span style="margin-left:24px"><svg width="15" height="15" viewBox="0 0 24 24" style="flex:none;display:block"><circle cx="12" cy="12" r="9" fill="none" stroke="#d8dbe2" stroke-width="3"></circle><path d="M12 3a9 9 0 0 1 9 9" fill="none" stroke="#2f6feb" stroke-width="3" stroke-linecap="round"></path></svg></span></div></div><div class="dimmer" style="background:rgba(20,20,19,.18)"></div><div class="set" id="set"><div class="set-h">Settings<span style="margin-left:auto" id="set-x"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 6l12 12M18 6L6 18"></path></svg></span></div><div class="set-nav"><div class="set-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM20 20l-4-4"></path></svg> Search</div><div style="position:absolute;left:0;right:0;top:0;height:56px;background:#fff;z-index:1"></div><div class="set-list" id="set-list"><div class="grp">Preferences</div><div class="set-i" id="nav-general"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></svg>General</div><div class="set-i" id="nav-account"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM4 21a8 8 0 0 1 16 0"></path></svg>Account</div><div class="set-i" id="nav-privacy"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path></svg>Privacy</div><div class="set-i" id="nav-billing"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zM2 10h20"></path></svg>Billing</div><div class="set-i" id="nav-usage"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM12 7v5l3 2"></path></svg>Usage</div><div class="set-i" id="nav-capabilities"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 8h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1zM9 8V5h6v3"></path></svg>Capabilities</div><div class="set-i" id="nav-memory"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 5a3.5 3.5 0 0 0-6.5 1.5A3.5 3.5 0 0 0 4 13a3.5 3.5 0 0 0 4 6 3 3 0 0 0 4 0zM12 5a3.5 3.5 0 0 1 6.5 1.5A3.5 3.5 0 0 1 20 13a3.5 3.5 0 0 1-4 6 3 3 0 0 1-4 0z"></path></svg>Memory</div><div class="set-i" id="nav-design-systems"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.5-4-8-9-8zM8 10h.01M12 7h.01M16 10h.01"></path></svg>Design systems</div><div class="set-i" id="nav-reflect"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 14h16M7 18h10M8 10a4 4 0 0 1 8 0"></path></svg>Reflect</div><div class="set-i" id="nav-time-and-focus"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M20 14A8 8 0 1 1 10 4a6.5 6.5 0 0 0 10 10z"></path></svg>Time and focus</div><div class="set-i sel" id="nav-claude-code"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"></path></svg>Claude Code</div><div class="set-i" id="nav-claude-in-chrome"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4l6 16 2.4-6.6L20 11z"></path></svg>Claude in Chrome</div><div class="grp">This computer</div><div class="set-i" id="nav-system"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 4h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM8 20h8M12 16v4"></path></svg>System</div><div class="set-i" id="nav-extensions"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"></path></svg>Extensions</div><div class="set-i" id="nav-developer"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M14.5 6.5a4 4 0 0 0-5.5 5L3.5 17l3.5 3.5L12.5 15a4 4 0 0 0 5-5.5L15 12l-3-3z"></path></svg>Developer</div><div class="grp">Customize</div><div class="set-i" id="nav-skills"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 3h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM9 8h6M9 12h6M9 16h3"></path></svg>Skills</div><div class="set-i" id="nav-connectors"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 4h6v6H4zM4 14h6v6H4zM14 14h6v6h-6zM17 3l4 4-4 4-4-4z"></path></svg>Connectors</div><div class="set-i" id="nav-plugins"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"></path></svg>Plugins</div><div class="grp">Platform</div><div class="set-i" id="nav-api-keys"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M8 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM11 13l8-8M16 8l3 3"></path></svg>API keys<span style="margin-left:auto"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M7 17L17 7M8 7h9v9"></path></svg></span></div></div></div><div class="set-body"><div id="sv-general" class="abs" style="inset:0"><div style="position:absolute;left:16px;right:26px;top:16px"><div style="font-size:15px;font-weight:600;margin-bottom:12px">General</div><div style="display:flex;align-items:center;gap:40px;padding:14px 0;border-bottom:1px solid #f0f0ee"><div><div style="font-size:14px;margin-bottom:4px">Classify session states</div><div class="mute" style="font-size:13px;line-height:1.5">Allow Claude to automatically classify sessions as blocked, ready for review, or done. Classifying sessions counts towards your plan usage.</div></div><span class="tog" style="flex:none"></span></div><div style="display:flex;align-items:center;gap:40px;padding:14px 0;border-bottom:1px solid #f0f0ee"><div><div style="font-size:14px;margin-bottom:4px">Switch models when a message is flagged</div><div class="mute" style="font-size:13px;line-height:1.5">When safeguards flag a message, automatically switch to a different model to keep chatting. When off, your session will pause instead.</div></div><span class="tog" style="flex:none"></span></div><div style="font-size:15px;font-weight:600;margin:40px 0 16px">Code appearance</div><div style="display:flex;gap:16px"><div style="flex:1"><div class="field" style="height:26px;margin-bottom:14px">Claude Light <span style="margin-left:auto"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></span></div><div style="height:92px;border:1px solid #ececea;border-radius:6px;font-family:JetBrains Mono, monospace;font-size:12px;padding:8px 14px;line-height:1.6"><div>function greet(name: string) {</div><div style="background:#fde7e7">-   return &quot;Hello, &quot; + name;</div><div style="background:#e6f4e6">+   return `Hello, $${name}!`;</div><div>}</div></div></div><div style="flex:1"><div class="field" style="height:26px;margin-bottom:14px">Claude Dark <span style="margin-left:auto"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></span></div><div style="height:92px;border-radius:6px;background:#1f1f1e;color:#e8e8e6;font-family:JetBrains Mono, monospace;font-size:12px;padding:8px 14px;line-height:1.6"><div>function greet(name: string) {</div><div style="background:#5a2626">-   return &quot;Hello, &quot; + name;</div><div style="background:#2b4f2b">+   return `Hello, $${name}!`;</div><div>}</div></div></div></div></div></div><div id="sv-plugins" class="abs off" style="inset:0;background:#fff"><div style="position:absolute;left:20px;right:20px;top:16px;height:30px;display:flex;align-items:center;gap:16px"><span style="font-size:21px;font-weight:500">Plugins</span><span class="seg2"><span class="on">Yours</span><span class="">Discover</span></span><span class="field" style="margin-left:auto;width:232px;height:28px;color:#8b8b86"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM20 20l-4-4"></path></svg> Search</span><span class="btn dark" id="btn-add" style="height:28px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 5v14M5 12h14"></path></svg> Add <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></span></div><div style="position:absolute;left:20px;right:20px;top:60px;height:124px;background:#f4f4f2;border-radius:10px;padding:18px 16px"><div style="font-size:15px;font-weight:600;margin-bottom:8px">Add your first plugins</div><div class="mute" style="font-size:14px;margin-bottom:14px">Give Claude role-level expertise with plugins. Add them from Discover.</div><span class="btn dark">Discover plugins</span><svg width="50" height="56" viewBox="0 0 50 56" style="position:absolute;right:46px;top:34px" fill="none" stroke="#1f1f1e" stroke-width="2"><path d="M8 4h34v14H34v8h8v14H34v12H16V40H8V26h8v-8H8z"></path></svg></div><div style="position:absolute;left:20px;right:20px;top:212px;display:flex;align-items:center;gap:10px"><span style="font-size:15px;font-weight:500">In this project</span><span style="font-size:11px;background:#f1f1ef;border-radius:999px;padding:1px 7px">0</span><span class="btn line" style="margin-left:auto;height:34px;font-size:12px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> konte-workspace</span></div><div style="position:absolute;left:20px;top:258px;display:flex;align-items:center;gap:16px;color:#3d3d3a"><span style="width:34px;height:34px;border:1px solid #e3e3e0;border-radius:7px;display:flex;align-items:center;justify-content:center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></span>No plugins installed for this project yet.</div></div></div></div></div><div class="cursor" id="cursor" style="transform:translate(433.75px, 568.375px)"><div class="cursor-ring" id="cursor-ring"></div><svg id="cursor-arrow" width="30" height="44" viewBox="0 0 17 24" style="display:block"><path d="M1 1 L1 19 L5.6 14.8 L8.6 21.6 L11.4 20.4 L8.5 13.8 L14.6 13.8 Z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"></path></svg></div></div></div><script>(function () {
+window.__timelines = window.__timelines || {};
+var shotTl = window.__timelines["shot-05"];
+if (!shotTl) {
+  shotTl = gsap.timeline({ paused: true });
+  window.__timelines["shot-05"] = shotTl;
+}
+var tl = gsap.timeline();
+shotTl.add(tl, 0);
+var split = function (selector, options) {
+  var result = SplitText.create(document.querySelectorAll(selector), options);
+  return { chars: result.chars, words: result.words };
+};
+try {
+(({ timeline, split, data }) => {
+  const { ev, w, h } = data;
+  for (const e of ev) {
+    const d = e.d ?? 0.5, ease = e.ease ?? "power3.inOut";
+    if (e.cam) {
+      const [cx, cy, s] = e.cam, clamp = (v, lo) => Math.min(0, Math.max(lo, v)), v = { x: clamp(w / 2 - cx * s, w - w * s), y: clamp(h / 2 - cy * s, h - h * s), scale: s };
+      if (d === 0)
+        timeline.set("#cam", v, e.t);
+      else
+        timeline.to("#cam", { ...v, duration: d, ease }, e.t);
+    }
+    if (e.cur) {
+      const v = { x: e.cur[0], y: e.cur[1] };
+      if (d === 0)
+        timeline.set("#cursor", v, e.t);
+      else
+        timeline.to("#cursor", { ...v, duration: d, ease: e.ease ?? "power2.inOut" }, e.t);
+    }
+    if (e.click) {
+      timeline.to("#cursor-arrow", { scale: 0.82, duration: 0.07, yoyo: !0, repeat: 1, transformOrigin: "0% 0%" }, e.t);
+      timeline.fromTo("#cursor-ring", { scale: 0.2, opacity: 0.9 }, { scale: 1.6, opacity: 0, duration: 0.45, ease: "power2.out", immediateRender: !1 }, e.t);
+    }
+    if (e.show)
+      timeline.set(e.show, { autoAlpha: 1 }, e.t);
+    if (e.hide)
+      timeline.set(e.hide, { autoAlpha: 0 }, e.t);
+    if (e.pop)
+      timeline.fromTo(e.pop, { autoAlpha: 0, y: 8, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1, duration: e.d ?? 0.22, ease: "power3.out", immediateRender: !1 }, e.t);
+    if (e.vanish)
+      timeline.to(e.vanish, { autoAlpha: 0, scale: 0.98, duration: e.d ?? 0.15, ease: "power2.in" }, e.t);
+    if (e.type) {
+      const s = split(e.type, { type: "chars" });
+      timeline.set(s.chars, { display: "none" }, 0);
+      timeline.to(s.chars, { display: "inline", duration: 0.001, stagger: { amount: d } }, e.t);
+    }
+    if (e.press)
+      timeline.to(e.press, { scale: 0.95, duration: 0.08, yoyo: !0, repeat: 1, ease: "power2.out" }, e.t);
+    if (e.pulse)
+      timeline.fromTo(e.pulse, { boxShadow: "0 0 0 0px rgba(217,119,87,0.65)" }, { boxShadow: "0 0 0 10px rgba(217,119,87,0)", duration: 0.8, ease: "power2.out", immediateRender: !1 }, e.t);
+    if (e.y)
+      timeline.to(e.y[0], { y: e.y[1], duration: d, ease }, e.t);
+    if (e.spin)
+      timeline.to(e.spin[0], { rotation: 360 * e.spin[1], duration: d, ease: "none" }, e.t);
+    if (e.count) {
+      const [sel, from, to] = e.count, o = { v: from };
+      timeline.to(o, {
+        v: to,
+        duration: d,
+        ease: "none",
+        onUpdate: () => {
+          document.querySelectorAll(sel).forEach((el) => {
+            el.textContent = `${Math.round(o.v)}s`;
+          });
+        }
+      }, e.t);
+    }
+    if (e.wipe)
+      timeline.to(e.wipe, { backgroundSize: "100% 100%", duration: d, ease: "power2.inOut" }, e.t);
+    if (e.on)
+      timeline.set(e.on, { display: "inline" }, e.t);
+    if (e.off)
+      timeline.set(e.off, { display: "none" }, e.t);
+    if (e.bg)
+      timeline.set(e.bg, { backgroundColor: "rgba(0,0,0,0.055)" }, e.t);
+    if (e.unbg)
+      timeline.set(e.unbg, { backgroundColor: "rgba(0,0,0,0)" }, e.t);
+    if (e.dim)
+      timeline.to(e.dim[0], { autoAlpha: e.dim[1], duration: d, ease: "power2.inOut" }, e.t);
+  }
+})({ timeline: tl, split: split, data: JSON.parse("{\"ev\":[{\"t\":0,\"d\":0,\"cam\":[960,543.375,1]},{\"t\":0,\"pop\":\"#set\",\"d\":0.25},{\"t\":0.25,\"d\":0.55,\"cam\":[583.75,593.375,1.75]},{\"t\":0.3,\"d\":0.4,\"cur\":[446.25,693.375]},{\"t\":0.7,\"d\":0.6,\"y\":[\"#set-list\",-211]},{\"t\":1.25,\"d\":0.35,\"cur\":[421.25,855.875]},{\"t\":1.65,\"click\":true},{\"t\":1.7,\"bg\":\"#nav-plugins\"},{\"t\":1.7,\"unbg\":\"#nav-claude-code\"},{\"t\":1.72,\"show\":\"#sv-plugins\"},{\"t\":1.75,\"d\":0.55,\"cam\":[960,518.375,1.15]}],\"w\":1920,\"h\":1088}") });
+} catch (err) {
+  var msg = (err && err.message) ? err.message : String(err);
+  window.__konteAnimateErrors = window.__konteAnimateErrors || [];
+  window.__konteAnimateErrors.push({ shotId: "05", message: msg });
+  console.error("[konte] <Animate> script threw in shot " + "05" + ": " + msg +
+    " — every tween after the throw is missing. The script is serialized and run in the browser, so it cannot reference anything outside itself.");
+  var host=document.querySelector("[data-composition-id=\"shot-05\"]");if(host&&host.tagName==="META")host=null;host=host||document.getElementById("stage")||document.body;if(host){var box=document.createElement("div");box.setAttribute("data-konte-animate-error","shot-05");box.style.cssText="position:absolute;left:0;right:0;bottom:0;z-index:2147483647;background:#b00020;color:#fff;font:600 14px/1.4 ui-monospace,monospace;padding:10px 14px;white-space:pre-wrap;word-break:break-word;";box.textContent="konte: <Animate> script failed in "+"shot-05"+"\n"+msg;host.appendChild(box);}
+}
+})();</script><audio data-duration="1.079728" src="konte://asset/animatic/shot.05.vo/v-1i9p8xI3/ComfyUI_00373.mp3" data-konte-track="sound" data-start="0.1" data-volume="1.717908387157588"></audio></div><script>(function(){var g=window.gsap;if(!g||!g.timeline)return;window.__timelines=window.__timelines||{};var key="shot-05";var tl=window.__timelines[key];if(!tl||typeof tl.set!=="function"){tl=g.timeline({paused:true});window.__timelines[key]=tl;}tl.set({},{},2.5);})()</script>

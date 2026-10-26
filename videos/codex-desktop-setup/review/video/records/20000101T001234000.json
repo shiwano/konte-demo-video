@@ -1,0 +1,214 @@
+{
+  "mode": "video-preview",
+  "stage": "video",
+  "createdAt": "2000-01-01T00:12:34.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 4,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 6.5,
+        "duration": 3.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 10,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 12.5,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 15,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 17,
+        "duration": 3,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 20,
+        "duration": 3.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 23.5,
+        "duration": 3.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 27,
+        "duration": 2,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 29,
+        "duration": 3.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 32.5,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "14",
+        "start": 35,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {}
+      },
+      {
+        "shotId": "15",
+        "start": 37.5,
+        "duration": 2.5,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "16",
+        "start": 40,
+        "duration": 4,
+        "variants": {},
+        "takes": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "17",
+        "start": 44,
+        "duration": 3.5,
+        "variants": {},
+        "takes": {}
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {
+      "reference:bgm": "v-zEpF0CI2"
+    },
+    "contentHashes": {
+      "video:shot.01#composition": "e6dc338d3eb5f7c49b0d97c78ef2163aab8d9d170187959b0e3526d6adb5b40a",
+      "video:shot.02#composition": "cd8b023b96b40b6eae22a59587ed8530d35010054371e4c42263aa63258361a4",
+      "video:shot.03#composition": "bc45c6084bbfeb72096f758016266e09a90252d796e90ca3e485e518838d9869",
+      "video:shot.04#composition": "9155ac58ffc5b172a1f49597be6e16d11f19dc942192f7fbd2c1e44feb21e142",
+      "video:shot.05#composition": "072776255d1e81eafe9473c245b3f1d772f24640b9f0b7c0293d3141e585cc62",
+      "video:shot.06#composition": "2fe8829c481bef727e0b4b7ef7911699d9c4990693393db80902900297778b4b",
+      "video:shot.07#composition": "d9ff7f032944c4cc39ce5766985a62c861d0bb3e9f5c94c5f58566e7df0d267f",
+      "video:shot.08#composition": "36572e6760cdfffba0e46c4b6af86684990c9b06709109f54b697e31002a8e8f",
+      "video:shot.09#composition": "f82f8ad5a042038b4e639f3818b81db8b03ab64f18425db3c7d0ce3dcddf8168",
+      "video:shot.10#composition": "3a19ec70e204571e219384e1bfcf734a5ae7a5143d5c439bb08510ce05d9a3b3",
+      "video:shot.11#composition": "700e0eed7c96b6ce3a17108ce552d60412e333072db149a4e488cf865efd6609",
+      "video:shot.12#composition": "9da67dc23c66295c01391d92278076b7b92731340bad77f0a7e915a708929efc",
+      "video:shot.13#composition": "79bb512c94f9930839bdaa7ae86d46eccec4cfe79acde3eb94ddda7276fa8dc8",
+      "video:shot.14#composition": "a07b4a59d884e1e36b8d5cedcb4a48f87fb8a7bdeb24b4d48cb57ac55053b73a",
+      "video:shot.15#composition": "81e74f49a7d22d6e264e2409c84944807f0d3ddfea535cea713f50981ff3ab61",
+      "video:shot.16#composition": "4d9da8b954da9faecaff618ae36aab8dfae3e809cce70c4c96e42394ef13e35a",
+      "video:shot.17#composition": "2a1b2a3a6c8311255f16fa3463ebc3a4b11b636dc7649221f31428baf3d3e78f",
+      "video:shot.01#stem": "63b7584f45e59d8fa687e58f95c636eb97c9074764745eb7134f93a293449d47",
+      "video:shot.02#stem": "32f867b610b0394c5e0d72455b2e0fc9898f64924cd64c67737a0cca35915296",
+      "video:shot.03#stem": "89fa45cd73e2ac404688e8fe87914a941368eccfe1e365528f38976319f6c2c3",
+      "video:shot.04#stem": "5b90d6395153f7a176132d24f9f5d67bb1c6bc58f6d454f7812658028f0b3ecb",
+      "video:shot.05#stem": "0c9ac90342864f4cec903edd9bade20ca45cd6ffe0119e2db24c1873946ebfa8",
+      "video:shot.06#stem": "a50f71123bcc80c82d1714ed4e163950b788486b743ba64461b8662740de0a16",
+      "video:shot.07#stem": "3930df3b08ff92036cfdeb60afe8dd370fcd5aafdff642cf6d64df6f3c6229fe",
+      "video:shot.08#stem": "cc22d18989188cb7da389e18ad4b7d36bcf248dbd954caf9ec4156f1e07610cf",
+      "video:shot.09#stem": "3aefb544bc2874c4ae6f98715504e2c915e8a23643c485366be7268fab82d6f2",
+      "video:shot.10#stem": "be9d1ac697dad0df0f043c1b9aa9cff354626ff5026b0f80c9b8d9d36dccfdeb",
+      "video:shot.11#stem": "c39bea9e216c4302bc9e4c8d2af8cd99a0aef03e98118664da9126c5817086bd",
+      "video:shot.12#stem": "d52576203c0db36dad454543393825f43bb1b51593cdc503af832c7812468115",
+      "video:shot.13#stem": "62792a3559013327513d42a545a990d2129d8e67cbc901d0e1c6c86c776f5fbc",
+      "video:shot.14#stem": "416d64035c9d9cee939cac8be0f593c1050c92d8e6d73e7bd7cf510b702f3686",
+      "video:shot.15#stem": "b6ca433e1a51c94585993c01c3b05cbb1b15fbfb820337359af952510a4c3f5e",
+      "video:shot.16#stem": "3ce4aba0d9eecbb5e1c5e74cd1f8387cb4d4e1021868f6bf7ca9057944b1d0d8",
+      "video:shot.17#stem": "c093c27eb020fbe8c31576b1d8e5a6296a65941b4128c868c81f6c666a3ac679",
+      "video:timeline#stem": "a295ce97c46040870e68f6ae86c5664f6d330483e10a25aee22f55cd0994a2de"
+    }
+  },
+  "decisions": {},
+  "overallComment": "ごめん元の色に戻して",
+  "handoffId": "20000101T001233000",
+  "handoffSummary": "背景をクリーム色から、同じくらいの明るさの青系のグラデーションに変えました（全ショット共通）。ウィンドウと見出しの影も寒色に揃えています。",
+  "handoffNotes": [
+    {
+      "address": "video:shot.01",
+      "text": "背景を青系に変えました（全ショット共通）。"
+    },
+    {
+      "address": "video:shot.07",
+      "text": "「Browse directory」のボタンと下のメニューを、文字が収まる幅に広げました。"
+    }
+  ]
+}

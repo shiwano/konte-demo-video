@@ -1,0 +1,41 @@
+{
+  "kind": "comfy",
+  "workflow": "image_krea2_turbo_t2i.json",
+  "inputs": {
+    "52.text": "2D anime illustration with soft cel shading, clean thin dark-brown line art, gentle painterly gradients, painterly anime background art. The interior of a small old corner café at night after closing, its chairs and stools all vacant, seen from the far end of the counter at seated eye level. Along the left side runs a long dark wooden café counter with a glass coffee siphon, a row of clean white cups upside down on a cloth, and three wooden stools. At the right end of the counter by the glass-panelled door stands a dented brass umbrella stand. On the right wall a large rain-streaked café window looks onto a dark blue night street, rain running down the glass in thin bright lines, blurred streetlights beyond. In front of the window stands a small round wooden window table with two chairs. Warm amber light from three glass pendant lamps fills the room; the street outside is cold blue. Dark wood floor, a chalk menu board on the back wall.",
+    "53.width": 2496,
+    "53.height": 1248,
+    "54.seed": "__konte:seed__",
+    "54.steps": 8,
+    "58.vae_name": "qwen_image_vae.safetensors",
+    "57.clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+    "56.unet_name": "krea2_turbo_int8_convrot.safetensors"
+  },
+  "models": [
+    {
+      "filename": "krea2_turbo_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors"
+    },
+    {
+      "filename": "qwen_image_vae.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "52.text": "prompt",
+    "53.width": "width",
+    "53.height": "height",
+    "54.seed": "seed",
+    "54.steps": "steps",
+    "58.vae_name": "vaeName",
+    "57.clip_name": "clipName",
+    "56.unet_name": "unetName"
+  }
+}

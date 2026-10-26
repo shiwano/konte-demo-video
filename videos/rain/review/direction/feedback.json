@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "direction:sequence.shots.04": [
+      {
+        "id": "fb-7mB4twjL",
+        "displayedVariants": {},
+        "subjectHash": "40a9b997db83",
+        "annotation": null,
+        "text": "2.5s is right. The hand is the whole beat, so keep it short and let the cut do the work.",
+        "createdAt": "2000-01-01T00:14:00.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "direction:sequence.shots.06": [
+      {
+        "id": "fb-UYB45j7r",
+        "displayedVariants": {},
+        "subjectHash": "12a7b2350b0d",
+        "annotation": null,
+        "text": "Love ending on the title over her walking away. Hold it a little — no need to hurry the last frame.",
+        "createdAt": "2000-01-01T00:14:00.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "kind": "comfy",
+  "workflow": "video_minimax_h3_r2v.json",
+  "inputs": {
+    "137.image": "__konte:animatic:shot.04.first__",
+    "139.image": "__konte:reference:umbrella__",
+    "165.image": "__konte:animatic:shot.04.first__",
+    "136.prompt": "subject_definitions: <Picture 1> is the first frame of [Shot 1].\n<Subject 1> is the yellow umbrella in <Picture 2>, a worn mustard-yellow long umbrella with a curved bamboo crook handle.\n\nsummary: [keyframe completion + reference generation] An old hand lifts the yellow umbrella out of the brass umbrella stand.\n\nretention_analysis: <Picture 1> ([Shot 1] first frame): fully_preserved - the take opens on this exact frame.\n<Subject 1> (appears in [Shot 1]): fully_preserved - its mustard-yellow canopy and bamboo handle hold.\n\ndetailed_description: 2D-animated, painterly anime background art with soft cel-shaded figures and clean thin dark-brown line art. [Shot 1] The shot begins from <Picture 1>. The camera holds a static shot. The old man's thin hand tightens around the bamboo crook handle of <Subject 1> and lifts it steadily straight up; the furled mustard-yellow canopy slides up out of the brass stand, brushing the rim, and rises through the frame until the whole umbrella has left the frame at the top edge. The two black umbrella handles stay in the stand, rocking slightly where the yellow one brushed them, then settle. The brass stand, the floor and the blurred blue door glass behind hold the position they have in the first frame.\n\noverall_soundscape: Steady rain against the café's large window, soft drips from the eaves outside, the low hum of a quiet café after closing. The soft scrape of fabric against a brass rim as the umbrella is drawn out.\n\nnon_diegetic_music: N/A",
+    "136.width": 1248,
+    "136.height": 704,
+    "136.length": 73,
+    "136.ref_image_size": "max",
+    "129.noise_seed": "__konte:seed__",
+    "143.value": 20,
+    "146.value": false,
+    "130.fps": 24,
+    "127.unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "128.clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "119.vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+    "120.vae_name": "minimax_h3_audio_vae_fp32.safetensors",
+    "145.lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors"
+  },
+  "prunedNodes": [
+    "147",
+    "148",
+    "149",
+    "150",
+    "151",
+    "152",
+    "153",
+    "154",
+    "155",
+    "156",
+    "157",
+    "158",
+    "159",
+    "169",
+    "170",
+    "171",
+    "160",
+    "161",
+    "162",
+    "163",
+    "164",
+    "167",
+    "168"
+  ],
+  "prunedPassThroughs": {
+    "164": "positive",
+    "168": "positive"
+  },
+  "models": [
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    },
+    {
+      "filename": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+    },
+    {
+      "filename": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "type": "lora",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "137.image": "image1",
+    "139.image": "image2",
+    "165.image": "startImage",
+    "136.prompt": "prompt",
+    "136.width": "width",
+    "136.height": "height",
+    "136.length": "length",
+    "136.ref_image_size": "refImageSize",
+    "129.noise_seed": "seed",
+    "143.value": "steps",
+    "146.value": "useTurbo",
+    "130.fps": "fps",
+    "127.unet_name": "unetName",
+    "128.clip_name": "clipName",
+    "119.vae_name": "vaeName",
+    "120.vae_name": "audioVaeName",
+    "145.lora_name": "loraName"
+  }
+}

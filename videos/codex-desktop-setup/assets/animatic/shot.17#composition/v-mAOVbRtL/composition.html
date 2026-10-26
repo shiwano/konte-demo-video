@@ -1,0 +1,156 @@
+<div id="stage"><style>
+.scr{position:absolute;inset:0;overflow:hidden;background:radial-gradient(120% 90% at 50% 40%,#f4f1ea 0%,#e6e0d4 60%,#d9d1c3 100%);font-family:"Inter",system-ui,sans-serif;color:#1d1d1f;-webkit-font-smoothing:antialiased;}
+.cam{position:absolute;left:0;top:0;width:1920px;height:1088px;transform-origin:0 0;}
+.win{position:absolute;left:221.875px;top:40.25px;width:1181px;height:806px;transform:scale(1.25);transform-origin:0 0;background:#edf0f5;border:1px solid #c4c8cf;border-radius:8px;overflow:hidden;box-shadow:0 30px 80px rgba(60,45,25,.25),0 6px 18px rgba(60,45,25,.12);font-size:14px;}
+.off{visibility:hidden;opacity:0;}
+.abs{position:absolute;}
+.full{position:absolute;inset:0;}
+.cursor{position:absolute;left:0;top:0;z-index:80;pointer-events:none;}
+.cursor-ring{position:absolute;left:-24px;top:-24px;width:48px;height:48px;border-radius:50%;border:3px solid rgba(47,111,235,.95);opacity:0;}
+.step{position:absolute;left:64px;top:44px;z-index:90;display:flex;align-items:center;gap:20px;padding:14px 36px 14px 16px;border-radius:999px;background:rgba(29,29,31,.94);box-shadow:0 14px 40px rgba(40,30,20,.35);color:#fafafa;font-size:44px;font-weight:700;letter-spacing:-.015em;}
+.step-n{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:#2f6feb;color:#fff;font-size:34px;font-weight:800;}
+.blackout{position:absolute;inset:0;z-index:70;background:#0c0c0c;}
+
+.t{position:absolute;white-space:nowrap;display:flex;align-items:center;gap:8px;}
+.ic{position:absolute;color:#3c3c41;}
+.panel{position:absolute;left:52px;top:44px;right:4px;bottom:4px;border-radius:10px;background:#fff;border:1px solid #e2e5ea;overflow:hidden;}
+.sidebg{position:absolute;left:52px;top:44px;width:289px;bottom:4px;border-radius:10px 0 0 10px;background:#f8f9fb;border-right:1px solid #e6e8ec;}
+.rail-sel{position:absolute;left:8px;width:36px;height:36px;border-radius:10px;background:#dfe3ea;}
+.row{position:absolute;left:60px;width:272px;height:30px;border-radius:8px;}
+.row.sel{background:#e9ebef;}
+.mute{color:#8a8a90;}
+.faint{color:#b2b2b8;}
+
+.pbar{position:absolute;left:405px;top:650px;width:708px;height:46px;border-radius:14px 14px 0 0;background:#eeeff2;}
+.comp{position:absolute;left:391px;top:688px;width:736px;height:98px;border:1px solid #dcdde1;border-radius:20px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.04);}
+.cin{font-size:14px;color:#1d1d1f;white-space:pre;}
+.pick{color:#2462d6;font-weight:600;align-items:center;gap:5px;}
+.caret{display:inline-block;width:1.5px;height:17px;background:#1d1d1f;vertical-align:-3px;margin-left:1px;}
+.round{position:absolute;width:28px;height:28px;border-radius:50%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;}
+.sq{width:9px;height:9px;border-radius:2px;background:#fff;}
+
+.dimmer{position:absolute;inset:0;background:rgba(20,20,24,.16);}
+.modal{position:absolute;background:#fafafa;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.06);}
+.btn{position:absolute;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:9px;font-size:14px;font-weight:500;}
+.btn.dark{background:#1b1b1f;color:#fff;}
+.btn.dis{background:#a3a3a8;color:#f4f4f5;}
+.btn.line{border:1px solid #dcdde1;background:#fff;color:#1d1d1f;}
+.btn.flat{color:#7a7a80;}
+.field{position:absolute;border:1px solid #dcdde1;border-radius:9px;background:#fff;display:flex;align-items:center;padding:0 10px;font-size:14px;}
+
+.menu{position:absolute;background:#fff;border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.15),0 0 0 1px rgba(0,0,0,.06);}
+.mi{position:absolute;left:6px;right:6px;height:30px;border-radius:8px;display:flex;align-items:center;gap:10px;padding:0 10px;font-size:14px;white-space:nowrap;}
+.mi .k{margin-left:auto;color:#8a8a90;font-size:13.5px;}
+.msep{position:absolute;left:14px;right:14px;height:1px;background:#ececef;}
+
+.card{position:absolute;border:1px solid #e3e4e8;border-radius:14px;background:#fff;}
+.tog{position:absolute;width:32px;height:20px;border-radius:999px;background:#3b82f6;}
+.tog::after{content:"";position:absolute;right:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#fff;}
+.tog.lite{background:#93b8f5;}
+.sel-box{position:absolute;height:28px;border:1px solid #dcdde1;border-radius:8px;display:flex;align-items:center;gap:8px;padding:0 10px;font-size:13.5px;background:#fff;}
+
+.xp{position:absolute;background:#fff;border:1px solid #b7b7b7;box-shadow:0 18px 50px rgba(0,0,0,.25);font-family:"Inter",system-ui,sans-serif;font-size:13px;color:#1b1b1b;}
+.xp-row{display:flex;align-items:center;height:28px;}
+.xp-sel{background:#cce8ff;}
+
+.bubble{position:absolute;height:42px;border-radius:21px;background:#111;color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;padding:0 16px;}
+.work{position:absolute;left:391px;width:736px;height:22px;border-bottom:1px solid #e6e7ea;padding-bottom:12px;color:#8a8a90;font-size:14px;display:flex;align-items:center;gap:6px;}
+.para{position:absolute;left:391px;width:736px;font-size:14px;line-height:22px;color:#1d1d1f;}
+.cmd{position:absolute;left:391px;display:flex;align-items:center;gap:8px;color:#9a9aa0;font-size:13.5px;white-space:nowrap;}
+.mark{background-image:linear-gradient(rgba(47,111,235,.22),rgba(47,111,235,.22));background-repeat:no-repeat;background-size:100% 100%;}
+.skill{display:inline-flex;align-items:center;gap:4px;color:#2462d6;font-weight:600;}
+.qopt{position:absolute;left:408px;display:flex;align-items:center;gap:10px;font-size:14px;}
+.qn{width:20px;height:20px;border-radius:5px;background:#f0f0f2;border:1px solid #e3e4e8;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:#6b6b70;}
+</style><div class="scr"><div class="cam" id="cam"><div class="win"><div class="ic" style="left:12px;top:10px;color:#9b9ba1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></div><div class="ic" style="left:46px;top:10px;color:#c2c2c7"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></div><div class="ic" style="left:80px;top:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM9 4v16"></path></svg></div><div class="abs" id="file-hl" style="left:113px;top:6px;width:40px;height:25px;border-radius:6px;background:rgba(0,0,0,0)"></div><div class="t" style="left:123px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">File</div><div class="t" style="left:168px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">Edit</div><div class="t" style="left:216px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">View</div><div class="t" style="left:269px;top:7.5px;height:21px;font-size:14px;font-weight:400;color:#3c3c41">Help</div><div class="abs" style="left:1060px;top:18px;width:12px;height:1px;background:#3c3c41"></div><div class="abs" style="left:1107px;top:13px;width:10px;height:10px;border:1px solid #3c3c41"></div><div class="ic" style="left:1150.5px;top:10.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 6l12 12M18 6L6 18"></path></svg></div><div class="rail-sel" style="top:52px"></div><div class="ic" style="left:17px;top:61px;color:#1d1d1f"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"></path></svg></div><div class="ic" style="left:17px;top:105px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M8 4h11v14H8zM5 7v13h11"></path></svg></div><div class="ic" style="left:17px;top:149px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM12 7v5l3 2"></path></svg></div><div class="ic" style="left:17px;top:193px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1"></path></svg></div><div class="ic" style="left:17px;top:237px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h.01M12 12h.01M19 12h.01"></path></svg></div><div class="abs" style="left:14px;top:272px;width:24px;height:1px;background:#d4d7dd"></div><div class="ic" style="left:17px;top:289px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM6 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM18 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM6 8v8M18 10c0 4-6 3-12 6"></path></svg></div><div class="ic" style="left:17px;top:334px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></svg></div><div class="round" style="left:14px;top:724px;width:24px;height:24px;background:#2f80f6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"></path></svg></div><div class="round" id="avatar" style="left:14px;top:768px;width:24px;height:24px;background:#8a8f98;font-size:9.5px;font-weight:600">AL</div><div class="sidebg"></div><div class="t" style="left:68px;top:57px;height:26px;font-size:17px;font-weight:600">Codex <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></div><div class="ic" style="left:272px;top:62px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"></path></svg></div><div class="abs" style="left:283px;top:61px;width:6px;height:6px;border-radius:50%;background:#2f80f6"></div><div class="ic" style="left:306px;top:62px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM20 20l-4-4"></path></svg></div><div class="ic" style="left:68.5px;top:104.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 20h4L19 9l-4-4L4 16zM13 7l4 4"></path></svg></div><div class="t" style="left:92px;top:101.5px;height:21px;font-size:14px;font-weight:400">New chat</div><div class="t" style="left:68px;top:174.5px;height:21px;font-size:14px;font-weight:400;color:#6b6b70">Projects</div><div class="row sel" style="top:204px"></div><div class="ic" style="left:68.5px;top:211.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v1M3 7v10a2 2 0 0 0 2 2h12l3-8H7l-3 8"></path></svg></div><div class="t" style="left:92px;top:208.5px;height:21px;font-size:14px;font-weight:400">konte-workspace</div><div><div class="row sel" style="top:234px"></div><div class="t" style="left:92px;top:238.5px;height:21px;font-size:14px;font-weight:400">Run konte session check-in</div><div class="abs" style="left:306px;top:242px"><svg id="chat-sp0" width="14" height="14" viewBox="0 0 24 24" style="flex:none;display:block"><circle cx="12" cy="12" r="9" fill="none" stroke="#dcdce0" stroke-width="2.6"></circle><path d="M12 3a9 9 0 0 1 9 9" fill="none" stroke="#6b6b70" stroke-width="2.6" stroke-linecap="round"></path></svg></div></div><div><div class="row" style="top:265px"></div><div class="t" style="left:92px;top:269.5px;height:21px;font-size:14px;font-weight:400">Set up Konte</div></div><div class="t" style="left:68px;top:316.5px;height:21px;font-size:14px;font-weight:400;color:#6b6b70">Recents <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 18l6-6-6-6"></path></svg></div><div class="full" id="c-main"><div class="panel" style="left:341px;border-radius:0 10px 10px 0;border-left:none"></div><div class="t" style="left:360px;top:59.5px;height:21px;font-size:14px;font-weight:600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>Run konte session check-in</div><div class="ic" style="left:1067.5px;top:61.5px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 12h.01M12 12h.01M19 12h.01"></path></svg></div><div class="ic" style="left:1102px;top:62px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 6h2M9 6h11M4 12h2M9 12h11M4 18h2M9 18h11"></path></svg></div><div class="abs" style="left:1131px;top:60px;width:1px;height:20px;background:#e2e3e7"></div><div class="ic" style="left:1143.5px;top:62.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM12 8v8M8 12h8"></path></svg></div><div class="bubble off" id="c-bubble" style="left:993px;top:112px">$konte-checkin</div><div class="work off" id="c-work" style="top:190px">Working for <span id="c-secs">1s</span></div><div class="para off" id="c-p1" style="top:232px">Following konte-checkin to see which piece is in progress and where it stands.</div><div class="cmd off" id="c-c1" style="top:268px;color:#7a7a80"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M14.5 6.5a4 4 0 0 0-5.5 5L3.5 17l3.5 3.5L12.5 15a4 4 0 0 0 5-5.5L15 12l-3-3z"></path></svg>Loaded a tool, ran commands</div><div class="para off" id="c-p2" style="top:302px">This workspace has no videos yet. I'd suggest starting by shaping the concept for your first piece.</div><div class="para off" id="c-p3" style="top:338px">What should your first piece start from?</div><div class="para off" id="c-p4" style="top:374px">Tell me what you have in mind — what it's for, where it'll be shown, and what you picture.</div><div class="cmd off" id="c-think" style="top:414px;color:#a8a8ae;font-size:14px">Thinking</div><div class="card off" id="c-q" style="left:391px;top:466px;width:736px;height:258px;border-radius:20px;box-shadow:0 4px 18px rgba(0,0,0,.06)"><div class="t" style="left:17px;top:17px;height:20px;font-size:13px;font-weight:400;color:#6b6b70"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4M12 16.5h.01"></path></svg>Question</div><div class="t" style="left:614px;top:19.5px;height:19px;font-size:12.5px;font-weight:400;color:#6b6b70"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M15 18l-6-6 6-6"></path></svg> 1 of 2 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M9 18l6-6-6-6"></path></svg><span style="margin-left:16px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 6l12 12M18 6L6 18"></path></svg></span></div><div class="t" style="left:17px;top:52.5px;height:21px;font-size:14px;font-weight:600">What should your first piece start from?</div><div class="t" style="left:17px;top:90.5px;height:21px;font-size:14px;font-weight:400"><span class="qn">1</span><span style="font-weight:500">Talk through an idea and shape the concept together (recommended)</span></div><div class="t" style="left:17px;top:127.5px;height:21px;font-size:14px;font-weight:400"><span class="qn">2</span><span style="font-weight:500">Use a script or shot list you already have</span></div><div class="t" style="left:17px;top:164.5px;height:21px;font-size:14px;font-weight:400"><span class="qn">3</span><span style="font-weight:500">Start from material or references you have</span></div><div class="abs" style="left:0;right:0;top:196px;height:62px;border-top:1px solid #f0f0f2;border-radius:0 0 20px 20px;background:#fbfbfc"></div><div class="t" style="left:25px;top:216.5px;height:21px;font-size:14px;font-weight:400;color:#a8a8ae"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M4 20h4L19 9l-4-4L4 16zM13 7l4 4"></path></svg><span style="margin-left:6px">Or write your own response</span></div><div class="ic" style="left:591px;top:219px;color:#3c3c41"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"></path></svg></div><div class="btn line" style="left:621px;top:214px;width:42px;height:27px;border-radius:999px;font-size:13px">Skip</div><div class="btn dis" style="left:672px;top:214px;width:46px;height:27px;border-radius:999px;font-size:13px">Next</div></div><div class="comp" style="top:738px;height:48px;border-radius:18px"></div><div class="ic" style="left:404px;top:753px;color:#1d1d1f"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 5v14M5 12h14"></path></svg></div><div class="t" style="left:432px;top:751.5px;height:21px;font-size:14px;font-weight:400;color:#a8a8ae">Work with Codex</div><div class="t" style="left:880px;top:752px;height:20px;font-size:13px;font-weight:400">GPT-6.1 Sol <span class="mute">Medium</span> <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8a8a90" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M6 9l6 6 6-6"></path></svg></div><div class="ic" style="left:1033.5px;top:754.5px;color:#6b6b70"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></svg></div><div class="ic" style="left:1060.5px;top:753.5px;color:#1d1d1f"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;display:block"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"></path></svg></div><div class="round" style="left:1091px;top:748px"><span class="sq"></span></div></div></div></div></div><script>(function () {
+window.__timelines = window.__timelines || {};
+var shotTl = window.__timelines["shot-17"];
+if (!shotTl) {
+  shotTl = gsap.timeline({ paused: true });
+  window.__timelines["shot-17"] = shotTl;
+}
+var tl = gsap.timeline();
+shotTl.add(tl, 0);
+var split = function (selector, options) {
+  var result = SplitText.create(document.querySelectorAll(selector), options);
+  return { chars: result.chars, words: result.words };
+};
+try {
+(({ timeline, split, data }) => {
+  const { ev, w, h } = data;
+  for (const e of ev) {
+    const d = e.d ?? 0.5, ease = e.ease ?? "power3.inOut";
+    if (e.cam) {
+      const [cx, cy, s] = e.cam, clamp = (v, lo) => Math.min(0, Math.max(lo, v)), v = { x: clamp(w / 2 - cx * s, w - w * s), y: clamp(h / 2 - cy * s, h - h * s), scale: s };
+      if (d === 0)
+        timeline.set("#cam", v, e.t);
+      else
+        timeline.to("#cam", { ...v, duration: d, ease }, e.t);
+    }
+    if (e.cur) {
+      const v = { x: e.cur[0], y: e.cur[1] };
+      if (d === 0)
+        timeline.set("#cursor", v, e.t);
+      else
+        timeline.to("#cursor", { ...v, duration: d, ease: e.ease ?? "power2.inOut" }, e.t);
+    }
+    if (e.click) {
+      timeline.to("#cursor-arrow", { scale: 0.82, duration: 0.07, yoyo: !0, repeat: 1, transformOrigin: "0% 0%" }, e.t);
+      timeline.fromTo("#cursor-ring", { scale: 0.2, opacity: 0.9 }, { scale: 1.6, opacity: 0, duration: 0.45, ease: "power2.out", immediateRender: !1 }, e.t);
+    }
+    if (e.show)
+      timeline.set(e.show, { autoAlpha: 1 }, e.t);
+    if (e.hide)
+      timeline.set(e.hide, { autoAlpha: 0 }, e.t);
+    if (e.pop)
+      timeline.fromTo(e.pop, { autoAlpha: 0, y: 8, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1, duration: e.d ?? 0.22, ease: "power3.out", immediateRender: !1 }, e.t);
+    if (e.vanish)
+      timeline.to(e.vanish, { autoAlpha: 0, scale: 0.98, duration: e.d ?? 0.15, ease: "power2.in" }, e.t);
+    if (e.type) {
+      const s = split(e.type, { type: "chars" });
+      timeline.set(s.chars, { display: "none" }, 0);
+      timeline.to(s.chars, { display: "inline", duration: 0.001, stagger: { amount: d } }, e.t);
+    }
+    if (e.press)
+      timeline.to(e.press, { scale: 0.95, duration: 0.08, yoyo: !0, repeat: 1, ease: "power2.out" }, e.t);
+    if (e.pulse)
+      timeline.fromTo(e.pulse, { boxShadow: "0 0 0 0px rgba(47,111,235,0.55)" }, { boxShadow: "0 0 0 10px rgba(47,111,235,0)", duration: 0.8, ease: "power2.out", immediateRender: !1 }, e.t);
+    if (e.y)
+      timeline.to(e.y[0], { y: e.y[1], duration: d, ease }, e.t);
+    if (e.spin)
+      timeline.to(e.spin[0], { rotation: 360 * e.spin[1], duration: d, ease: "none", transformOrigin: "50% 50%" }, e.t);
+    if (e.count) {
+      const [sel, from, to] = e.count, o = { v: from };
+      timeline.to(o, {
+        v: to,
+        duration: d,
+        ease: "none",
+        onUpdate: () => {
+          document.querySelectorAll(sel).forEach((el) => {
+            el.textContent = `${Math.round(o.v)}s`;
+          });
+        }
+      }, e.t);
+    }
+    if (e.wipe)
+      timeline.to(e.wipe, { backgroundSize: "100% 100%", duration: d, ease: "power2.inOut" }, e.t);
+    if (e.on)
+      timeline.set(e.on, { display: "inline" }, e.t);
+    if (e.off)
+      timeline.set(e.off, { display: "none" }, e.t);
+    if (e.bg)
+      timeline.set(e.bg, { backgroundColor: "rgba(0,0,0,0.06)" }, e.t);
+    if (e.unbg)
+      timeline.set(e.unbg, { backgroundColor: "rgba(0,0,0,0)" }, e.t);
+    if (e.dim)
+      timeline.to(e.dim[0], { autoAlpha: e.dim[1], duration: d, ease: "power2.inOut" }, e.t);
+  }
+})({ timeline: tl, split: split, data: JSON.parse("{\"ev\":[{\"t\":0,\"d\":0,\"cam\":[1171.875,352.75,1.45]},{\"t\":0,\"pop\":\"#c-bubble\",\"d\":0.25},{\"t\":0.2,\"pop\":\"#c-work\",\"d\":0.2},{\"t\":0.2,\"d\":3.2,\"count\":[\"#c-secs\",1,24]},{\"t\":0,\"d\":3.5,\"spin\":[\"#chat-sp0\",4]},{\"t\":0.45,\"pop\":\"#c-p1\",\"d\":0.2},{\"t\":0.8,\"pop\":\"#c-c1\",\"d\":0.2},{\"t\":0.5,\"d\":0.8,\"cam\":[1171.875,415.25,1.6]},{\"t\":1.15,\"pop\":\"#c-p2\",\"d\":0.2},{\"t\":1.4,\"pop\":\"#c-p3\",\"d\":0.2},{\"t\":1.6,\"pop\":\"#c-p4\",\"d\":0.2},{\"t\":1.8,\"pop\":\"#c-think\",\"d\":0.2},{\"t\":1.9,\"d\":0.9,\"cam\":[1096.875,577.75,1.25]},{\"t\":2.2,\"pop\":\"#c-q\",\"d\":0.35}],\"w\":1920,\"h\":1088}") });
+} catch (err) {
+  var msg = (err && err.message) ? err.message : String(err);
+  window.__konteAnimateErrors = window.__konteAnimateErrors || [];
+  window.__konteAnimateErrors.push({ shotId: "17", message: msg });
+  console.error("[konte] <Animate> script threw in shot " + "17" + ": " + msg +
+    " — every tween after the throw is missing. The script is serialized and run in the browser, so it cannot reference anything outside itself.");
+  var host=document.querySelector("[data-composition-id=\"shot-17\"]");if(host&&host.tagName==="META")host=null;host=host||document.getElementById("stage")||document.body;if(host){var box=document.createElement("div");box.setAttribute("data-konte-animate-error","shot-17");box.style.cssText="position:absolute;left:0;right:0;bottom:0;z-index:2147483647;background:#b00020;color:#fff;font:600 14px/1.4 ui-monospace,monospace;padding:10px 14px;white-space:pre-wrap;word-break:break-word;";box.textContent="konte: <Animate> script failed in "+"shot-17"+"\n"+msg;host.appendChild(box);}
+}
+})();</script><audio data-duration="1.880816" src="konte://asset/animatic/shot.17.vo/v-EIXQNPks/ComfyUI_00409.mp3" data-konte-track="sound" data-start="0.1" data-volume="1.3963683610559374"></audio></div><script>(function(){var g=window.gsap;if(!g||!g.timeline)return;window.__timelines=window.__timelines||{};var key="shot-17";var tl=window.__timelines[key];if(!tl||typeof tl.set!=="function"){tl=g.timeline({paused:true});window.__timelines[key]=tl;}tl.set({},{},3.5);})()</script>

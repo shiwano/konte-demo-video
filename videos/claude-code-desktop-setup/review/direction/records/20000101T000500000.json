@@ -1,0 +1,76 @@
+{
+  "mode": "direction-preview",
+  "stage": "direction",
+  "createdAt": "2000-01-01T00:05:00.000Z",
+  "context": {
+    "shots": [],
+    "directionParts": {
+      "direction:sequence": "a0bdabadbed0",
+      "direction:brief.logline": "733a44fe4d7a",
+      "direction:brief.hook": "c17e4b4f82c0",
+      "direction:brief.audience": "757c03e88de9",
+      "direction:brief.tone": "6a28349b11cb",
+      "direction:brief.look": "8b87845afda9",
+      "direction:brief.outOfScope": "e398110a5a19",
+      "direction:brief.tolerances": "4f53cda18c2b",
+      "direction:policy.format": "78cc3f194f8b",
+      "direction:policy.lang": "50eac10e7966",
+      "direction:policy.fonts": "9ed7e743ec15",
+      "direction:policy.speech": "83f6b6204ca5",
+      "direction:sequence.shots.01": "fcbe9c685054",
+      "direction:sequence.shots.02": "33a8075ea5ac",
+      "direction:sequence.shots.03": "fe9dd0ab0182",
+      "direction:sequence.shots.04": "7c2aee4973f9",
+      "direction:sequence.shots.05": "ff7f057f0adf",
+      "direction:sequence.shots.06": "65d808750903",
+      "direction:sequence.shots.07": "63da673b9022",
+      "direction:sequence.shots.08": "a15fee48dc06",
+      "direction:sequence.shots.09": "d0ab9a9edf78",
+      "direction:sequence.shots.10": "4773c8507293",
+      "direction:sequence.shots.11": "bfe9a7017192",
+      "direction:sequence.shots.12": "32cfe82a627f",
+      "direction:sequence.shots.13": "13e4ab4039d9",
+      "direction:sequence.shots.14": "043cc352d58c",
+      "direction:sequence.shots.15": "7f20e14d8ba0",
+      "direction:sequence.shots.16": "ca7eb5aec592",
+      "direction:sequence.shots.17": "cfa9e171324f",
+      "direction:narrator": "c824fa5108c9"
+    }
+  },
+  "decisions": [],
+  "directionDecisions": {
+    "brief": "accepted",
+    "policy": "accepted",
+    "characters": "accepted",
+    "shots": "accepted"
+  },
+  "directionGate": {
+    "open": true,
+    "blocking": 0,
+    "total": 30
+  },
+  "handoffId": "20000101T000459000",
+  "handoffSummary": "README の Quick start（Claude Code デスクトップ版）の導入手順動画、17ショット・約38秒です。英語ナレーションと字幕、手順ごとに見出しを出します。構成担当の点検2回分を反映済みです。",
+  "handoffNotes": [
+    {
+      "address": "direction:sequence.shots.14",
+      "text": "新しく足したショットです。konte の setup は「アプリを完全に終了して起動し直す」よう伝える仕様なので、その一文を画面に出して寄ります。"
+    },
+    {
+      "address": "direction:sequence.shots.15",
+      "text": "アプリの終了操作は「左上のメニュー → File → Exit」と仮に書きました。Windows 版の実際の終了操作と違っていたら教えてください。"
+    },
+    {
+      "address": "direction:sequence.shots.11",
+      "text": "Settings を × で閉じてから New を押し、konte-workspace を開いたままの新しいセッションへ移る流れにしました。"
+    },
+    {
+      "address": "direction:sequence.shots.10",
+      "text": "Add を押す場面と Added・トーストの場面を、ひとつのショットにまとめました。"
+    },
+    {
+      "address": "direction:sequence.shots.03",
+      "text": "Trust を押すとフォルダ欄が konte-workspace に変わるところまで見せます。"
+    }
+  ]
+}

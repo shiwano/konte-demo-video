@@ -1,0 +1,26 @@
+{
+  "stage": "animatic",
+  "summary": "全17ショット・約42秒の絵コンテです。画面の動きはすべて JSX で作った完成形で、ナレーションも入っています（BGM・効果音・字幕は次の video 段階で重ねます）。",
+  "notes": [
+    {
+      "address": "animatic:shot.12",
+      "text": "「konte setup」の発音が崩れやすかったので、6回引き直して聞き取れるテイクを選びました。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "「konte checkin」も同じく引き直し済みです。最後に Enter で送信して入力欄が空になるところまで見せます。"
+    },
+    {
+      "address": "animatic:shot.01",
+      "text": "ナレーションが尺をわずかにはみ出したので、約5%速めて収めています。"
+    },
+    {
+      "address": "animatic:shot.14",
+      "text": "同じく約8%速めています。"
+    },
+    {
+      "address": "animatic:shot.15",
+      "text": "アプリの終了は「左上のメニュー → File → Exit」で描いています。実際の操作と違えば教えてください。"
+    }
+  ]
+}

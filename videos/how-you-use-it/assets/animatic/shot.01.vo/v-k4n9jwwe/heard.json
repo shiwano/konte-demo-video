@@ -1,0 +1,25 @@
+{
+  "outputHash": "836359c350a68ff4fff5ebe4a8632cedca38dff7aa37d99cd10d890117688c3b",
+  "heard": [
+    {
+      "text": "star",
+      "startSec": 0.12
+    },
+    {
+      "text": "t",
+      "startSec": 0.18
+    },
+    {
+      "text": " with",
+      "startSec": 0.36
+    },
+    {
+      "text": " one",
+      "startSec": 0.6
+    },
+    {
+      "text": " command",
+      "startSec": 0.9
+    }
+  ]
+}

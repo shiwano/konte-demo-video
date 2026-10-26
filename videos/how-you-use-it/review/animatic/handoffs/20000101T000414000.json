@@ -1,0 +1,14 @@
+{
+  "stage": "animatic",
+  "summary": "Submit ボタンを UI の右下に戻して、UI と一緒にズームするようにしました。",
+  "notes": [
+    {
+      "address": "animatic:shot.03",
+      "text": "カーソルを消しました。Submit ボタンは UI 右下のフローティング位置に戻したので、UI と一緒にズームします（カメラが UI の左上に寄っている間は、画面の外になります）。"
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "カメラを動かさず、ページ全体が入る等倍のフレームに固定しました。カーソルだけが Accept all から右下の Submit へ動きます。"
+    }
+  ]
+}

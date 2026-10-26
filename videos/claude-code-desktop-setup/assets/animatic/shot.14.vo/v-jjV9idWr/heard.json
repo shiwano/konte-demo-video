@@ -1,0 +1,33 @@
+{
+  "outputHash": "3ad0e220688f27e37830094a58a8c1f1f154a82706c9abaa50cae1f29a391336",
+  "heard": [
+    {
+      "text": "t",
+      "startSec": 0.06
+    },
+    {
+      "text": "hen",
+      "startSec": 0.12
+    },
+    {
+      "text": " quit",
+      "startSec": 0.6
+    },
+    {
+      "text": " and",
+      "startSec": 0.96
+    },
+    {
+      "text": " reopen",
+      "startSec": 1.2
+    },
+    {
+      "text": " the",
+      "startSec": 1.62
+    },
+    {
+      "text": " app",
+      "startSec": 1.8
+    }
+  ]
+}

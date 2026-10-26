@@ -1,0 +1,34 @@
+{
+  "stage": "direction",
+  "summary": "konte 0.3.5 に合わせ、旧方式のテイクを保つためにつなぎ目の見逃し扱いを7件追加しました。承認をお願いします。",
+  "notes": [
+    {
+      "address": "direction:waivers.join-unshown_04",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    },
+    {
+      "address": "direction:waivers.join-unshown_07",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    },
+    {
+      "address": "direction:waivers.join-unshown_09",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    },
+    {
+      "address": "direction:waivers.join-unshown_11",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    },
+    {
+      "address": "direction:waivers.join-unshown_13",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    },
+    {
+      "address": "direction:waivers.join-unshown_15",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    },
+    {
+      "address": "direction:waivers.join-unshown_32",
+      "text": "旧konteで作ったテイクは最終フレームに着地する旧方式のため、つなぎ目の指摘を見逃し扱いにしました。承認済みのテイクと書き出し済みの動画はそのままです。"
+    }
+  ]
+}

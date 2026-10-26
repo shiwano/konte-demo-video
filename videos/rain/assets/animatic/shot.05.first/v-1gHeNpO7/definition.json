@@ -1,0 +1,69 @@
+{
+  "kind": "comfy",
+  "workflow": "image_minimax_h3_r2i.json",
+  "inputs": {
+    "21.image": "__konte:reference:cafe__",
+    "22.image": "__konte:reference:owner__",
+    "23.image": "__konte:reference:girl__",
+    "24.image": "__konte:reference:umbrella__",
+    "10.prompt": "subject_definitions: <Subject 1> is the corner café in <Picture 1>: the small round wooden window table and the large rain-streaked café window behind it.\n<Subject 2> is the elderly man in a gray cardigan and brown apron, short white hair, round thin gold wire glasses, a white collared shirt under the gray wool cardigan, a long brown canvas apron, as in <Picture 2>.\n<Subject 3> is the young woman in a navy duffle coat with cream toggle buttons over a cream cable-knit sweater, shoulder-length straight black hair with the ends damp and separated into strands, as in <Picture 3>; her expression is remade as the description writes it.\n<Subject 4> is the yellow umbrella, a worn mustard-yellow long umbrella with a curved bamboo crook handle, as in <Picture 4>.\n\nsummary: [reference generation] A medium two-shot at the window table: the owner holds the furled yellow umbrella out to the seated girl.\n\nretention_analysis: <Subject 1> (appears in [Shot 1]): attribute_transfer - the window table, the rainy window and the amber light are carried to a side-on medium camera.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, glasses, hair, cardigan and apron are kept.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, damp black hair and the navy duffle coat are kept; she is seated.\n<Subject 4> (appears in [Shot 1]): fully_preserved - the mustard-yellow furled canopy and the bamboo crook handle are kept.\n\ndetailed_description: 2D-animated, painterly anime background art with soft cel-shaded figures and clean thin dark-brown line art. [Shot 1] A medium two-shot side-on to the window table at standing eye level, the large rain-streaked café window filling the back of the frame. On the left, <Subject 2> stands beside the table, seen from the knees up, torso turned three-quarters toward screen right, leaning slightly forward from the waist; his right arm extends forward and a little down toward screen right, elbow nearly straight, and his right hand holds <Subject 4> horizontally by its middle, the bamboo crook handle pointing toward the girl, the furled mustard-yellow canopy lying along his forearm. His head tilts toward her, his eyes behind the round gold glasses looking down at her, a small closed-mouth smile. On the right, <Subject 3> sits at the small round wooden window table, seen from the waist up, torso facing screen left toward him, her hands still around the white cup on the table; her head is tilted up toward his face, her eyes lifted to him and slightly widened, her lips just parted in surprise. The umbrella's bamboo handle hangs in the gap between them, about a hand's width from her shoulder. Both figures meet the dark wood floor, his shoes beside the table leg. Warm amber light from glass pendant lamps fills the café; the street beyond the window is cold night blue, rain running down the glass in thin bright lines. The yellow umbrella is the most saturated thing in the frame.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",
+    "10.width": 1248,
+    "10.height": 704,
+    "10.ref_image_size": "max",
+    "11.noise_seed": "__konte:seed__",
+    "13.steps": 20,
+    "1.unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "2.clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "3.vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+    "4.vae_name": "minimax_h3_audio_vae_fp32.safetensors",
+    "10.length": 5,
+    "17.batch_index": 0
+  },
+  "prunedNodes": [
+    "25",
+    "26",
+    "27",
+    "28",
+    "29"
+  ],
+  "models": [
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "type": "diffusion_model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "clip",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+    },
+    {
+      "filename": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "type": "VAE",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+    }
+  ],
+  "inputLabels": {
+    "21.image": "image1",
+    "22.image": "image2",
+    "23.image": "image3",
+    "24.image": "image4",
+    "10.prompt": "prompt",
+    "10.width": "width",
+    "10.height": "height",
+    "10.ref_image_size": "refImageSize",
+    "11.noise_seed": "seed",
+    "13.steps": "steps",
+    "1.unet_name": "unetName",
+    "2.clip_name": "clipName",
+    "3.vae_name": "vaeName",
+    "4.vae_name": "audioVaeName",
+    "10.length": "length",
+    "17.batch_index": "frameIndex"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "video",
+  "summary": "背景を元のクリーム色に戻しました。7番のボタン修正は残しています。",
+  "notes": [
+    {
+      "address": "video:shot.07",
+      "text": "「Browse directory」のボタンと下のメニューを、文字が収まる幅に広げました。"
+    },
+    {
+      "address": "video:shot.06",
+      "text": "7番と同じ Plugins 画面が映るため、ボタン幅の修正が反映されています。"
+    },
+    {
+      "address": "video:shot.08",
+      "text": "7番と同じ Plugins 画面が映るため、ボタン幅の修正が反映されています。"
+    },
+    {
+      "address": "video:shot.09",
+      "text": "7番と同じ Plugins 画面が映るため、ボタン幅の修正が反映されています。"
+    }
+  ]
+}

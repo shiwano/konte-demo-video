@@ -1,0 +1,37 @@
+{
+  "outputHash": "4cebbff52381b0a9119eaa5c814c23c64be99ba7bf4f8641ecfd17409db8d227",
+  "heard": [
+    {
+      "text": "c",
+      "startSec": 0.12
+    },
+    {
+      "text": "re",
+      "startSec": 0.24
+    },
+    {
+      "text": "ate",
+      "startSec": 0.36
+    },
+    {
+      "text": " it",
+      "startSec": 0.48
+    },
+    {
+      "text": " and",
+      "startSec": 0.9
+    },
+    {
+      "text": " trust",
+      "startSec": 1.26
+    },
+    {
+      "text": " the",
+      "startSec": 1.68
+    },
+    {
+      "text": " folder",
+      "startSec": 1.86
+    }
+  ]
+}

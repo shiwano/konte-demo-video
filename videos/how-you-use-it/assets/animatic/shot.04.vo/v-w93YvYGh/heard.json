@@ -1,0 +1,17 @@
+{
+  "outputHash": "29241cbe13b53ecc9168a7ee7e62fc3be19847fed4222433d8d8bd0ba08341ba",
+  "heard": [
+    {
+      "text": "you",
+      "startSec": 0.06
+    },
+    {
+      "text": " accept",
+      "startSec": 0.3
+    },
+    {
+      "text": " it",
+      "startSec": 0.66
+    }
+  ]
+}

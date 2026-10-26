@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "video:shot.07": [
+      {
+        "id": "fb-DnrwzfNR",
+        "displayedVariants": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "animatic:shot.07#narrationStem": "v-BUKWAslT",
+          "video:shot.07#composition": "v-jO58mgSL"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.07#composition": "790abd76eeb2",
+          "video:shot.07#stem": "d890029a57c7"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.539,
+          "y": 0.366
+        },
+        "time": 16.566666666666666,
+        "shotTime": 1.5666666666666664,
+        "text": "ここボタンがおかしい",
+        "createdAt": "2000-01-01T00:12:30.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video": [
+      {
+        "id": "fb-iMv4jlyg",
+        "displayedVariants": {},
+        "annotation": null,
+        "text": "背景はクリーム色じゃなくて、青系の似た明度のやつにしたいな",
+        "createdAt": "2000-01-01T00:12:32.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-5nOQe0tk",
+        "displayedVariants": {},
+        "annotation": null,
+        "text": "ごめん元の色に戻して",
+        "createdAt": "2000-01-01T00:12:34.000Z",
+        "createdBy": "local"
+      }
+    ],
+    "video:shot.12": [
+      {
+        "id": "fb-1XtIgloZ",
+        "displayedVariants": {
+          "reference:sfxTyping": "v-K9lrI4EW",
+          "animatic:shot.12#narrationStem": "v-Bomd8HeA",
+          "video:shot.12#composition": "v-tn7jIpX3"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.12#composition": "984f28b91312",
+          "video:shot.12#stem": "f364943068c0"
+        },
+        "annotation": null,
+        "text": "setup いえてなくない？",
+        "time": 30.866666666666667,
+        "shotTime": 1.8666666666666671,
+        "createdAt": "2000-01-01T00:12:37.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "outputHash": "8587ef01d78eee65aa2d909c7e92517173b4473368703e1091abc4eba4876a8c",
+  "heard": [
+    {
+      "text": "the",
+      "startSec": 0.06
+    },
+    {
+      "text": " agent",
+      "startSec": 0.24
+    },
+    {
+      "text": " draw",
+      "startSec": 0.66
+    },
+    {
+      "text": "s",
+      "startSec": 0.9
+    },
+    {
+      "text": " a",
+      "startSec": 1.02
+    },
+    {
+      "text": " time",
+      "startSec": 1.26
+    },
+    {
+      "text": "d",
+      "startSec": 1.44
+    },
+    {
+      "text": " story",
+      "startSec": 1.62
+    },
+    {
+      "text": "board",
+      "startSec": 1.98
+    }
+  ]
+}

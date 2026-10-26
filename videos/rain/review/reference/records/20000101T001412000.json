@@ -1,0 +1,134 @@
+{
+  "mode": "reference-preview",
+  "stage": "reference",
+  "createdAt": "2000-01-01T00:14:12.000Z",
+  "context": {
+    "shots": [],
+    "timeline": {
+      "girl": "v-OxR8p3U9",
+      "owner": "v-ftQ0baSX",
+      "umbrella": "v-AYxwMmzO",
+      "cafe": "v-ZPpsw5bD",
+      "girlVoice": "v-Mq3d84C0",
+      "ownerVoice": "v-8OqaVFC7",
+      "bgm": "v-qJ92L1ze",
+      "rain": "v-4JA5x6eZ"
+    }
+  },
+  "decisions": [
+    {
+      "address": "reference:girl",
+      "variantId": "v-OxR8p3U9",
+      "status": "accepted",
+      "feedback": [
+        {
+          "id": "fb-lSIv00Ek",
+          "annotation": null,
+          "text": "This one. Her eyes are a little more tired than the others, which is exactly where she is tonight.",
+          "displayedVariants": {
+            "reference:girl": "v-OxR8p3U9"
+          },
+          "stale": true,
+          "added": true
+        }
+      ]
+    },
+    {
+      "address": "reference:owner",
+      "variantId": "v-ftQ0baSX",
+      "status": "accepted",
+      "feedback": [
+        {
+          "id": "fb-V1ZLlMFi",
+          "annotation": {
+            "kind": "pin",
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": "These glasses are perfect — keep them this thin and round in every shot.",
+          "displayedVariants": {
+            "reference:owner": "v-ftQ0baSX"
+          },
+          "stale": true,
+          "added": true
+        }
+      ]
+    },
+    {
+      "address": "reference:umbrella",
+      "variantId": "v-AYxwMmzO",
+      "status": "accepted",
+      "feedback": []
+    },
+    {
+      "address": "reference:cafe",
+      "variantId": "v-ZPpsw5bD",
+      "status": "accepted",
+      "feedback": []
+    },
+    {
+      "address": "reference:girlVoice",
+      "variantId": "v-Mq3d84C0",
+      "status": "accepted",
+      "feedback": []
+    },
+    {
+      "address": "reference:ownerVoice",
+      "variantId": "v-8OqaVFC7",
+      "status": "accepted",
+      "feedback": []
+    },
+    {
+      "address": "reference:bgm",
+      "variantId": "v-qJ92L1ze",
+      "status": "accepted",
+      "feedback": [
+        {
+          "id": "fb-vT7ZJAxz",
+          "annotation": null,
+          "text": "Good, but keep it very low under the rain — the rain is the real score.",
+          "displayedVariants": {
+            "reference:bgm": "v-qJ92L1ze"
+          },
+          "stale": false,
+          "added": true
+        }
+      ]
+    },
+    {
+      "address": "reference:rain",
+      "variantId": "v-4JA5x6eZ",
+      "status": "accepted",
+      "feedback": []
+    }
+  ],
+  "overallComment": "Cast looks right. Go to the board.",
+  "handoffId": "20000101T001403000",
+  "handoffSummary": "The cast, the umbrella, the café and the sound bed — three takes each for the two faces and voices. Pick one per asset; everything downstream is drawn from these.",
+  "handoffNotes": [
+    {
+      "address": "reference:girl",
+      "text": "Three takes, same outfit. The first holds the damp hair ends best; the toggles read clearly on all three."
+    },
+    {
+      "address": "reference:owner",
+      "text": "The round gold glasses and the long apron hold across takes. The first take stoops a little more, which suits him."
+    },
+    {
+      "address": "reference:umbrella",
+      "text": "Mustard rather than lemon yellow, so it sits inside the amber palette and still pops against the blue street."
+    },
+    {
+      "address": "reference:cafe",
+      "text": "Both masters keep the counter left and the window table right, matching the wide setup. The second has a busier window."
+    },
+    {
+      "address": "reference:girlVoice",
+      "text": "Designed from the roster description alone. Listen for the husk; the second take is the most present."
+    },
+    {
+      "address": "reference:bgm",
+      "text": "Sparse felt piano at 66 bpm. It ducks under both lines."
+    }
+  ]
+}

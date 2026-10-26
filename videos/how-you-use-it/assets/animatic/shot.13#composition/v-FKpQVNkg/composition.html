@@ -1,0 +1,120 @@
+<div id="stage"><style>
+.scr{position:absolute;inset:0;overflow:hidden;background:#0b0c0f;--font-term:"JetBrains Mono",ui-monospace,monospace;}
+.cam{position:absolute;left:0;top:0;width:1920px;height:1088px;transform-origin:0 0;}
+.st{position:absolute;left:0;top:0;width:1920px;height:1088px;}
+.off{visibility:hidden;opacity:0;}
+.cursor{position:absolute;left:0;top:0;z-index:50;pointer-events:none;}
+.cursor-ring{position:absolute;left:-22px;top:-22px;width:44px;height:44px;border-radius:50%;border:3px solid rgba(169,159,255,.9);opacity:0;}
+.step{position:absolute;right:56px;top:44px;z-index:60;display:flex;align-items:center;gap:22px;padding:16px 40px 16px 18px;border-radius:999px;background:rgba(21,22,29,.94);border:2px solid #4c5166;box-shadow:0 16px 44px rgba(0,0,0,.6);color:#f0f1f7;font-size:50px;font-weight:700;letter-spacing:-.015em;}
+.step-n{display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:#6e62f5;color:#fff;font-size:38px;font-weight:800;}
+.term{position:absolute;inset:0;background:#101012;color:#e8e8ea;font-family:var(--font-term);font-size:29px;line-height:1.5;display:flex;flex-direction:column;padding:48px 84px 40px;}
+.term-log{flex:0 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;gap:2px;}
+.tl{display:flex;white-space:pre-wrap;}
+.tl.hid{display:none;}
+.tl-b{flex:none;width:2ch;}
+.tl-body{flex:1;min-width:0;}
+.tl.text .tl-b{color:#e8e8ea;}
+.tl.tool .tl-b{color:#4eba65;}
+.tl.tool b{font-weight:700;}
+.tl.out{color:#8e8e96;}
+.tl.user{color:#b9b9c0;background:#232327;margin:10px 0;padding:2px 0;}
+.tl.spin{color:#d97757;}
+.tl.gap{height:14px;}
+.tl.head{color:#e8e8ea;}
+.tl.head .mascot{color:#d97757;}
+.tl.dim{color:#8e8e96;}
+.tl.cont{color:#e8e8ea;}
+.g1{display:inline-block;width:1ch;}
+.mascot{display:block;flex:none;}
+.tl.q-title{color:#e8e8ea;}
+.tl.q-opt{color:#e8e8ea;}
+.tl.q-opt.sel{color:#b1b9f9;}
+.tl.q-desc{color:#8e8e96;}
+.tl.q-hint{color:#8e8e96;font-size:24px;}
+.tl.q-rule{color:#56565e;}
+.term-in{margin-top:18px;border-top:2px solid #4a4a52;border-bottom:2px solid #4a4a52;padding:10px 0;display:flex;gap:1ch;}
+.term-in-p{color:#e8e8ea;}
+.term-caret{display:inline-block;width:.6em;height:1.15em;vertical-align:-.2em;background:#e8e8ea;}
+.term-hint{color:#6e6e76;font-size:24px;padding-top:8px;}
+</style><div class="scr"><div class="cam" id="cam"><div class="term"><div class="term-log"><div class="tl text  "><span class="tl-b">●</span><span class="tl-body">Board accepted. All six shots are in motion now.</span></div><div class="tl tool  "><span class="tl-b">●</span><span class="tl-body"><b>Bash</b>(konte preview video --summary &quot;Every shot is in motion now…&quot;)</span></div><div class="tl out  "><span class="tl-body">  <span class="g1">⎿</span>  Running in the background (↓ to manage)</span></div><div class="tl text  "><span class="tl-b">●</span><span class="tl-body">Background command &quot;Open the video preview for review&quot; completed (exit code 0)</span></div><div class="tl text hid " id="c1"><span class="tl-b">●</span><span class="tl-body">One note on shot 05: she should take the umbrella. Generating a new take.</span></div><div class="tl tool hid " id="c2"><span class="tl-b">●</span><span class="tl-body"><b>Bash</b>(konte reroll video:shot.05.motion &amp;&amp; konte job wait)</span></div><div class="tl out hid " id="c3"><span class="tl-body">  <span class="g1">⎿</span>  Running in the background (↓ to manage)</span></div><div class="tl text hid " id="c4"><span class="tl-b">●</span><span class="tl-body">Background command &quot;Reroll shot 05 motion and wait&quot; completed (exit code 0)</span></div><div class="tl tool hid " id="c5"><span class="tl-b">●</span><span class="tl-body"><b>Bash</b>(konte preview video --summary &quot;New take on 05: her hands close on the handle.&quot;)</span></div><div class="tl out hid " id="c6"><span class="tl-body">  <span class="g1">⎿</span>  Running in the background (↓ to manage)</span></div></div><div class="term-in"><span class="term-in-p">❯</span><span><span></span><span class="term-caret"></span></span></div><div class="term-hint">? for shortcuts</div></div></div></div><script>(function () {
+window.__timelines = window.__timelines || {};
+var shotTl = window.__timelines["shot-13"];
+if (!shotTl) {
+  shotTl = gsap.timeline({ paused: true });
+  window.__timelines["shot-13"] = shotTl;
+}
+var tl = gsap.timeline();
+shotTl.add(tl, 0);
+var split = function (selector, options) {
+  var result = SplitText.create(document.querySelectorAll(selector), options);
+  return { chars: result.chars, words: result.words };
+};
+try {
+(({ timeline, split, data }) => {
+  const { ev: evs, w, h } = data, fmt = (v) => {
+    const m = Math.floor(v / 60), s = v - m * 60;
+    return `${m}:${s < 10 ? "0" : ""}${s.toFixed(1)}`;
+  };
+  for (const e of evs) {
+    const d = e.d ?? 0.5, ease = e.ease ?? "power3.inOut";
+    if (e.cam) {
+      const [cx, cy, s] = e.cam, clamp = (v, lo) => Math.min(0, Math.max(lo, v)), v = { x: clamp(w / 2 - cx * s, w - w * s), y: clamp(h / 2 - cy * s, h - h * s), scale: s };
+      if (d === 0)
+        timeline.set("#cam", v, e.t);
+      else
+        timeline.to("#cam", { ...v, duration: d, ease }, e.t);
+    }
+    if (e.cur) {
+      const v = { x: e.cur[0], y: e.cur[1] };
+      if (d === 0)
+        timeline.set("#cursor", v, e.t);
+      else
+        timeline.to("#cursor", { ...v, duration: d, ease: e.ease ?? "power2.inOut" }, e.t);
+    }
+    if (e.click) {
+      timeline.to("#cursor-arrow", { scale: 0.8, duration: 0.07, yoyo: !0, repeat: 1, transformOrigin: "0% 0%" }, e.t);
+      timeline.fromTo("#cursor-ring", { scale: 0.2, opacity: 0.9 }, { scale: 1.5, opacity: 0, duration: 0.45, ease: "power2.out", immediateRender: !1 }, e.t);
+    }
+    if (e.show)
+      timeline.set(e.show, { autoAlpha: 1 }, e.t);
+    if (e.hide)
+      timeline.set(e.hide, { autoAlpha: 0 }, e.t);
+    if (e.on)
+      timeline.set(e.on, { display: "flex" }, e.t);
+    if (e.off)
+      timeline.set(e.off, { display: "none" }, e.t);
+    if (e.type) {
+      const s = split(e.type, { type: "words,chars" });
+      timeline.set(s.chars, { display: "none" }, 0);
+      timeline.to(s.chars, { display: "inline-block", duration: 0.001, stagger: { amount: d } }, e.t);
+    }
+    if (e.y)
+      timeline.to(e.y[0], { y: e.y[1], duration: d, ease }, e.t);
+    if (e.x)
+      timeline.to(e.x[0], { x: e.x[1], duration: d, ease: e.ease ?? "none" }, e.t);
+    if (e.clock) {
+      const o = { v: e.clock[0] };
+      timeline.to(o, {
+        v: e.clock[1],
+        duration: d,
+        ease: "none",
+        onUpdate: () => {
+          document.querySelectorAll(".kr-time-now").forEach((el) => {
+            el.textContent = fmt(o.v);
+          });
+        }
+      }, e.t);
+    }
+    if (e.press)
+      timeline.to(e.press, { scale: 0.94, opacity: 0.6, duration: 0.12, ease: "power2.out" }, e.t);
+  }
+})({ timeline: tl, split: split, data: JSON.parse("{\"ev\":[{\"t\":0,\"d\":0,\"cam\":[0,0,1.15]},{\"t\":0.2,\"on\":\"#c1\"},{\"t\":0.5,\"on\":\"#c2\"},{\"t\":0.65,\"on\":\"#c3\"},{\"t\":1.5,\"on\":\"#c4\"},{\"t\":1.95,\"on\":\"#c5\"},{\"t\":2.15,\"on\":\"#c6\"}],\"w\":1920,\"h\":1088}") });
+} catch (err) {
+  var msg = (err && err.message) ? err.message : String(err);
+  window.__konteAnimateErrors = window.__konteAnimateErrors || [];
+  window.__konteAnimateErrors.push({ shotId: "13", message: msg });
+  console.error("[konte] <Animate> script threw in shot " + "13" + ": " + msg +
+    " — every tween after the throw is missing. The script is serialized and run in the browser, so it cannot reference anything outside itself.");
+  var host=document.querySelector("[data-composition-id=\"shot-13\"]");if(host&&host.tagName==="META")host=null;host=host||document.getElementById("stage")||document.body;if(host){var box=document.createElement("div");box.setAttribute("data-konte-animate-error","shot-13");box.style.cssText="position:absolute;left:0;right:0;bottom:0;z-index:2147483647;background:#b00020;color:#fff;font:600 14px/1.4 ui-monospace,monospace;padding:10px 14px;white-space:pre-wrap;word-break:break-word;";box.textContent="konte: <Animate> script failed in "+"shot-13"+"\n"+msg;host.appendChild(box);}
+}
+})();</script><audio data-duration="1.486077" src="konte://asset/animatic/shot.13.vo/v-GE2VZrK5/ComfyUI_00363.mp3" data-konte-track="sound" data-start="0.2" data-volume="2.1379620895022327"></audio></div><script>(function(){var g=window.gsap;if(!g||!g.timeline)return;window.__timelines=window.__timelines||{};var key="shot-13";var tl=window.__timelines[key];if(!tl||typeof tl.set!=="function"){tl=g.timeline({paused:true});window.__timelines[key]=tl;}tl.set({},{},2.5);})()</script>

@@ -1,0 +1,26 @@
+{
+  "stage": "direction",
+  "summary": "README の Quick start（Claude Code デスクトップ版）の導入手順動画、17ショット・約38秒です。英語ナレーションと字幕、手順ごとに見出しを出します。構成担当の点検2回分を反映済みです。",
+  "notes": [
+    {
+      "address": "direction:sequence.shots.14",
+      "text": "新しく足したショットです。konte の setup は「アプリを完全に終了して起動し直す」よう伝える仕様なので、その一文を画面に出して寄ります。"
+    },
+    {
+      "address": "direction:sequence.shots.15",
+      "text": "アプリの終了操作は「左上のメニュー → File → Exit」と仮に書きました。Windows 版の実際の終了操作と違っていたら教えてください。"
+    },
+    {
+      "address": "direction:sequence.shots.11",
+      "text": "Settings を × で閉じてから New を押し、konte-workspace を開いたままの新しいセッションへ移る流れにしました。"
+    },
+    {
+      "address": "direction:sequence.shots.10",
+      "text": "Add を押す場面と Added・トーストの場面を、ひとつのショットにまとめました。"
+    },
+    {
+      "address": "direction:sequence.shots.03",
+      "text": "Trust を押すとフォルダ欄が konte-workspace に変わるところまで見せます。"
+    }
+  ]
+}
