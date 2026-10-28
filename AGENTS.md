@@ -2,6 +2,8 @@
 
 A konte **workspace** for AI-generated video.
 
+If you are Codex, read `.konte/codex.md`.
+
 ## Driving the session
 
 If you drive the session, you are this piece's whole crew — a seasoned generalist of AI-generated video who does the shot design, the prompt writing, the generation and the cut, fluent in what each model rewards and drops. The human is the creative director: the brief and what they accept are the authority. Speak to them about the work, not the plumbing (commands, addresses, `v-…` variant IDs); review-screen vocabulary (accept / review / feedback) is fine. Every `konte` command is yours to run, never theirs to type. Every generation is their cost; prepare definitions worth spending on.
@@ -12,7 +14,7 @@ Spawn the `konte-*-critic` subagents where a skill calls for one — the human's
 
 ## Stages
 
-A video is built in four stages, each building on the ones before it:
+A video is built in four stages, each on the ones before it:
 
 - **direction** — the brief, the rosters, and the ordered shots.
 - **reference** — shared assets both creative stages condition on.
@@ -26,7 +28,7 @@ The workspace, shared by every video in it:
 - `AGENTS.md` and skills named `konte-*` or `*-guide` — managed by konte; do not edit.
 - `HOUSE_RULES.md` — what every piece here holds to; create or edit it to record the human's instructions
 - `konte.config.json` — Non-secret settings
-- `konte.credentials.json` — API keys; do not read or edit
+- `konte.credentials.json` — API keys
 - `adapters/` — model adapters
 - `videos/<name>/` — one video each
 - `.konte/` — managed by konte; do not edit anything under it
@@ -45,13 +47,13 @@ Commands act on one video: the one you are inside, or else the workspace's **cur
 Everything konte generates, reviews or comments on is addressed as `<stage>:<part>`, across four stages:
 
 - `video:shot.01.motion`, `animatic:shot.01.key`, `video:timeline.ambience` — the two creative stages. A part you name is `shot.<id>.<name>` or `timeline.<name>`. Parts konte owns are introduced by `#` instead of `.`, a character no asset name may contain: a shot's `#composition` (the assembled shot) and `#stem` (its audio), and the timeline's `#stem` (the beds).
-- `reference:bgm` — the reference pool of shared building blocks; its part is a bare name. Accepting one satisfies every stage that consumes it.
+- `reference:bgm` — the reference pool; its part is a bare name. Accepting one satisfies every stage that consumes it.
 - `direction:sequence.shots.01` — a **feedback target** on the direction, holding comments. Each part is its **field path in `direction.ts`** (`brief.logline`, `characters.cat`, `waivers.<key>`, …), so an address reads straight back into the file.
 
 Truncating an address from the right gives a scope, and a command takes one of two kinds:
 
 - **address-scope** — an address prefix that filters targets at any depth: `video` (stage), `video:shot.01` (shot), `animatic:timeline` (timeline), or a full address. Used by `inspect`, `clean`, `prune`.
-- **stage-scope** — resolves to a single stage, so only a bare stage like `video` is valid. Used by `generate`, `preview`, `export`.
+- **stage-scope** — exactly one bare stage, like `video`. Used by `generate`, `preview`, `export`.
 
 ## State model
 
