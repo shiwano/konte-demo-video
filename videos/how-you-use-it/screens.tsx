@@ -389,7 +389,7 @@ const policy = (accepted: boolean): DirectionSectionData => ({
   fields: [
     { field: "Format", value: "16:9  1248×704 (0.9 Mpx) → 1280×720, 24 fps" },
     { field: "Language", value: "en  English" },
-    { field: "Speech", value: "Free  any script allowed" },
+    { field: "Fonts", value: "None  text falls to the rendering machine's own faces" },
   ],
 });
 
