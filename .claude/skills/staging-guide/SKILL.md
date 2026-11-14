@@ -15,7 +15,7 @@ Stage each shot's frame, cut and motion from its `action`; done = the read-test 
 
 - Stage against the direction's `action` — never restate it; there is no separate audio goal.
 - Every panel declares the movement out of it — `blocking` and `camera`, across the span to the next keyframe; a key, the shot's whole movement. A multi-panel shot's landing frame declares neither, except at a continuous seam.
-- Write it from the take — settle the panel's take first, then write the transit the `action` needs from that frame; if the take can't launch it, the take is wrong, not the shot.
+- Write it from the take — settle the panel's take first, then write the transit the `action` needs from that frame; if the take can't launch it, the take is wrong.
 - Rewriting it after the panel's accept needs no review — the take is untouched.
 - Only the transit — a keyframe fixes a position, never a direction through it; what the pair already shows does not belong in these fields.
 - Write both in the `brief`'s working language, whatever the prompts use.
@@ -30,10 +30,11 @@ Stage each shot's frame, cut and motion from its `action`; done = the read-test 
 
 - The plate fixes the place and the camera; the panel prompt composes — where each figure sits and faces, what fills the frame they leave open, what is nearest the lens, what the edges cut, chosen from what the `action` has to show. Naming only who is left and right leaves the frame to the model.
 - Each panel prompt writes one state of the `action` — the opening frame its starting state, a landing frame its final state, a key the moment the shot reads, a change landed.
+- A key stages the opening state instead where the landing cannot carry the start — a rise and exit, a figure leaving frame. The take moves out of it; its `blocking` writes the move.
 - Make the setup's `framing` concrete — within the frame its plate holds, write the subject's crop or share of the image: "waist-up", "her head fills a third of the frame's height".
 - The eye lands on the action's carrier — whatever the shot hinges on must be the frame's most salient element (position, contrast, light, motion); if a stranger's eye goes elsewhere first, the staging failed before the prompt.
 - One strong signifier per idea — pick the element that says it best and cut action-adjacent extras; each one added dilutes the read.
-- Subject & purpose — what the subject wants in this shot decides pose, expression, and gaze. Name a declared character or prop by its exact roster `promptDepiction` and anchor its look on the `reference:<id>` asset (identity prose → `prompt-guide`'s reference preflight).
+- What the subject wants in this shot decides pose, expression, and gaze. Name a declared character or prop by its exact roster `promptDepiction` and anchor its look on the `reference:<id>` asset (identity prose → `prompt-guide`'s reference preflight).
 - Make the performance readable at the shot's scale — a close frame can carry a glance or a tightened mouth; a distant figure needs posture, weight, hands or distance from the other subject to carry the same intention.
 - Name every subject in `ctx.lineup` order — who the frame holds, left to right, is the direction's (`ctx.lineupTo` the order the shot leaves on); one named place lands nothing, all of them always lands. Add who is nearer the lens where they are not side by side.
 - Pass a reference image for every one of them — a subject only a sleeve or a fist of whom is in frame is fed too, never waived. A keyframe drawn from an earlier keyframe inherits what that one stood on.
@@ -53,12 +54,13 @@ Stage each shot's frame, cut and motion from its `action`; done = the read-test 
 ## Stage the cut
 
 - Eyelines, screen direction and edges bind every cut, shown geography or not — the 180° line, gaze axes, the entrance/exit directions the `action` implies, and wardrobe/props agreeing across adjacent same-space shots. A journey "toward" something holds one direction across every panel and shot.
+- A gaze or turn toward someone out of frame goes to the side the `offscreen:` line names (`konte inspect animatic:shot.<id> --prompts`).
 - The 180° line is checked between two shots in one place — a single subject re-framed from the other side settles no pair, so it is yours to catch.
 - Matching backgrounds is owed only where two frames share geography on screen (a continuous-space stretch, a re-established `wide`) — there, pin the look on a `reference.tsx` asset and compare the adjacent panels at the board before paying for motion.
 - Change two of size / angle / subject on every cut — unless a match cut is the point; a cut that changes only one reads as a jump, and cutting back to one setup without a shot between flattens the sequence.
 - The edit base chooses the camera — a keyframe edited from a neighbouring shot's populated frame inherits its composition whatever the prompt says. Chain off a neighbour only for a match cut; otherwise start from the setup's plate, else `reference:<location>`. At a `join: "continuous"` seam, keep the camera of the panel before it.
 - A long take has one frame at its seam, and it is the next shot's first panel — `join: "continuous"`: the shot before authors no closing keyframe; its last panel carries `blocking` / `camera` like any other. Nothing is passed on the board.
-- A cut along one `within` axis takes the frame before it — two setups of one axis, no join written: the previous shot's last panel goes in one of the keyframe's image inputs (a cutin's: the last panel of the cutin before it), for a model that reads it as the frame the cut comes from (`readsPrevPanel` in `konte adapter show`). The plate fixes the room, that panel the subject's light, size and position; a cut between two lineups sharing no subject owes none. `panel-unlinked` gates it; a cut meant to re-open the frame is the waiver.
+- Another shot's panel is never a keyframe's input — it carries that shot's light into the frame. A cut along one `within` axis, and a cut back to a setup across a cutaway (`returns: from <id>` in `konte inspect --prompts`), stand on the setup's plate and the sheets; the prompt writes what changed while the camera was away.
 - Save the strongest staging for the payoff — the lens's payoff role gets the most distinct frame in the piece; spending it on a setup role upstages the climax.
 - Name light source and time of day per shot — anchors within a scene, an arc across the piece; unnamed light drifts per generation.
 

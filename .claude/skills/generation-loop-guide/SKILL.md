@@ -1,6 +1,6 @@
 ---
 name: generation-loop-guide
-description: Drive one stage — reference pool, animatic, or video — through generate → wait → self-review → human review → iterate until every reviewable asset is accepted. Read when the user wants to build the reference pool, complete the animatic, complete/refine the video shots, run a stage, or whenever you reach a generate/wait/reroll step; developing a pendingShot is layout-guide's.
+description: Drive one stage — reference pool, animatic, or video — through generate → wait → self-review → human review → iterate. Read when the user wants to build the reference pool, complete the animatic, complete/refine the video shots, run a stage, or whenever you reach a generate/wait/reroll step; developing a pendingShot is layout-guide's.
 user-invocable: false
 ---
 
@@ -24,13 +24,13 @@ Substitute your stage's `<scope>` / `<address>` into every step below.
 - Generating what has no accepted variant needs no go-ahead — on a paid vendor backend report batch size and expected cost in one line, then generate. Ask before invalidating accepted work.
 - `konte generate <scope>` — submits all the stage's assets at once, async.
 - `generate` regenerates a stale unaccepted take and skips an accepted generative one, even stale — after an edit, `generate` is the new take; `reroll` draws again on an unchanged definition, `--count N` for N takes at once. Follow the command's `accepted but stale` Next steps. Stale deterministic assets re-bake automatically unless their accepted take is a patch.
-- Open on the cheap pass — `production-guide`'s cost ladder.
+- Open on the cheap pass — `production-guide` step 6.
 
 ## 3. Wait for jobs
 
 After `konte generate` or `konte reroll`:
 
-- `konte job wait` — returns when the queue drains; run it on its own, in the background, without extra confirmation. Never close a turn with jobs in flight.
+- `konte job run` — jobs run only while it does; it returns when the queue drains. Run it on its own, in the background, without extra confirmation. Never close a turn with jobs in flight.
 - Pending jobs wait for dependencies — including model downloads and node installation; do not reroll them.
 - A job stuck running far too long → `konte job show <jobId>` — its diagnosis separates a slow model, a prompt ComfyUI lost in a crash, and a job no worker is watching.
 - Failed job → `konte job show <jobId>`, then `konte job logs <jobId>`; fix the cause and `konte reroll <address>`. Several failed addresses → `konte reroll --failed --yes`.
@@ -88,13 +88,16 @@ Reroll:
 
 - Animatic: write each panel's movement from its settled take — preview refuses (`movement-unwritten`) while any is missing; re-check after a reroll. Where that take departs from `action`, `action` follows it.
 - A variant finding — a take silent, or heard to drop or change its line — holds the review (`take-silent` / `line-misheard`). Compare `line` with `heard` in `konte probe audio <variantId>`: dismiss a broken take (a reroll leaves it standing); `konte vouch <variantId>` one whose difference is only spelling (kanji for kana, a name, digits).
+- Animatic: a shot with lines that goes quiet long before its cut holds the review (`tail-silent`). Set its `duration` as the finding says; `konte vouch animatic:shot.<id>` only a hold its picture needs.
 
 ## 5. Human review
 
-- Hand off, preview, read the record → `review-guide`, with your stage's `<scope>`. Takes the human names to go back to are yours to record: `konte accept <variantId>... -y`.
+- Hand off, preview, read the record → `review-guide`, with your stage's `<scope>`. What the human signs off outside the review is yours to record: a take they name to go back to, `konte accept <variantId>... -y`; a whole shot, `konte accept <stage>:shot.<id> -y`; everything they have watched, `konte accept <stage> -y`.
 
 ## 6. Iterating on feedback
 
-For each target with open feedback, accepted or not: route the human's words through step 4's fix — read the comment with its pin and `[image: <path>]` frame. A note changing what the shot shows goes into its `action` too. Then wait (step 3), self-check (step 4) — the changes, their adjacent cuts, and agreement with the feedback — and re-review (step 5).
+- Each target with open feedback, accepted or not → step 4's fix — read the comment with its pin and `[image: <path>]` frame.
+- A note changing what the shot shows goes into its `action` too.
+- Then wait (step 3), self-check (step 4) — the changes, their adjacent cuts, and agreement with the feedback — and re-review (step 5).
 
 Loop until the stage matrix's "done =" holds, then report the accepted variant per asset and take that row's exit.

@@ -21,13 +21,14 @@ Bring each file under `assets/files/` in as `file` kind — no generation. Pick 
 - Declare one look proof alone in `reference.tsx`, then hand to `generation-loop-guide` for its pass — reference is exempt from the direction gate, so it generates with the rosters unanchored. Return here once it is accepted.
 - It is `brief.look` as a picture — palette, key light, line, finish, realism register. Draw the world, not a shot: a frame from the cut turns the review onto staging.
 - Put one unnamed figure in it when the piece has people — a person of the world, not the cast: line, skin and proportion under this look, no face or costume to sign off. A look settled on scenery alone is redone after pass 1, and every sheet with it.
-- Looked at, never drawn from — a later asset drawn from it carries its staging into everything built on it. Every later prompt is written to it in prose; where prose cannot pin the finish, style-convert each sheet with it as the style example, in pass 1.
+- Looked at, never drawn from — a later asset drawn from it carries its staging into everything built on it. Every later prompt is written to it in prose.
 - Leave it declared — removing it orphans its accepted take.
 
 ## 4. Wire the rosters
 
 - Expose a `reference:<id>` per character, prop, location, and cast voice in `reference.tsx` — the deferred roster findings gate generation from here on.
-- Return a view image from `views` for every way but `front` a location's setups face — each is accepted before a plate on it can spend.
+- An adapted piece → write each sheet's prompt against how the source describes them too (its looks in `konte source show`); a comic page as a reference → `scenario-guide`'s adaptation.md.
+- Return a view image from `views` for each declared view but `front` — each is accepted before a plate on it can spend.
 - Run the reference pool through `generation-loop-guide` and return once accepted.
 
 ## 5. Lay out every shot
@@ -40,7 +41,7 @@ Bring each file under `assets/files/` in as `file` kind — no generation. Pick 
 
 - Wire the plates the setups owe → `staging-guide`; every shot stays pending through the bake. None owed → step 7.
 - Spawn `konte-prompt-critic` on `animatic.tsx` before the bake; a rewrite confined to what its findings name bakes without a second pass.
-- `konte generate animatic`, `konte job wait`, then spawn `konte-animatic-critic` on `plates` — recut or reroll a wrong frame before any panel stands on it. Accept nothing: a plate is never review work; the accept of the first panel built on it signs it off.
+- `konte generate animatic`, `konte job run`, then spawn `konte-animatic-critic` on `plates` — recut or reroll a wrong frame before any panel stands on it. Accept nothing: a plate is never review work; the accept of the first panel built on it signs it off.
 
 ## 7. Develop one direction sequence at a time
 
@@ -62,7 +63,7 @@ Developing a shot = swapping its pending form for the real one — `pendingShot(
 - For pending panels, spawn `konte-staging-critic` on `animatic.tsx`, then fix its findings before the prompt pass; a fix confined to what they name gets no second pass.
 - A match pass on what no critic reads — each reference prompt against its roster entry and the job it holds as an anchor (single subject, clean ground, identifying features in frame); each motion prompt against the shot's `duration`; each bed against `brief.tone`. A promise the prompt drops, or an element it invents, is a rewrite now — after generating it is a reroll.
 - Then spawn `konte-prompt-critic` on the definition before the first spend on new or rewritten prompts; a rewrite confined to what its findings name goes to spend without a second pass. A reroll on unchanged definitions skips both critics.
-- Revising after the human's review, no critic runs — read the rewritten prompts against their shots yourself:
+- Revising after the human's review, read the rewritten prompts against their shots yourself:
   - each panel prompt against its shot (`action`, `script`, and the size/place its `setup` carries) and the anchors it conditions on — the `reference:<id>`s, and the setup's plate where it has one; each motion prompt against the panel's `blocking` / `camera`; each voice asset word for word against the shot's `script` line, a character line's delivery against that shot's `action`
   - each opening panel against the motion it must launch — is the condition its `action` lands true in the frame the prompt fixes? Untrue or half true is a rewrite, unless the shot opens on the tail by choice
   - each key panel — is it the moment its `action` is read by?

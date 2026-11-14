@@ -7,7 +7,7 @@ The song take is accepted before any shot is written. Fields → `direction-guid
 - Before writing or revising lyrics, read `scenario-guide`'s [song.md](../../scenario-guide/references/song.md) — finish its lyric pass before review.
 - `policy.song`, `lyrics`, and `sequence.shots: []`.
 
-## 2. Review the brief, policy and lyrics
+## 2. Review the policy and lyrics
 
 - Per `review-guide`, scope `direction` — the song is refused until they are accepted.
 
@@ -28,7 +28,7 @@ const song = asset(direction.policy.song!, audioYue2, {
 ```
 
 - Brought → a `file` asset at that id; in parts → `adapters.audioConcat` of them, in order.
-- `konte generate reference`, then `konte job wait` — the wait covers the reading of each take.
+- `konte generate reference`, then `konte job run` — the run covers the reading of each take.
 - A reading failed → `konte song analyze` — the first run downloads the beat tracker and the vocal separator. It re-reads the current take, keeping every `konte song set` correction on it.
 
 ## 4. Check the lines, then accept

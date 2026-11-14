@@ -1,11 +1,11 @@
-// source-hash: b3c2a50a25f92e9b9bd7910953ef91c9c113169313e85557bdb1af7f4dba2fd7
+// source-hash: 2816d7e0f8278897bb90f9ac4ea8b4c59a62e2e083fc207240a71592f845cb7d
 // source: github.com/Comfy-Org/workflow_templates / templates/image_qwen_image_2_1_image_edit.json (MIT License)
 import { defineComfyAsset, inertInputs } from "konte";
 
 export const imageQwenImageEdit21 = defineComfyAsset({
   workflow: "image_qwen_image_edit_2_1.json",
   description:
-    "Qwen Image 2.1 — edits from up to three images, keeping what the prompt does not change: in reference, a change of rendering medium (a photograph redrawn as anime) or a new pose or outfit of an existing subject, never another view of a location (`views`); in a timeline, a change to a picture several shots show; in a shot, a keyframe on the same camera from another already drawn, never a new viewpoint, a cut or a new composition.",
+    "Qwen Image 2.1 — edits from up to three images, keeping what the prompt does not change: in reference, live action redrawn in a drawn medium (a photograph as anime) or a new pose or outfit of an existing subject, never a restyle of a picture already drawn or another view of a location (`views`); in a timeline, a change to a picture several shots show; in a shot, a keyframe on the same camera from another already drawn, never a new viewpoint, a cut or a new composition.",
   guide: "konte/guides/qwen-image-edit-2-1.md",
   allowedIn: ["reference", "timeline", "shot"],
   models: [
@@ -41,60 +41,60 @@ export const imageQwenImageEdit21 = defineComfyAsset({
       description: "Optional style or character reference, addressed as <image2>.",
     },
     image3: {
-      nodeId: "486",
+      nodeId: "517",
       field: "image",
       type: "image",
       description: "Optional reference after image2, addressed as <image3>.",
     },
     // EmptyLatentImage → KSampler.latent_image
-    width: { nodeId: "480", field: "width", type: "width", default: 1280, grid: { step: 32 } },
-    height: { nodeId: "480", field: "height", type: "height", default: 736, grid: { step: 32 } },
+    width: { nodeId: "505", field: "width", type: "width", default: 1280, grid: { step: 32 } },
+    height: { nodeId: "505", field: "height", type: "height", default: 736, grid: { step: 32 } },
     prompt: {
-      nodeId: "485",
+      nodeId: "510",
       field: "prompt",
       type: "prompt",
       required: true,
     },
     negativePrompt: {
-      nodeId: "485",
+      nodeId: "510",
       field: "negative_prompt",
       type: "negativePrompt",
       default: "",
       description: "Artifact terms; only effective with cfg above 1.",
     },
     seed: {
-      nodeId: "482",
+      nodeId: "507",
       field: "seed",
       type: "seed",
       default: 0,
     },
     steps: {
-      nodeId: "482",
+      nodeId: "507",
       field: "steps",
       type: "number",
       default: 40,
     },
     cfg: {
-      nodeId: "482",
+      nodeId: "507",
       field: "cfg",
       type: "number",
       default: 4,
       description: "Above 1 enables negativePrompt.",
     },
     unetName: {
-      nodeId: "477",
+      nodeId: "502",
       field: "unet_name",
       type: "string",
       default: "qwen_image_2.1_int8_convrot.safetensors",
     },
     clipName: {
-      nodeId: "478",
+      nodeId: "503",
       field: "clip_name",
       type: "string",
       default: "qwen3vl_8b_int8_convrot.safetensors",
     },
     vaeName: {
-      nodeId: "479",
+      nodeId: "504",
       field: "vae_name",
       type: "string",
       default: "qwen_image_2.1_vae_bf16.safetensors",

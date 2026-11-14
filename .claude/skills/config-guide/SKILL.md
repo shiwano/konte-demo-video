@@ -1,17 +1,19 @@
 ---
 name: config-guide
-description: Read when a key "is not set", konte doctor reports a backend failure, or a comfy asset routes to the wrong place — API keys, the ComfyUI connection, Comfy Cloud and Comfy API routing, editor type-checking.
+description: Read when a key "is not set", konte doctor reports a backend failure, or a comfy asset routes to the wrong place — API keys, the ComfyUI connection, Comfy Cloud and Comfy API routing.
 user-invocable: false
 ---
 
-Configure the required backends and editor; done = those backends pass `konte doctor --backends`.
+Configure the required backends; done = those backends pass `konte doctor --backends`.
 
 ## API keys
 
 1. Run `konte doctor --backends` — each unconfigured backend prints the variable name and where to obtain it.
    - WARN = survey only — configure only the backends you'll use; plain `konte doctor` FAILs on one an asset uses.
-2. Run `konte settings --tab credentials` in the background and ask the user to enter the listed keys, naming each key and its source URL from the message.
-3. Once the user has saved the keys, re-run `konte doctor --backends` — the backends you need report connected.
+2. Ask the user to set the listed keys, naming each key and its source URL from the message. Never ask for a key's value in chat.
+   - The user's browser can open this machine's `127.0.0.1` → run `konte settings --tab credentials` in the background; the user enters them there.
+   - Otherwise (a remote VM, a container) → the user sets each as an environment variable in the machine's environment settings, not by `export` in a shell, which a new session loses.
+3. Once the user has set the keys, re-run `konte doctor --backends` — the backends you need report connected. A key set as an environment variable after this session started reaches konte only in a new session.
 
 - An adapter missing from `konte adapter list` → its backend is unconfigured (`--all` shows it); `generate` refuses it. `file`/`local` assets need no backend.
 
@@ -30,6 +32,7 @@ Configure the required backends and editor; done = those backends pass `konte do
   }
   ```
 
+- ComfyUI on the user's machine while konte runs on a remote VM → [remote-comfyui.md](references/remote-comfyui.md).
 - WSL2: `127.0.0.1` points at WSL itself, not a ComfyUI running on Windows — either enable WSL mirrored networking (`networkingMode=mirrored` in `%UserProfile%\.wslconfig`, then `wsl --shutdown`; needs Win11 22H2+) so `127.0.0.1` works unchanged, or set `comfy.comfyui.url` to the Windows host IP (can change on reboot).
 
 ## Comfy routing
@@ -55,14 +58,6 @@ konte builds a deployment's Build and release; only the user creates and deletes
 - A deployment named as not ready → tell the user its status and the Build page URL; they read why on that page and deploy again.
 - A deployment named as running an earlier release → ask the user to delete it on the same page — a deployment bills its models' storage until deleted.
 - Done with Comfy API for now → the user may delete the deployment on the Build page; the next `konte adapter comfy build` asks for a new one.
-
-## Editor type-checking
-
-`konte lsp` is a language server providing TypeScript diagnostics and completion in the definition files.
-
-- Claude Code: automatic — `konte workspace new` ships a `konte-lsp` plugin under `.claude/skills/`. Accept the workspace trust prompt.
-- VSCode: no setup.
-- Neovim: use the workspace binary's absolute path with `lsp` as the language-server command, and `konte.config.json` as its root marker.
 
 ## Done
 

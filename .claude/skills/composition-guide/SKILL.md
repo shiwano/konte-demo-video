@@ -31,6 +31,7 @@ import {
   Subtitle,
   Animate,
   Cutin,
+  Screen,
   soundtrack,
   asset,
 } from "konte";
@@ -38,10 +39,11 @@ import {
 
 - `<Composition>` — root, one per shot. Injects HTML scaffold, GSAP 3.15 with SplitText and DrawSVG, Tailwind v4, `#stage`.
 - `<Video src={asset} />` — a video clip on the timeline, a full-stage cover-fit layer; Tailwind classes in `className` override that (`left-0 top-0 w-1/3 h-1/3` for an inset). Defaults to `muted` + `playsInline`. Props: `src` (MediaAsset), `start`, `duration`, `mediaStart`, `playbackRate` (source s per timeline s; a `hasAudio` track follows it, pitch kept), `hasAudio`, `volume`, + any `<video>` attr (`id`, `className`, `style`)
-- `<Audio src={asset} />` — a one-shot sound in a shot (SE, sting, dialogue, narration). Plays once at full length; may extend past the shot. Props: `src`, `id` (cue handle), `start`, `duration`, `mediaStart`, `volume`, `fadeIn`, `fadeOut`, + any `<audio>` attr. With `mediaStart` omitted, the take's leading silence is skipped, so `start` is where the sound lands
+- `<Audio src={asset} />` — a one-shot sound in a shot (SE, sting, dialogue, narration). Plays once at full length; may extend past the shot. Props: `src`, `id` (cue handle), `start`, `duration`, `mediaStart`, `volume`, `fadeIn`, `fadeOut`, + any `<audio>` attr. With `mediaStart` omitted, an SE take's leading silence is skipped, so `start` is where the sound lands; a line plays from the take's head
 - `<Image src={asset} />` — a still image on the timeline (logo, character, product, plate, overlay). Whole shot unless windowed; at its pixel size unless `fill` makes it a full-stage cover-fit layer. Props: `src` (MediaAsset), `start`, `duration`, `fill`, + any `<img>` attr (`alt`, `className`, `style`)
-- `<Subtitle entries={[...]} />` — timed text. Defaults to bottom-center 5% up, white, `text-[1.875vmax] font-semibold drop-shadow-lg`; a portrait canvas sits it a sixth up at `text-[3.25vmax]`, rendered above clips. Props: `entries: { start, end, text }[]`, `lineClassName` / `lineStyle` (the text's `<span>`), + any `<div>` attr
+- `<Subtitle entries={[...]} />` — timed text. Defaults to bottom-center 5% up, white, `text-[1.875vmax] font-semibold drop-shadow-lg`; a portrait canvas sits it a sixth up at `text-[3.25vmax]`, rendered above clips. Props: `entries` — each `{ start, end, text }` (seconds) or a script line timed by konte ([subtitles.md](references/subtitles.md)), `lineClassName` / `lineStyle` (the text's `<span>`), + any `<div>` attr
 - `<Cutin at size inset>` — the shot's declared `cutin`, over the whole shot: `at` a corner (default `bottom-right`), `size` a fraction of canvas width, `inset` the edge gap. Holds that frame's `<Panel>`s on the animatic, its `<Video>` on the video.
+- `<Screen corners>` — a surface seen at an angle: its children warped onto four `corners` (canvas fractions, TL TR BR BL).
 - `<Animate script={...} />` — GSAP animation for the shot. Props: `script: ({ timeline, split, data }) => void` — `split(selector, { type, mask? })` returns `{ chars, words }`, each a tween target; inferred inline; `import type { GsapTimeline }` only for a callback lifted out of the JSX. `data` — JSON (an imported `.json`, a computed series) the script reads, typed
 
 Plus any HTML element, inline SVG, Tailwind v4 class, inline `style` or CSS `filter` — overlays, titles, frames, vignettes.
@@ -62,7 +64,7 @@ Gotchas:
 
 ## Fonts
 
-- The piece's web fonts are declared on `direction.policy.fonts` — Google Fonts family names, every shipped weight requested, laid on the composition body.
+- The piece's web fonts are declared on `direction.policy.fonts` — every shipped weight requested, laid on the composition body.
 - Never a Tailwind arbitrary-value class (`font-[Inter]`) — the export embeds faces by reading the HTML, and a class's CSS does not exist until the browser has run.
 
 ## Timing model
@@ -86,4 +88,4 @@ Gotchas:
 
 - `konte probe contact-sheet video` / `reel-audio video` — captions, transitions, the audio timeline.
 - `konte probe motion video:shot.<id>#composition --at <sec>` — each `<Animate>` move.
-- An element positioned in % over an image (a box around a screenshot row) — `konte probe image <image> --grid` to measure it.
+- An element positioned in % over an image (a box around a screenshot row, a `<Screen>`'s corners) — `konte probe image <image> --grid` / `probe thumbnails <clip> --at <sec> --grid`.

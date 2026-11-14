@@ -9,3 +9,4 @@ konte.credentials.json.lock
 .mcp.json
 .codex/config.toml
 .codex/rules/konte.rules
+videos/*/source/chunks/

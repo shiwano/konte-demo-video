@@ -4,25 +4,30 @@ description: Shape a human's concept, script, or shot plan into an accepted dire
 user-invocable: false
 ---
 
-Translate what a human wants to make into the direction every stage builds on — the signed-off concept captured in `direction.ts` and accepted. Done = every direction part accepted; laying out the stage files is `layout-guide`'s, generation and stage review `generation-loop-guide`'s.
+Translate what a human wants to make into the `direction.ts` every stage builds on. Done = every direction part accepted.
 
 ## 1. Settle which piece
 
-- New piece → a new video, even when the workspace holds videos — never author one into an existing video's files; created at step 7. Ask when it isn't explicit.
+- New piece → a new video, even when the workspace holds videos — never author one into an existing video's files; created at step 7, a source's at step 2. Ask when it isn't explicit.
 - Deriving from a sibling video → still a new video; a copied `direction.ts` is a draft — re-author it against `direction-guide` before editing it.
 - Revising an existing video → `konte status` (shot IDs, what's accepted), then step 7; steps 2–6 shape a new piece only.
 
 ## 2. Take in what they bring
 
-Ask which of three inputs they have:
+Ask which of four inputs they have:
 
 - Concept — a script/shot list (honor it; map onto konte's shape with minimal restructuring) or a vague idea (then you propose).
-- Material — their own media to put _in_ the video (footage, character/product/logo image, BGM/SE). Separate "already have" from "to generate"; `layout-guide` wires the files in.
+- Material — their own media to put _in_ the video (footage, character/product/logo image, BGM/SE). Separate "already have" from "to generate".
+- Source — the story itself comes from an existing work (a novel, a comic, a play or film script, a film to remake); it stands in for the concept. A script written for this video is a concept, a clip shown as "make it like this" a reference. → `konte video new <name> --template blank`, then `scenario-guide`'s adaptation.md.
 - Reference — a link/video/image shown as "make it like this" → direction, not material to include. Pin down _what_ to emulate (form, tone, pacing, palette, framing, motion, subtitles); read what you can (a video or a link: `konte study clip <file|url>`), ask the rest.
 
 ## 3. Hear what they picture — before any pitch
 
-Ask in rounds of two or three questions, each shaped by the last answer; stop when every line below is filled — a pitch made before that answers a brief you invented. "Just make something" → fill the rest yourself and say what you assumed.
+- A source → fill every line it settles off the digest and write it back; ask only the adaptation's choices — the range first (the reader finds it), runtime (its options off the span's length in `konte source show`, adaptation.md), fidelity, narration or not, the translation policy across languages, what its medium leaves open.
+- Otherwise → ask in rounds of two or three questions, each shaped by the last answer; stop when every line below is filled — a pitch made before that answers a brief you invented.
+- "Just make something" → fill the rest yourself and say what you assumed.
+
+The lines:
 
 - Why, and where it plays — the purpose (a laugh among friends, a portfolio piece, a product's feed) and the surface (a feed thumbed with the sound off, a screen watched sitting down). The two set the runtime, what the first second must do, and whether on-screen text carries the piece.
 - The form — offer the four, a reference's form as the first guess: a story (someone wants something, events follow), persuasion (a claim and its reasons — a promo, an explainer), a process (one subject made or changed), a mood (a motif).
@@ -43,21 +48,22 @@ Your picks go into the treatment (step 6). Ask nothing here.
 
 ## 5. Pitch and pick
 
-- Read `scenario-guide` first — a vague concept is pitched under its cull. A brought script or shot list (step 2) is never re-pitched.
+- Read `scenario-guide` first — a vague concept is pitched under its cull. A brought script or shot list (step 2) is never re-pitched; a source's story isn't either — offer two or three adaptation approaches at most (faithful, one viewpoint).
 - Present each pitch with its cull answers — the human picks or blends.
 
 ## 6. Agree the treatment — the gate before any file
 
-Nothing is written to disk until the human has said yes to the treatment, in so many words. "Make a video about X" authorized the conversation, not the file.
+Nothing is written to disk until the human has said yes to the treatment, in so many words — bar a source's video and its import (step 2). "Make a video about X" authorized the conversation, not the file.
 
-- Develop the pick, or the brought script, into a treatment — tone, look, rough runtime (propose defaults, marked as yours), the recurring characters, props and places, and the frames the shots will share. Ask only for forks you can't guess past — live-action vs anime, aspect ratio, length. Never pitch a shot-by-shot cut in chat — it is authored in `direction.ts` and reviewed in the direction preview.
+- Develop the pick, or the brought script, into a treatment — tone, look, rough runtime (propose defaults, marked as yours; a source's is the human's pick), the recurring characters, props and places, and the frames the shots will share. Ask only for forks you can't guess past — live-action vs anime, aspect ratio, length. Never pitch a shot-by-shot cut in chat — it is authored in `direction.ts` and reviewed in the direction preview.
+- A source adds the adaptation map — scenes kept, cut, merged; how each interior shows; lines changed beyond translation; looks and style filled in — the translation policy, and "how I read it" (adaptation.md).
 - Send the treatment as one message, then the question alone — what it is for and where it plays, logline, hook, the feeling and the viewer's line, the direction it refuses, tone, look, runtime, delivery resolution, backend and model, who and where, the frames; then "shall I write this up as the direction?" With a native choice UI, that is the only question on it.
 - What is not a yes — the pick in step 5; "sounds good" on one part; silence; a question back; a "yes, but…" (fold the "but" in, re-send the treatment, ask again). A treatment changed after the yes needs a new one.
 
 ## 7. Author the direction
 
 - Read `direction-guide` first — and `scenario-guide`, entering here on a revision.
-- New piece → `konte video new <name> --template blank`, then copy the material already in hand to its `assets/files/`, a studied clip to `studies/` (`brief.references`).
+- New piece → `konte video new <name> --template blank` (a source's exists since step 2), then copy the material already in hand to its `assets/files/`, a studied clip to `studies/` (`brief.references`).
 - A piece derived from an existing one → `konte video copy <src> <dest> --through <stage>` — `--through direction` to revise the direction.
 - Cut to a song → [song-first.md](references/song-first.md) before writing any shot — the song is made and accepted first.
 - Write `direction.ts` — the `brief` is step 6's treatment (its hook is `hook`, step 3's refused direction is `outOfScope`); add rosters, `policy` and `sequence: { lens, pleasure, shots }`; clear `konte status`'s direction findings (fix or waive).
@@ -79,7 +85,7 @@ A fresh `konte-direction-critic` subagent reads the cut and returns findings bef
 - Get the direction accepted before authoring the stages — chat sign-off does not substitute.
 - Run the review per `review-guide`, scope `direction`.
 - Iterate feedback here, not later — fix the direction (or waive with a reason), hand off again, re-preview; loop until accepted.
-- Once the direction is accepted end to end, don't reopen this preview — retuning a shot, a roster entry or the arc is an edit and a report; the human signs it off in the stage review of the panel or shot that realizes it. Only `brief`, `policy` and a waiver on no shot bring you back; `konte status` then offers `konte preview direction` under Next steps.
+- Once the direction is accepted end to end, don't reopen this preview — retuning a shot, a roster entry or the arc is an edit and a report; the human signs it off in the stage review of the panel or shot that realizes it. Only `policy` and a waiver on no shot bring you back; `konte status` then offers `konte preview direction` under Next steps.
 
 ## 10. Hand off
 

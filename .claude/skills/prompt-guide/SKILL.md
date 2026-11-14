@@ -20,6 +20,7 @@ Before writing or editing a prompt-like field (`prompt`, `text`, `lyrics`):
 
 - Name what occupies the space, never what to leave out — a model conditions on the words it is given, so `no outlines` draws outlines; write `flat washes meeting edge to edge`.
 - An exclusion belongs in `negativePrompt` — the one field a model reads it in.
+- Revise by rewriting the whole prompt from the shot's `action` and the panel's `blocking`/`camera` — a fix naming the defect ("the pen stays motionless") or stacking it (`perfectly still`, `like a statue`) draws the model to it.
 - Write the scene description as a plain string literal, inline and fully spelled out — only boilerplate that must stay verbatim across shots (a canvas preamble, a character-preservation clause) may be a shared constant.
 
 ## Per kind
@@ -32,6 +33,7 @@ Before writing or editing a prompt-like field (`prompt`, `text`, `lyrics`):
 - Two characters' lines in one call only work on a model that takes speaker tags — on any other, give each speaker its own take.
 - Either kind's words — pass the injected `script.<who>[n]` as it stands; a paraphrase, a retyped copy or a wording fix is a `direction.ts` edit. A word THIS model reads wrong is respelled at the take with `respell(script.<who>[n], "…")`. A `ja` line's notation is `direction-guide`'s `japanese-notation.md`.
 - motion — realize the movement the panel's `blocking`/`camera` fixed; read them in `animatic.tsx`. The prompt names what moves and what the motion reveals — on a key, from its start to the key's landing.
+  - Open the take on the state the shot before it left on screen (on a `returns: from <id>` shot, that shot's) — posture, what is held, where each figure looks (out of frame: the side `offscreen:` names in `konte inspect video:shot.<id> --prompts`) — an unwritten opening is the model's guess.
   - Open each beat on where the last one lands, unless a pause is the point — its end state or its momentum: `out of the stumble she snaps a front kick`. A beat written from rest plays a pause before it.
   - Write a camera move as a path — where it starts, what it passes, where it lands, and the subject it travels with: `rises off the floor between the two runners, rides the lead runner's shoulder into a medium shot`.
   - A piece with its own motion grammar writes it once, where every shot reads it — what motion leaves on screen and how the camera behaves: `fast limbs smear and trail speed lines, every landed hit flashes the background hot pink; the camera keeps moving, riding a fist within inches of the lens`. Unwritten, a moment no shot moves holds still.
@@ -42,9 +44,6 @@ Before writing or editing a prompt-like field (`prompt`, `text`, `lyrics`):
 
 - A `coverage: true` shot is one take the model cuts inside — write the exchange beat after beat; the beats are the body.
 - Write the quick detail cuts as a beat (always) — each insert, in order: `quick detail cuts: Rue's narrowed eyes, Mina's tightening glove, the swinging dog tag, then the camera dives under the spin kick`. Unwritten, the model holds one angle.
-- Rehearse first:
-  1. The adapter's turbo switch on (`useTurbo: true`) at the working size, `konte generate video`, `konte-video-critic` on it; the human accepts or comments in `konte preview video`.
-  2. Switch off and `konte reroll` — `generate` skips the accepted rehearsal. `konte-video-critic` on the full take; the human's accept of it replaces the rehearsal.
 
 ## Reference preflight (image & video)
 
@@ -67,7 +66,7 @@ Look at the actual upstream image before writing about it.
 - Write a keyframe as a held instant — an action verb can pull the model through it: an opening is "fingers pinch the note's top edge, its lower edge hovering a hand's width from the board"; "presses the note onto the board" belongs in the motion prompt. An opening take that completes the action is redrawn from a rewritten opening, never patched.
 - An animatic panel states the body in full — torso orientation, each visible arm and leg's direction and bend, hand and foot positions, and the surfaces visible from the staged camera. For an upward gaze: "torso faces the camera; head tilts back toward screen left, chin underside visible; pupils high and toward screen left, whites visible below; the raised hand is off the upper-left edge of frame."
 - Two figures in contact are told apart by one visible axis, written at every contact — the attribute that separates them at the staged scale (a red coat against a grey one), restated wherever their bodies cross, trade blows or overlap: `the gloved woman blocks; the bare-knuckled one ducks under`. Named only by name, they swap identities mid-contact.
-- An animatic panel places contacts, overlaps and gaps explicitly — name what touches what, which object is nearer the camera, what occludes what, and which frame edge crops each part. Describe a required gap by its visible shape, screen position and thickness relative to an object in frame, alongside the physical distance.
+- An animatic panel places contacts, overlaps and gaps explicitly — name what touches what and what occludes what. Describe a required gap by its visible shape, screen position and thickness relative to an object in frame, alongside the physical distance.
 - Sides are the frame's, never a figure's — `screen left`, `off the right edge of frame`; a hand recurring across adjacent shots has its side and grip written so (`image-left`, the thumb's direction).
 - A figure turned toward the lens is mirrored — what sits on its left sits on the frame's right, so "the sword at his left hip" hangs it off the wrong side; a worn or carried object, and which hand reaches for it, as much as a gaze.
 - A reverse cut holds its axis only if both halves name the edge the gaze leaves by — unstated, each subject renders squared up to the lens and the pair loses the line.

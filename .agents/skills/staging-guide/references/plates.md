@@ -4,7 +4,7 @@
 - Generate every plate from its view's image — `reference.view.<location>.<view>`, `front` being the `location` master itself (`plate-unviewed`, `plate-unanchored`).
 - A view image is the room at full distance — cut a closer frame out of it (`imageCrop`) or in from a plate on it; cut an insert or a night frame in from a plate of the same view.
 - A root setup (`within: null`) declares its framing new — carry the master's setting and light onto each camera axis.
-- Where a setup and its `within` setup both have a plate, generate the child's from the parent's (`plate-unnested`) — pass the parent plate as is, beside the master, to a model that reads a previous frame (`cut` in `konte adapter show`), and write a cut in from that frame. Match its framing, camera height and perspective — the parent alone is enlarged to a blur.
+- Where a setup and its `within` setup both have a plate, generate the child's from the parent's (`plate-unnested`) — pass the parent plate as is to a generative model and write the step in from that frame, or crop a window out of it. Match its framing, camera height and perspective — the parent alone is enlarged to a blur.
 - A plate fixes how much of the set is in frame, and is passed at canvas size — a plate larger than the canvas reads as a picture inside the frame, its edges drawn as a window.
 - Include the setup's `holds`, each asked for by its `promptDepiction` in the prompt the plate is generated with (`plate-unnamed`).
 - Where the shot needs a frame its plate does not hold, regenerate the plate to its setup or move the shot to a setup that holds that frame (`direction-guide`); never crop the plate inside the keyframe (`plate-recropped`).
@@ -17,17 +17,21 @@
 
 ## View images
 
-A setup facing anything but `front` costs its location a view image (`view-unrealized`) — returned from `views` in reference.tsx, filed at `reference:view.<location>.<view>` whatever the asset is named and reached as `reference.view.<location>.<view>`.
+- Each declared view but `front` costs its location a view image (`view-unrealized`) — returned from `views` in reference.tsx, filed at `reference:view.<location>.<view>` whatever the asset is named and reached as `reference.view.<location>.<view>`.
 
 ```tsx
-views: ({ reference }) => {
-  const roomTop = asset("roomTop", imageMinimaxH3R2i, { image1: reference.room, prompt: { … } });
+views: ({ reference, coarse }) => {
+  const roomTop = asset("roomTop", imageMinimaxH3ImageView, {
+    image1: coarse.room.top,
+    image2: reference.room,
+    prompt: { … },
+  });
   return { room: { top: roomTop } };
 },
 ```
 
-- One image per view, made from the master (`view-unanchored`); the adapter's craft guide has the prompt.
-- Write the camera position, and what is in frame near to far with its share of the frame, in things the master shows. Never restate the room wall by wall — layout written against the master moves furniture.
-- Write the build of what the master does not show (a desk's legs, a chair's back) — left out, it is invented per view.
+- One image per view, painted over its coarse (`reference:view.<location>.<view>#coarse`, the master drawn from the view's camera); `konte generate reference` makes the coarses first, free. `back` has none: it is drawn from the master alone. The adapter's craft guide has the prompt.
+- Ask for each landmark in the view's `holds` by its `promptDepiction` (`view-unnamed`).
+- What the master does not show (a desk's legs, the wall behind its camera) takes its build only — left out, it is invented per view.
 - Draw the room at full distance — no close, insert or change of light; those are plates.
 - Rework a broken view alone, by changing its text.

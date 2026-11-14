@@ -1,6 +1,6 @@
 ---
 name: authoring-guide
-description: How to author the definition files — defineReference/defineAnimatic/defineVideo, shot/asset/<Panel>, dependencies between assets, cross-stage (animatic → video) references, and export delivery. Read when adding, editing, or wiring shots and assets in a definition file.
+description: How to author the definition files — defineReference/defineAnimatic/defineVideo, shot/asset/<Panel>, dependencies between assets, cross-stage (animatic → video) references, and `export.delivery` wiring. Read when adding, editing, or wiring shots and assets in a definition file.
 user-invocable: false
 ---
 
@@ -13,7 +13,6 @@ Declare shots, assets and dependencies in the stage files; done = `konte status`
 - The `prompt` string → `prompt-guide`
 - Plates, landmarks and a panel's `blocking` / `camera` → `staging-guide`
 - `<Composition>` JSX, audio placement → `composition-guide`
-- A type, field or signature (check, don't guess) → the konte LSP (`konte-lsp` plugin) in your editor
 - A dependency or staleness reason → `konte inspect <address>`
 
 ## The three definition files
@@ -36,18 +35,19 @@ export default defineReference(direction, {
       path: "assets/files/character.png",
     });
     const bgm = asset("bgm", adapters.audioFile, { path: "assets/files/bgm.mp3" });
-    return { character, bgm }; // exposed to other stages as reference.character / reference.bgm
+    return { character, bgm };
   },
 });
 ```
 
 - `defineReference(direction, { references, views? })` — `references` receives `{ format }` and declares assets with `asset()` (both `file` and generative adapters); returning one exposes it as `reference.<name>`. Address: `reference:<name>`.
-- `views` receives `{ format, reference }` and returns a location's view images, `{ <locationId>: { back | side | top: asset(…) } }`, each at `reference:view.<locationId>.<view>` and reached as `reference.view.<locationId>.<view>` — authoring → staging-guide.
+- `views` receives `{ format, reference, coarse }` and returns a location's view images, `{ <locationId>: { back | sideLeft | sideRight | top: asset(…) } }`, each but `back` painted over `coarse.<locationId>.<view>` — authoring → staging-guide's plates.md.
 - A reference asset may depend only on other reference assets, never on an animatic/video asset.
 - Return only what other stages consume — an asset used solely as an input to another reference asset (a blank `latent` feeding a generated `key`) is left un-returned; it still generates, but is never reviewed.
-- Return each character, prop, location and cast voice under its roster id — a `lineup`'s `cat` needs `reference:cat`; other shared assets (`bgm`) are fine. Setups and landmarks are declared on the animatic.
+- A location's `reference:<id>` is its master; the way it faces is `front` — draw it facing the way the location's `description` declares (`view-unnamed`).
+- Return each character, prop, location and cast voice under its roster id — a `lineup`'s `cat` needs `reference:cat`; other shared assets (`bgm`) are fine. A setup or landmark takes no reference asset — its plate is on the animatic.
+- A reference modeled on something real may start from a found photo or picture — download it to `assets/files/` and redraw it in the piece's look with an image edit adapter.
 - Let konte size a generated reference — `width`/`height` derive off the canvas' long edge: portrait for a character, a landscape master at twice it for a location, square for the rest; pass neither. A canvas-shaped overlay takes `...format.size`.
-- Frame the subject filling the frame — margin is pixels the shot never uses.
 
 ### animatic.tsx — defineAnimatic()
 
@@ -128,8 +128,8 @@ export default defineVideo(direction, {
 });
 ```
 
-- `defineVideo(direction, { export?, timeline })` — `{ size, fps }` derive from the direction. `export.delivery.upscale` wires the upscaler.
-- What it takes from the board — `animatic.shot("01").image("<panel>")` for a keyframe, `.stem` for the mixed-down lines, `.narrationStem` for the narration (`<Audio>` only).
+- `defineVideo(direction, { export?, timeline, thumbnail? })` — `{ size, fps }` derive from the direction. `thumbnail: { at, compose? }` — the cover is the cut at `at` seconds; `compose: ({ frame, shot }) => <Composition>…` draws over it, its `asset()`s `video:thumbnail.<name>`.
+- What it takes from the board — `animatic.shot("01").image("<panel>")` for a keyframe, `.stem` for the mixed-down lines, `.narrationStem` / `.offFrameStem` for the narration and the lines of a character the frame does not hold (`<Audio>` only).
 
 ## Adapter inputs
 
