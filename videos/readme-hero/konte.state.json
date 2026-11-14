@@ -7008,34 +7008,6 @@
         "partHash": "073bb95e9a3e",
         "acceptedAt": "2000-01-01T00:28:54.000Z"
       },
-      "direction:brief.logline": {
-        "partHash": "a308782764b5",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
-      "direction:brief.hook": {
-        "partHash": "04d4e457a28f",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
-      "direction:brief.audience": {
-        "partHash": "2abffe46147f",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
-      "direction:brief.tone": {
-        "partHash": "28949a6efcf0",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
-      "direction:brief.look": {
-        "partHash": "c1e0dec9d0d9",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
-      "direction:brief.outOfScope": {
-        "partHash": "d48140b92bf0",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
-      "direction:brief.tolerances": {
-        "partHash": "c1da6e55b1d9",
-        "acceptedAt": "2000-01-01T00:28:54.000Z"
-      },
       "direction:policy.format": {
         "partHash": "40b2d6f568f1",
         "acceptedAt": "2000-01-01T00:28:54.000Z"
@@ -7355,10 +7327,14 @@
       "direction:setups.deskInsert": {
         "partHash": "21b5df185678",
         "acceptedAt": "2000-01-01T00:28:54.000Z"
+      },
+      "direction:waivers.view-unnamed_studio.front.window": {
+        "partHash": "83d09850779e",
+        "acceptedAt": "2026-11-14T14:40:46.503Z"
       }
     },
     "whole": {
-      "hash": "071ce309c185",
+      "hash": null,
       "acceptedAt": "2000-01-01T00:15:59.000Z"
     }
   }

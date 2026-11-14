@@ -85,6 +85,9 @@ export default defineDirection({
           description: "A dented brass umbrella stand by the door at the end of the counter.",
         },
       },
+      views: {
+        front: { holds: ["counter", "umbrellaStand", "windowTable", "window"] },
+      },
     },
   },
   setups: {
@@ -133,7 +136,7 @@ export default defineDirection({
       location: "cafe",
       framing: "insert",
       view: "front",
-      holds: [],
+      holds: ["umbrellaStand"],
     },
     windowOut: {
       name: "through the window, wide",
@@ -158,6 +161,7 @@ export default defineDirection({
         setup: "cafeWide",
         duration: 4,
         lineup: ["owner", "girl"],
+        props: [],
       },
       {
         id: "02",
@@ -167,6 +171,7 @@ export default defineDirection({
         setup: "girlClose",
         duration: 3.5,
         lineup: ["girl"],
+        props: [],
         script: [
           {
             character: "girl",
@@ -183,6 +188,7 @@ export default defineDirection({
         setup: "counterMedium",
         duration: 3,
         lineup: ["owner"],
+        props: [],
       },
       {
         id: "04",
@@ -191,6 +197,7 @@ export default defineDirection({
         setup: "standInsert",
         duration: 2.5,
         lineup: ["owner"],
+        props: ["umbrella"],
       },
       {
         id: "05",
@@ -200,6 +207,7 @@ export default defineDirection({
         setup: "tableMedium",
         duration: 4,
         lineup: ["owner", "girl"],
+        props: ["umbrella"],
         script: [
           {
             character: "owner",
@@ -216,6 +224,7 @@ export default defineDirection({
         setup: "windowOut",
         duration: 4,
         lineup: ["girl"],
+        props: ["umbrella"],
         telop: ["Borrowed Umbrella"],
       },
     ],
@@ -224,6 +233,14 @@ export default defineDirection({
     "opening-key_02":
       "旧konteで生成したテイクを維持する。motionはキーフレームから開始する旧方式のまま。",
     "opening-key_05":
+      "旧konteで生成したテイクを維持する。motionはキーフレームから開始する旧方式のまま。",
+    "opening-key_01":
+      "旧konteで生成したテイクを維持する。motionはキーフレームから開始する旧方式のまま。",
+    "opening-key_03":
+      "旧konteで生成したテイクを維持する。motionはキーフレームから開始する旧方式のまま。",
+    "opening-key_04":
+      "旧konteで生成したテイクを維持する。motionはキーフレームから開始する旧方式のまま。",
+    "opening-key_06":
       "旧konteで生成したテイクを維持する。motionはキーフレームから開始する旧方式のまま。",
   },
 });

@@ -1593,34 +1593,6 @@
         "partHash": "895eb621cc9c",
         "acceptedAt": "2000-01-01T00:28:57.000Z"
       },
-      "direction:brief.logline": {
-        "partHash": "b65f02a18128",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
-      "direction:brief.hook": {
-        "partHash": "39634c997965",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
-      "direction:brief.audience": {
-        "partHash": "5ab291a3729a",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
-      "direction:brief.tone": {
-        "partHash": "4cb9c4b2ad32",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
-      "direction:brief.look": {
-        "partHash": "1e93592f0185",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
-      "direction:brief.outOfScope": {
-        "partHash": "fd319166b612",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
-      "direction:brief.tolerances": {
-        "partHash": "90ec5463c292",
-        "acceptedAt": "2000-01-01T00:28:57.000Z"
-      },
       "direction:policy.format": {
         "partHash": "0ada616adc30",
         "acceptedAt": "2000-01-01T00:28:57.000Z"
@@ -1712,10 +1684,26 @@
       "direction:setups.windowOut": {
         "partHash": "9a3e304eec47",
         "acceptedAt": "2000-01-01T00:28:57.000Z"
+      },
+      "direction:waivers.opening-key_01": {
+        "partHash": "83cb8d9272aa",
+        "acceptedAt": "2026-11-14T14:40:41.465Z"
+      },
+      "direction:waivers.opening-key_03": {
+        "partHash": "0a1778fb9126",
+        "acceptedAt": "2026-11-14T14:40:41.465Z"
+      },
+      "direction:waivers.opening-key_04": {
+        "partHash": "3dcd04c2311c",
+        "acceptedAt": "2026-11-14T14:40:41.465Z"
+      },
+      "direction:waivers.opening-key_06": {
+        "partHash": "75d23e28c6d5",
+        "acceptedAt": "2026-11-14T14:40:41.465Z"
       }
     },
     "whole": {
-      "hash": "bea8ccb8bb55",
+      "hash": null,
       "acceptedAt": "2000-01-01T00:14:01.000Z"
     }
   }

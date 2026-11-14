@@ -1045,7 +1045,7 @@ export default defineVideo(direction, {
             detailedDescription: {
               style: "2D-animated.",
               shots: [
-                "The shot begins from <Picture 1>: close on the desk top in warm orange evening light, the pile of storyboard sheets and the mug with long soft shadows, the pen tablet's screen dark, her black hair and white sleeve resting on the desk at the left edge. Almost nothing moves: the orange light creeps slowly across the wood, the shadows lengthen a fraction, and her sleeve rises and falls faintly with her breathing. The camera holds a static shot.",
+                "The shot begins from <Picture 1>: close on the desk top in warm orange evening light, the pile of storyboard sheets and the mug with long soft shadows, the pen tablet's screen dark, her black hair and white sleeve resting on the desk at the left edge. The desk rests in a quiet hush: the orange light creeps slowly across the wood, the shadows lengthen a fraction, and her sleeve rises and falls faintly with her breathing. The camera holds a static shot.",
               ],
             },
             overallSoundscape: "A quiet interior with faint room tone and slow, soft breathing.",

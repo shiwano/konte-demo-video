@@ -1,12 +1,6 @@
 // source-hash: 8edfef99106d3342c229e0594e6dd1aedad95717f1e90adb5462d644479209a0
 // source: konte / workflows/konte/image_minimax_h3_r2i.json (hand-authored)
-import {
-  defineComfyAsset,
-  formatCutTime,
-  minimaxH3CutSource,
-  minimaxH3Prompt,
-  promptReferenceTags,
-} from "konte";
+import { defineComfyAsset, formatCutTime, promptReferenceTags } from "konte";
 
 type Task = "keyframe completion" | "reference generation";
 
@@ -173,11 +167,10 @@ export const imageMinimaxH3R2i = defineComfyAsset({
   // The latent packs frames (1, 4, 4, 4, 4) per slot, repeating every 17; a frame kept from inside
   // a four-frame slot comes back smeared. Frame 17 is past the cut at frame 12.
   derive: {
-    length: ({ prompt }) => (minimaxH3CutSource(prompt) === undefined ? 5 : 22),
-    frameIndex: ({ prompt }) => (minimaxH3CutSource(prompt) === undefined ? 0 : 17),
+    length: ({ prompt }) => (prompt.includes("[Shot 2]") ? 22 : 5),
+    frameIndex: ({ prompt }) => (prompt.includes("[Shot 2]") ? 17 : 0),
   },
   validators: [
-    minimaxH3Prompt({ mode: "r2i", length: "length" }),
     promptReferenceTags({
       tags: {
         Picture: [
@@ -194,8 +187,6 @@ export const imageMinimaxH3R2i = defineComfyAsset({
         Video: [],
         Audio: [],
       },
-      prevPanel: { tag: "Picture", within: minimaxH3CutSource },
     }),
   ],
-  readsPrevPanel: true,
 });

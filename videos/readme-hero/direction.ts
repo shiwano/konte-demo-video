@@ -88,6 +88,9 @@ export default defineDirection({
           description: "絵コンテやメモがピンで留まったコルクボード。右の壁、彼女の立ち位置の後ろ。",
         },
       },
+      views: {
+        front: { holds: ["desk", "window", "board"] },
+      },
     },
   },
   setups: {
@@ -199,6 +202,7 @@ export default defineDirection({
       "旧konteで承認済みのテイクを維持する。motionは最終フレームに着地する旧方式のまま。",
     "join-unshown_32":
       "旧konteで承認済みのテイクを維持する。motionは最終フレームに着地する旧方式のまま。",
+    "view-unnamed_studio.front.window": "旧konteで承認済みの参照画像を維持する。",
   },
   sequence: {
     lens: "comedy",
@@ -212,6 +216,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 1.5,
         lineup: ["konte"],
+        props: [],
         telop: ["TAKE 1"],
         script: [{ character: "konte", text: "Hi!", acting: "明るく短く、弾むように。" }],
       },
@@ -223,6 +228,7 @@ export default defineDirection({
         setup: "roomWide",
         duration: 4,
         lineup: ["konte"],
+        props: [],
         script: [
           {
             character: "konte",
@@ -238,6 +244,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["stickyNote"],
       },
       {
         id: "04",
@@ -246,6 +253,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 3.5,
         lineup: ["konte"],
+        props: ["stickyNote"],
         join: "continuous",
         script: [
           {
@@ -262,6 +270,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 3.5,
         lineup: ["konte"],
+        props: [],
         telop: ["TAKE 2"],
         script: [
           {
@@ -279,6 +288,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 5,
         lineup: ["konte"],
+        props: [],
         join: "continuous",
         script: [
           {
@@ -296,6 +306,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["stickyNote"],
       },
       {
         id: "09",
@@ -304,6 +315,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 2.5,
         lineup: ["konte"],
+        props: ["stickyNote"],
         join: "continuous",
         script: [
           {
@@ -321,6 +333,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 4,
         lineup: ["konte"],
+        props: [],
         telop: ["TAKE 3"],
         script: [
           {
@@ -337,6 +350,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 4.5,
         lineup: ["konte"],
+        props: [],
         join: "continuous",
         script: [
           {
@@ -353,6 +367,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 1,
         lineup: ["konte"],
+        props: ["stickyNote"],
       },
       {
         id: "13",
@@ -361,6 +376,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 3.5,
         lineup: ["konte"],
+        props: ["stickyNote"],
         join: "continuous",
         script: [
           {
@@ -378,6 +394,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 3.5,
         lineup: ["konte"],
+        props: [],
         telop: ["TAKE 4"],
         script: [
           {
@@ -394,6 +411,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 3,
         lineup: ["konte"],
+        props: [],
         join: "continuous",
         script: [
           { character: "konte", text: "And I make it.", acting: "短く、言い切って。" },
@@ -407,6 +425,7 @@ export default defineDirection({
         setup: "roomWide",
         duration: 2.5,
         lineup: ["konte"],
+        props: [],
       },
       {
         id: "17",
@@ -415,6 +434,7 @@ export default defineDirection({
         setup: "deskInsert",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["storyboardSheet"],
       },
       {
         id: "18",
@@ -423,6 +443,7 @@ export default defineDirection({
         setup: "deskMedium",
         duration: 3.5,
         lineup: ["konte"],
+        props: [],
         script: [
           {
             character: "konte",
@@ -438,6 +459,7 @@ export default defineDirection({
         setup: "deskMedium",
         duration: 2.5,
         lineup: ["konte"],
+        props: ["storyboardSheet"],
         join: "jump-forward",
         script: [{ character: "konte", text: "...No.", acting: "自分にだけ聞こえる声で。" }],
       },
@@ -448,6 +470,7 @@ export default defineDirection({
         setup: "deskInsert",
         duration: 1,
         lineup: [],
+        props: ["storyboardSheet"],
       },
       {
         id: "21",
@@ -456,6 +479,7 @@ export default defineDirection({
         setup: "deskMedium",
         duration: 2,
         lineup: ["konte"],
+        props: ["clapperboard"],
         telop: ["TAKE 6"],
         script: [
           { character: "konte", text: "Again.", acting: "カチンコと同時に、気合いを入れ直して。" },
@@ -468,6 +492,7 @@ export default defineDirection({
         setup: "deskInsert",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["storyboardSheet"],
       },
       {
         id: "23",
@@ -476,6 +501,7 @@ export default defineDirection({
         setup: "deskMedium",
         duration: 2.5,
         lineup: ["konte"],
+        props: ["tablet"],
         script: [{ character: "konte", text: "Nope.", acting: "即決で。" }],
       },
       {
@@ -485,6 +511,7 @@ export default defineDirection({
         setup: "deskInsert",
         duration: 1.5,
         lineup: [],
+        props: ["storyboardSheet"],
       },
       {
         id: "25",
@@ -494,6 +521,7 @@ export default defineDirection({
         setup: "deskMedium",
         duration: 3,
         lineup: ["konte"],
+        props: [],
       },
       {
         id: "26",
@@ -503,6 +531,7 @@ export default defineDirection({
         setup: "deskInsert",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["storyboardSheet"],
       },
       {
         id: "27",
@@ -512,6 +541,7 @@ export default defineDirection({
         setup: "roomWide",
         duration: 3.5,
         lineup: ["konte"],
+        props: [],
         telop: ["TAKE 42"],
       },
       {
@@ -521,6 +551,7 @@ export default defineDirection({
         setup: "deskInsert",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["tablet"],
       },
       {
         id: "29",
@@ -529,6 +560,7 @@ export default defineDirection({
         setup: "deskMedium",
         duration: 3,
         lineup: ["konte"],
+        props: ["tablet"],
         script: [{ character: "konte", text: "...Better.", acting: "小さく、それから確信して。" }],
       },
       {
@@ -539,6 +571,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 4.5,
         lineup: ["konte"],
+        props: ["tablet"],
         script: [
           { character: "konte", text: "This one?", acting: "息を切らして、期待いっぱいに。" },
         ],
@@ -551,6 +584,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 1.5,
         lineup: ["konte"],
+        props: ["stickyNote", "tablet"],
       },
       {
         id: "32",
@@ -560,6 +594,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 2.5,
         lineup: ["konte"],
+        props: ["stickyNote"],
         join: "continuous",
         script: [
           {
@@ -577,6 +612,7 @@ export default defineDirection({
         setup: "konteMedium",
         duration: 4.5,
         lineup: ["konte"],
+        props: ["stickyNote", "tablet"],
         telop: ["ACCEPTED"],
       },
       {
@@ -586,6 +622,7 @@ export default defineDirection({
         setup: "konteClose",
         duration: 3.5,
         lineup: ["konte"],
+        props: [],
         script: [
           {
             character: "konte",
