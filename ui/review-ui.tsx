@@ -11,7 +11,7 @@ const CSS = `
 .kr *{box-sizing:border-box;}
 :where(.kr button){font:inherit;color:inherit;cursor:pointer;background:transparent;border:0 solid;padding:0;}
 .kr svg{display:block;flex:none;}
-.kr-header{z-index:5;position:absolute;inset:0 0 auto 0;height:52px;border-bottom:1px solid var(--border);background:rgba(11,12,15,.85);}
+.kr-header{z-index:5;position:absolute;inset:0 0 auto 0;height:52px;border-bottom:1px solid var(--border);background:rgba(11,12,15,.85);backdrop-filter:blur(12px);}
 .kr-header-in{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1600px;margin:0 auto;padding:0 20px;}
 .kr-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:-.01em;}
 .kr-brand-sep{width:1px;height:18px;background:var(--border-strong);}
@@ -100,33 +100,16 @@ const CSS = `
 .kr-shotcard-action{margin-top:8px;color:var(--text-secondary);font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .kr-progress{height:4px;border-radius:999px;background:var(--bg-hover);overflow:hidden;}
 .kr-progress div{height:100%;background:var(--green);}
-.kr-table{border:1px solid var(--border);border-radius:14px;background:var(--bg-panel);overflow:hidden;}
-.kr-thead{display:grid;padding:12px 16px;background:var(--bg-elevated);border-bottom:1px solid var(--border);}
-.kr-row{display:grid;gap:18px;padding:14px 16px;border-bottom:1px solid var(--border);}
-.kr-row.sel{background:rgba(110,98,245,.12);box-shadow:inset 3px 0 0 var(--accent);}
 .kr-media{position:relative;border-radius:10px;overflow:hidden;background:#000;}
 .kr-media-tag{position:absolute;top:10px;left:10px;padding:2px 8px;border-radius:6px;background:rgba(0,0,0,.6);font-size:11px;font-weight:600;}
 .kr-media-tools{position:absolute;top:10px;right:10px;display:flex;gap:6px;}
 .kr-media-tool{display:flex;align-items:center;gap:5px;height:28px;padding:0 8px;border-radius:7px;background:rgba(15,16,20,.75);border:1px solid rgba(255,255,255,.12);font-size:11.5px;color:var(--text-secondary);}
-.kr-audio{position:absolute;left:10px;right:10px;bottom:12px;height:28px;display:flex;align-items:center;gap:12px;padding:0 14px;border-radius:999px;background:#f1f3f4;}
+.kr-audio{position:absolute;left:12px;right:12px;bottom:16px;height:34px;display:flex;align-items:center;gap:12px;padding:0 14px;border-radius:999px;background:#f1f3f4;}
 .kr-audio-time{font-size:12px;color:#222;}
 .kr-audio-bar{flex:1;height:4px;border-radius:999px;background:#c8c8c8;overflow:hidden;}
 .kr-audio-bar div{height:100%;background:#555;}
 .kr-audio-more{color:#333;font-weight:700;font-size:15px;}
-.kr-roster{border:1px solid var(--border);border-radius:10px;padding:10px 14px;background:var(--bg-elevated);}
-.kr-roster-k{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);}
-.kr-section{border:1px solid var(--border);border-radius:14px;background:var(--bg-panel);overflow:hidden;margin-bottom:22px;}
-.kr-section.sel{border-color:rgba(110,98,245,.7);box-shadow:0 0 0 1px rgba(110,98,245,.35);}
-.kr-section-head{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--border);}
-.kr-section.sel .kr-section-head{background:rgba(110,98,245,.13);}
-.kr-section-title{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-secondary);}
-.kr-section-body{padding:12px 13px 14px;}
-.kr-dgrid{display:grid;grid-template-columns:108px 1fr 318px;column-gap:16px;}
-.kr-dhead{background:var(--bg-elevated);padding:9px 12px;border-radius:6px 6px 0 0;}
-.kr-drow{padding:10px 12px;border-bottom:1px solid var(--border);}
 .kr-drow:last-child{border-bottom:none;}
-.kr-dfield{font-weight:600;font-size:14px;}
-.kr-dvalue{font-size:14px;color:var(--text-secondary);}
 .kr ul{margin:0;padding-left:18px;list-style:disc;}
 .kr li{margin-bottom:3px;}
 .kr li::marker{color:var(--text-secondary);}
@@ -144,7 +127,6 @@ const CSS = `
 .kr-sc-body{flex:1;min-width:0;margin:0;padding:10px 0 10px 35px;border-left:3px solid transparent;}
 .kr-sc-notes{flex:none;width:288px;padding:10px 0;display:flex;flex-direction:column;gap:6px;}
 .kr-sc-scene{padding-top:26px;padding-bottom:3px;font-size:16px;font-weight:700;letter-spacing:.02em;}
-.kr-sc-join{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);}
 .kr-sc-action{position:relative;margin:0;font-size:14px;}
 .kr-sc-chev{position:absolute;left:-34px;top:-2px;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:6px;color:var(--text-muted);}
 .kr-sc-chev.open{background:var(--bg-elevated);color:var(--text-primary);}
@@ -155,9 +137,56 @@ const CSS = `
 .kr-sc-text{font-size:16px;}
 .kr-sc-aside{margin:6px 0 0;font-size:13px;color:var(--text-secondary);}
 .kr-sc-label{margin-right:8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);}
-.kr-sc-staging{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:8px 0 0;padding:10px 12px;background:var(--bg-app);border:1px solid var(--border);border-radius:8px;font-size:12.8px;}
 .kr-sc-staging dt{color:var(--text-muted);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px;}
 .kr-sc-staging dd{margin:0;}
+.kr-rail{z-index:4;position:absolute;top:52px;bottom:0;left:0;background:var(--bg-panel);border-right:1px solid var(--border);font-size:13.4px;}
+.kr-rail-scroll{margin-top:41.6px;padding:4.8px 8px 32px;}
+.kr-rail-toggle{z-index:5;position:absolute;top:60px;left:9.6px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;color:var(--text-muted);}
+.kr-rail-group+.kr-rail-group{margin-top:17.6px;}
+.kr-rail-title{padding:4.8px 9.6px;font-size:11.5px;font-weight:500;color:var(--text-muted);}
+.kr-rail-row{display:flex;align-items:center;gap:7.2px;min-height:30px;padding:2.4px 9.6px;border-radius:6px;color:var(--text-secondary);}
+.kr-rail-row.current{background:var(--bg-elevated);color:var(--text-primary);font-weight:600;}
+.kr-rail-name{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.kr-rail-fold{display:flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:-4.8px;color:var(--text-muted);}
+.kr-rail-fold.open svg{transform:rotate(90deg);}
+.kr-rail-meta{font-size:11.5px;font-weight:400;color:var(--text-muted);}
+.kr-rail-noted{color:var(--accent-hover);}
+.kr-rail-left{min-width:20px;padding:0 5.6px;border-radius:999px;background:var(--yellow-soft);color:var(--yellow);font-size:11.2px;font-weight:600;line-height:20px;text-align:center;}
+.kr-rail-done{color:var(--green);}
+.kr-rail-shots{display:flex;flex-wrap:wrap;gap:3px;padding:4px 9.6px 8px 24.8px;}
+.kr-rail-shot{display:flex;align-items:center;justify-content:center;min-width:30.4px;height:24px;padding:0 4.8px;border:1px solid transparent;border-radius:4px;font-size:11.2px;}
+.kr-rail-shot.cur{color:var(--text-primary)!important;}
+.kr-group-title{margin:0 0 11.2px;font-size:13.1px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);line-height:19.2px;}
+.kr-subject{background:var(--bg-panel);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);}
+.kr-subject-head{display:flex;align-items:center;gap:11.2px;height:47px;padding:0 14.4px;background:var(--bg-elevated);border-bottom:1px solid var(--border);}
+.kr-subject-kind{font-size:10.9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);}
+.kr-subject-name{flex:1 1 auto;font-size:15.7px;font-weight:600;}
+.kr-subject-progress{font-size:12.2px;color:var(--text-muted);}
+.kr-ref-row{display:grid;grid-template-columns:940px minmax(0,1fr) 132px;gap:9.6px 14.4px;align-items:start;padding:14.4px;}
+.kr-ref-row+.kr-ref-row{border-top:1px solid var(--border);}
+.kr-ref-row.focused{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent);}
+.kr-ref-label{grid-column:1/-1;display:flex;align-items:baseline;gap:9.6px;height:17px;}
+.kr-ref-role{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);}
+.kr-ref-holds{font-size:12.5px;color:var(--text-muted);}
+.kr-move{display:flex;align-items:flex-start;gap:6.4px;padding:7px 9px;border-radius:10px;background:var(--bg-elevated);border:1px solid var(--border-strong);font-size:13.1px;line-height:1.4;}
+.kr-move-icon{color:var(--text-secondary);padding-top:2px;}
+.kr-move-body{display:flex;flex:1;flex-direction:column;gap:3px;min-width:0;}
+.kr-move-row{display:flex;align-items:baseline;gap:8px;}
+.kr-move-label{flex:none;width:67px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-secondary);}
+.kr-move-flag{margin-left:auto;padding:1px 6px;border-radius:6px;background:var(--yellow-soft);color:var(--yellow);font-size:10.9px;text-transform:uppercase;letter-spacing:.05em;}
+.kr-dgrid{display:grid;grid-template-columns:108px 1fr 318px;column-gap:16px;}
+.kr-dhead{background:var(--bg-elevated);padding:7.2px 11.2px;box-shadow:inset 0 -1px 0 var(--border);}
+.kr-dhead-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);}
+.kr-drow{padding:8px 11.2px;border-bottom:1px solid var(--border);font-size:14.1px;}
+.kr-drow:last-child{border-bottom:none;}
+.kr-dfield{font-weight:600;}
+.kr-dvalue{color:var(--text-primary);}
+.kr-sc-body.focused{background:var(--accent-soft);}
+.kr-sc-jump{padding-top:1.6px;padding-bottom:1.6px;}
+.kr-sc-join{display:flex;align-items:center;gap:6.4px;font-size:11.5px;line-height:1.4;white-space:nowrap;color:var(--text-secondary);}
+.kr-sc-join::after{content:"";flex:1 1 auto;margin-left:4.8px;border-top:1px dashed var(--border-strong);}
+.kr-sc-staging{display:grid;grid-template-columns:auto 1fr;gap:4.8px 14.4px;margin:8px 0 0;padding:9.6px 12px;background:var(--bg-app);border:1px solid var(--border);border-radius:10px;font-size:12.8px;}
+.kr-framing{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--bg-elevated);color:var(--text-secondary);border:1px solid var(--border);font-size:11.2px;font-weight:600;letter-spacing:.02em;}
 `;
 
 const Icon = {
@@ -289,6 +318,16 @@ const Icon = {
       <path d="M6 6l12 12M18 6 6 18" />
     </svg>
   ),
+  menu: (s = 16) => (
+    <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  ),
+  chevron: (s = 12) => (
+    <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="m9 6 6 6-6 6" />
+    </svg>
+  ),
   minus: (s = 12) => (
     <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
       <path d="M5 12h14" />
@@ -302,9 +341,18 @@ export interface HeaderState {
   needsReview?: boolean;
   hideStale?: boolean;
   nextToReview?: number;
-  allAccepted?: boolean;
+  /** The Accept all button, done or not; omitted where the page has none. */
+  acceptAll?: boolean;
+  /** The page's one Accept (the direction review), marked or not. */
+  accept?: boolean;
   /** Unsent drafts on the page, which arm the Reset button. */
   dirty?: boolean;
+}
+
+/** The index pinned to the page's left edge; the page makes room for it. */
+export interface RailSpec {
+  width: number;
+  children?: Children;
 }
 
 export interface ReviewFrameProps {
@@ -315,8 +363,9 @@ export interface ReviewFrameProps {
   handoff?: string;
   header?: HeaderState;
   submit?: boolean;
-  /** Pixels the page is scrolled down; the header and the submit button stay put. */
+  /** Pixels the page is scrolled down; the header, the index and the submit button stay put. */
   scroll?: number;
+  rail?: RailSpec;
   children?: Children;
 }
 
@@ -331,6 +380,7 @@ function Switch({ on, label }: { on: boolean; label: string }) {
 
 export function ReviewFrame(props: ReviewFrameProps) {
   const h = props.header ?? {};
+  const mainStyle = props.rail ? { left: `${props.rail.width + 28}px`, right: "20px", maxWidth: "none", padding: "0" } : undefined;
   return (
     <div style={{ zoom: props.width / BASE_W }}>
       <style>{CSS}</style>
@@ -348,22 +398,36 @@ export function ReviewFrame(props: ReviewFrameProps) {
               <Switch on={h.hideStale ?? true} label="Hide stale notes" />
               <button className="kr-btn icon">{Icon.help()}</button>
               {h.nextToReview !== undefined && (
-                <button className="kr-btn">
-                  Next to review <span className="count">{h.nextToReview}</span>
+                <button className={h.nextToReview > 0 ? "kr-btn" : "kr-btn ghost"}>
+                  Next to review {h.nextToReview > 0 && <span className="count">{h.nextToReview}</span>}
                 </button>
               )}
-              {h.allAccepted ? (
-                <button className="kr-btn ok">{Icon.check(13)} All accepted</button>
-              ) : (
-                <button className="kr-btn">{Icon.check(13)} Accept all</button>
-              )}
+              {h.acceptAll !== undefined &&
+                (h.acceptAll ? (
+                  <button className="kr-btn ok">{Icon.check(13)} All accepted</button>
+                ) : (
+                  <button className="kr-btn">{Icon.check(13)} Accept all</button>
+                ))}
               <button className={h.dirty ? "kr-btn" : "kr-btn ghost"}>
                 {Icon.reset()} Reset
               </button>
+              {h.accept !== undefined && (
+                <button className={h.accept ? "kr-btn ok" : "kr-btn"}>
+                  {Icon.check(13)} {h.accept ? "Accepted" : "Accept"}
+                </button>
+              )}
             </div>
           </div>
         </div>
-        <div className="kr-main">
+        {props.rail && (
+          <>
+            <div className="kr-rail" style={{ width: `${props.rail.width}px` }}>
+              {props.rail.children}
+            </div>
+            <button className="kr-rail-toggle">{Icon.menu()}</button>
+          </>
+        )}
+        <div className="kr-main" style={mainStyle}>
           <div style={{ marginTop: `${-(props.scroll ?? 0)}px` }}>
             {props.handoff && <HandoffBanner text={props.handoff} />}
             {props.children}
@@ -375,6 +439,29 @@ export function ReviewFrame(props: ReviewFrameProps) {
           </button>
         )}
       </div>
+    </div>
+  );
+}
+
+/** A titled group of the index. */
+export function RailGroup({ title, children }: { title: string; children?: Children }) {
+  return (
+    <div className="kr-rail-group">
+      <div className="kr-rail-title">{title}</div>
+      {children}
+    </div>
+  );
+}
+
+/** One row of the index: a fold before the name, then its marks and count. */
+export function RailRow(p: { name: string; current?: boolean; fold?: boolean; noted?: boolean; meta?: string | number; left?: number; done?: boolean }) {
+  return (
+    <div className={p.current ? "kr-rail-row current" : "kr-rail-row"}>
+      {p.fold !== undefined && <span className={p.fold ? "kr-rail-fold open" : "kr-rail-fold"}>{Icon.chevron(12)}</span>}
+      <span className="kr-rail-name">{p.name}</span>
+      {p.noted && <span className="kr-rail-noted">{Icon.bubble(11)}</span>}
+      {p.meta !== undefined && <span className="kr-rail-meta">{p.meta}</span>}
+      {p.left ? <span className="kr-rail-left">{p.left}</span> : p.done ? <span className="kr-rail-done">{Icon.check(12)}</span> : null}
     </div>
   );
 }
@@ -469,11 +556,16 @@ function AddNote() {
   );
 }
 
-function AcceptPill({ on }: { on: boolean }) {
+function AcceptPill({ on, wide }: { on: boolean; wide?: boolean }) {
+  const style = wide ? { width: "100%", justifyContent: "center" } : undefined;
   return on ? (
-    <button className="kr-accept on">{Icon.check(13)} Accepted</button>
+    <button className="kr-accept on" style={style}>
+      {Icon.check(13)} Accepted
+    </button>
   ) : (
-    <button className="kr-accept">{Icon.check(13)} Accept</button>
+    <button className="kr-accept" style={style}>
+      {Icon.check(13)} Accept
+    </button>
   );
 }
 
@@ -876,35 +968,75 @@ export function ReelReview(p: ReelReviewProps) {
 
 // ───────────────────────── reference ─────────────────────────
 
-export interface ReferenceAssetData {
+export interface ReferenceRowData {
+  /** The asset's name, tagged on its frame. */
   name: string;
+  /** What the row is inside its subject ("Look", "Voice", "Master"); omitted where the subject's name says it. */
+  label?: string;
+  /** The landmarks a view holds, beside its label. */
+  holds?: string;
   /** An image asset; omitted for an audio row, which shows the player instead. */
   image?: Img;
-  /** Width over height of the image; a portrait sheet sits letterboxed in the cell. */
+  /** Width over height of the image. */
   aspect?: number;
   takes?: number;
   /** Takes awaiting a verdict, shown as "N new". */
   fresh?: number;
-  roster?: { kind: string; name: string; description: string };
+  roster?: { kind: string; name: string; description: string; needsReview?: boolean };
+  /** The lines a voice sample's character speaks. */
+  lines?: { text: string; acting?: string }[];
   agent?: string;
   notes?: Note[];
   pins?: Pin[];
   accepted?: boolean;
-  /** The audio player's readout, e.g. "0:01 / 0:04"; audio rows only. */
-  playback?: { time: string; progress: number };
+  focused?: boolean;
 }
 
-export interface ReferenceGroup {
-  title: string;
-  assets: ReferenceAssetData[];
+export interface ReferenceSubjectData {
+  kind: "Character" | "Narrator" | "Prop" | "Place" | "Song" | "Material";
+  name: string;
+  rows: ReferenceRowData[];
 }
 
-export interface ReferenceReviewProps extends Omit<ReviewFrameProps, "children" | "stage"> {
-  groups: ReferenceGroup[];
-  selected?: string;
+export interface ReferenceSectionData {
+  title: "Cast" | "Props" | "Places" | "Sound" | "Materials";
+  subjects: ReferenceSubjectData[];
 }
 
-function MediaTools({ a }: { a: ReferenceAssetData }) {
+export interface ReferenceReviewProps extends Omit<ReviewFrameProps, "children" | "stage" | "rail"> {
+  sections: ReferenceSectionData[];
+  /** The subject the index marks as being read. */
+  current?: string;
+}
+
+const REF_RAIL_W = 208;
+/** The subjects' column: 1600px wide, centered beside the index. */
+const REF_COL_W = 1600;
+const REF_MEDIA_W = 940;
+const REF_IMAGE_MAX_H = 842;
+const REF_AUDIO_H = 136;
+
+const refImageH = (r: ReferenceRowData) => Math.min(REF_IMAGE_MAX_H, REF_MEDIA_W / (r.aspect ?? 16 / 9));
+const refRowH = (r: ReferenceRowData) => 28.8 + (r.label ? 26.6 : 0) + (r.image ? refImageH(r) : REF_AUDIO_H);
+const refSubjectH = (s: ReferenceSubjectData) => 48 + s.rows.reduce((a, r, i) => a + refRowH(r) + (i > 0 ? 1 : 0), 0) + 1;
+
+/** Each subject card's top, by name, measured from the top of the page under the handoff banner. */
+export function referenceSubjectTops(sections: ReferenceSectionData[]): Record<string, number> {
+  const out: Record<string, number> = {};
+  let y = 0;
+  sections.forEach((sec, si) => {
+    if (si > 0) y += 25.6;
+    y += 30.4;
+    sec.subjects.forEach((sub, i) => {
+      if (i > 0) y += 14.4;
+      out[sub.name] = y;
+      y += refSubjectH(sub);
+    });
+  });
+  return out;
+}
+
+function MediaTools({ a }: { a: ReferenceRowData }) {
   return (
     <div className="kr-media-tools">
       {a.takes !== undefined && (
@@ -914,47 +1046,40 @@ function MediaTools({ a }: { a: ReferenceAssetData }) {
           {a.accepted && <span className="kr-chip ok">{Icon.check(10)}</span>}
         </button>
       )}
-      <button className="kr-media-tool">{Icon.info(13)}</button>
       <button className="kr-media-tool">{Icon.expand(13)}</button>
     </div>
   );
 }
 
-function AssetCell({ a }: { a: ReferenceAssetData }) {
-  const cellW = 595;
-  const cellH = 460;
-  const imgW = Math.min(cellW, cellH * (a.aspect ?? 16 / 9));
+function ImageMedia({ a }: { a: ReferenceRowData }) {
+  const h = refImageH(a);
+  const w = h * (a.aspect ?? 16 / 9);
   return (
-    <div className="kr-media" style={{ width: `${cellW}px`, height: `${cellH}px` }}>
-      {a.image && (
-        <div style={{ position: "absolute", top: "0", bottom: "0", left: `${(cellW - imgW) / 2}px`, width: `${imgW}px` }}>
-          <Image src={a.image} fill />
-          {(a.pins ?? []).map((p) => (
-            <PinMark pin={p} />
-          ))}
-        </div>
-      )}
+    <div className="kr-media" style={{ height: `${h}px` }}>
+      <div style={{ position: "absolute", top: "0", bottom: "0", left: `${(REF_MEDIA_W - w) / 2}px`, width: `${w}px` }}>
+        <Image src={a.image!} fill />
+        {(a.pins ?? []).map((p) => (
+          <PinMark pin={p} />
+        ))}
+      </div>
       <div className="kr-media-tag">{a.name}</div>
       <MediaTools a={a} />
     </div>
   );
 }
 
-function AudioCell({ a }: { a: ReferenceAssetData }) {
-  const pb = a.playback ?? { time: "0:00 / 0:00", progress: 0 };
+function AudioMedia({ a }: { a: ReferenceRowData }) {
   return (
-    <div className="kr-media" style={{ width: "595px", height: "117px" }}>
+    <div className="kr-media" style={{ height: `${REF_AUDIO_H}px` }}>
       <div className="kr-media-tag">{a.name}</div>
       <MediaTools a={a} />
-      <div style={{ position: "absolute", top: "38px", left: "0", right: "0", display: "flex", justifyContent: "center", color: "var(--text-muted)" }}>
-        {Icon.speaker(26)}
+      <div style={{ position: "absolute", top: "46px", left: "0", right: "0", display: "flex", justifyContent: "center", color: "var(--text-muted)" }}>
+        {Icon.speaker(32)}
       </div>
       <div className="kr-audio">
         <span style={{ color: "#111" }}>{Icon.play(13)}</span>
-        <span className="kr-audio-time">{pb.time}</span>
-        <div className="kr-audio-bar">
-          <div style={{ width: `${pb.progress * 100}%` }} />
-        </div>
+        <span className="kr-audio-time">0:00 / 0:00</span>
+        <div className="kr-audio-bar" />
         <span style={{ color: "#777" }}>{Icon.speaker(14)}</span>
         <span className="kr-audio-more">⋮</span>
       </div>
@@ -962,29 +1087,52 @@ function AudioCell({ a }: { a: ReferenceAssetData }) {
   );
 }
 
-function ReferenceRow({ a, selected }: { a: ReferenceAssetData; selected: boolean }) {
-  const cols = "620px 1fr 120px";
+/** A direction card in the notes column: a label column, then its text. */
+function MoveCard({ rows, flag }: { rows: [string | null, Children][]; flag?: string }) {
+  return (
+    <div className="kr-move">
+      <span className="kr-move-icon">{Icon.film(12)}</span>
+      <span className="kr-move-body">
+        {rows.map(([label, text], i) => (
+          <span className="kr-move-row">
+            {label !== null && <span className="kr-move-label">{label}</span>}
+            <span>{text}</span>
+            {i === 0 && flag && <span className="kr-move-flag">{flag}</span>}
+          </span>
+        ))}
+      </span>
+    </div>
+  );
+}
+
+function ReferenceRow({ a }: { a: ReferenceRowData }) {
   const audio = !a.image;
   return (
-    <div className={selected ? "kr-row sel" : "kr-row"} style={{ gridTemplateColumns: cols }}>
-      {audio ? <AudioCell a={a} /> : <AssetCell a={a} />}
-      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        {a.roster && (
-          <div className="kr-roster">
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
-              <span style={{ color: "var(--text-muted)" }}>{Icon.book(11)}</span>
-              <span className="kr-roster-k">{a.roster.kind}</span>
-              <span style={{ fontSize: "13px", marginLeft: "8px" }}>{a.roster.name}</span>
-            </div>
-            <div style={{ fontSize: "13px" }}>{a.roster.description}</div>
-          </div>
+    <div className={a.focused ? "kr-ref-row focused" : "kr-ref-row"}>
+      {a.label && (
+        <div className="kr-ref-label">
+          <span className="kr-ref-role">{a.label}</span>
+          {a.holds && <span className="kr-ref-holds">{a.holds}</span>}
+        </div>
+      )}
+      {audio ? <AudioMedia a={a} /> : <ImageMedia a={a} />}
+      <div style={{ display: "flex", flexDirection: "column", gap: "8px", minWidth: "0" }}>
+        {a.roster && <MoveCard rows={[[a.roster.kind, a.roster.name], [null, a.roster.description]]} flag={a.roster.needsReview ? "needs review" : undefined} />}
+        {a.lines && a.lines.length > 0 && (
+          <MoveCard
+            rows={a.lines.map((l, i): [string, Children] => [
+              i === 0 ? "Lines" : "",
+              <>
+                {l.text}
+                {l.acting && <span style={{ color: "var(--text-muted)" }}> ({l.acting})</span>}
+              </>,
+            ])}
+          />
         )}
         {a.agent && <AgentNote text={a.agent} />}
         {(a.notes ?? []).length === 0 && (
           <div className="kr-empty">
-            {audio
-              ? "No notes on this asset yet. Add one below."
-              : "No notes on this asset yet. Add one below, or click the frame to pin one."}
+            {audio ? "No notes on this asset yet. Add one below." : "No notes on this asset yet. Add one below, or click the frame to pin one."}
           </div>
         )}
         {(a.notes ?? []).map((n) => (
@@ -993,34 +1141,65 @@ function ReferenceRow({ a, selected }: { a: ReferenceAssetData; selected: boolea
         <AddNote />
       </div>
       <div>
-        <AcceptPill on={!!a.accepted} />
+        <AcceptPill on={!!a.accepted} wide />
       </div>
     </div>
   );
 }
 
-/** The reference review page: images then audio, one row per asset, its feedback and accept beside it. */
-export function ReferenceReview(p: ReferenceReviewProps) {
-  const cols = "620px 1fr 120px";
+function ReferenceSubject({ s }: { s: ReferenceSubjectData }) {
+  const done = s.rows.filter((r) => r.accepted).length;
   return (
-    <ReviewFrame {...p} stage="Reference">
-      {p.groups.map((g) => (
-        <div style={{ marginBottom: "30px" }}>
-          <div className="kr-label" style={{ fontSize: "13px", margin: "4px 0 10px" }}>
-            {g.title}
-          </div>
-          <div className="kr-table">
-            <div className="kr-thead" style={{ gridTemplateColumns: cols, gap: "18px" }}>
-              <span className="kr-label">Asset</span>
-              <span className="kr-label">Feedback</span>
-              <span className="kr-label">Accept</span>
-            </div>
-            {g.assets.map((a) => (
-              <ReferenceRow a={a} selected={a.name === p.selected} />
+    <div className="kr-subject">
+      <div className="kr-subject-head">
+        <span className="kr-subject-kind">{s.kind}</span>
+        <span className="kr-subject-name">{s.name}</span>
+        {s.rows.length > 1 && (
+          <span className="kr-subject-progress">
+            {done}/{s.rows.length} accepted
+          </span>
+        )}
+        {s.rows.length > 1 && done < s.rows.length && (
+          <button className="kr-btn" style={{ color: "var(--text-secondary)" }}>
+            {Icon.check(13)} Accept all
+          </button>
+        )}
+      </div>
+      {s.rows.map((r) => (
+        <ReferenceRow a={r} />
+      ))}
+    </div>
+  );
+}
+
+/** The reference review page: a card per subject the direction names, a row per asset under it, the index on the left. */
+export function ReferenceReview(p: ReferenceReviewProps) {
+  const rail = (
+    <div className="kr-rail-scroll">
+      {p.sections.map((sec) => (
+        <RailGroup title={sec.title}>
+          {sec.subjects.map((sub) => {
+            const left = sub.rows.filter((r) => !r.accepted).length;
+            return <RailRow name={sub.name} current={sub.name === p.current} noted={sub.rows.some((r) => (r.notes ?? []).length > 0)} left={left} done={left === 0} />;
+          })}
+        </RailGroup>
+      ))}
+    </div>
+  );
+  return (
+    <ReviewFrame {...p} stage="Reference" rail={{ width: REF_RAIL_W, children: rail }}>
+      <div style={{ maxWidth: `${REF_COL_W}px`, margin: "0 auto" }}>
+        {p.sections.map((sec, i) => (
+          <div style={{ marginTop: i > 0 ? "25.6px" : "0" }}>
+            <div className="kr-group-title">{sec.title}</div>
+            {sec.subjects.map((sub, j) => (
+              <div style={{ marginTop: j > 0 ? "14.4px" : "0" }}>
+                <ReferenceSubject s={sub} />
+              </div>
             ))}
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </ReviewFrame>
   );
 }
@@ -1034,39 +1213,114 @@ export interface DirectionField {
   notes?: Note[];
 }
 
-export interface DirectionSectionData {
-  title: string;
-  accepted?: boolean;
-  selected?: boolean;
-  fields: DirectionField[];
+export interface DirectionShotRow {
+  id: string;
+  /** The dramatic function, shown under the shot's staging. */
+  role: string;
+  /** The stripe beside the shot and its cell in the index. */
+  roleTone?: "opening" | "rising" | "turn" | "payoff" | "closing";
+  action: string;
+  line?: { speaker: string; text: string; acting: string };
+  telop?: string;
+  place: string;
+  framing: string;
+  setup: string;
+  lineup: string;
+  props?: string[];
+  duration: number;
+  /** A time jump into the shot, headed above it. */
+  join?: "jump-back" | "jump-forward";
+  /** The staging folded open under the shot. */
+  staging?: boolean;
+  focused?: boolean;
+  agent?: string;
+  notes?: Note[];
 }
 
-export interface DirectionReviewProps extends Omit<ReviewFrameProps, "children" | "stage"> {
-  sections: DirectionSectionData[];
-  /** Rendered after the sections, e.g. a `DirectionShots` table. */
-  after?: Children;
+/** An index entry: a roster part and the number of shots showing it. */
+export interface DirectionEntry {
+  name: string;
+  shots: number;
+  noted?: boolean;
 }
 
-export function DirectionSection({ s }: { s: DirectionSectionData }) {
+export interface DirectionReviewProps extends Omit<ReviewFrameProps, "children" | "stage" | "rail"> {
+  shots: DirectionShotRow[];
+  cast: DirectionEntry[];
+  props?: DirectionEntry[];
+  places: DirectionEntry[];
+  brief: DirectionField[];
+  policy: DirectionField[];
+}
+
+const DIR_RAIL_W = 280;
+const DIR_PAGE_W = 1152;
+
+const TONE_COLOR = {
+  opening: ["#8a93a6", "rgba(138,147,166,.16)"],
+  rising: ["#a99fff", "rgba(110,98,245,.18)"],
+  turn: ["#f59e4b", "rgba(245,158,75,.18)"],
+  payoff: ["#30c98e", "rgba(48,201,142,.18)"],
+  closing: ["#4fb8c9", "rgba(79,184,201,.16)"],
+} as const;
+
+const JOIN_LABEL = { "jump-back": "time jumps back", "jump-forward": "time jumps forward" };
+
+function DirectionRail(p: DirectionReviewProps) {
+  const total = p.shots.reduce((a, r) => a + r.duration, 0);
   return (
-    <div className={s.selected ? "kr-section sel" : "kr-section"}>
-      <div className="kr-section-head">
-        <span className="kr-section-title">{s.title}</span>
-        <AcceptPill on={!!s.accepted} />
-      </div>
-      <div className="kr-section-body">
-        <div className="kr-dgrid kr-dhead">
-          <span className="kr-label" style={{ fontSize: "10px" }}>
-            Field
-          </span>
-          <span className="kr-label" style={{ fontSize: "10px" }}>
-            Value
-          </span>
-          <span className="kr-label" style={{ fontSize: "10px" }}>
-            Notes
-          </span>
+    <div className="kr-rail-scroll" style={{ fontSize: "13.4px" }}>
+      <RailGroup title="Flow">
+        <RailRow name="Whole piece" meta={`${p.shots.length} shots · ${fmt(total)}`} />
+        <div className="kr-rail-shots">
+          {p.shots.map((s) => {
+            const [c, soft] = TONE_COLOR[s.roleTone ?? "opening"];
+            return (
+              <span className={s.focused ? "kr-rail-shot cur" : "kr-rail-shot"} style={{ color: c, background: soft, borderColor: s.focused ? c : "transparent" }}>
+                {s.id}
+              </span>
+            );
+          })}
         </div>
-        {s.fields.map((f) => (
+      </RailGroup>
+      <RailGroup title="Cast">
+        {p.cast.map((e) => (
+          <RailRow name={e.name} noted={e.noted} meta={e.shots} />
+        ))}
+      </RailGroup>
+      {p.props && p.props.length > 0 && (
+        <RailGroup title="Props">
+          {p.props.map((e) => (
+            <RailRow name={e.name} noted={e.noted} meta={e.shots} />
+          ))}
+        </RailGroup>
+      )}
+      <RailGroup title="Places">
+        {p.places.map((e) => (
+          <RailRow name={e.name} fold={false} noted={e.noted} meta={e.shots} />
+        ))}
+      </RailGroup>
+      <RailGroup title="More">
+        <RailRow name="Brief" noted={p.brief.some((f) => f.agent || (f.notes ?? []).length > 0)} />
+        <RailRow name="Policy" noted={p.policy.some((f) => f.agent || (f.notes ?? []).length > 0)} />
+      </RailGroup>
+    </div>
+  );
+}
+
+function DirectionTable({ title, head, fields }: { title: string; head: string; fields: DirectionField[] }) {
+  return (
+    <div style={{ marginTop: "41.6px" }}>
+      <div className="kr-group-title" style={{ margin: "0" }}>
+        {title}
+      </div>
+      <div style={{ marginTop: "12.8px" }}>
+        <div className="kr-dgrid kr-dhead">
+          {[head, "Value", "Notes"].map((l) => (
+            <span className="kr-dhead-label">{l}</span>
+          ))}
+        </div>
+        {fields.map((f) => (
           <div className="kr-dgrid kr-drow">
             <div className="kr-dfield">{f.field}</div>
             <div className="kr-dvalue">
@@ -1094,49 +1348,18 @@ export function DirectionSection({ s }: { s: DirectionSectionData }) {
   );
 }
 
-/** The direction review page: one box per section, each accepted as a whole. */
+/** The direction review page: the shots as a script, the brief and the policy under it, the index on the left; the header's Accept signs it all. */
 export function DirectionReview(p: DirectionReviewProps) {
   return (
-    <ReviewFrame {...p} stage="Direction">
-      {p.sections.map((s) => (
-        <DirectionSection s={s} />
-      ))}
-      {p.after}
+    <ReviewFrame {...p} stage="Direction" rail={{ width: DIR_RAIL_W, children: <DirectionRail {...p} /> }}>
+      <div style={{ maxWidth: `${DIR_PAGE_W}px`, margin: "0 auto" }}>
+        <ShotScript rows={p.shots} />
+        <DirectionTable title="Brief" head="Field" fields={p.brief} />
+        <DirectionTable title="Policy" head="Field" fields={p.policy} />
+      </div>
     </ReviewFrame>
   );
 }
-
-export interface DirectionShotRow {
-  id: string;
-  /** The dramatic function, shown under the shot's staging. */
-  role: string;
-  /** The stripe beside the shot. */
-  roleTone?: "opening" | "rising" | "turn" | "payoff" | "closing";
-  action: string;
-  line?: { speaker: string; text: string; acting: string };
-  telop?: string;
-  place: string;
-  framing: string;
-  setup: string;
-  lineup: string;
-  duration: number;
-  /** A time jump into the shot, headed above it. */
-  join?: "jump-back" | "jump-forward";
-  /** The staging folded open under the shot. */
-  staging?: boolean;
-  agent?: string;
-  notes?: Note[];
-}
-
-const TONE_COLOR = {
-  opening: "#8a93a6",
-  rising: "#a99fff",
-  turn: "#f59e4b",
-  payoff: "#30c98e",
-  closing: "#4fb8c9",
-};
-
-const JOIN_LABEL = { "jump-back": "time jumps back", "jump-forward": "time jumps forward" };
 
 const chevron = (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -1145,14 +1368,6 @@ const chevron = (
 );
 
 /** The direction's shots as a screenplay: the clock in the gutter, the shot in the column, its notes in the margin. */
-export function DirectionShots({ title, accepted, rows }: { title: string; accepted?: boolean; rows: DirectionShotRow[] }) {
-  return (
-    <DirectionBox title={title} accepted={accepted}>
-      <ShotScript rows={rows} />
-    </DirectionBox>
-  );
-}
-
 function ShotScript({ rows }: { rows: DirectionShotRow[] }) {
   let clock = 0;
   return (
@@ -1165,8 +1380,8 @@ function ShotScript({ rows }: { rows: DirectionShotRow[] }) {
           r.join && (
             <div className="kr-sc-row">
               <div className="kr-sc-gutter" />
-              <div className="kr-sc-body">
-                <span className="kr-sc-join">— {JOIN_LABEL[r.join]}</span>
+              <div className="kr-sc-body kr-sc-jump">
+                <span className="kr-sc-join">{JOIN_LABEL[r.join]}</span>
               </div>
               <div className="kr-sc-notes" />
             </div>
@@ -1182,7 +1397,7 @@ function ShotScript({ rows }: { rows: DirectionShotRow[] }) {
               <span className="kr-sc-id">{r.id}</span>
               {fmt(Math.floor(start))} · {r.duration}s
             </div>
-            <div className="kr-sc-body" style={{ borderLeftColor: TONE_COLOR[r.roleTone ?? "opening"] }}>
+            <div className={r.focused ? "kr-sc-body focused" : "kr-sc-body"} style={{ borderLeftColor: TONE_COLOR[r.roleTone ?? "opening"][0] }}>
               <p className="kr-sc-action">
                 <span className={r.staging ? "kr-sc-chev open" : "kr-sc-chev"}>{chevron}</span>
                 {r.action}
@@ -1206,18 +1421,14 @@ function ShotScript({ rows }: { rows: DirectionShotRow[] }) {
                   <dd>{r.role}</dd>
                   <dt>Where</dt>
                   <dd style={{ display: "flex", flexDirection: "column", gap: "4px", alignItems: "flex-start" }}>
-                    <span className="kr-badge" style={{ height: "22px", textTransform: "none", letterSpacing: "0", fontSize: "11.5px", background: "var(--accent-soft)", color: "var(--accent-hover)", borderRadius: "999px", padding: "0 10px" }}>
-                      {r.place}
-                    </span>
-                    <span style={{ fontSize: "11.5px", color: "var(--text-muted)" }}>
-                      <span className="kr-badge" style={{ textTransform: "none", letterSpacing: "0", background: "var(--bg-hover)", color: "var(--text-primary)", marginRight: "6px" }}>
-                        {r.framing}
-                      </span>
-                      {r.setup}
+                    <span>{r.place}</span>
+                    <span>
+                      <span className="kr-framing">{r.framing}</span> {r.setup}
                     </span>
                   </dd>
                   <dt>Lineup (L→R)</dt>
                   <dd>{r.lineup}</dd>
+                  {r.props && r.props.length > 0 && [<dt>Props</dt>, <dd>{r.props.join(" · ")}</dd>]}
                 </dl>
               )}
             </div>
@@ -1232,250 +1443,5 @@ function ShotScript({ rows }: { rows: DirectionShotRow[] }) {
         ];
       })}
     </div>
-  );
-}
-
-// ───────────────────────── direction rosters ─────────────────────────
-
-function DirectionBox({ title, accepted, children }: { title: string; accepted?: boolean; children?: Children }) {
-  return (
-    <div className="kr-section">
-      <div className="kr-section-head">
-        <span className="kr-section-title">{title}</span>
-        <AcceptPill on={!!accepted} />
-      </div>
-      <div className="kr-section-body">{children}</div>
-    </div>
-  );
-}
-
-function HeadRow({ cols, labels }: { cols: string; labels: string[] }) {
-  return (
-    <div className="kr-dhead" style={{ display: "grid", gridTemplateColumns: cols, columnGap: "16px" }}>
-      {labels.map((l) => (
-        <span className="kr-label" style={{ fontSize: "10px" }}>
-          {l}
-        </span>
-      ))}
-    </div>
-  );
-}
-
-function NotesCell({ notes }: { notes?: Note[] }) {
-  return (
-    <div className="kr-dnotes">
-      {(notes ?? []).map((n) => (
-        <HumanNote note={n} />
-      ))}
-      <AddNote />
-    </div>
-  );
-}
-
-export interface RosterRow {
-  name: string;
-  description: string;
-  notes?: Note[];
-  /** A cast voice, shown as a sub-row under its character. */
-  voice?: string;
-  voiceNotes?: Note[];
-}
-
-/** The direction's character or prop roster. */
-export function DirectionRoster(p: { title: string; noun: string; accepted?: boolean; rows: RosterRow[] }) {
-  const cols = "190px 1fr 318px";
-  return (
-    <DirectionBox title={p.title} accepted={p.accepted}>
-      <HeadRow cols={cols} labels={[p.noun, "Description", "Notes"]} />
-      {p.rows.map((r) => (
-        <div className="kr-drow" style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: cols, columnGap: "16px", alignItems: "start" }}>
-            <span className="kr-dfield">{r.name}</span>
-            <span className="kr-dvalue" style={{ color: "var(--text-primary)" }}>
-              {r.description}
-            </span>
-            <NotesCell notes={r.notes} />
-          </div>
-          {r.voice !== undefined && (
-            <div style={{ display: "grid", gridTemplateColumns: cols, columnGap: "16px", alignItems: "start" }}>
-              <span style={{ textAlign: "right", color: "var(--text-secondary)", fontSize: "13.5px" }}>voice</span>
-              <span className="kr-dvalue">{r.voice}</span>
-              <NotesCell notes={r.voiceNotes} />
-            </div>
-          )}
-        </div>
-      ))}
-    </DirectionBox>
-  );
-}
-
-export interface LocationRow {
-  name: string;
-  setups: number;
-  description: string;
-  landmarks: { name: string; description: string }[];
-  notes?: Note[];
-}
-
-/** The direction's locations, each with its landmarks and the camera setups taken in it. */
-export function DirectionLocations(p: { title?: string; accepted?: boolean; rows: LocationRow[] }) {
-  const cols = "240px 44px 44px 1fr 318px";
-  return (
-    <DirectionBox title={p.title ?? "Locations & Setups"} accepted={p.accepted}>
-      <HeadRow cols={cols} labels={["Location / setup", "Frame", "Holds", "Description", "Notes"]} />
-      {p.rows.map((r) => (
-        <div className="kr-drow" style={{ display: "grid", gridTemplateColumns: cols, columnGap: "16px", alignItems: "start" }}>
-          <span style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", color: "var(--text-muted)", whiteSpace: "nowrap" }}>
-            <span style={{ fontSize: "9px", color: "var(--text-secondary)" }}>▶</span>
-            <span className="kr-badge" style={{ height: "22px", textTransform: "none", letterSpacing: "0", fontSize: "11.5px", background: "var(--accent-soft)", color: "var(--accent-hover)", borderRadius: "999px", padding: "0 10px" }}>
-              {r.name}
-            </span>
-            {r.setups} setups
-          </span>
-          <span />
-          <span />
-          <div className="kr-dvalue" style={{ color: "var(--text-primary)" }}>
-            {r.description}
-            <ul style={{ marginTop: "6px", fontSize: "12.5px", color: "var(--text-secondary)" }}>
-              {r.landmarks.map((l) => (
-                <li>
-                  <b style={{ color: "var(--text-primary)", fontWeight: 500, marginRight: "6px" }}>{l.name}</b>
-                  {l.description}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <NotesCell notes={r.notes} />
-        </div>
-      ))}
-    </DirectionBox>
-  );
-}
-
-// ───────────────────────── direction pacing ─────────────────────────
-
-export interface PacingData {
-  pleasure: string;
-  gloss: string;
-  /** Arc height per shot, 0 (calm) to 1 (peak), in shot order. */
-  arc: number[];
-  /** Comment count per shot id, shown on its block. */
-  comments?: Record<string, number>;
-}
-
-/** Flow & Shots: the pleasure aimed for, the arc over the shots' clock, and the shots as a screenplay. */
-export function DirectionFlow(p: {
-  accepted?: boolean;
-  pacing: PacingData;
-  rows: DirectionShotRow[];
-  /** Number of shots the script shows, from the first. */
-  scriptRows?: number;
-}) {
-  const total = p.rows.reduce((a, r) => a + r.duration, 0);
-  const left = 76;
-  const trackW = 1530 - left - 24;
-  const x = (t: number) => left + (t / total) * trackW;
-  let acc = 0;
-  const blocks = p.rows.map((r) => {
-    const b = { ...r, start: acc, end: acc + r.duration };
-    acc += r.duration;
-    return b;
-  });
-  const arcTop = 52;
-  const arcH = 40;
-  const pts = blocks.map((b, i) => ({ x: x((b.start + b.end) / 2), y: arcTop + arcH - (p.pacing.arc[i] ?? 0) * arcH, c: TONE_COLOR[b.roleTone ?? "opening"] }));
-  const ticks: number[] = [];
-  for (let t = 0; t <= total; t += 2) ticks.push(t);
-  const legend: [string, string][] = [
-    ["opening", TONE_COLOR.opening],
-    ["rising", TONE_COLOR.rising],
-    ["turning point", TONE_COLOR.turn],
-    ["payoff", TONE_COLOR.payoff],
-    ["closing", TONE_COLOR.closing],
-  ];
-  return (
-    <DirectionBox title="Flow & Shots" accepted={p.accepted}>
-      <div style={{ display: "flex", alignItems: "baseline", gap: "10px", margin: "2px 0 12px" }}>
-        <span className="kr-label" style={{ fontSize: "10px" }}>
-          Aiming for
-        </span>
-        <span style={{ fontSize: "15px", fontWeight: 700 }}>{p.pacing.pleasure}</span>
-        <span style={{ color: "var(--text-secondary)", fontSize: "13px" }}>{p.pacing.gloss}</span>
-      </div>
-      <div style={{ position: "relative", height: "182px", border: "1px solid var(--border)", borderRadius: "10px", background: "var(--bg-elevated)" }}>
-        <div style={{ position: "absolute", left: "12px", top: "10px", display: "flex", gap: "10px", alignItems: "baseline" }}>
-          <span className="kr-label" style={{ fontSize: "10px" }}>
-            Pacing
-          </span>
-          <span style={{ fontSize: "11.5px", color: "var(--text-secondary)" }}>
-            {p.rows.length} shots · {fmt(total)}
-          </span>
-        </div>
-        <div style={{ position: "absolute", right: "14px", top: "10px", display: "flex", gap: "12px" }}>
-          {legend.map(([l, c]) => (
-            <span style={{ display: "flex", alignItems: "center", gap: "5px", fontSize: "10.5px", color: "var(--text-muted)" }}>
-              <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: c }} />
-              {l}
-            </span>
-          ))}
-        </div>
-        {ticks.map((t) => (
-          <span style={{ position: "absolute", top: "30px", left: `${x(t)}px`, fontSize: "10px", color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}>{fmt(t)}</span>
-        ))}
-        <span className="kr-label" style={{ position: "absolute", left: "12px", top: `${arcTop + 14}px`, fontSize: "10px" }}>
-          Arc
-        </span>
-        <svg width="1530" height="182" style={{ position: "absolute", left: "0", top: "0" }}>
-          <polyline points={pts.map((q) => `${q.x},${q.y}`).join(" ")} fill="none" stroke="#5b5f74" strokeWidth="1.5" />
-          {pts.map((q) => (
-            <circle cx={q.x} cy={q.y} r="4" fill={q.c} />
-          ))}
-        </svg>
-        <span className="kr-label" style={{ position: "absolute", left: "12px", top: "118px", fontSize: "10px" }}>
-          Shots
-        </span>
-        {blocks.map((b) => {
-          const c = TONE_COLOR[b.roleTone ?? "opening"];
-          const n = p.pacing.comments?.[b.id];
-          return (
-            <div
-              style={{
-                position: "absolute",
-                top: "103px",
-                height: "34px",
-                left: `${x(b.start) + 1}px`,
-                width: `${x(b.end) - x(b.start) - 2}px`,
-                borderTop: `2px solid ${c}`,
-                borderRadius: "4px",
-                background: `color-mix(in srgb, ${c} 22%, #15161d)`,
-                padding: "3px 6px",
-                fontSize: "11px",
-                lineHeight: "1.2",
-              }}
-            >
-              <div style={{ fontWeight: 700 }}>{b.id}</div>
-              <div style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)", fontSize: "10px" }}>{b.duration}s</div>
-              {n ? (
-                <span style={{ position: "absolute", right: "6px", bottom: "4px", display: "flex", gap: "2px", alignItems: "center", color: "var(--text-secondary)", fontSize: "10px" }}>
-                  {Icon.bubble(10)}
-                  {n}
-                </span>
-              ) : null}
-            </div>
-          );
-        })}
-        <div style={{ position: "absolute", right: "10px", bottom: "8px", display: "flex", gap: "6px" }}>
-          {[Icon.minus(), Icon.expand(12), Icon.plus(12)].map((ic) => (
-            <button className="kr-tbtn" style={{ width: "26px", height: "26px", borderRadius: "50%" }}>
-              {ic}
-            </button>
-          ))}
-        </div>
-      </div>
-      <div style={{ margin: "12px 0" }}>
-        <AddNote />
-      </div>
-      <ShotScript rows={p.rows.slice(0, p.scriptRows ?? p.rows.length)} />
-    </DirectionBox>
   );
 }

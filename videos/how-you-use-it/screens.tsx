@@ -1,15 +1,15 @@
 import { Animate, Image, type AnimateContext, type AnimateData, type MediaAsset } from "konte";
 import {
   DirectionReview,
-  DirectionShots,
   ReelReview,
   ReferenceReview,
-  type DirectionSectionData,
+  referenceSubjectTops,
+  type DirectionField,
   type DirectionShotRow,
   type FeedbackData,
   type Note,
   type Pin,
-  type ReferenceAssetData,
+  type ReferenceSectionData,
   type ShotCardData,
   type TimelineRow,
   type TimelineShot,
@@ -363,47 +363,41 @@ const icon = reference.icon;
 
 // ───────────── direction review ─────────────
 
-const brief = (accepted: boolean): DirectionSectionData => ({
-  title: "Brief",
-  accepted,
-  selected: !accepted,
-  fields: [
-    { field: "Logline", value: "At closing time on a rainy night, the old café owner lends his last customer the yellow umbrella from the stand by the door." },
-    {
-      field: "Hook",
-      value: "Rain running down a café window at closing time, and one girl at the window table with nowhere dry to go.",
-      agent: "Shot 01 shows the chairs already upturned, so 'closing time' reads without a word.",
-    },
-    { field: "Audience", value: "People who watch short films on a quiet evening. They leave with the small warmth of a stranger's kindness." },
-    { field: "Tone", value: "Quiet, tender and unhurried. Nobody explains anything; the kindness is in a gesture and two short lines." },
-    {
-      field: "Look",
-      value: "2D anime with painterly backgrounds and soft cel shading. A warm amber café interior against the cold blue of a rainy night outside; the yellow umbrella is the only saturated colour in the piece.",
-    },
-  ],
-});
+const BRIEF: DirectionField[] = [
+  { field: "Logline", value: "At closing time on a rainy night, the old café owner lends his last customer the yellow umbrella from the stand by the door." },
+  {
+    field: "Hook",
+    value: "Rain running down a café window at closing time, and one girl at the window table with nowhere dry to go.",
+    agent: "Shot 01 shows the chairs already upturned, so 'closing time' reads without a word.",
+  },
+  { field: "Audience", value: "People who watch short films on a quiet evening. They leave with the small warmth of a stranger's kindness." },
+  { field: "Tone", value: "Quiet, tender and unhurried. Nobody explains anything; the kindness is in a gesture and two short lines." },
+  {
+    field: "Look",
+    value: "2D anime with painterly backgrounds and soft cel shading. A warm amber café interior against the cold blue of a rainy night outside; the yellow umbrella is the only saturated colour in the piece.",
+  },
+];
 
-const policy = (accepted: boolean): DirectionSectionData => ({
-  title: "Policy",
-  accepted,
-  fields: [
-    { field: "Format", value: "16:9  1248×704 (0.9 Mpx) → 1280×720, 24 fps" },
-    { field: "Language", value: "en  English" },
-    { field: "Fonts", value: "None  text falls to the rendering machine's own faces" },
-  ],
-});
+const POLICY: DirectionField[] = [
+  { field: "Format", value: "16:9  1248×704 (0.9 Mpx) → 1280×720, 24 fps" },
+  { field: "Language", value: "en  English" },
+  { field: "Fonts", value: "None  text falls to the rendering machine's own faces" },
+];
 
 const shotRows: DirectionShotRow[] = [
-  { id: "01", role: "opening", roleTone: "opening", action: ACTIONS["01"], place: "the corner café", framing: "wide", setup: "the café, wide", lineup: "the old café owner / the girl in the navy coat", duration: 4 },
-  { id: "02", role: "rising", roleTone: "rising", action: ACTIONS["02"], line: LINES["02"], place: "the corner café", framing: "close", setup: "the girl, close", lineup: "the girl in the navy coat", duration: 3.5 },
-  { id: "03", role: "rising", roleTone: "rising", action: ACTIONS["03"], place: "the corner café", framing: "medium", setup: "the counter, medium", lineup: "the old café owner", duration: 3 },
-  { id: "04", role: "turning point", roleTone: "turn", action: ACTIONS["04"], place: "the corner café", framing: "insert", setup: "the umbrella stand, insert", lineup: "the old café owner", duration: 2.5 },
-  { id: "05", role: "payoff", roleTone: "payoff", action: ACTIONS["05"], line: LINES["05"], place: "the corner café", framing: "medium", setup: "the window table, medium", lineup: "the old café owner / the girl in the navy coat", duration: 4 },
-  { id: "06", role: "payoff", roleTone: "payoff", action: ACTIONS["06"], telop: "Borrowed Umbrella", place: "the corner café", framing: "wide", setup: "through the window, wide", lineup: "the girl in the navy coat", duration: 4 },
+  { id: "01", role: "opening", roleTone: "opening", action: ACTIONS["01"], place: "the corner café", framing: "wide", setup: "the café, wide", lineup: "the old café owner / the girl in the navy coat", props: [], duration: 4 },
+  { id: "02", role: "rising", roleTone: "rising", action: ACTIONS["02"], line: LINES["02"], place: "the corner café", framing: "close", setup: "the girl, close", lineup: "the girl in the navy coat", props: [], duration: 3.5 },
+  { id: "03", role: "rising", roleTone: "rising", action: ACTIONS["03"], place: "the corner café", framing: "medium", setup: "the counter, medium", lineup: "the old café owner", props: [], duration: 3 },
+  { id: "04", role: "turning point", roleTone: "turn", action: ACTIONS["04"], place: "the corner café", framing: "insert", setup: "the umbrella stand, insert", lineup: "the old café owner", props: ["the yellow umbrella"], duration: 2.5 },
+  { id: "05", role: "payoff", roleTone: "payoff", action: ACTIONS["05"], line: LINES["05"], place: "the corner café", framing: "medium", setup: "the window table, medium", lineup: "the old café owner / the girl in the navy coat", props: ["the yellow umbrella"], duration: 4 },
+  { id: "06", role: "payoff", roleTone: "payoff", action: ACTIONS["06"], telop: "Borrowed Umbrella", place: "the corner café", framing: "wide", setup: "through the window, wide", lineup: "the girl in the navy coat", props: ["the yellow umbrella"], duration: 4 },
 ];
 
 const DIRECTION_HANDOFF =
   "Six shots, about 21 seconds: one quiet act of kindness at closing time. Please sign off the direction before we spend on the animatic.";
+
+/** How far Shot03 scrolls the direction page, and where Shot04 picks it up. */
+const DIRECTION_SCROLL = 520;
 
 function DirectionPage({ accepted, submit }: { accepted: boolean; submit?: boolean }) {
   return (
@@ -411,16 +405,17 @@ function DirectionPage({ accepted, submit }: { accepted: boolean; submit?: boole
       width={W}
       submit={submit}
       icon={icon}
-      header={{ hideStale: true, nextToReview: accepted ? undefined : 8, allAccepted: accepted }}
+      header={{ hideStale: true, nextToReview: 1, accept: accepted, dirty: accepted }}
       handoff={DIRECTION_HANDOFF}
-      sections={[
-        brief(accepted),
-        policy(accepted),
-        rosterSection("Characters", [ROSTER.girl, ROSTER.owner], accepted),
-        rosterSection("Props", [ROSTER.umbrella], accepted),
-        rosterSection("Locations", [ROSTER.cafe], accepted),
+      shots={shotRows}
+      cast={[
+        { name: ROSTER.girl.name, shots: 4 },
+        { name: ROSTER.owner.name, shots: 4 },
       ]}
-      after={<DirectionShots title="Flow & Shots" accepted={accepted} rows={shotRows} />}
+      props={[{ name: ROSTER.umbrella.name, shots: 3 }]}
+      places={[{ name: ROSTER.cafe.name, shots: 6 }]}
+      brief={BRIEF}
+      policy={POLICY}
     />
   );
 }
@@ -434,67 +429,81 @@ const ROSTER = {
   cafe: { kind: "Location", name: "the corner café", description: "A small old café at night, dark wood and warm amber pendant lights, almost empty at closing time. Rain on a dark street outside." },
 };
 
-const rosterSection = (title: string, entries: { name: string; description: string }[], accepted: boolean): DirectionSectionData => ({
-  title,
-  accepted,
-  fields: entries.map((e) => ({ field: e.name, value: e.description })),
-});
-
 const REFERENCE_HANDOFF =
   "The cast, the umbrella, the café and the sound bed. Pick one take per asset; everything downstream is drawn from these.";
 
-const refAssets = (accepted: number): ReferenceAssetData[] => [
-  {
-    name: "girl",
-    image: reference.refGirl,
-    aspect: 2 / 3,
-    takes: 3,
-    fresh: accepted > 0 ? undefined : 3,
-    accepted: accepted > 0,
-    roster: ROSTER.girl,
-    agent: "Three takes, same outfit. This one holds the damp hair ends best; the toggles read clearly.",
-  },
-  {
-    name: "owner",
-    image: reference.refOwner,
-    aspect: 2 / 3,
-    takes: 3,
-    fresh: accepted > 1 ? undefined : 3,
-    accepted: accepted > 1,
-    roster: ROSTER.owner,
-    agent: "The round wire glasses and the long apron hold across takes. This one stoops a little more, which suits him.",
-  },
-  {
-    name: "umbrella",
-    image: reference.refUmbrella,
-    aspect: 1,
-    takes: 2,
-    fresh: accepted > 2 ? undefined : 2,
-    accepted: accepted > 2,
-    roster: ROSTER.umbrella,
-    agent: "Mustard rather than lemon yellow, so it sits inside the amber palette and still pops against the blue street.",
-  },
-  {
-    name: "cafe",
-    image: reference.refCafe,
-    aspect: 2,
-    takes: 2,
-    fresh: accepted > 3 ? undefined : 2,
-    accepted: accepted > 3,
-    roster: ROSTER.cafe,
-    agent: "The counter sits left and the window table right, matching the wide setup.",
-  },
-];
+/** The looks accepted in order, one per step of Shot05 and Shot06. */
+const REF_ORDER = [ROSTER.girl.name, ROSTER.owner.name, ROSTER.umbrella.name, ROSTER.cafe.name];
+
+const refSections = (accepted: number): ReferenceSectionData[] => {
+  const focus = REF_ORDER[Math.max(accepted - 1, 0)];
+  const look = (n: number) => ({ accepted: accepted > n, fresh: accepted > n ? undefined : 3, focused: REF_ORDER[n] === focus });
+  return [
+    {
+      title: "Cast",
+      subjects: [
+        {
+          kind: "Character",
+          name: ROSTER.girl.name,
+          rows: [
+            { label: "Look", name: "girl", image: reference.refGirl, aspect: 2 / 3, takes: 3, ...look(0), roster: ROSTER.girl, agent: "Three takes, same outfit. This one holds the damp hair ends best; the toggles read clearly." },
+            { label: "Voice", name: "girlVoice", takes: 2, fresh: 2, lines: [{ text: LINES["02"].text, acting: LINES["02"].acting }] },
+          ],
+        },
+        {
+          kind: "Character",
+          name: ROSTER.owner.name,
+          rows: [
+            { label: "Look", name: "owner", image: reference.refOwner, aspect: 2 / 3, takes: 3, ...look(1), roster: ROSTER.owner, agent: "The round wire glasses and the long apron hold across takes. This one stoops a little more, which suits him." },
+            { label: "Voice", name: "ownerVoice", takes: 2, fresh: 2, lines: [{ text: LINES["05"].text, acting: LINES["05"].acting }] },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Props",
+      subjects: [
+        {
+          kind: "Prop",
+          name: ROSTER.umbrella.name,
+          rows: [{ label: "Look", name: "umbrella", image: reference.refUmbrella, aspect: 1, takes: 2, ...look(2), fresh: accepted > 2 ? undefined : 2, roster: ROSTER.umbrella, agent: "Mustard rather than lemon yellow, so it sits inside the amber palette and still pops against the blue street." }],
+        },
+      ],
+    },
+    {
+      title: "Places",
+      subjects: [
+        {
+          kind: "Place",
+          name: ROSTER.cafe.name,
+          rows: [{ label: "Master", holds: "the counter, the window table", name: "cafe", image: reference.refCafe, aspect: 2, takes: 2, ...look(3), fresh: accepted > 3 ? undefined : 2, roster: ROSTER.cafe, agent: "The counter sits left and the window table right, matching the wide setup." }],
+        },
+      ],
+    },
+    {
+      title: "Materials",
+      subjects: [
+        { kind: "Material", name: "rain", rows: [{ name: "rain", takes: 1, fresh: 1 }] },
+        { kind: "Material", name: "bgm", rows: [{ name: "bgm", takes: 2, fresh: 2 }] },
+      ],
+    },
+  ];
+};
+
+const REF_TOPS = referenceSubjectTops(refSections(0));
+/** The page's top under the header, and the accept button's offset from a subject card's top. */
+const REF_PAGE_TOP = 132;
+const REF_ACCEPT = { x: 1788, dy: 105 };
 
 function ReferencePage({ accepted }: { accepted: number }) {
   return (
     <ReferenceReview
       width={W}
       icon={icon}
-      header={{ needsReview: false, hideStale: true, nextToReview: 8 - accepted }}
+      header={{ needsReview: false, hideStale: true, nextToReview: 8 - accepted, acceptAll: false }}
       handoff={REFERENCE_HANDOFF}
-      selected={["girl", "owner", "umbrella", "cafe"][Math.min(accepted, 3)]}
-      groups={[{ title: "Images", assets: refAssets(accepted) }]}
+      current={REF_ORDER[Math.max(accepted - 1, 0)]}
+      sections={refSections(accepted)}
     />
   );
 }
@@ -552,7 +561,7 @@ function AnimaticPage({ panels }: { panels: El }) {
       width={W}
       icon={icon}
       stage="Animatic"
-      header={{ needsReview: false, hideStale: true }}
+      header={{ needsReview: false, hideStale: true, acceptAll: false }}
       handoff="The whole board, six panels and both lines, on the cut's own clock. Scrub through and accept the panels that tell it."
       media={panels}
       time="0:00.0"
@@ -584,7 +593,7 @@ function VideoPage(p: {
       width={W}
       icon={icon}
       stage="Video"
-      header={{ needsReview: false, hideStale: p.hideStale ?? true, dirty: p.dirty, allAccepted: accepted === 6 }}
+      header={{ needsReview: false, hideStale: p.hideStale ?? true, dirty: p.dirty, acceptAll: accepted === 6 }}
       handoff={p.handoff ?? VIDEO_HANDOFF}
       media={p.media}
       pins={p.pins}
@@ -688,9 +697,9 @@ export function Shot03() {
     <Screen
       cursor={false}
       ev={[
-        { t: 0, d: 0, cam: [900, 470, 1.3] },
-        { t: 0.35, d: 4.6, y: [".kr-main > div", -1260], ease: "power2.inOut" },
-        { t: 0.2, d: 5, cam: [900, 720, 1.38], ease: "power1.inOut" },
+        { t: 0, d: 0, cam: [835, 500, 1.15] },
+        { t: 0.35, d: 4.6, y: [".kr-main > div", -DIRECTION_SCROLL], ease: "power2.inOut" },
+        { t: 0.2, d: 5, cam: [1000, 620, 1.38], ease: "power1.inOut" },
       ]}
     >
       <DirectionPage accepted={false} submit={false} />
@@ -698,14 +707,16 @@ export function Shot03() {
   );
 }
 
+const DIR_ACCEPT = [1697, 26] as const;
+
 export function Shot04() {
   return (
     <Screen
       ev={[
         { t: 0, d: 0, cam: [1300, 420, 1.2] },
-        { t: 0, d: 0, y: [".kr-main > div", -1260] },
+        { t: 0, d: 0, y: [".kr-main > div", -DIRECTION_SCROLL] },
         { t: 0, d: 0, cur: [1150, 420] },
-        { t: 0.05, d: 0.4, cur: [1590, 30] },
+        { t: 0.05, d: 0.4, cur: DIR_ACCEPT },
         { t: 0.05, d: 0.4, cam: [1400, 300, 1.35] },
         { t: 0.48, click: true },
         { t: 0.5, hide: "#d1" },
@@ -726,15 +737,17 @@ export function Shot04() {
   );
 }
 
+const refAcceptY = (scroll: number, n: number) => REF_PAGE_TOP + REF_TOPS[REF_ORDER[n]!]! - scroll + REF_ACCEPT.dy;
+
 export function Shot05() {
   return (
     <Screen
       step={[2, "Review shared assets"]}
       ev={[
-        { t: 0, d: 0, cam: [1000, 480, 1.25] },
+        { t: 0, d: 0, cam: [857, 520, 1.12] },
         { t: 0, d: 0, cur: [900, 620] },
-        { t: 0.3, d: 0.7, cam: [1150, 420, 1.45], ease: "power3.out" },
-        { t: 0.9, d: 0.55, cur: [1690, 222] },
+        { t: 0.3, d: 0.7, cam: [1250, 450, 1.45], ease: "power3.out" },
+        { t: 0.9, d: 0.55, cur: [REF_ACCEPT.x, refAcceptY(0, 0)] },
         { t: 1.55, click: true },
         { t: 1.57, hide: "#r0" },
         { t: 1.57, show: "#r1" },
@@ -750,16 +763,16 @@ export function Shot05() {
   );
 }
 
-const REF_ROW = 488;
-
 export function Shot06() {
   const ev: Ev[] = [
     { t: 0, d: 0, cam: [1300, 520, 1.25] },
-    { t: 0, d: 0, cur: [1690, 222] },
+    { t: 0, d: 0, cur: [REF_ACCEPT.x, refAcceptY(0, 0)] },
   ];
   [1, 2, 3].forEach((i) => {
     const t = 0.05 + (i - 1) * 0.6;
-    ev.push({ t, d: 0.3, y: [".kr-main > div", -REF_ROW * i], ease: "power3.inOut" });
+    const scroll = REF_TOPS[REF_ORDER[i]!]! - 40;
+    ev.push({ t, d: 0.3, y: [".kr-main > div", -scroll], ease: "power3.inOut" });
+    ev.push({ t, d: 0.3, cur: [REF_ACCEPT.x, refAcceptY(scroll, i)] });
     ev.push({ t: t + 0.38, click: true });
     ev.push({ t: t + 0.4, hide: `#r${i}` });
     ev.push({ t: t + 0.4, show: `#r${i + 1}` });
