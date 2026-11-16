@@ -1,6 +1,12 @@
 // source-hash: 8edfef99106d3342c229e0594e6dd1aedad95717f1e90adb5462d644479209a0
 // source: konte / workflows/konte/image_minimax_h3_r2i.json (hand-authored)
-import { defineComfyAsset, formatCutTime, promptReferenceTags } from "konte";
+import {
+  defineComfyAsset,
+  formatCutTime,
+  minimaxH3CutSource,
+  minimaxH3Prompt,
+  promptReferenceTags,
+} from "konte";
 
 type Task = "keyframe completion" | "reference generation";
 
@@ -20,7 +26,8 @@ const shotsText = (shots: readonly string[]) =>
 export const imageMinimaxH3R2i = defineComfyAsset({
   workflow: "image_minimax_h3_r2i.json",
   description:
-    "MiniMax H3 R2I — a still from a prompt plus up to nine reference images; the origin of a frame, keeping the scene of every reference passed, so never a sheet. Takes a two-shot description, cutting into the frame from the panel before it.",
+    "MiniMax H3 R2I — a shot's keyframe from a prompt plus up to nine reference images, keeping the scene of every reference passed, so never a sheet. Takes a two-shot description, cutting into the frame from the panel before it.",
+  allowedIn: ["shot"],
   guide: [
     "konte/guides/minimax-h3.md",
     "konte/guides/minimax-h3-picture.md",
@@ -167,10 +174,11 @@ export const imageMinimaxH3R2i = defineComfyAsset({
   // The latent packs frames (1, 4, 4, 4, 4) per slot, repeating every 17; a frame kept from inside
   // a four-frame slot comes back smeared. Frame 17 is past the cut at frame 12.
   derive: {
-    length: ({ prompt }) => (prompt.includes("[Shot 2]") ? 22 : 5),
-    frameIndex: ({ prompt }) => (prompt.includes("[Shot 2]") ? 17 : 0),
+    length: ({ prompt }) => (minimaxH3CutSource(prompt) === undefined ? 5 : 22),
+    frameIndex: ({ prompt }) => (minimaxH3CutSource(prompt) === undefined ? 0 : 17),
   },
   validators: [
+    minimaxH3Prompt({ mode: "r2i", length: "length" }),
     promptReferenceTags({
       tags: {
         Picture: [
@@ -187,6 +195,7 @@ export const imageMinimaxH3R2i = defineComfyAsset({
         Video: [],
         Audio: [],
       },
+      prevPanel: { tag: "Picture", within: minimaxH3CutSource },
     }),
   ],
 });

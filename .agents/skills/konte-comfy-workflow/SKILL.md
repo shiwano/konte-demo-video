@@ -66,6 +66,7 @@ The generated adapter may carry a commented-out block:
 ### 2.6 Write the descriptions and the guide
 
 - `description` (emitted as a TODO) — one line: what the adapter generates, and when to pick it over its neighbours (mode, look lean, length lean). `konte adapter list` shows it — the next session picks an adapter by it. Match the already-fixed adapters' phrasing.
+- `allowedIn` (emitted empty, a load error) — the sites the adapter may be declared in. A model that only corrects a take that already exists (an inpaint) names `patch` alone; an upscaler names `upscale` alone.
 - A non-obvious input takes a one-line `description` — printed beside its type and default, it carries what those can't (units, gotchas).
 - `<name>.md` — the prompt-craft guide `konte adapter show` points at: prompt shape, length, mode/reference notes, and what to avoid. Write it from the model's official documentation and the adapter's actual schema; document only controls it exposes; per-input facts go in input descriptions.
 
@@ -74,17 +75,17 @@ The generated adapter may carry a commented-out block:
 Optional `validators` (one or an array) reject an input combination the model forbids but each input's type allows, failing the load before any spend.
 
 - A model that names its references by ordinal — `promptReferenceTags({ tags: { Picture: ["image1", …] } })`, each tag's slots in numbering order; it reads the adapter's one `"prompt"` input, so name `prompt:` only where there are two. `form: "bare"` for a model writing them as prose (`image 1`) rather than `<Picture 1>`; `{ slots: [...], exhaustive: false }` when naming a wired slot is the author's call or the count is only a ceiling; `[]` for a tag this workflow cannot take.
+- An image model drawing animatic keyframes that reads another shot's panel as the frame a cut comes from (H3 R2I's `[Shot 1]`) — `prevPanel: { tag, within }` on `promptReferenceTags`, `within` returning the span the panel's ordinal belongs in (`minimaxH3CutSource`).
 - A model whose prompt is a fixed grammar of named sections — declare a `structure` on its `"prompt"` input; read [prompt-structure.md](references/prompt-structure.md).
 - An input the model won't read in this configuration — `inertInputs({ inputs: { negativePrompt: [" ", ""] }, when: { useLightning: true }, reason, fix })`, each input mapped to the value that means "not set". `whenNot` states the condition as an absence.
 - A group where at least one must be set — `requireOneOf({ inputs: { instruct: "", character: "Auto" }, reason })`.
 - A negation this model is meant to be written with — `promptExemptions: [/…/]`, beside `validators`; every span one matches is cut from the value the prompt check reads. Leave it off a model with none.
 - An input whose value follows from the others — `derive: { <input>: (inputs) => … }` beside `validators`, the input declared with no `default`. `inputs` are the others resolved, a structured prompt assembled. konte fills it, and it leaves the call options and `adapter show`.
-- An edit model — uncomment `allowedIn` and name the sites it may be declared in.
 - Anything else: a pure function of the resolved inputs that returns why it rejects them, or nothing when they pass, reading only which are present.
 
 ### 2.8 Remove the Scaffold Comments
 
-- Remove the `// @generated` marker and every scaffold comment left unused — the `allowedIn`, `validators` and `promptExemptions` hints and any `// TODO` line.
+- Remove the `// @generated` marker and every scaffold comment left unused — the `validators` and `promptExemptions` hints and any `// TODO` line.
 
 ### 2.9 Verify
 
