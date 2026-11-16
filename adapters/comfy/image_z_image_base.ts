@@ -6,6 +6,7 @@ export const imageZImageBase = defineComfyAsset({
   workflow: "image_z_image_base.json",
   description:
     "Z Image — generate a still from text for realistic subject, location or prop references. Choose it to establish readable physical structure: body build, garment cut, materials and shape from different views.",
+  allowedIn: ["reference", "plate", "timeline", "thumbnail", "shot"],
   guide: "konte/guides/z-image-base.md",
   models: [
     {

@@ -1,5 +1,5 @@
 import { defineAnimatic, asset, adapters, Audio, Composition, Panel } from "konte";
-import { imageMinimaxH3R2i } from "konte/workspace/adapters/comfy/image_minimax_h3_r2i.js";
+import { imageMinimaxH3R2i } from "./adapters/image_minimax_h3_r2i";
 import { audioMinimaxH3R2a } from "konte/workspace/adapters/comfy/audio_minimax_h3_r2a.js";
 import { imageQwenImageEdit21 } from "konte/workspace/adapters/comfy/image_qwen_image_edit_2_1.js";
 import { audioStableAudio3Medium } from "konte/workspace/adapters/comfy/audio_stable_audio_3_medium.js";
