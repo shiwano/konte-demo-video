@@ -134,7 +134,7 @@
         "shotId": "20",
         "duration": 1,
         "variants": {
-          "motion": "v-6K8uP93l"
+          "motion": "v-ZjGve1Xm"
         }
       },
       {
@@ -162,7 +162,7 @@
         "shotId": "24",
         "duration": 1.5,
         "variants": {
-          "motion": "v-7shnfAcy"
+          "motion": "v-Ze4lFJTb"
         }
       },
       {
@@ -257,11 +257,11 @@
       "video:shot.17#composition": "8b25a295a9e5c67c20fa4abe4218683e82ab5ba9ef942d2c8c3b278c17a72de8",
       "video:shot.18#composition": "83181f55e69c4b3dfb6ffd8094c63ed6c195834b3fd8ca48f9ef1770635e0297",
       "video:shot.19#composition": "0ec57b8992bbcee66740f293424661d5b64c8702b0efd9e08fc00778d9eb0306",
-      "video:shot.20#composition": "ea67fea2b7b19533fb2c050b1abc220f6db24c62f3a6196ef6f068231acc6eab",
+      "video:shot.20#composition": "31fae72de64d54095244842e8f43898ead909505505ed95c411ef6925afda829",
       "video:shot.21#composition": "01b06d40ec5b06267bd737e732ee181f3cc080568288ca49e897d3b57e9173ea",
       "video:shot.22#composition": "b03244c829b4aa98a5c286b4f88b1b1e63c66d7f6b57a86519fc09b00a73f086",
       "video:shot.23#composition": "289d08ae9c984044695fcfed7b3b10c656c9c7b15369ee2192e90d7ece0ff752",
-      "video:shot.24#composition": "b91068cd2fb7234225b00a7852583660e48592c4c7d2be83fb3c5ce5766aca80",
+      "video:shot.24#composition": "def3db96ff9d70108393cf31401aab09341912bb995fb4115e44b1185e5d3a01",
       "video:shot.25#composition": "54babb2d5f043ce6485bf42a0f0e5d415b134a83d3a81a2acf4eba0eba998f55",
       "video:shot.26#composition": "e65f015f0c963e723bcfb9063200647e847f98d58cb54f62d1c79219272e95a4",
       "video:shot.27#composition": "8350d3c09ed6baee3c12aa31dd3e51061681b0e8c3ed0861c39930929d1bbefa",
@@ -270,7 +270,7 @@
       "video:shot.30#composition": "4f46ff52d05556b3b5f8866a948b10479c77b7b2fb48d1c471cf6cac790e9e1b",
       "video:shot.31#composition": "d946924555852013a8b918698b05c3f9c0779fb246996b33da54f7fb46b42656",
       "video:shot.32#composition": "4fe6538e91e3f18d9897eead866da372037521ee34f66363aa1e8cf7f73e79cb",
-      "video:shot.33#composition": "6089856d7b52f9f6a6e136a6593b45257ffb3455470da2ff30c290c79fee9db3",
+      "video:shot.33#composition": "91ddaeedb1d57aed1b6c587776097606d5365292fc2838d4fa43a7adad8c3357",
       "video:shot.34#composition": "bfe597a8b94a03ad7936d01534158f51ef42277de84d2c86e2677f49a54de11d",
       "video:shot.01#stem": "5d2470ddfc6c3e7b0fbf01192f1bad840bcd81f5f85c4f2b5cab5bcdbd977ee6",
       "video:shot.02#stem": "a6dc40b4c1eb22a23b92f41883e5db82b3d75093dfa0d9d8ddc310235ed01898",
@@ -290,11 +290,11 @@
       "video:shot.17#stem": "3ca9754907d1c8c5daff13c4f1343e2d3640c221d0fa9f24735c45604c586a41",
       "video:shot.18#stem": "c80a3b9aba5ad69f4d0b83ea2540b71dc451ecfa5368a7b8beb7fd5f7a778019",
       "video:shot.19#stem": "705634706c60ccf2bf15b326ef71f276be1b6042652943a881063b5ba7db80ab",
-      "video:shot.20#stem": "f7ddc6b2d397b5729220b10e6410e89d977b5780e21c4002aaebd6570516e303",
+      "video:shot.20#stem": "a62ef56961cbba938a9bc43557193b54ee599e3c497aed4460df7d4ee7a47081",
       "video:shot.21#stem": "68355f3f893a466d4f279e4c352b35cf58dd7adbf5ae276414ec8f65649e93fa",
       "video:shot.22#stem": "9066cd1c76f798871a98cfb92542bea99c0682bd569d301f269b006e8d856fba",
       "video:shot.23#stem": "07d4d2c61c6eb3ef79d859828d30ace53f76f47154ae302f5e848020e64210b4",
-      "video:shot.24#stem": "d77b1ffdc3eeddbbf167918fe244a87476ba7a3979c1a8c216526b14c7409af3",
+      "video:shot.24#stem": "3cceaf612b1b06e5e5f14d7655520a2686e97a7f2df10ee350032b7d0f557b0f",
       "video:shot.26#stem": "992a6588bdcda6194f3427b1489d674dff6d0e8b6458e646142210b157e5f046",
       "video:shot.27#stem": "8b728ca58cb0233b0fd83fee2aa960107dc18adb99b72ba5f54fe9c6db3f1472",
       "video:shot.28#stem": "292249570297bb35aae5fdbc0d6ee584d908d3294f9d22d8104bfeadd5b6be42",
@@ -310,23 +310,22 @@
   "decisions": {},
   "notes": [
     {
-      "id": "fb-wxLFV9mU",
-      "time": 85.63333333333334,
-      "shotId": "33",
-      "address": "video:shot.33",
-      "text": "うーん、なんだろ。輪郭線が黒なのが変にみえるのかも。\nさっきほどじゃなくて、若干大きくしてもいい。",
+      "id": "fb-bZT8eHWe",
+      "time": 59.5,
+      "shotId": "24",
+      "address": "video:shot.24",
+      "text": "いや、コーヒーカップの中に入るのをやめてほしいだけ。紙が飛んできて、跳ねる描写は残したい",
       "displayedVariants": {
-        "video:shot.33.motion": "v-ryPNA7Rl",
-        "video:shot.33.cheer": "v-d5Fr9JwW",
-        "video:shot.33#composition": "v-i8qX0QwA"
+        "video:shot.24.motion": "v-Ze4lFJTb"
       }
     }
   ],
-  "handoffSummary": "紙吹雪の枚数と大きさを元に戻して、絵に馴染む細い輪郭線だけを足しました。",
+  "handoffSummary": "24の紙玉が手前へ転がって落ちるよう作り直しました",
   "handoffNotes": [
     {
-      "address": "video:shot.33.motion",
-      "text": "紙吹雪の枚数（130枚）・大きさ・形を元の紙片に戻しました。足したのは、絵の線に合わせた細い輪郭線と、少しだけ混ぜた丸い紙片の2点です。動きは前のままです。費用はかかっていません。"
+      "address": "video:shot.24.motion",
+      "text": "カップを避けて、手前の縁から転がり落ちます。"
     }
   ]
 }
+

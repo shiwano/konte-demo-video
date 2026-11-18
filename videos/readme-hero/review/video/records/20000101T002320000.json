@@ -204,28 +204,29 @@
         "shotId": "30",
         "duration": 4.5,
         "variants": {
-          "motion": "v-RloS8ewU"
+          "motion": "v-rDIUV0Pd"
         }
       },
       {
         "shotId": "31",
         "duration": 1.5,
         "variants": {
-          "motion": "v-KxqqU4g1"
+          "motion": "v-LgPnqpCq"
         }
       },
       {
         "shotId": "32",
         "duration": 2.5,
         "variants": {
-          "motion": "v-eNBYmZ6P"
+          "motion": "v-8qwn1D54"
         }
       },
       {
         "shotId": "33",
         "duration": 4.5,
         "variants": {
-          "motion": "v-ryPNA7Rl"
+          "motion": "v-ryPNA7Rl",
+          "cheer": "v-d5Fr9JwW"
         }
       },
       {
@@ -266,10 +267,10 @@
       "video:shot.27#composition": "8350d3c09ed6baee3c12aa31dd3e51061681b0e8c3ed0861c39930929d1bbefa",
       "video:shot.28#composition": "cc200b3896a63e4120ca2d18c072360e6fbd613e1c70ddf17f6f39c94b434197",
       "video:shot.29#composition": "fcf07c58bc1e6364872cc62cd68fbaf959c39ba5ca78d5fe8b49e2ee55ccc3d2",
-      "video:shot.30#composition": "9d8d6bdd6af25e96947a8413c9250d1f960136d6c65a56a72054f655408880e9",
-      "video:shot.31#composition": "6535cc56de0506d4de60bf9af09acf95aa86b4c66914cdfa92ec877f159d9919",
-      "video:shot.32#composition": "b4a229c1815ff89de1c161cf64df6d33c45fbf90a625880eb409997715a1fc84",
-      "video:shot.33#composition": "1d83bb9d63dbef6fe95a4955a988a301ff7d98c18ceafb8f821836ba595ee769",
+      "video:shot.30#composition": "4f46ff52d05556b3b5f8866a948b10479c77b7b2fb48d1c471cf6cac790e9e1b",
+      "video:shot.31#composition": "d946924555852013a8b918698b05c3f9c0779fb246996b33da54f7fb46b42656",
+      "video:shot.32#composition": "4fe6538e91e3f18d9897eead866da372037521ee34f66363aa1e8cf7f73e79cb",
+      "video:shot.33#composition": "08119239ccdac8b11e0e4e8fa1896ac0f7c10b3ccc9e4d7852071e8977ef910a",
       "video:shot.34#composition": "bfe597a8b94a03ad7936d01534158f51ef42277de84d2c86e2677f49a54de11d",
       "video:shot.01#stem": "5d2470ddfc6c3e7b0fbf01192f1bad840bcd81f5f85c4f2b5cab5bcdbd977ee6",
       "video:shot.02#stem": "a6dc40b4c1eb22a23b92f41883e5db82b3d75093dfa0d9d8ddc310235ed01898",
@@ -298,310 +299,46 @@
       "video:shot.27#stem": "8b728ca58cb0233b0fd83fee2aa960107dc18adb99b72ba5f54fe9c6db3f1472",
       "video:shot.28#stem": "292249570297bb35aae5fdbc0d6ee584d908d3294f9d22d8104bfeadd5b6be42",
       "video:shot.29#stem": "bc8a86852aa36eb338d292e7bc981d2f4c203b0fd6588bbc16b82e7d42addfd7",
-      "video:shot.30#stem": "555ebe36ce7e8397c4c0914684edf7c45231367ded09a85e568033e3abe9a3f9",
-      "video:shot.31#stem": "3b5ebe3d1395e7f8bf2bdee36aa14358817ab55727ba66a9ef223f9e36f7c57c",
-      "video:shot.32#stem": "73617db44c7b0e550eb13511f9c3dfb1f5fe7e828e2eb261088f1b28c07c8069",
-      "video:shot.33#stem": "7412c68e74d7d10766bbe304d6d90053e10bf67d41ddd058de3f9ebd47ffd6c9",
+      "video:shot.30#stem": "327470853f4006281f6aa47f09d89e13789ea1cfa9598496d77c816ae79db330",
+      "video:shot.31#stem": "213c25c3b98696cd1ff5f7df6732c865cacfd922137d53852abdfc1e4fc0fabc",
+      "video:shot.32#stem": "464829643aeb77a3bf80accaec7e4f9ab1ec44fdee653246b5c777f648267aa1",
+      "video:shot.33#stem": "9cd5acd890cb3676e0bca88e9c49565d1eafe7856be0c970b1c730c5b1ac7374",
       "video:shot.34#stem": "56b824b6d959dfdc40cd30b5dcb12869f8b1d8f843920576ddf61c5bb05dcf93",
       "video:timeline#stem": "ed426d16c15a9c3d36c6fb54f8d7e560be746689de88b00945d3d27ff3427d7b"
     }
   },
-  "decisions": {
-    "10": "accepted",
-    "11": "accepted",
-    "12": "accepted",
-    "13": "accepted",
-    "14": "accepted",
-    "15": "accepted",
-    "16": "accepted",
-    "17": "accepted",
-    "18": "accepted",
-    "19": "accepted",
-    "20": "accepted",
-    "21": "accepted",
-    "22": "accepted",
-    "23": "accepted",
-    "24": "accepted",
-    "25": "accepted",
-    "26": "accepted",
-    "27": "accepted",
-    "28": "accepted",
-    "29": "accepted",
-    "30": "accepted",
-    "31": "accepted",
-    "32": "accepted",
-    "33": "accepted",
-    "34": "accepted",
-    "01": "accepted",
-    "02": "accepted",
-    "03": "accepted",
-    "04": "accepted",
-    "06": "accepted",
-    "07": "accepted",
-    "08": "accepted",
-    "09": "accepted"
-  },
-  "cascadeAccepted": [
-    {
-      "address": "video:shot.01#stem",
-      "via": "video:shot.01"
-    },
-    {
-      "address": "video:shot.02#stem",
-      "via": "video:shot.02"
-    },
-    {
-      "address": "video:shot.03#stem",
-      "via": "video:shot.03"
-    },
-    {
-      "address": "video:shot.04#stem",
-      "via": "video:shot.04"
-    },
-    {
-      "address": "video:shot.06#stem",
-      "via": "video:shot.06"
-    },
-    {
-      "address": "video:shot.07#stem",
-      "via": "video:shot.07"
-    },
-    {
-      "address": "video:shot.08#stem",
-      "via": "video:shot.08"
-    },
-    {
-      "address": "video:shot.09#stem",
-      "via": "video:shot.09"
-    },
-    {
-      "address": "video:shot.10#stem",
-      "via": "video:shot.10"
-    },
-    {
-      "address": "video:shot.11#stem",
-      "via": "video:shot.11"
-    },
-    {
-      "address": "video:shot.12#stem",
-      "via": "video:shot.12"
-    },
-    {
-      "address": "video:shot.13#stem",
-      "via": "video:shot.13"
-    },
-    {
-      "address": "video:shot.14#stem",
-      "via": "video:shot.14"
-    },
-    {
-      "address": "video:shot.15#stem",
-      "via": "video:shot.15"
-    },
-    {
-      "address": "video:shot.16#stem",
-      "via": "video:shot.16"
-    },
-    {
-      "address": "video:shot.17#stem",
-      "via": "video:shot.17"
-    },
-    {
-      "address": "video:shot.18#stem",
-      "via": "video:shot.18"
-    },
-    {
-      "address": "video:shot.19#stem",
-      "via": "video:shot.19"
-    },
-    {
-      "address": "video:shot.20#stem",
-      "via": "video:shot.20"
-    },
-    {
-      "address": "video:shot.21#stem",
-      "via": "video:shot.21"
-    },
-    {
-      "address": "video:shot.22#stem",
-      "via": "video:shot.22"
-    },
-    {
-      "address": "video:shot.23#stem",
-      "via": "video:shot.23"
-    },
-    {
-      "address": "video:shot.24#stem",
-      "via": "video:shot.24"
-    },
-    {
-      "address": "video:shot.26#stem",
-      "via": "video:shot.26"
-    },
-    {
-      "address": "video:shot.27#stem",
-      "via": "video:shot.27"
-    },
-    {
-      "address": "video:shot.28#stem",
-      "via": "video:shot.28"
-    },
-    {
-      "address": "video:shot.29#stem",
-      "via": "video:shot.29"
-    },
-    {
-      "address": "video:shot.30#stem",
-      "via": "video:shot.30"
-    },
-    {
-      "address": "video:shot.31#stem",
-      "via": "video:shot.31"
-    },
-    {
-      "address": "video:shot.32#stem",
-      "via": "video:shot.32"
-    },
-    {
-      "address": "video:shot.33#stem",
-      "via": "video:shot.33"
-    },
-    {
-      "address": "video:shot.34#stem",
-      "via": "video:shot.34"
-    },
-    {
-      "address": "video:shot.01#composition",
-      "via": "video:shot.01"
-    },
-    {
-      "address": "video:shot.02#composition",
-      "via": "video:shot.02"
-    },
-    {
-      "address": "video:shot.03#composition",
-      "via": "video:shot.03"
-    },
-    {
-      "address": "video:shot.04#composition",
-      "via": "video:shot.04"
-    },
-    {
-      "address": "video:shot.06#composition",
-      "via": "video:shot.06"
-    },
-    {
-      "address": "video:shot.07#composition",
-      "via": "video:shot.07"
-    },
-    {
-      "address": "video:shot.08#composition",
-      "via": "video:shot.08"
-    },
-    {
-      "address": "video:shot.09#composition",
-      "via": "video:shot.09"
-    },
-    {
-      "address": "video:shot.10#composition",
-      "via": "video:shot.10"
-    },
-    {
-      "address": "video:shot.11#composition",
-      "via": "video:shot.11"
-    },
-    {
-      "address": "video:shot.12#composition",
-      "via": "video:shot.12"
-    },
-    {
-      "address": "video:shot.13#composition",
-      "via": "video:shot.13"
-    },
-    {
-      "address": "video:shot.14#composition",
-      "via": "video:shot.14"
-    },
-    {
-      "address": "video:shot.15#composition",
-      "via": "video:shot.15"
-    },
-    {
-      "address": "video:shot.16#composition",
-      "via": "video:shot.16"
-    },
-    {
-      "address": "video:shot.17#composition",
-      "via": "video:shot.17"
-    },
-    {
-      "address": "video:shot.18#composition",
-      "via": "video:shot.18"
-    },
-    {
-      "address": "video:shot.19#composition",
-      "via": "video:shot.19"
-    },
-    {
-      "address": "video:shot.20#composition",
-      "via": "video:shot.20"
-    },
-    {
-      "address": "video:shot.21#composition",
-      "via": "video:shot.21"
-    },
-    {
-      "address": "video:shot.22#composition",
-      "via": "video:shot.22"
-    },
-    {
-      "address": "video:shot.23#composition",
-      "via": "video:shot.23"
-    },
-    {
-      "address": "video:shot.24#composition",
-      "via": "video:shot.24"
-    },
-    {
-      "address": "video:shot.25#composition",
-      "via": "video:shot.25"
-    },
-    {
-      "address": "video:shot.26#composition",
-      "via": "video:shot.26"
-    },
-    {
-      "address": "video:shot.27#composition",
-      "via": "video:shot.27"
-    },
-    {
-      "address": "video:shot.28#composition",
-      "via": "video:shot.28"
-    },
-    {
-      "address": "video:shot.29#composition",
-      "via": "video:shot.29"
-    },
-    {
-      "address": "video:shot.30#composition",
-      "via": "video:shot.30"
-    },
-    {
-      "address": "video:shot.31#composition",
-      "via": "video:shot.31"
-    },
-    {
-      "address": "video:shot.32#composition",
-      "via": "video:shot.32"
-    },
-    {
-      "address": "video:shot.33#composition",
-      "via": "video:shot.33"
-    },
-    {
-      "address": "video:shot.34#composition",
-      "via": "video:shot.34"
+  "decisions": {},
+  "notes": [
+    {
+      "id": "fb-XlJeIAPg",
+      "time": 85.1,
+      "shotId": "33",
+      "address": "video:shot.33",
+      "text": "もうちょっと輪郭線太くしてもいいかも。\nあと、影とかつけられないよね？",
+      "displayedVariants": {
+        "video:shot.33.motion": "v-ryPNA7Rl",
+        "video:shot.33.cheer": "v-d5Fr9JwW",
+        "video:shot.33#composition": "v-i8qX0QwA"
+      }
+    },
+    {
+      "id": "fb-rJEmGwon",
+      "time": 82,
+      "shotId": "33",
+      "address": "video:shot.33",
+      "text": "紙吹雪が上部にあつまりすぎだからもっと散ってほしい",
+      "displayedVariants": {
+        "video:shot.33.motion": "v-ryPNA7Rl",
+        "video:shot.33.cheer": "v-d5Fr9JwW",
+        "video:shot.33#composition": "v-i8qX0QwA"
+      }
     }
   ],
-  "handoffSummary": "konteの更新で合成の記録方法が変わり、全ショットの合成が「古い」と出ています。素材は何も作り直していません。中身は前回承認したものと同じなので、全ショットを承認し直していただければ表示が消えます。気になるところがあればコメントをどうぞ。"
+  "handoffSummary": "紙吹雪の輪郭線を黒から各色の濃い色に変えて、少しだけ大きくしました。",
+  "handoffNotes": [
+    {
+      "address": "video:shot.33.motion",
+      "text": "輪郭線を黒ではなく、紙片ごとの色を濃くした線にしました（紫なら濃い紫、黄色なら濃い黄色）。大きさは元の1.3倍くらいで、130枚・動き・タイミングはそのままです。費用はかかっていません。"
+    }
+  ]
 }

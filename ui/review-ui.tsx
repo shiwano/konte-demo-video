@@ -365,6 +365,8 @@ export interface ReviewFrameProps {
   submit?: boolean;
   /** Pixels the page is scrolled down; the header, the index and the submit button stay put. */
   scroll?: number;
+  /** The browser window's CSS size, zoomed to fill `width`. */
+  viewport?: readonly [number, number];
   rail?: RailSpec;
   children?: Children;
 }
@@ -382,9 +384,15 @@ export function ReviewFrame(props: ReviewFrameProps) {
   const h = props.header ?? {};
   const mainStyle = props.rail ? { left: `${props.rail.width + 28}px`, right: "20px", maxWidth: "none", padding: "0" } : undefined;
   return (
-    <div style={{ zoom: props.width / BASE_W }}>
+    <div
+      style={
+        props.viewport
+          ? { width: `${props.viewport[0]}px`, height: `${props.viewport[1]}px`, transform: `scale(${props.width / props.viewport[0]})`, transformOrigin: "0 0" }
+          : { zoom: props.width / BASE_W }
+      }
+    >
       <style>{CSS}</style>
-      <div className="kr">
+      <div className="kr" style={props.viewport && { width: `${props.viewport[0]}px`, height: `${props.viewport[1]}px` }}>
         <div className="kr-header">
           <div className="kr-header-in">
             <div className="kr-brand">

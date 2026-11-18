@@ -78,14 +78,14 @@
         "shotId": "12",
         "duration": 1,
         "variants": {
-          "motion": "v-M4pEDm5v"
+          "motion": "v-tLEXYl2P"
         }
       },
       {
         "shotId": "13",
-        "duration": 3,
+        "duration": 3.5,
         "variants": {
-          "motion": "v-J5NoptGP"
+          "motion": "v-9EX1z8Ez"
         }
       },
       {
@@ -197,7 +197,7 @@
         "shotId": "29",
         "duration": 3,
         "variants": {
-          "motion": "v-BUsRHOvK"
+          "motion": "v-UEnfDEAF"
         }
       },
       {
@@ -238,39 +238,39 @@
     ],
     "timeline": {},
     "contentHashes": {
-      "video:shot.01#composition": "1027facd25dd3d4d8eb04f14e5de45366294230a8caa4fed4927baa9ea32eadc",
-      "video:shot.02#composition": "f5d45e446309597d7483ec810145d7fca4c43867b14c4480c5fd34a3c66a1dd2",
-      "video:shot.03#composition": "88a12df9091ae23eb0c566e80b24a58e93e28a5cd40f5709d503991c96e84c41",
-      "video:shot.04#composition": "ec75c0bacac43b376522f9c87142b6d45cf3e0a4e022c3c6e53323ddcc3f8f03",
-      "video:shot.06#composition": "31e6bf80b4c8d1e9136d002d5c1435e1a987b1b20978381a74ce85b4f3752902",
-      "video:shot.07#composition": "d738166ea9a07827210351b447f6582673c67024e4812851390158a6d3d9d1e8",
-      "video:shot.08#composition": "d7c518aeabfde226a0cb00e2676e7b2da3ff9faf47374cc963403555d7f12bad",
-      "video:shot.09#composition": "2dd7a95b368c86846b6112a25f62397bac7a5ba3b596d81d87de9d090f5cac03",
-      "video:shot.10#composition": "b1967d61a14a491e08aaeceb99bb3f83c8faf0a0e2ef5fcca359dd1fc6e9323b",
-      "video:shot.11#composition": "5c28516c816da66cfc9c0606c7b6df0f1b1cd8264f2e82b9d9339b682b0c0e19",
-      "video:shot.12#composition": "1320077188ce9105bafeb34f7077e82c8b4aebdd1086819ca14084dce89153ec",
-      "video:shot.13#composition": "f643b0497a6e540786f555900f511a7c8048fb9965a93d1d856118b1865c634e",
-      "video:shot.14#composition": "853a88ca85810c27602dffe5bad0ed11f0e4f7f4f465b8a679df5001e5a3fe5c",
-      "video:shot.15#composition": "4a5f9d375cf8158d69ec2d110b45c347d8cb402fddbef0044ffa41cc3f56cc01",
-      "video:shot.16#composition": "6838734fb6cddb310d760b9ad7b321d1ca85b8905872a25f2e34ef41ef22b8aa",
-      "video:shot.17#composition": "8ba63dca1606beac9635033e569abbf79812723b5bb4b1d8385b8fac77a916be",
-      "video:shot.18#composition": "a981c49676f56260f5328d0e223b7f6bea534da52de0371c27debb5ad0e47630",
-      "video:shot.19#composition": "3e8159521f65eb825763831d2bb3d327fa78b122d86b478a3c5f9fe011cc65d4",
-      "video:shot.20#composition": "cc9aeb779c0c274a0dc5008afe70fc8c0a5800e59c8c5e51089787f17473f077",
-      "video:shot.21#composition": "cfdf06f4ea789ef4d14ed8ae8cbda0e38cac3e898cdb24e412d342c1ebe0cd74",
-      "video:shot.22#composition": "2c2af2d5b1fb879a470f6d72666c9385c640ec63bb8951cd89e1d419179019c8",
-      "video:shot.23#composition": "baaee619ab1f5fda68a431a34c4d34a7af3018d9b4d7f685556449c21363525a",
-      "video:shot.24#composition": "cc433744fe3269abeaeee62052357555b8c991487b3c42adb8e52fae3361a15a",
-      "video:shot.25#composition": "ced885fd0c0180d053c6de5f77ed37420ba25752a8ebb0e75fd9c79f8fa0de2f",
-      "video:shot.26#composition": "4c36d2672f0c26ee831848d5bd0b0dee5407cf09f1b9830704fa9854b41d49e8",
-      "video:shot.27#composition": "543d3831c88c4181f13f628da895cbe9dbe9557e91cd98d5fdd257399ddd7b61",
-      "video:shot.28#composition": "2391db1085e4e17094b201fea575f933a107b096c652e0c1025df0df9db0504a",
-      "video:shot.29#composition": "d70da62894daede55a1afd2b956f973e2fdeec3e8fc2d1864028512b429c610c",
-      "video:shot.30#composition": "2b7373b25cc51bee24daf1c3ceb3cde0d373c2ae31ac4f91c13720752852267a",
-      "video:shot.31#composition": "bf70e34097cb81f74399fd36c8f0a788537a501db539b7489164aad2d86043ad",
-      "video:shot.32#composition": "065388d7fc82f732d26681a6ef5dea7d3323ffcccd116f9280f0c980f90e6eb5",
-      "video:shot.33#composition": "e50413d7ecca9686b604bf6d43c03759bb97321ca534213192cbd80f3cf57db7",
-      "video:shot.34#composition": "8fa3df83ec442013a52317d9721c27af1b6df79761aeab9e50494e9df4b8ceb9",
+      "video:shot.01#composition": "4ca7fb5f8cf6b73cdc548ac45c2530732eb356e3615c81d55107fd9e46e17034",
+      "video:shot.02#composition": "6eb2b8b28bbc383ef7ef9cd489105cad66be8765820225ca8996fd73fac4029a",
+      "video:shot.03#composition": "eb3fb57a99b0b064f54847bc1860bb58ac77fdf910486f1713ea1c8aec34e377",
+      "video:shot.04#composition": "48dfc0343cb0beab50a3910f756220307f9049e28eb14c4a95a9900dad179af2",
+      "video:shot.06#composition": "544b1870ef15883fb34217c517cad19572ea178a1c11007eb36238a710284f46",
+      "video:shot.07#composition": "1b0c708c759bfdd9742db1929ceda979d191fe8c67c17cbd738e3d80675c10a9",
+      "video:shot.08#composition": "3929285205f79a04d5b40ffe28b1ff647fe0141c39dc3ced979db065eb1feeda",
+      "video:shot.09#composition": "c9121d93c9c6a2e32488c5332be927169a8fd3aca16bcb677cb7371626e9e3df",
+      "video:shot.10#composition": "cc2ccc254beececce259fa6b016fb144b63928712d4f59a7cc9f5ada5983aba3",
+      "video:shot.11#composition": "759386087c595900b203eacc6317b968b29d215f23100858beb372682ea5dc08",
+      "video:shot.12#composition": "56035b379cd9f335e31a5b11f856c001ab9c8b6bf3158e57d9fac8a7d900da44",
+      "video:shot.13#composition": "9a8a3c73cdf8411d9f6ad905b3145a7533d3b39f23031fdd52acf33886eaf858",
+      "video:shot.14#composition": "6831968a28d4fd1ed6565855b8064ed59b4e640e99168774dc1895a315187e1c",
+      "video:shot.15#composition": "76659af126c7d411b16bb3ebde993e1c65a6148647021c1d2a343f947dcfaa4e",
+      "video:shot.16#composition": "2df561a2214c059bdce539cb8cc969de1b13717477112278c022e123c868adf4",
+      "video:shot.17#composition": "8b25a295a9e5c67c20fa4abe4218683e82ab5ba9ef942d2c8c3b278c17a72de8",
+      "video:shot.18#composition": "83181f55e69c4b3dfb6ffd8094c63ed6c195834b3fd8ca48f9ef1770635e0297",
+      "video:shot.19#composition": "0ec57b8992bbcee66740f293424661d5b64c8702b0efd9e08fc00778d9eb0306",
+      "video:shot.20#composition": "ea67fea2b7b19533fb2c050b1abc220f6db24c62f3a6196ef6f068231acc6eab",
+      "video:shot.21#composition": "01b06d40ec5b06267bd737e732ee181f3cc080568288ca49e897d3b57e9173ea",
+      "video:shot.22#composition": "b03244c829b4aa98a5c286b4f88b1b1e63c66d7f6b57a86519fc09b00a73f086",
+      "video:shot.23#composition": "289d08ae9c984044695fcfed7b3b10c656c9c7b15369ee2192e90d7ece0ff752",
+      "video:shot.24#composition": "b91068cd2fb7234225b00a7852583660e48592c4c7d2be83fb3c5ce5766aca80",
+      "video:shot.25#composition": "54babb2d5f043ce6485bf42a0f0e5d415b134a83d3a81a2acf4eba0eba998f55",
+      "video:shot.26#composition": "e65f015f0c963e723bcfb9063200647e847f98d58cb54f62d1c79219272e95a4",
+      "video:shot.27#composition": "8350d3c09ed6baee3c12aa31dd3e51061681b0e8c3ed0861c39930929d1bbefa",
+      "video:shot.28#composition": "cc200b3896a63e4120ca2d18c072360e6fbd613e1c70ddf17f6f39c94b434197",
+      "video:shot.29#composition": "fcf07c58bc1e6364872cc62cd68fbaf959c39ba5ca78d5fe8b49e2ee55ccc3d2",
+      "video:shot.30#composition": "9d8d6bdd6af25e96947a8413c9250d1f960136d6c65a56a72054f655408880e9",
+      "video:shot.31#composition": "6535cc56de0506d4de60bf9af09acf95aa86b4c66914cdfa92ec877f159d9919",
+      "video:shot.32#composition": "b4a229c1815ff89de1c161cf64df6d33c45fbf90a625880eb409997715a1fc84",
+      "video:shot.33#composition": "1d83bb9d63dbef6fe95a4955a988a301ff7d98c18ceafb8f821836ba595ee769",
+      "video:shot.34#composition": "bfe597a8b94a03ad7936d01534158f51ef42277de84d2c86e2677f49a54de11d",
       "video:shot.01#stem": "5d2470ddfc6c3e7b0fbf01192f1bad840bcd81f5f85c4f2b5cab5bcdbd977ee6",
       "video:shot.02#stem": "a6dc40b4c1eb22a23b92f41883e5db82b3d75093dfa0d9d8ddc310235ed01898",
       "video:shot.03#stem": "f23b9ae85a266c5ce8abea2f95c0d41fb44cde05536194fa12ccbbab11975878",
@@ -281,8 +281,8 @@
       "video:shot.09#stem": "95c771e192a4296e2e8b3f48dcb4e1247d02cc7f6924ad5fa2baf3a63f7da5ec",
       "video:shot.10#stem": "d9f4969bf94d398312c7ad4af07a2e6035f38537c898cbefa398cacbcde39f01",
       "video:shot.11#stem": "ac5a206e055daef5bd2942d304cee4f6f03aad7960366ac44e7c9c954cdee7a5",
-      "video:shot.12#stem": "a4cde78dc09d2ffe85094ae72b09554ccdcb76b3e351b4188ea169a721353e5b",
-      "video:shot.13#stem": "eee52cee84cca6b7fd70f9746eae03c1f10bb2211726e20678d123ebfda40356",
+      "video:shot.12#stem": "0cc51042c2ab924fdd2beb6ca6bfed1a4028ce62c76dd07a56c6cd82c619d8df",
+      "video:shot.13#stem": "8f7c9b846a57e325b6b89d709b6dcd06acf3bc8ee56ae1cd687bc95379b9260d",
       "video:shot.14#stem": "e08bdac857649980b84e63199f64393e4686d49bb444bafcd70dee687257fd44",
       "video:shot.15#stem": "93f4a36ed91e52a79b5b3154fb2086fe268c1f7ba2470a7e9c7669375a592119",
       "video:shot.16#stem": "07aaaced69c2f511281315a4b3881276dc778e9fe1afac06c5d52a5ee19a914e",
@@ -294,11 +294,10 @@
       "video:shot.22#stem": "9066cd1c76f798871a98cfb92542bea99c0682bd569d301f269b006e8d856fba",
       "video:shot.23#stem": "07d4d2c61c6eb3ef79d859828d30ace53f76f47154ae302f5e848020e64210b4",
       "video:shot.24#stem": "d77b1ffdc3eeddbbf167918fe244a87476ba7a3979c1a8c216526b14c7409af3",
-      "video:shot.25#stem": "6728b07a51f2919283b6319227ad271756f96adf9b2b2efa4f8b25c0feb9b4b7",
       "video:shot.26#stem": "992a6588bdcda6194f3427b1489d674dff6d0e8b6458e646142210b157e5f046",
       "video:shot.27#stem": "8b728ca58cb0233b0fd83fee2aa960107dc18adb99b72ba5f54fe9c6db3f1472",
       "video:shot.28#stem": "292249570297bb35aae5fdbc0d6ee584d908d3294f9d22d8104bfeadd5b6be42",
-      "video:shot.29#stem": "1ff3d2fa3804657185b8ff7661f78bdb6c8cdaaecd23142daf70a066906136e3",
+      "video:shot.29#stem": "bc8a86852aa36eb338d292e7bc981d2f4c203b0fd6588bbc16b82e7d42addfd7",
       "video:shot.30#stem": "555ebe36ce7e8397c4c0914684edf7c45231367ded09a85e568033e3abe9a3f9",
       "video:shot.31#stem": "3b5ebe3d1395e7f8bf2bdee36aa14358817ab55727ba66a9ef223f9e36f7c57c",
       "video:shot.32#stem": "73617db44c7b0e550eb13511f9c3dfb1f5fe7e828e2eb261088f1b28c07c8069",
@@ -308,42 +307,301 @@
     }
   },
   "decisions": {
+    "10": "accepted",
+    "11": "accepted",
+    "12": "accepted",
+    "13": "accepted",
     "14": "accepted",
-    "25": "none"
+    "15": "accepted",
+    "16": "accepted",
+    "17": "accepted",
+    "18": "accepted",
+    "19": "accepted",
+    "20": "accepted",
+    "21": "accepted",
+    "22": "accepted",
+    "23": "accepted",
+    "24": "accepted",
+    "25": "accepted",
+    "26": "accepted",
+    "27": "accepted",
+    "28": "accepted",
+    "29": "accepted",
+    "30": "accepted",
+    "31": "accepted",
+    "32": "accepted",
+    "33": "accepted",
+    "34": "accepted",
+    "01": "accepted",
+    "02": "accepted",
+    "03": "accepted",
+    "04": "accepted",
+    "06": "accepted",
+    "07": "accepted",
+    "08": "accepted",
+    "09": "accepted"
   },
   "cascadeAccepted": [
     {
+      "address": "video:shot.01#stem",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "video:shot.02#stem",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "video:shot.03#stem",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "video:shot.04#stem",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "video:shot.06#stem",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "video:shot.07#stem",
+      "via": "video:shot.07"
+    },
+    {
+      "address": "video:shot.08#stem",
+      "via": "video:shot.08"
+    },
+    {
+      "address": "video:shot.09#stem",
+      "via": "video:shot.09"
+    },
+    {
+      "address": "video:shot.10#stem",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "video:shot.11#stem",
+      "via": "video:shot.11"
+    },
+    {
+      "address": "video:shot.12#stem",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "video:shot.13#stem",
+      "via": "video:shot.13"
+    },
+    {
       "address": "video:shot.14#stem",
       "via": "video:shot.14"
+    },
+    {
+      "address": "video:shot.15#stem",
+      "via": "video:shot.15"
+    },
+    {
+      "address": "video:shot.16#stem",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "video:shot.17#stem",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "video:shot.18#stem",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "video:shot.19#stem",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "video:shot.20#stem",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "video:shot.21#stem",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "video:shot.22#stem",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "video:shot.23#stem",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "video:shot.24#stem",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "video:shot.26#stem",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "video:shot.27#stem",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "video:shot.28#stem",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "video:shot.29#stem",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "video:shot.30#stem",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "video:shot.31#stem",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "video:shot.32#stem",
+      "via": "video:shot.32"
+    },
+    {
+      "address": "video:shot.33#stem",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "video:shot.34#stem",
+      "via": "video:shot.34"
+    },
+    {
+      "address": "video:shot.01#composition",
+      "via": "video:shot.01"
+    },
+    {
+      "address": "video:shot.02#composition",
+      "via": "video:shot.02"
+    },
+    {
+      "address": "video:shot.03#composition",
+      "via": "video:shot.03"
+    },
+    {
+      "address": "video:shot.04#composition",
+      "via": "video:shot.04"
+    },
+    {
+      "address": "video:shot.06#composition",
+      "via": "video:shot.06"
+    },
+    {
+      "address": "video:shot.07#composition",
+      "via": "video:shot.07"
+    },
+    {
+      "address": "video:shot.08#composition",
+      "via": "video:shot.08"
+    },
+    {
+      "address": "video:shot.09#composition",
+      "via": "video:shot.09"
+    },
+    {
+      "address": "video:shot.10#composition",
+      "via": "video:shot.10"
+    },
+    {
+      "address": "video:shot.11#composition",
+      "via": "video:shot.11"
+    },
+    {
+      "address": "video:shot.12#composition",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "video:shot.13#composition",
+      "via": "video:shot.13"
     },
     {
       "address": "video:shot.14#composition",
       "via": "video:shot.14"
     },
     {
-      "address": "direction:sequence.shots.14",
-      "via": "video:shot.14"
+      "address": "video:shot.15#composition",
+      "via": "video:shot.15"
+    },
+    {
+      "address": "video:shot.16#composition",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "video:shot.17#composition",
+      "via": "video:shot.17"
+    },
+    {
+      "address": "video:shot.18#composition",
+      "via": "video:shot.18"
+    },
+    {
+      "address": "video:shot.19#composition",
+      "via": "video:shot.19"
+    },
+    {
+      "address": "video:shot.20#composition",
+      "via": "video:shot.20"
+    },
+    {
+      "address": "video:shot.21#composition",
+      "via": "video:shot.21"
+    },
+    {
+      "address": "video:shot.22#composition",
+      "via": "video:shot.22"
+    },
+    {
+      "address": "video:shot.23#composition",
+      "via": "video:shot.23"
+    },
+    {
+      "address": "video:shot.24#composition",
+      "via": "video:shot.24"
+    },
+    {
+      "address": "video:shot.25#composition",
+      "via": "video:shot.25"
+    },
+    {
+      "address": "video:shot.26#composition",
+      "via": "video:shot.26"
+    },
+    {
+      "address": "video:shot.27#composition",
+      "via": "video:shot.27"
+    },
+    {
+      "address": "video:shot.28#composition",
+      "via": "video:shot.28"
+    },
+    {
+      "address": "video:shot.29#composition",
+      "via": "video:shot.29"
+    },
+    {
+      "address": "video:shot.30#composition",
+      "via": "video:shot.30"
+    },
+    {
+      "address": "video:shot.31#composition",
+      "via": "video:shot.31"
+    },
+    {
+      "address": "video:shot.32#composition",
+      "via": "video:shot.32"
+    },
+    {
+      "address": "video:shot.33#composition",
+      "via": "video:shot.33"
+    },
+    {
+      "address": "video:shot.34#composition",
+      "via": "video:shot.34"
     }
   ],
-  "notes": [
-    {
-      "id": "fb-KnWXGmJV",
-      "time": 60.5,
-      "shotId": "25",
-      "address": "video:shot.25",
-      "text": "このショットの効果音が気になる。動画に音がついてるのかな？できるなら消したい",
-      "displayedVariants": {
-        "video:shot.25.motion": "v-MVK5m1qf",
-        "video:shot.25#composition": "v-YNM4GhqE"
-      }
-    }
-  ],
-  "overallComment": "14OK。あともう一つだけ確認して",
-  "handoffSummary": "shot 14を作り直しました。ほかの32ショットは承認済みのままです。よろしければ承認してください。承認されたら、書き出し直します。",
-  "handoffNotes": [
-    {
-      "address": "video:shot.14.motion",
-      "text": "『You pick.』の言葉に合わせて、手のひらを上にしてカメラへ手を差し出します。そのあと手を戻し、shot 15につながるように胸のロゴに拳を当てます。"
-    }
-  ]
+  "handoffSummary": "konteの更新で合成の記録方法が変わり、全ショットの合成が「古い」と出ています。素材は何も作り直していません。中身は前回承認したものと同じなので、全ショットを承認し直していただければ表示が消えます。気になるところがあればコメントをどうぞ。"
 }

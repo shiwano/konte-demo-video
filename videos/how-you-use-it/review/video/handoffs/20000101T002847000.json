@@ -1,0 +1,38 @@
+{
+  "stage": "video",
+  "summary": "animatic と同じく、UI 更新で古くなった8ショットの画面を新しい UI で組み直しました。ショット03・04は animatic で直した、幅の狭い窓とスクロールだけの見せ方になっています。音声と字幕はそのままです。",
+  "notes": [
+    {
+      "address": "video:shot.03",
+      "text": "幅の狭い窓で表示し、カメラの寄りをやめてスクロールだけにしました（animatic と同じ）"
+    },
+    {
+      "address": "video:shot.04",
+      "text": "03と同じ窓幅に揃え、クリックの位置を合わせ直しました"
+    },
+    {
+      "address": "video:shot.05",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "video:shot.08",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "video:shot.09",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "video:shot.10",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "video:shot.11",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "video:shot.14",
+      "text": "新しい UI で組み直し"
+    }
+  ]
+}

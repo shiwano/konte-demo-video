@@ -399,10 +399,13 @@ const DIRECTION_HANDOFF =
 /** How far Shot03 scrolls the direction page, and where Shot04 picks it up. */
 const DIRECTION_SCROLL = 520;
 
+const DIRECTION_VIEWPORT = [1480, Math.round((H * 1480) / W)] as const;
+
 function DirectionPage({ accepted, submit }: { accepted: boolean; submit?: boolean }) {
   return (
     <DirectionReview
       width={W}
+      viewport={DIRECTION_VIEWPORT}
       submit={submit}
       icon={icon}
       header={{ hideStale: true, nextToReview: 1, accept: accepted, dirty: accepted }}
@@ -697,9 +700,8 @@ export function Shot03() {
     <Screen
       cursor={false}
       ev={[
-        { t: 0, d: 0, cam: [835, 500, 1.15] },
+        { t: 0, d: 0, cam: [0, 0, 1] },
         { t: 0.35, d: 4.6, y: [".kr-main > div", -DIRECTION_SCROLL], ease: "power2.inOut" },
-        { t: 0.2, d: 5, cam: [1000, 620, 1.38], ease: "power1.inOut" },
       ]}
     >
       <DirectionPage accepted={false} submit={false} />
@@ -707,7 +709,7 @@ export function Shot03() {
   );
 }
 
-const DIR_ACCEPT = [1697, 26] as const;
+const DIR_ACCEPT = [1838, 34] as const;
 
 export function Shot04() {
   return (
@@ -721,7 +723,7 @@ export function Shot04() {
         { t: 0.48, click: true },
         { t: 0.5, hide: "#d1" },
         { t: 0.5, show: "#d2" },
-        { t: 0.7, d: 0.4, cur: [1600, 1036] },
+        { t: 0.7, d: 0.4, cur: [1505, 1028] },
         { t: 0.7, d: 0.45, cam: [1400, 800, 1.35] },
         { t: 1.15, click: true },
         { t: 1.15, press: ".kr-submit" },

@@ -20,7 +20,7 @@
         },
         "time": 12.3,
         "text": "Submit ボタンとテーブルの間のマージンが大きすぎなので直したい",
-        "createdAt": "2000-01-01T00:03:56.000Z",
+        "createdAt": "2000-01-01T00:03:24.000Z",
         "createdBy": "local"
       },
       {
@@ -37,7 +37,7 @@
         "annotation": null,
         "time": 11,
         "text": "submit ボタンはフローティングボタンだから03と合わせて",
-        "createdAt": "2000-01-01T00:04:05.000Z",
+        "createdAt": "2000-01-01T00:03:31.000Z",
         "createdBy": "local"
       },
       {
@@ -58,7 +58,7 @@
         },
         "time": 11.633333333333333,
         "text": "他の UI がズームしているのに、フローティングボタンがズームしてない",
-        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdAt": "2000-01-01T00:03:33.000Z",
         "createdBy": "local"
       },
       {
@@ -79,7 +79,7 @@
         },
         "time": 12.3,
         "text": "スクロールしなくてもよさそう。",
-        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdAt": "2000-01-01T00:03:33.000Z",
         "createdBy": "local"
       },
       {
@@ -96,7 +96,7 @@
         "annotation": null,
         "time": 11,
         "text": "等倍にしないで、みにくいから",
-        "createdAt": "2000-01-01T00:04:15.000Z",
+        "createdAt": "2000-01-01T00:03:38.000Z",
         "createdBy": "local"
       },
       {
@@ -117,7 +117,7 @@
         },
         "time": 11,
         "text": "マージンが広すぎ",
-        "createdAt": "2000-01-01T00:04:15.000Z",
+        "createdAt": "2000-01-01T00:03:38.000Z",
         "createdBy": "local"
       }
     ],
@@ -146,7 +146,7 @@
         },
         "time": 22.6,
         "text": "タイムラインのshotが変わってないのに、絵が切り変わっているのがおかしい。\nタイミングを合わせてほしい。",
-        "createdAt": "2000-01-01T00:03:56.000Z",
+        "createdAt": "2000-01-01T00:03:24.000Z",
         "createdBy": "local"
       }
     ],
@@ -165,7 +165,7 @@
         "annotation": null,
         "time": 5.5,
         "text": "スクロールは減らさないでほしい。\nshots の画面が中央に来るようにしたいから。\nあと、submit ボタンって右下に常時でてるフローティングボタンだから、そういう感じにして",
-        "createdAt": "2000-01-01T00:04:05.000Z",
+        "createdAt": "2000-01-01T00:03:31.000Z",
         "createdBy": "local"
       },
       {
@@ -185,7 +185,7 @@
         },
         "time": 6.6,
         "text": "右下じゃない",
-        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdAt": "2000-01-01T00:03:33.000Z",
         "createdBy": "local"
       },
       {
@@ -205,7 +205,7 @@
         },
         "time": 9.266666666666667,
         "text": "このカーソルいらない",
-        "createdAt": "2000-01-01T00:04:10.000Z",
+        "createdAt": "2000-01-01T00:03:33.000Z",
         "createdBy": "local"
       },
       {
@@ -221,7 +221,41 @@
         "annotation": null,
         "time": 8.9,
         "text": "characters とか props の画面消えてない？",
-        "createdAt": "2000-01-01T00:04:15.000Z",
+        "createdAt": "2000-01-01T00:03:38.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-JS1cyP3u",
+        "displayedVariants": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.03#composition": "v-XeSPAOEb"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.03#composition": "c637188a338c",
+          "animatic:shot.03#narrationStem": "5a12e74e693b"
+        },
+        "annotation": null,
+        "time": 6.6,
+        "text": "横幅縮めて、サイドバーとメイン画面が一緒にうつるようにできない？",
+        "createdAt": "2000-01-01T00:28:09.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-uI2afiyS",
+        "displayedVariants": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk",
+          "animatic:shot.03#composition": "v-XeSPAOEb"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.03#composition": "ff60a12f6ecf",
+          "animatic:shot.03#narrationStem": "5a12e74e693b"
+        },
+        "annotation": null,
+        "text": "なんかズームが気持ち悪いんだけど、変なことやってない？",
+        "time": 6.3,
+        "createdAt": "2000-01-01T00:28:11.000Z",
         "createdBy": "local"
       }
     ],
@@ -243,7 +277,7 @@
         },
         "time": 2.5,
         "text": "こういう選択肢、konte-checkin のスキルで出る？",
-        "createdAt": "2000-01-01T00:04:05.000Z",
+        "createdAt": "2000-01-01T00:03:31.000Z",
         "createdBy": "local"
       }
     ]

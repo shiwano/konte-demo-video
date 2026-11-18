@@ -1,0 +1,50 @@
+{
+  "stage": "animatic",
+  "summary": "UI 更新（screens.tsx の作り直し）で古くなった10ショットの画面合成を、新しい UI で組み直しました。ナレーション音声は今のまま据え置いています。",
+  "notes": [
+    {
+      "address": "animatic:shot.02",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.03",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.05",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.06",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.08",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.09",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.10",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.11",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.12",
+      "text": "新しい UI で組み直し"
+    },
+    {
+      "address": "animatic:shot.14",
+      "text": "新しい UI で組み直し"
+    }
+  ]
+}
