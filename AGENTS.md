@@ -55,14 +55,14 @@ Each video, under `videos/<name>/`:
 - `assets/` — generated asset outputs; `assets/files/` — manually placed files for `file` assets.
 - `.konte/` — jobs, logs, caches; managed by konte, do not edit anything under it.
 
-A command acts on the video you are inside, else the workspace's current video — `konte video current` shows it, `konte video use <name>` switches it, `konte video new` makes the video it creates current.
+A command acts on `--video <name>`, else the video you are in, else the current video — `konte video current` shows it, `video use <name>` switches it, `video new` sets it.
 
 ## Addresses
 
 Everything konte generates, reviews or comments on is addressed `<stage>:<part>`:
 
-- `video:shot.01.motion`, `animatic:shot.01.key`, `video:timeline.ambience` — the two creative stages; a part you name is `shot.<id>.<name>` or `timeline.<name>`.
-- `#` in place of `.` introduces a part konte owns, and no asset name may contain it — a shot's `#composition` (the assembled shot) and `#stem` (its audio), the timeline's `#stem` (the beds).
+- `video:shot.01.motion`, `animatic:shot.01.key`, `video:timeline.ambience` — the two creative stages; parts you name include `shot.<id>.<name>` and `timeline.<name>`.
+- `#` in place of `.` introduces a part konte owns, and no asset name may contain it — including a shot's `#composition` (the assembled shot) and `#stem` (its audio), the timeline's `#stem` (the beds).
 - `reference:bgm` — the reference pool; its part is a bare name. Accepting one satisfies every stage that consumes it.
 - `direction:sequence.shots.01` — a feedback target on the direction, holding comments; its part is its field path in `direction.ts` (`brief.logline`, `characters.cat`, `waivers.<key>`, …), so an address reads straight back into the file.
 
