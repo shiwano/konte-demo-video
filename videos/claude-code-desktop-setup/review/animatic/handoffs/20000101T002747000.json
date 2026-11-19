@@ -1,0 +1,14 @@
+{
+  "stage": "animatic",
+  "summary": "Add marketplace ダイアログの Sync ボタンが Cancel に食い込んでいたのを直しました。同じダイアログを使う shot 08 も一緒に変わっています。",
+  "notes": [
+    {
+      "address": "animatic:shot.08",
+      "text": "Sync ボタンの幅の取り方を直した影響で、Cancel と Sync の間隔が正しく空くようになりました。動きは変えていません。"
+    },
+    {
+      "address": "animatic:shot.09",
+      "text": "Sync ボタンの置き場所がラベルより狭く、Cancel に重なっていたのを直しました。間隔は他のダイアログと同じ 8px です。"
+    }
+  ]
+}

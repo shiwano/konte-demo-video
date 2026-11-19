@@ -1,0 +1,14 @@
+{
+  "stage": "video",
+  "summary": "Konte プラグインの説明文を直した shot 10・11 を、効果音・字幕つきで並べています。",
+  "notes": [
+    {
+      "address": "video:shot.10",
+      "text": "konte の行の説明が「Set up konte, the agent-operated AI video…」になりました。"
+    },
+    {
+      "address": "video:shot.11",
+      "text": "最初に映る Customize 画面の説明も同じく直っています。"
+    }
+  ]
+}

@@ -17,10 +17,13 @@ const CAPTION_TOP: S.ShotId[] = ["01"];
 /** Shots framed on the home heading and the composer carry the caption in the empty band between them. */
 const CAPTION_MID: S.ShotId[] = ["11", "12", "16"];
 
+/** Shots whose line starts late in the animatic, so the caption waits for it. */
+const CAPTION_AT: Partial<Record<S.ShotId, number>> = { "16": 1.2 };
+
 const narration = (id: S.ShotId, text: string, duration: number) => [
   <Audio src={animatic.shot(id).narrationStem} />,
   <Subtitle
-    entries={[{ start: 0.1, end: duration, text }]}
+    entries={[{ start: CAPTION_AT[id] ?? 0.1, end: duration, text }]}
     className={`${CAPTION_TOP.includes(id) ? "top-[15%] bottom-auto" : CAPTION_MID.includes(id) ? "top-[33%] bottom-auto" : "bottom-[5%]"} text-[2.3vmax] font-semibold`}
     lineClassName="rounded-xl bg-black/80 px-[0.7em] py-[0.25em] leading-snug"
   />,
@@ -60,7 +63,6 @@ export default defineVideo(direction, {
       .nextGraphicShot("12", voiced("12"))
       .nextGraphicShot("13", voiced("13"))
       .nextGraphicShot("14", voiced("14"))
-      .nextGraphicShot("15", silent("15"))
       .nextGraphicShot("16", voiced("16"))
       .nextGraphicShot("17", voiced("17")),
   }),

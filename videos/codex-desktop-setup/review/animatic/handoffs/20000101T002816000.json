@@ -1,0 +1,14 @@
+{
+  "stage": "animatic",
+  "summary": "setup 後の Codex 再起動をやめ、新しいチャットを始める流れに直しました。旧 shot 15（File → Quit ChatGPT で再起動）は削除しています。",
+  "notes": [
+    {
+      "address": "animatic:shot.14",
+      "text": "返答の 1 を「Start a new chat in this workspace so the new settings load.」にし、ナレーションを「Then start a new chat.」で作り直しました。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "shot 14 の最後の画面から始まり、左端のホームアイコンで新しいチャットを開いてから $konte を打ちます。その分 4 秒 → 4.5 秒に延ばし、ナレーションの入りを入力欄に寄るところ（1.2 秒）に合わせました。"
+    }
+  ]
+}

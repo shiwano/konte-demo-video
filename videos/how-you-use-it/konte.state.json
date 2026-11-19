@@ -655,7 +655,7 @@
      "inputFingerprints": {
       "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
      },
-     "vouchedAt": "2000-01-01T00:27:58.000Z",
+     "vouchedAt": "2000-01-01T00:26:08.000Z",
      "seed": 3136010357,
      "derivedFrom": null,
      "patchHash": null,
@@ -943,7 +943,7 @@
      "inputFingerprints": {
       "reference:konteVoice": "38099b51730af2a4bdd9adc93f9ee1a0691e4e62dab0a1ad4bb0d29d6f5068a4"
      },
-     "vouchedAt": "2000-01-01T00:27:59.000Z",
+     "vouchedAt": "2000-01-01T00:26:09.000Z",
      "seed": 3460842001,
      "derivedFrom": null,
      "patchHash": null,
@@ -1557,9 +1557,9 @@
      "file": "assets/animatic/shot.03#composition/v-Jtwkat05/composition.html",
      "definitionHash": "b9d8f209f728",
      "outputHash": "7647d207361b4e176c3637a39d6fda63ced2a326c077148691a31d75f2f1864c",
-     "createdAt": "2000-01-01T00:28:43.000Z",
-     "readyAt": "2000-01-01T00:28:44.000Z",
-     "decidedAt": "2000-01-01T00:28:44.000Z",
+     "createdAt": "2000-01-01T00:26:53.000Z",
+     "readyAt": "2000-01-01T00:26:54.000Z",
+     "decidedAt": "2000-01-01T00:26:54.000Z",
      "inputFingerprints": {
       "animatic:shot.03.vo": "5faf3ea974f0223a8c2c91638d87e092bbc2e90ff85b51c2794e99efd0385786",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
@@ -1578,9 +1578,9 @@
      "file": "assets/animatic/shot.04#composition/v-gpeiL7xF/composition.html",
      "definitionHash": "86117cad914f",
      "outputHash": "d74ae6a76e2a2696445b77ce929734762500cec2cb89800b5f95b48cb50c6aad",
-     "createdAt": "2000-01-01T00:28:45.000Z",
-     "readyAt": "2000-01-01T00:28:46.000Z",
-     "decidedAt": "2000-01-01T00:28:46.000Z",
+     "createdAt": "2000-01-01T00:26:55.000Z",
+     "readyAt": "2000-01-01T00:26:56.000Z",
+     "decidedAt": "2000-01-01T00:26:56.000Z",
      "inputFingerprints": {
       "animatic:shot.04.vo": "29241cbe13b53ecc9168a7ee7e62fc3be19847fed4222433d8d8bd0ba08341ba",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
@@ -1599,9 +1599,9 @@
      "file": "assets/animatic/shot.05#composition/v-IH4xaNI6/composition.html",
      "definitionHash": "55c1405ebfb0",
      "outputHash": "2cdcf90e3ba73c0f02f18ce45c519920d37ebd9674ad9418b4e756fabcbd496e",
-     "createdAt": "2000-01-01T00:28:18.000Z",
-     "readyAt": "2000-01-01T00:28:19.000Z",
-     "decidedAt": "2000-01-01T00:28:19.000Z",
+     "createdAt": "2000-01-01T00:26:28.000Z",
+     "readyAt": "2000-01-01T00:26:29.000Z",
+     "decidedAt": "2000-01-01T00:26:29.000Z",
      "inputFingerprints": {
       "animatic:shot.05.vo": "dd51e564606fb4ff2e92cc114a9b1209416e65aff68cc7567f6e48ca36c99da7",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
@@ -1624,9 +1624,9 @@
      "file": "assets/animatic/shot.06#composition/v-WDbjhBKQ/composition.html",
      "definitionHash": "bf78ce107280",
      "outputHash": "11b4ec06ae04dda54588155808b1142b52afe8774c3f5a8d10d6191d2b1230bb",
-     "createdAt": "2000-01-01T00:28:20.000Z",
-     "readyAt": "2000-01-01T00:28:21.000Z",
-     "decidedAt": "2000-01-01T00:28:21.000Z",
+     "createdAt": "2000-01-01T00:26:30.000Z",
+     "readyAt": "2000-01-01T00:26:31.000Z",
+     "decidedAt": "2000-01-01T00:26:31.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
@@ -1668,9 +1668,9 @@
      "file": "assets/animatic/shot.08#composition/v-QavZNe2E/composition.html",
      "definitionHash": "914ceb4586f8",
      "outputHash": "f0555be0ff33744e200aa0df348cafa0be915800c83ad499a124566680d70d45",
-     "createdAt": "2000-01-01T00:28:22.000Z",
-     "readyAt": "2000-01-01T00:28:23.000Z",
-     "decidedAt": "2000-01-01T00:28:23.000Z",
+     "createdAt": "2000-01-01T00:26:32.000Z",
+     "readyAt": "2000-01-01T00:26:33.000Z",
+     "decidedAt": "2000-01-01T00:26:33.000Z",
      "inputFingerprints": {
       "animatic:shot.08.vo": "c5b395547174d69ddf4baead82b75c55b458d5b4b9acb46da3503989f590ee9d",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
@@ -1695,9 +1695,9 @@
      "file": "assets/animatic/shot.09#composition/v-cTo9N46V/composition.html",
      "definitionHash": "359080eaa026",
      "outputHash": "35ee23e3f8b513764b14079e3c1bdee1272a5234b441cad39e149b08a6fb2eca",
-     "createdAt": "2000-01-01T00:28:24.000Z",
-     "readyAt": "2000-01-01T00:28:25.000Z",
-     "decidedAt": "2000-01-01T00:28:25.000Z",
+     "createdAt": "2000-01-01T00:26:34.000Z",
+     "readyAt": "2000-01-01T00:26:35.000Z",
+     "decidedAt": "2000-01-01T00:26:35.000Z",
      "inputFingerprints": {
       "animatic:shot.09.vo": "16b5b7cb06d68039c7abae555760e969e51163806114bb09a6ebcfd0635fefec",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
@@ -1718,9 +1718,9 @@
      "file": "assets/animatic/shot.10#composition/v-HCRp3NxK/composition.html",
      "definitionHash": "267f0839ee0d",
      "outputHash": "9059c292fd1dcadcdff748972e5d30ad73e9ed2781f5f4fbae28b50bdd0c1fd2",
-     "createdAt": "2000-01-01T00:28:26.000Z",
-     "readyAt": "2000-01-01T00:28:27.000Z",
-     "decidedAt": "2000-01-01T00:28:27.000Z",
+     "createdAt": "2000-01-01T00:26:36.000Z",
+     "readyAt": "2000-01-01T00:26:37.000Z",
+     "decidedAt": "2000-01-01T00:26:37.000Z",
      "inputFingerprints": {
       "animatic:shot.10.vo": "517bb0576441049ace21e59dad18d3ac316c6063928f627f0b8ebab87a6f0e12",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
@@ -1740,9 +1740,9 @@
      "file": "assets/animatic/shot.11#composition/v-fvePAjKw/composition.html",
      "definitionHash": "669db78fc47c",
      "outputHash": "37efe56d6ddb0fa1cee6076620883d8a1cc3c42181a15c5c11c1c2f24c521eea",
-     "createdAt": "2000-01-01T00:28:28.000Z",
-     "readyAt": "2000-01-01T00:28:29.000Z",
-     "decidedAt": "2000-01-01T00:28:29.000Z",
+     "createdAt": "2000-01-01T00:26:38.000Z",
+     "readyAt": "2000-01-01T00:26:39.000Z",
+     "decidedAt": "2000-01-01T00:26:39.000Z",
      "inputFingerprints": {
       "animatic:shot.11.vo": "70604f1a61b0dbe27f2499f8caaf2db74ee4de63820d73254eafe0c3adf9411a",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
@@ -1762,9 +1762,9 @@
      "file": "assets/animatic/shot.12#composition/v-Zb59I3a3/composition.html",
      "definitionHash": "004e7559944c",
      "outputHash": "6f7b6f988ae79492b379a0e751b6c2c997ecc3f30596923f0d98a75b1811a06c",
-     "createdAt": "2000-01-01T00:28:30.000Z",
-     "readyAt": "2000-01-01T00:28:31.000Z",
-     "decidedAt": "2000-01-01T00:28:32.000Z",
+     "createdAt": "2000-01-01T00:26:40.000Z",
+     "readyAt": "2000-01-01T00:26:41.000Z",
+     "decidedAt": "2000-01-01T00:26:42.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
@@ -1803,9 +1803,9 @@
      "file": "assets/animatic/shot.14#composition/v-xgpY2P7I/composition.html",
      "definitionHash": "16a370869e6b",
      "outputHash": "34b10d1dedff2217cb62b942271706e3afef236d6990f7d60269774fac8f1804",
-     "createdAt": "2000-01-01T00:28:33.000Z",
-     "readyAt": "2000-01-01T00:28:34.000Z",
-     "decidedAt": "2000-01-01T00:28:34.000Z",
+     "createdAt": "2000-01-01T00:26:43.000Z",
+     "readyAt": "2000-01-01T00:26:44.000Z",
+     "decidedAt": "2000-01-01T00:26:44.000Z",
      "inputFingerprints": {
       "animatic:shot.14.vo": "f11dad9239132710e6fd789d57ada6adbb23c1e448e2b280585cc8b86b48c640",
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
@@ -1893,7 +1893,7 @@
      },
      "createdAt": "2000-01-01T00:03:27.000Z",
      "readyAt": "2000-01-01T00:03:28.000Z",
-     "decidedAt": "2000-01-01T00:28:12.000Z",
+     "decidedAt": "2000-01-01T00:26:22.000Z",
      "inputFingerprints": {
       "animatic:shot.05.vo": "dd51e564606fb4ff2e92cc114a9b1209416e65aff68cc7567f6e48ca36c99da7"
      },
@@ -1959,7 +1959,7 @@
      },
      "createdAt": "2000-01-01T00:02:22.000Z",
      "readyAt": "2000-01-01T00:02:23.000Z",
-     "decidedAt": "2000-01-01T00:28:15.000Z",
+     "decidedAt": "2000-01-01T00:26:25.000Z",
      "inputFingerprints": {
       "animatic:shot.10.vo": "517bb0576441049ace21e59dad18d3ac316c6063928f627f0b8ebab87a6f0e12"
      },
@@ -2089,9 +2089,9 @@
      "file": "assets/video/shot.03#composition/v-4ti7uTC8/composition.html",
      "definitionHash": "5f41e7148455",
      "outputHash": "deef633509d8221f947aff81ec966891115268f04087e341ef43158f6b777724",
-     "createdAt": "2000-01-01T00:28:57.000Z",
-     "readyAt": "2000-01-01T00:28:58.000Z",
-     "decidedAt": "2000-01-01T00:28:58.000Z",
+     "createdAt": "2000-01-01T00:27:07.000Z",
+     "readyAt": "2000-01-01T00:27:08.000Z",
+     "decidedAt": "2000-01-01T00:27:08.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
      },
@@ -2109,9 +2109,9 @@
      "file": "assets/video/shot.04#composition/v-ifcYLr47/composition.html",
      "definitionHash": "07d775605068",
      "outputHash": "2836ed938f5d85eb1d4ce49eb4820156ced3be8c599e11d2bd246a5b583c48f8",
-     "createdAt": "2000-01-01T00:28:59.000Z",
-     "readyAt": "2000-01-01T00:29:00.000Z",
-     "decidedAt": "2000-01-01T00:29:00.000Z",
+     "createdAt": "2000-01-01T00:27:09.000Z",
+     "readyAt": "2000-01-01T00:27:10.000Z",
+     "decidedAt": "2000-01-01T00:27:10.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff"
      },
@@ -2131,7 +2131,7 @@
      "outputHash": "6ee15b5d128acde546a5f2f2f62f1aa384b97b541c8ad219314a5cff8e1eb8cc",
      "createdAt": "2000-01-01T00:03:47.000Z",
      "readyAt": "2000-01-01T00:03:48.000Z",
-     "decidedAt": "2000-01-01T00:28:50.000Z",
+     "decidedAt": "2000-01-01T00:27:00.000Z",
      "inputFingerprints": {
       "animatic:shot.04#narrationStem": "01b13234b75f834a75c11ac84d337b58511683bb1e3bbbca5d5eadfc2d59991e",
       "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
@@ -2150,9 +2150,9 @@
      "file": "assets/video/shot.05#composition/v-Ai9CDREP/composition.html",
      "definitionHash": "279fa09bd86b",
      "outputHash": "35b457373eba0b2d62b394eea87b6ba4de08d9ec7a6f289e2c2a7436d9e4f75b",
-     "createdAt": "2000-01-01T00:29:01.000Z",
-     "readyAt": "2000-01-01T00:29:02.000Z",
-     "decidedAt": "2000-01-01T00:29:02.000Z",
+     "createdAt": "2000-01-01T00:27:11.000Z",
+     "readyAt": "2000-01-01T00:27:12.000Z",
+     "decidedAt": "2000-01-01T00:27:12.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
@@ -2176,7 +2176,7 @@
      "outputHash": "a3257af4d55b9f059a78a940a312080f21b3388e81f95ce6954f68da4e2f36f1",
      "createdAt": "2000-01-01T00:03:49.000Z",
      "readyAt": "2000-01-01T00:03:50.000Z",
-     "decidedAt": "2000-01-01T00:28:51.000Z",
+     "decidedAt": "2000-01-01T00:27:01.000Z",
      "inputFingerprints": {
       "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f",
       "animatic:shot.05#narrationStem": "33d39476dc8301ff55f3553df9754eaae80980f568f47c51882a3b5c4b2cfd79"
@@ -2195,9 +2195,9 @@
      "file": "assets/video/shot.06#composition/v-dFfqavGH/composition.html",
      "definitionHash": "bf78ce107280",
      "outputHash": "fecfa590555751f4ce8c6d3e0716eb4be63d1e61c799dca0046026afaf9e1a33",
-     "createdAt": "2000-01-01T00:28:35.000Z",
-     "readyAt": "2000-01-01T00:28:36.000Z",
-     "decidedAt": "2000-01-01T00:28:36.000Z",
+     "createdAt": "2000-01-01T00:26:45.000Z",
+     "readyAt": "2000-01-01T00:26:46.000Z",
+     "decidedAt": "2000-01-01T00:26:46.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:refGirl": "9026c70feb40e76c6187087b6260571fd82deb6c787026b6a516044fea49bfd3",
@@ -2277,9 +2277,9 @@
      "file": "assets/video/shot.08#composition/v-SjJJ8qpN/composition.html",
      "definitionHash": "bb416b75d477",
      "outputHash": "c196e2e985b8a31fe686b30f978ae37dabf40747c4877764d66fe63a1ad122b8",
-     "createdAt": "2000-01-01T00:29:03.000Z",
-     "readyAt": "2000-01-01T00:29:04.000Z",
-     "decidedAt": "2000-01-01T00:29:04.000Z",
+     "createdAt": "2000-01-01T00:27:13.000Z",
+     "readyAt": "2000-01-01T00:27:14.000Z",
+     "decidedAt": "2000-01-01T00:27:14.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:panel01": "c5808e9032be837d730ed919ffc9800762ec1b408a99606473e11b8fdbc4ac2a",
@@ -2305,7 +2305,7 @@
      "outputHash": "9d01acd97f7c6e0f2858c8530dbf411944de7239ad70e25b69cd5b222bbb7eeb",
      "createdAt": "2000-01-01T00:02:46.000Z",
      "readyAt": "2000-01-01T00:02:47.000Z",
-     "decidedAt": "2000-01-01T00:28:52.000Z",
+     "decidedAt": "2000-01-01T00:27:02.000Z",
      "inputFingerprints": {
       "animatic:shot.08#narrationStem": "5061effe29318518a0702485827f4d5be60f2dbfa34a09492bfe0532b571963c",
       "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
@@ -2324,9 +2324,9 @@
      "file": "assets/video/shot.09#composition/v-kJOXRZlf/composition.html",
      "definitionHash": "38d1c1a40c15",
      "outputHash": "111c680cce8558f274f416e687981b6e219995fa9174b644589f453ef227ef15",
-     "createdAt": "2000-01-01T00:29:05.000Z",
-     "readyAt": "2000-01-01T00:29:06.000Z",
-     "decidedAt": "2000-01-01T00:29:06.000Z",
+     "createdAt": "2000-01-01T00:27:15.000Z",
+     "readyAt": "2000-01-01T00:27:16.000Z",
+     "decidedAt": "2000-01-01T00:27:16.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:clip03": "d7c85c0319725b18310bf5db0024b92d92f488df578cf61873a99005d9647be6",
@@ -2346,9 +2346,9 @@
      "file": "assets/video/shot.10#composition/v-In6MfVFj/composition.html",
      "definitionHash": "e42c4565a5ac",
      "outputHash": "4a7693990addc954639e0eab3dd272d749c820284b162a13928b06a142e27a98",
-     "createdAt": "2000-01-01T00:29:07.000Z",
-     "readyAt": "2000-01-01T00:29:08.000Z",
-     "decidedAt": "2000-01-01T00:29:08.000Z",
+     "createdAt": "2000-01-01T00:27:17.000Z",
+     "readyAt": "2000-01-01T00:27:18.000Z",
+     "decidedAt": "2000-01-01T00:27:18.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
@@ -2369,7 +2369,7 @@
      "outputHash": "ea44f2ffb15b9e802ff1c09331401ba8e891e8464be0a09ce78e9fdaee980858",
      "createdAt": "2000-01-01T00:02:50.000Z",
      "readyAt": "2000-01-01T00:02:51.000Z",
-     "decidedAt": "2000-01-01T00:28:54.000Z",
+     "decidedAt": "2000-01-01T00:27:04.000Z",
      "inputFingerprints": {
       "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f",
       "animatic:shot.10#narrationStem": "a57b51a6f772e5027b25f9f5d72ebfb30ea6d3f585b15dc4c8620ed55e6ccf51"
@@ -2388,9 +2388,9 @@
      "file": "assets/video/shot.11#composition/v-IiJU19oK/composition.html",
      "definitionHash": "4b910687c402",
      "outputHash": "59d3e3811c7be5cdceed8ebac9a2d74c3b73370c33a002e490d8dd79a2182b36",
-     "createdAt": "2000-01-01T00:29:09.000Z",
-     "readyAt": "2000-01-01T00:29:10.000Z",
-     "decidedAt": "2000-01-01T00:29:10.000Z",
+     "createdAt": "2000-01-01T00:27:19.000Z",
+     "readyAt": "2000-01-01T00:27:20.000Z",
+     "decidedAt": "2000-01-01T00:27:20.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
@@ -2411,7 +2411,7 @@
      "outputHash": "1563e51dbb21345efd10984f60e1cdfb7850c0a2b0c06d67239091e613e23020",
      "createdAt": "2000-01-01T00:02:52.000Z",
      "readyAt": "2000-01-01T00:02:53.000Z",
-     "decidedAt": "2000-01-01T00:28:55.000Z",
+     "decidedAt": "2000-01-01T00:27:05.000Z",
      "inputFingerprints": {
       "animatic:shot.11#narrationStem": "b55e01a9c38de40e6540d3e143061bcf39c35702a5085f05b6aa1b01e5bc25c3",
       "reference:sfxTyping": "321b792bc0e530cb34012ede3fef4308dbdb1b4a33409be83875019ac0bbe015",
@@ -2431,9 +2431,9 @@
      "file": "assets/video/shot.12#composition/v-fcEGUfT6/composition.html",
      "definitionHash": "004e7559944c",
      "outputHash": "ff57e884d88bf601e997eab01cd89db0a255a691883071bd866b1d042e9cf79e",
-     "createdAt": "2000-01-01T00:28:37.000Z",
-     "readyAt": "2000-01-01T00:28:38.000Z",
-     "decidedAt": "2000-01-01T00:28:38.000Z",
+     "createdAt": "2000-01-01T00:26:47.000Z",
+     "readyAt": "2000-01-01T00:26:48.000Z",
+     "decidedAt": "2000-01-01T00:26:48.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:frame05Before": "808e4979915363bec600310370f23e32dcedac5fa6df29a58f1332c3961c219f"
@@ -2490,9 +2490,9 @@
      "file": "assets/video/shot.14#composition/v-okiAFrYF/composition.html",
      "definitionHash": "1af313d27fa1",
      "outputHash": "1644a18a0ec3d560db0b246467835daba4fc6f7697e0e65e3b5e7c1d5cb8ce6e",
-     "createdAt": "2000-01-01T00:29:11.000Z",
-     "readyAt": "2000-01-01T00:29:12.000Z",
-     "decidedAt": "2000-01-01T00:29:12.000Z",
+     "createdAt": "2000-01-01T00:27:21.000Z",
+     "readyAt": "2000-01-01T00:27:22.000Z",
+     "decidedAt": "2000-01-01T00:27:22.000Z",
      "inputFingerprints": {
       "reference:icon": "a888c965f20e4f4e33996a26354df9fec02fccbe062b77476b0d970f9d1a27ff",
       "reference:clip05": "9f389eee61c59642a2e863d4f56040690bd91e4cfad5c4f083327511076e9be4"
@@ -2513,7 +2513,7 @@
      "outputHash": "3dab7f06fcf87d27637b7bad4d3fbfac842a93a8b802a21699237fc8524dc0fe",
      "createdAt": "2000-01-01T00:02:57.000Z",
      "readyAt": "2000-01-01T00:02:58.000Z",
-     "decidedAt": "2000-01-01T00:28:56.000Z",
+     "decidedAt": "2000-01-01T00:27:06.000Z",
      "inputFingerprints": {
       "animatic:shot.14#narrationStem": "ca7fc75e939a7eac984b5784a841abe92c375fbc72becdf1f5ab1b87c68f35ec",
       "reference:sfxClick": "bba2f5883716be7441b1929326f301be575316ca0e492d5673e7b13b7a610e6f"
@@ -3042,7 +3042,7 @@
      },
      "createdAt": "2000-01-01T00:02:08.000Z",
      "readyAt": "2000-01-01T00:02:09.000Z",
-     "decidedAt": "2000-01-01T00:28:41.000Z",
+     "decidedAt": "2000-01-01T00:26:51.000Z",
      "inputFingerprints": {
       "animatic:shot.03.vo": "5faf3ea974f0223a8c2c91638d87e092bbc2e90ff85b51c2794e99efd0385786"
      },
@@ -3075,7 +3075,7 @@
      },
      "createdAt": "2000-01-01T00:03:42.000Z",
      "readyAt": "2000-01-01T00:03:43.000Z",
-     "decidedAt": "2000-01-01T00:28:42.000Z",
+     "decidedAt": "2000-01-01T00:26:52.000Z",
      "inputFingerprints": {
       "animatic:shot.04.vo": "29241cbe13b53ecc9168a7ee7e62fc3be19847fed4222433d8d8bd0ba08341ba"
      },
@@ -3108,7 +3108,7 @@
      },
      "createdAt": "2000-01-01T00:02:18.000Z",
      "readyAt": "2000-01-01T00:02:19.000Z",
-     "decidedAt": "2000-01-01T00:28:13.000Z",
+     "decidedAt": "2000-01-01T00:26:23.000Z",
      "inputFingerprints": {
       "animatic:shot.08.vo": "c5b395547174d69ddf4baead82b75c55b458d5b4b9acb46da3503989f590ee9d"
      },
@@ -3141,7 +3141,7 @@
      },
      "createdAt": "2000-01-01T00:02:20.000Z",
      "readyAt": "2000-01-01T00:02:21.000Z",
-     "decidedAt": "2000-01-01T00:28:14.000Z",
+     "decidedAt": "2000-01-01T00:26:24.000Z",
      "inputFingerprints": {
       "animatic:shot.09.vo": "16b5b7cb06d68039c7abae555760e969e51163806114bb09a6ebcfd0635fefec"
      },
@@ -3174,7 +3174,7 @@
      },
      "createdAt": "2000-01-01T00:02:24.000Z",
      "readyAt": "2000-01-01T00:02:25.000Z",
-     "decidedAt": "2000-01-01T00:28:16.000Z",
+     "decidedAt": "2000-01-01T00:26:26.000Z",
      "inputFingerprints": {
       "animatic:shot.11.vo": "70604f1a61b0dbe27f2499f8caaf2db74ee4de63820d73254eafe0c3adf9411a"
      },
@@ -3240,7 +3240,7 @@
      },
      "createdAt": "2000-01-01T00:02:32.000Z",
      "readyAt": "2000-01-01T00:02:33.000Z",
-     "decidedAt": "2000-01-01T00:28:17.000Z",
+     "decidedAt": "2000-01-01T00:26:27.000Z",
      "inputFingerprints": {
       "animatic:shot.14.vo": "f11dad9239132710e6fd789d57ada6adbb23c1e448e2b280585cc8b86b48c640"
      },
@@ -3260,7 +3260,7 @@
      "outputHash": "c714ea752b6be93490aed58a28b8ce0cfb67dd68940d8930f4cdf81c85d1daaa",
      "createdAt": "2000-01-01T00:02:42.000Z",
      "readyAt": "2000-01-01T00:02:43.000Z",
-     "decidedAt": "2000-01-01T00:28:49.000Z",
+     "decidedAt": "2000-01-01T00:26:59.000Z",
      "inputFingerprints": {
       "animatic:shot.03#narrationStem": "53685202a24e36c096b1b2e08b1de70fb44848575436e8f8723d1627216aebd9"
      },
@@ -3280,7 +3280,7 @@
      "outputHash": "6bde6e0eac61ea477bf8baad04d706002d8825e4704d156f041aebe3a2848f69",
      "createdAt": "2000-01-01T00:02:48.000Z",
      "readyAt": "2000-01-01T00:02:49.000Z",
-     "decidedAt": "2000-01-01T00:28:53.000Z",
+     "decidedAt": "2000-01-01T00:27:03.000Z",
      "inputFingerprints": {
       "animatic:shot.09#narrationStem": "01a56a8c51646d64f27724d073dfd19382078b068f7f2ae06b7ef85032a3ea2b"
      },

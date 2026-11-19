@@ -1,0 +1,18 @@
+{
+  "stage": "animatic",
+  "summary": "なくなった konte:upgrade を候補から消し、Konte プラグインの説明文とバージョンを今のものに直しました。",
+  "notes": [
+    {
+      "address": "animatic:shot.10",
+      "text": "Konte の行の説明を、追加前は「Install and bootstrap konte, …」、追加後は「v0.2.0 · Set up konte, …」に直しました。"
+    },
+    {
+      "address": "animatic:shot.11",
+      "text": "閉じる直前の Plugins 画面に残る Konte の行の説明も同じく直っています。"
+    },
+    {
+      "address": "animatic:shot.12",
+      "text": "/konte の候補から konte:upgrade を消し、konte:setup と context の二つにしました。"
+    }
+  ]
+}

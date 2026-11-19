@@ -1,0 +1,30 @@
+{
+  "stage": "video",
+  "summary": "shot 09 の Cancel と Sync の間隔を直しました（同じダイアログの shot 08 も連動）。前回保留になっていた 12・13・14・16 も合わせて並べています。",
+  "notes": [
+    {
+      "address": "video:shot.08",
+      "text": "Sync ボタンの幅を直した影響で、Cancel との間隔だけ変わっています。"
+    },
+    {
+      "address": "video:shot.09",
+      "text": "Sync ボタンが Cancel に重なっていたのを直し、8px の間隔を空けました。"
+    },
+    {
+      "address": "video:shot.12",
+      "text": "チェックリスト3項目めの文言のみ変更です。"
+    },
+    {
+      "address": "video:shot.13",
+      "text": "チェックリストと進行表示の文言を hand-off の言い回しに変えました。"
+    },
+    {
+      "address": "video:shot.14",
+      "text": "新しい返答の文とナレーション「Then start a new session.」です。"
+    },
+    {
+      "address": "video:shot.16",
+      "text": "shot 14 の最後の画面から始まり、konte-workspace の + で新しいセッションを開きます。"
+    }
+  ]
+}

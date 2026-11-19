@@ -21,7 +21,7 @@
         "time": 16.566666666666666,
         "shotTime": 1.5666666666666664,
         "text": "ここボタンがおかしい",
-        "createdAt": "2000-01-01T00:11:38.000Z",
+        "createdAt": "2000-01-01T00:09:56.000Z",
         "createdBy": "local"
       }
     ],
@@ -31,7 +31,7 @@
         "displayedVariants": {},
         "annotation": null,
         "text": "背景はクリーム色じゃなくて、青系の似た明度のやつにしたいな",
-        "createdAt": "2000-01-01T00:11:40.000Z",
+        "createdAt": "2000-01-01T00:09:58.000Z",
         "createdBy": "local"
       },
       {
@@ -39,7 +39,7 @@
         "displayedVariants": {},
         "annotation": null,
         "text": "ごめん元の色に戻して",
-        "createdAt": "2000-01-01T00:11:42.000Z",
+        "createdAt": "2000-01-01T00:10:00.000Z",
         "createdBy": "local"
       }
     ],
@@ -56,12 +56,31 @@
           "video:shot.12#stem": "f364943068c0"
         },
         "annotation": null,
-        "text": "setup いえてなくない？",
         "time": 30.866666666666667,
         "shotTime": 1.8666666666666671,
-        "createdAt": "2000-01-01T00:11:45.000Z",
+        "text": "setup いえてなくない？",
+        "createdAt": "2000-01-01T00:10:02.000Z",
+        "createdBy": "local"
+      },
+      {
+        "id": "fb-W4wnR81z",
+        "displayedVariants": {
+          "reference:sfxTyping": "v-K9lrI4EW",
+          "animatic:shot.12#narrationStem": "v-rB0V0K0n",
+          "video:shot.12#composition": "v-DZgCYTMP"
+        },
+        "displayedDefinitionHashes": {
+          "video:shot.12#composition": "09a824e2ecbd",
+          "video:shot.12#stem": "f364943068c0"
+        },
+        "annotation": null,
+        "text": "konte:upgrade はなくなったから消して",
+        "time": 30.233333333333334,
+        "shotTime": 1.2333333333333343,
+        "createdAt": "2000-01-01T00:28:32.000Z",
         "createdBy": "local"
       }
     ]
   }
 }
+

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "feedback": {
+    "animatic:shot.12": [
+      {
+        "id": "fb-pnYvCimy",
+        "displayedVariants": {
+          "animatic:shot.12.vo": "v-xKaN7VKW",
+          "animatic:shot.12#composition": "v-QjWtyLrT"
+        },
+        "displayedDefinitionHashes": {
+          "animatic:shot.12#composition": "d3ca9a3d12e8",
+          "animatic:shot.12#narrationStem": "5c51027fd1b1"
+        },
+        "annotation": {
+          "kind": "pin",
+          "x": 0.203,
+          "y": 0.724
+        },
+        "text": "カーソル入っているのに、プレースホルダーが残っているのが気になる",
+        "time": 29,
+        "createdAt": "2000-01-01T00:28:17.000Z",
+        "createdBy": "local"
+      }
+    ]
+  }
+}

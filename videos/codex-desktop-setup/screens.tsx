@@ -886,35 +886,9 @@ function AccountMenu() {
   );
 }
 
-/** The File menu, as it opens from the menu bar. */
-function FileMenu() {
-  const row = (top: number, s: string, k?: string, id?: string, dim?: boolean) => (
-    <div className="mi" id={id} style={{ top: `${top}px`, ...(dim && { color: "#a8a8ae" }) }}>
-      {s}
-      {k && <span className="k">{k}</span>}
-    </div>
-  );
-  return (
-    <div className="menu off" id="file-menu" style={{ left: "101px", top: "31px", width: "240px", height: "292px", borderRadius: "10px" }}>
-      {row(4, "New Window")}
-      {row(33, "New Chat", "Ctrl+N")}
-      {row(62, "New Temporary Chat", "Ctrl+Shift+N", undefined, true)}
-      {row(91, "New Project...")}
-      <div className="msep" style={{ top: "126px" }} />
-      {row(136, "Open Folder...", "Ctrl+O")}
-      <div className="msep" style={{ top: "171px" }} />
-      {row(181, "Close", "Ctrl+W")}
-      <div className="msep" style={{ top: "216px" }} />
-      {row(224, "Log Out")}
-      {row(254, "Quit ChatGPT", "Ctrl+Q", "fm-quit")}
-    </div>
-  );
-}
-
 const SKILLS: [string, string, string][] = [
   ["Konte: Setup", "Create or set up a konte workspace. Use when starting with konte, creating a workspace, or preparing one.", "From Konte"],
   ["Konte Checkin", "Session opener — recap where the current video stands, propose the next step, surface the choice.", "Project"],
-  ["Konte: Upgrade", "Update or reinstall one workspace's konte binary. Use when the user requests an upgrade.", "From Konte"],
   ["Konte Feedback", "Turn one konte bug, rough edge or unanswered question hit this session into a post for the forum.", "Project"],
   ["Konte Comfy Workflow", "Import a ComfyUI workflow into a konte project and clean up the auto-generated adapter.", "Project"],
 ];
@@ -1345,7 +1319,7 @@ function Customize({ tab, konte }: { tab: "public" | "personal"; konte: "none" |
           konte <I n="branch" s={13} c="#6b6b70" />
         </T>
         <T x={419} y={419} s={12.5} c="#6b6b70">
-          Setup and upgrade konte, the agent-operated…
+          Set up konte, the agent-operated AI video…
         </T>
         <div className={konte === "none" ? "abs" : "abs off"} id="pk-plus" style={{ left: "708px", top: "395px", width: "24px", height: "24px", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center" }}>
           <I n="plus" s={18} />
@@ -1429,7 +1403,7 @@ function SetupChat({ id, stage }: { id: string; stage: 0 | 1 | 2 | 3 }) {
           <div className="para" style={{ top: "286px", paddingLeft: "28px", width: "708px" }}>
             <b style={{ position: "absolute", left: "8px" }}>1.</b>
             <span className="mark" id={`${id}-mark`} style={stage === 2 ? { backgroundSize: "0% 100%" } : undefined}>
-              Fully quit the Codex app and restart it. Opening a new chat isn't enough.
+              Start a new chat in this workspace so the new settings load.
             </span>
           </div>
           <div className="para" style={{ top: "310px", paddingLeft: "28px", width: "708px" }}>
@@ -1539,7 +1513,7 @@ function CheckinChat({ id }: { id: string }) {
 
 // ───────────── the shots ─────────────
 
-export type ShotId = "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17";
+export type ShotId = "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "16" | "17";
 
 type Def = { step?: readonly [number, string]; cursor?: readonly [number, number]; ev: Ev[]; body: () => El };
 
@@ -1829,6 +1803,7 @@ const SHOTS: Record<ShotId, Def> = {
       { t: 0.85, d: 0.55, cur: [700, 716] },
       { t: 1.45, click: true },
       { t: 1.5, show: "#h-caret" },
+      { t: 1.5, off: "#h-ph" },
       { t: 1.5, pulse: "#h-comp" },
     ],
     body: () => (
@@ -1850,7 +1825,7 @@ const SHOTS: Record<ShotId, Def> = {
     ev: [
       { t: 0, d: 0, cam: [760, 680, 1.75] },
       { t: 0, d: 0, show: "#h-caret" },
-      { t: 0.2, off: "#h-ph" },
+      { t: 0, off: "#h-ph" },
       { t: 0.2, on: "#h-in" },
       { t: 0.2, d: 0.6, type: "#h-in" },
       { t: 0.2, hide: "#h-wave" },
@@ -1884,7 +1859,7 @@ const SHOTS: Record<ShotId, Def> = {
           <HomeSide proj={[{ name: "Set up Konte", sel: true, spin: true }]} />
         </div>
         <Home ws typed="$konte" pick="Konte: Setup" />
-        <SkillMenu rows={[0, 2]} />
+        <SkillMenu rows={[0]} />
         <div className="full off" id="s-main">
           <SetupChat id="s" stage={0} />
         </div>
@@ -1928,24 +1903,39 @@ const SHOTS: Record<ShotId, Def> = {
       </>
     ),
   },
-  "15": {
-    cursor: [520, 360],
+  "16": {
+    step: [5, "Check in"],
+    cursor: [860, 450],
     ev: [
       { t: 0, d: 0, cam: [640, 300, 2.3] },
-      { t: 0.05, d: 0.5, cam: [220, 170, 2.1] },
-      { t: 0.1, d: 0.45, cur: [133, 20] },
+      { t: 0.05, d: 0.5, cam: [250, 260, 1.6] },
+      { t: 0.1, d: 0.45, cur: [27, 72] },
       { t: 0.6, click: true },
-      { t: 0.62, bg: "#file-hl" },
-      { t: 0.65, pop: "#file-menu", d: 0.18 },
-      { t: 0.8, d: 0.55, cur: [170, 302] },
-      { t: 1.3, bg: "#fm-quit" },
-      { t: 1.5, click: true },
-      { t: 1.55, d: 0.2, dim: ["#blackout", 1] },
-      { t: 1.75, hide: "#old" },
-      { t: 1.75, show: "#new" },
-      { t: 1.75, d: 0, cam: [590, 403, 1] },
-      { t: 1.75, d: 0, cur: [780, 560] },
-      { t: 1.9, d: 0.35, dim: ["#blackout", 0] },
+      { t: 0.7, hide: "#old" },
+      { t: 0.7, show: "#new" },
+      { t: 0.7, d: 0.6, cam: [760, 640, 1.6] },
+      { t: 0.7, d: 0.55, cur: [700, 716] },
+      { t: 1.35, click: true },
+      { t: 1.4, show: "#h-caret" },
+      { t: 1.4, off: "#h-ph" },
+      { t: 1.4, pulse: "#h-comp" },
+      { t: 1.6, on: "#h-in" },
+      { t: 1.6, d: 0.6, type: "#h-in" },
+      { t: 1.6, hide: "#h-wave" },
+      { t: 1.6, show: "#h-send" },
+      { t: 2.3, show: "#skills" },
+      { t: 2.3, pop: "#skills", d: 0.2 },
+      { t: 2.35, d: 0.5, cam: [760, 610, 1.6] },
+      { t: 2.9, unbg: "#sk-0" },
+      { t: 2.9, bg: "#sk-1" },
+      { t: 3.5, off: "#h-in" },
+      { t: 3.5, on: "#h-pick" },
+      { t: 3.5, vanish: "#skills", d: 0.12 },
+      { t: 3.55, d: 0.4, cam: [760, 690, 1.75] },
+      { t: 4.1, press: "#h-send" },
+      { t: 4.2, off: "#h-pick" },
+      { t: 4.2, on: "#h-ph" },
+      { t: 4.2, hide: "#h-caret" },
     ],
     body: () => (
       <>
@@ -1954,54 +1944,14 @@ const SHOTS: Record<ShotId, Def> = {
           <Rail />
           <HomeSide proj={[{ name: "Set up Konte", sel: true }]} />
           <SetupChat id="s" stage={3} />
-          <FileMenu />
         </div>
         <div id="new" className="full off">
           <TopBar />
           <Rail />
           <HomeSide proj={AFTER_SETUP} />
-          <Home id="n" ws konteChip />
+          <Home ws konteChip typed="$konte" pick="Konte Checkin" />
+          <SkillMenu rows={[0, 1, 2, 3]} />
         </div>
-        <div className="blackout off" id="blackout" />
-      </>
-    ),
-  },
-  "16": {
-    step: [5, "Check in"],
-    cursor: [780, 560],
-    ev: [
-      { t: 0, d: 0, cam: [590, 403, 1] },
-      { t: 0.1, d: 0.6, cam: [760, 640, 1.6] },
-      { t: 0.1, d: 0.55, cur: [700, 716] },
-      { t: 0.75, click: true },
-      { t: 0.8, show: "#h-caret" },
-      { t: 0.8, pulse: "#h-comp" },
-      { t: 1.0, off: "#h-ph" },
-      { t: 1.0, on: "#h-in" },
-      { t: 1.0, d: 0.6, type: "#h-in" },
-      { t: 1.0, hide: "#h-wave" },
-      { t: 1.0, show: "#h-send" },
-      { t: 1.7, show: "#skills" },
-      { t: 1.7, pop: "#skills", d: 0.2 },
-      { t: 1.75, d: 0.5, cam: [760, 610, 1.6] },
-      { t: 2.3, unbg: "#sk-0" },
-      { t: 2.3, bg: "#sk-1" },
-      { t: 2.9, off: "#h-in" },
-      { t: 2.9, on: "#h-pick" },
-      { t: 2.9, vanish: "#skills", d: 0.12 },
-      { t: 2.95, d: 0.4, cam: [760, 690, 1.75] },
-      { t: 3.5, press: "#h-send" },
-      { t: 3.6, off: "#h-pick" },
-      { t: 3.6, on: "#h-ph" },
-      { t: 3.6, hide: "#h-caret" },
-    ],
-    body: () => (
-      <>
-        <TopBar />
-        <Rail />
-        <HomeSide proj={AFTER_SETUP} />
-        <Home ws konteChip typed="$konte" pick="Konte Checkin" />
-        <SkillMenu rows={[0, 1, 2, 3, 4]} />
       </>
     ),
   },

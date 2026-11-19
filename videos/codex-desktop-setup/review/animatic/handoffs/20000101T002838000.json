@@ -1,0 +1,14 @@
+{
+  "stage": "animatic",
+  "summary": "スキル候補から、なくなった Konte: Upgrade を消しました。",
+  "notes": [
+    {
+      "address": "animatic:shot.12",
+      "text": "$konte の候補は Konte: Setup だけになりました。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "同じ Konte: Upgrade（From Konte）が候補に残っていたので消し、四つの候補にしました。選ばれるのは変わらず Konte Checkin です。"
+    }
+  ]
+}

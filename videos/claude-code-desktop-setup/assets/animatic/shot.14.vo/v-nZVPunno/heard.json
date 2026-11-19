@@ -1,0 +1,29 @@
+{
+  "outputHash": "b784e7dc47562ad13d16bc1e6bdfbd7471048a2e5b68f6ce8cf6db6e8d5844aa",
+  "heard": [
+    {
+      "text": "t",
+      "startSec": 0
+    },
+    {
+      "text": "hen",
+      "startSec": 0.06
+    },
+    {
+      "text": " start",
+      "startSec": 0.3
+    },
+    {
+      "text": " a",
+      "startSec": 0.54
+    },
+    {
+      "text": " new",
+      "startSec": 0.78
+    },
+    {
+      "text": " session",
+      "startSec": 1.02
+    }
+  ]
+}

@@ -577,7 +577,7 @@ function Home({ folder, folderNext, id = "h", input, inputCmd }: { folder?: stri
   );
 }
 
-const TODO_SETUP = ["Check workspace directory", "Download and run setup script", "Hand off restart steps"];
+const TODO_SETUP = ["Check workspace directory", "Download and run setup script", "Hand off next steps"];
 const TODO_CHECKIN = ["Read house rules and current video", "Read video status and feedback", "Deliver check-in"];
 
 /** A running session: the user's slash command, the agent's checklist and the environment panel. */
@@ -906,10 +906,10 @@ function PluginsKonte({ installed }: { installed?: boolean }) {
           <div style={{ fontSize: "14px", fontWeight: 600, marginBottom: "3px" }}>Konte</div>
           <div className="mute" style={{ fontSize: "13px", whiteSpace: "nowrap", overflow: "hidden", position: "relative", height: "18px" }}>
             <span id="pk-desc-a" className={installed ? "abs off" : "abs"} style={{ left: 0, top: 0 }}>
-              by shiwano · Install, bootstrap and upgrade konte, the agent-operated AI video productio...
+              by shiwano · Install and bootstrap konte, the agent-operated AI video production tool
             </span>
             <span id="pk-desc-b" className={installed ? "abs" : "abs off"} style={{ left: 0, top: 0 }}>
-              by shiwano · v0.1.1 · Setup and upgrade konte, the agent-operated AI video production ...
+              by shiwano · v0.2.0 · Set up konte, the agent-operated AI video production tool
             </span>
           </div>
         </div>
@@ -1050,7 +1050,10 @@ function MarketForm({ typed }: { typed: "none" | "typing" | "picked" }) {
       </div>
       <div style={{ position: "absolute", right: "16px", bottom: "16px", display: "flex", gap: "8px" }}>
         <span className="btn ghost">Cancel</span>
-        <span style={{ position: "relative", width: "46px", height: "28px" }}>
+        <span style={{ position: "relative", display: "inline-flex" }}>
+          <span className="btn" style={{ visibility: "hidden" }}>
+            Sync
+          </span>
           <span className={typed === "picked" ? "btn dis abs off" : "btn dis abs"} id="mk-sync-off" style={{ right: 0, top: 0 }}>
             Sync
           </span>
@@ -1240,39 +1243,6 @@ function TrustDialog() {
   );
 }
 
-function AppMenu() {
-  return (
-    <>
-      <div className="menu off" id="app-menu" style={{ left: "12px", top: "34px", width: "150px", transformOrigin: "0% 0%" }}>
-        <div className="mi" id="am-file">
-          File <span className="k">›</span>
-        </div>
-        <div className="mi">
-          Edit <span className="k">›</span>
-        </div>
-        <div className="mi">
-          View <span className="k">›</span>
-        </div>
-        <div className="mi">
-          Help <span className="k">›</span>
-        </div>
-      </div>
-      <div className="menu off" id="file-menu" style={{ left: "166px", top: "34px", width: "200px", transformOrigin: "0% 0%" }}>
-        <div className="mi">
-          New session <span className="k">Ctrl+N</span>
-        </div>
-        <div className="mi">
-          Settings… <span className="k">Ctrl+,</span>
-        </div>
-        <div className="msep" />
-        <div className="mi" id="fm-exit">
-          Exit
-        </div>
-      </div>
-    </>
-  );
-}
-
 function Toast() {
   return (
     <div className="toast off" id="toast">
@@ -1291,7 +1261,7 @@ const WS_SETUP: Ws = { sessions: ["Konte setup"], sel: "Konte setup" };
 const WS_AFTER: Ws = { sessions: ["Konte setup"] };
 const WS_CHECKIN: Ws = { sessions: ["Konte checkin", "Konte setup"], sel: "Konte checkin" };
 
-export type ShotId = "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17";
+export type ShotId = "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "16" | "17";
 
 type Def = { step?: readonly [number, string]; cursor?: readonly [number, number]; ev: Ev[]; body: () => El };
 
@@ -1594,7 +1564,7 @@ const SHOTS: Record<ShotId, Def> = {
           <Sidebar ws={WS_SETUP} newSel={false} />
         </div>
         <Home folder="konte-workspace" input="/konte" inputCmd="/konte:setup" />
-        <SlashMenu items={["konte:setup", "konte:upgrade", "context"]} tip="(konte) Create or set up a konte workspace. Use when starting with konte, creating a workspace, or preparing a cloned or moved workspace." />
+        <SlashMenu items={["konte:setup", "context"]} tip="(konte) Create or set up a konte workspace. Use when starting with konte, creating a workspace, or preparing a cloned or moved workspace." />
         <div className="off" id="s-wrap">
           <SessionSetup id="s" stage={0} />
         </div>
@@ -1638,53 +1608,19 @@ const SHOTS: Record<ShotId, Def> = {
       </>
     ),
   },
-  "15": {
-    cursor: [360, 380],
-    ev: [
-      { t: 0, d: 0, cam: [610, 400, 2.1] },
-      { t: 0.05, d: 0.5, cam: [200, 150, 2.1] },
-      { t: 0.1, d: 0.45, cur: [27, 20] },
-      { t: 0.6, click: true },
-      { t: 0.65, pop: "#app-menu", d: 0.18 },
-      { t: 0.8, d: 0.3, cur: [70, 54] },
-      { t: 1.0, bg: "#am-file" },
-      { t: 1.05, pop: "#file-menu", d: 0.18 },
-      { t: 1.15, d: 0.35, cur: [210, 123] },
-      { t: 1.45, bg: "#fm-exit" },
-      { t: 1.55, click: true },
-      { t: 1.6, d: 0.2, dim: ["#blackout", 1] },
-      { t: 1.8, hide: "#old" },
-      { t: 1.8, show: "#new" },
-      { t: 1.8, d: 0, cam: [601, 400, 1] },
-      { t: 1.8, d: 0, cur: [760, 520] },
-      { t: 1.95, d: 0.35, dim: ["#blackout", 0] },
-    ],
-    body: () => (
-      <>
-        <div id="old" className="abs" style={{ inset: 0 }}>
-          <Sidebar ws={WS_SETUP} newSel={false} />
-          <SessionSetup id="s" stage={3} />
-          <AppMenu />
-        </div>
-        <div id="new" className="abs off" style={{ inset: 0 }}>
-          <Sidebar ws={WS_AFTER} />
-          <Home folder="konte-workspace" id="n" />
-        </div>
-        <div className="blackout off" id="blackout" />
-      </>
-    ),
-  },
   "16": {
     step: [5, "Check in"],
-    cursor: [760, 520],
+    cursor: [850, 560],
     ev: [
-      { t: 0, d: 0, cam: [601, 400, 1] },
+      { t: 0, d: 0, cam: [610, 400, 2.1] },
       { t: 0.05, d: 0.6, cam: [260, 330, 2.0] },
       { t: 0.1, d: 0.55, cur: [268, 324] },
       { t: 0.5, show: "#ws-plus" },
       { t: 0.5, bg: "#ws-head" },
       { t: 0.8, click: true },
       { t: 0.8, press: "#ws-plus" },
+      { t: 0.85, hide: "#old" },
+      { t: 0.85, show: "#new" },
       { t: 0.9, pop: "#h-main", d: 0.25 },
       { t: 1.0, d: 0.6, cam: [440, 690, 2.0] },
       { t: 1.05, d: 0.5, cur: [760, 620] },
@@ -1706,8 +1642,14 @@ const SHOTS: Record<ShotId, Def> = {
     ],
     body: () => (
       <>
-        <Sidebar ws={WS_AFTER} />
-        <Home folder="konte-workspace" input="/konte-checkin" inputCmd="/konte-checkin" />
+        <div id="old" className="abs" style={{ inset: 0 }}>
+          <Sidebar ws={WS_SETUP} newSel={false} />
+          <SessionSetup id="s" stage={3} />
+        </div>
+        <div id="new" className="abs off" style={{ inset: 0 }}>
+          <Sidebar ws={WS_AFTER} />
+          <Home folder="konte-workspace" input="/konte-checkin" inputCmd="/konte-checkin" />
+        </div>
         <SlashMenu items={["konte-checkin"]} tip={'Session opener — recap where the current video stands, propose the next step, surface the choice. Use at the start of a session or when the user asks "where are we" / "what\'s next". (project)'} />
       </>
     ),
@@ -1740,7 +1682,7 @@ const SHOTS: Record<ShotId, Def> = {
   },
 };
 
-/** The setup session at a stage: 0 just sent, 1 running, 2 done with the restart reply arriving, 3 that reply settled. */
+/** The setup session at a stage: 0 just sent, 1 running, 2 done with the hand-off reply arriving, 3 that reply settled. */
 function SessionSetup({ id, stage }: { id: string; stage: 0 | 1 | 2 | 3 }) {
   const state: Todo[] = stage >= 2 ? ["done", "done", "done"] : ["done", "run", "wait"];
   return (
@@ -1748,16 +1690,16 @@ function SessionSetup({ id, stage }: { id: string; stage: 0 | 1 | 2 | 3 }) {
       {stage <= 1 ? (
         <>
           <Status id={`${id}-st`} top={354} label="Downloading and running the konte setup script" secs={11} hidden={stage === 0} />
-          <Status id={`${id}-st2`} top={354} label="Writing the restart steps" secs={2} hidden />
+          <Status id={`${id}-st2`} top={354} label="Writing the next steps" secs={2} hidden />
         </>
       ) : (
         <div className={stage === 2 ? "reply off" : "reply"} id={`${id}-reply`} style={{ top: "346px" }}>
           <p style={{ margin: "0 0 10px" }}>konte is set up in this workspace.</p>
           <p style={{ margin: 0 }}>
             <span className="mark" id={`${id}-mark`} style={stage === 2 ? { backgroundSize: "0% 100%" } : undefined}>
-              Fully quit Claude Code and launch it again in this folder — closing the window is not enough.
+              Start a new session in this folder so the new settings load.
             </span>{" "}
-            Then run <code>/konte-checkin</code>.
+            Then run <code>/konte-checkin</code> there.
           </p>
         </div>
       )}

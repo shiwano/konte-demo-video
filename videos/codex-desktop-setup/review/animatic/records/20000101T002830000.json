@@ -1,0 +1,263 @@
+{
+  "mode": "animatic-preview",
+  "stage": "animatic",
+  "createdAt": "2000-01-01T00:28:30.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2,
+        "variants": {
+          "vo": "v-ELg4rwxz"
+        },
+        "sources": {
+          "animatic:shot.01.vo": "v-ELg4rwxz"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2,
+        "duration": 2,
+        "variants": {
+          "vo": "v-ndOR8acV"
+        },
+        "sources": {
+          "animatic:shot.02.vo": "v-ndOR8acV"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 4,
+        "duration": 2.5,
+        "variants": {},
+        "sources": {}
+      },
+      {
+        "shotId": "04",
+        "start": 6.5,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-wKeoxdDW"
+        },
+        "sources": {
+          "animatic:shot.04.vo": "v-wKeoxdDW"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 10,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-CjKnwme8"
+        },
+        "sources": {
+          "animatic:shot.05.vo": "v-CjKnwme8"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 12.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-6lM8XuSw"
+        },
+        "sources": {
+          "animatic:shot.06.vo": "v-6lM8XuSw"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 15,
+        "duration": 2,
+        "variants": {
+          "vo": "v-hHko1UoY"
+        },
+        "sources": {
+          "animatic:shot.07.vo": "v-hHko1UoY"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 17,
+        "duration": 3,
+        "variants": {
+          "vo": "v-njaPTHWz"
+        },
+        "sources": {
+          "animatic:shot.08.vo": "v-njaPTHWz"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 20,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-HIwZJ55h"
+        },
+        "sources": {
+          "animatic:shot.09.vo": "v-HIwZJ55h"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 23.5,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-incAQcno"
+        },
+        "sources": {
+          "animatic:shot.10.vo": "v-incAQcno"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 27,
+        "duration": 2,
+        "variants": {
+          "vo": "v-s1uwyIEW"
+        },
+        "sources": {
+          "animatic:shot.11.vo": "v-s1uwyIEW"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 29,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-xKaN7VKW"
+        },
+        "sources": {
+          "animatic:shot.12.vo": "v-xKaN7VKW"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 32.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-D7AqtNt0"
+        },
+        "sources": {
+          "animatic:shot.13.vo": "v-D7AqtNt0"
+        }
+      },
+      {
+        "shotId": "14",
+        "start": 35,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-NybCFvAP"
+        },
+        "sources": {
+          "animatic:shot.14.vo": "v-NybCFvAP"
+        }
+      },
+      {
+        "shotId": "16",
+        "start": 37.5,
+        "duration": 4.5,
+        "variants": {
+          "vo": "v-0tgpjvDP"
+        },
+        "sources": {
+          "animatic:shot.16.vo": "v-0tgpjvDP"
+        }
+      },
+      {
+        "shotId": "17",
+        "start": 42,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-EIXQNPks"
+        },
+        "sources": {
+          "animatic:shot.17.vo": "v-EIXQNPks"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {},
+    "contentHashes": {
+      "animatic:shot.01#composition": "07f165b428bfc9715392987b126dd65b41732bc687bf42c320f5397864b86cc3",
+      "animatic:shot.02#composition": "44ae02e6e3d0eccb6cb0dc60ec38968afe2d680b7d702e1118a11b9f8f2dd562",
+      "animatic:shot.03#composition": "e324a9987f2bd9cb1e95004ebb8c9689db222d201aecf228f8c21a2303b7a756",
+      "animatic:shot.04#composition": "1a238bb8bd86061a5efc58516fde97cb18ac331c4c9fbd4770ca1a02f0f296b5",
+      "animatic:shot.05#composition": "b81443b7185f2cc21e62d10b71c0480ef9b1b3cbae856ff74b266d27a59183a6",
+      "animatic:shot.06#composition": "4493fec411c8c89fe4f465d8d6376e4da68729517dda9a601bbaec81adddbf84",
+      "animatic:shot.07#composition": "017e8ccb6ae10b844ecf05895f0976e97a7d12edd8f7640961a3e599f6ce9e5c",
+      "animatic:shot.08#composition": "375693b0ebc6e978592e3246a71072eb93eeb6dc5766bb5f90531c87e44d57c0",
+      "animatic:shot.09#composition": "62cf1633fcf2b02cb5115013c869d8be8c807097712e5b86abbe2968f36fd41c",
+      "animatic:shot.10#composition": "3dc66e8e4d37f914bf7d3f5d3837d044c886aeeef753c05a00fb996e385ff6ec",
+      "animatic:shot.11#composition": "50e05e3496ac19d323eda4559428f46ac540c56aa14bceb4bcb865469b8b2fd7",
+      "animatic:shot.12#composition": "04aba32d0733cdebcdd18d0be8f26891f11599de8746d2d87484ed2fa97f89df",
+      "animatic:shot.13#composition": "7fe55cf9a204940699a7cbc1428a390520c8b6e41676859c533e977a7139b6e6",
+      "animatic:shot.14#composition": "6e88256a4b9165af4e66baac9d7c767a2c008a5a4255fb138eb2adb7e688a321",
+      "animatic:shot.16#composition": "455041b1ba2691123c67083d9e75ff546db3edca496a63be2022222c3d6f96bd",
+      "animatic:shot.17#composition": "47628c3e42807a3fb4b337d6e93546514aec0c119e86137754f53db870c0dfba",
+      "animatic:shot.01#narrationStem": "b23d5ddc6a9e6740b6d9d644f1580a99989386b900ec2342ddd35b94368d0652",
+      "animatic:shot.02#narrationStem": "4a4831153ab01e52c7ef9f6a4d00156dbdb320efbe2b59ff5e57e66f12fdfe47",
+      "animatic:shot.04#narrationStem": "d20a2fa36e31a35adbcab9dfde4b4d1c2bf5f30b88ef6db1c7340617beb22a7e",
+      "animatic:shot.05#narrationStem": "0530dac29791f397d7a59e869b42f0a0e2e9eb919037f1dfb915323ca7e9fb9b",
+      "animatic:shot.06#narrationStem": "fbad1a4aebc05f54845dcb9457c92f09e86f4e8598b7a50628a0808a4fd801e0",
+      "animatic:shot.07#narrationStem": "f458cfa6fa78782dde60199896adc140218d99925dd953025ba41801966d3a89",
+      "animatic:shot.08#narrationStem": "5f96cca490d4df30a6b46020b49b663ac22a02e18f05b766b7924760c1752c3d",
+      "animatic:shot.09#narrationStem": "a6f229a9525225280601ec40eba25bfb24979ad92328566b135c0f28863d8d05",
+      "animatic:shot.10#narrationStem": "b61e074fd470c869fcc6526bb7ac303973099c47197f2609b3a026fb0c400732",
+      "animatic:shot.11#narrationStem": "d194775b282c495a6ce7a34b4fa77d5bde6c7e108db0e0a6ba5fdfbb410fc372",
+      "animatic:shot.12#narrationStem": "c07f8362f26ab141ec7ef8ccd7b89f77b9b32a94503f8fdcd9b054a6a61532d5",
+      "animatic:shot.13#narrationStem": "0592557b40a9b9a83fd0736f417ff4fa3c503e3079b12b135e4d602f369e5346",
+      "animatic:shot.14#narrationStem": "47c72236bae9bd025da3bb683740c57954c04d5954984bfca83959a03ce439d3",
+      "animatic:shot.16#narrationStem": "95c4ff84371979ce6c27ce353e07ceabd404569ae5a9530bc9ee4c48d0f484af",
+      "animatic:shot.17#narrationStem": "f40e8108a925ff859b9bc911d79d0b25221428a57d27f46779ee6e67c0b4f607"
+    }
+  },
+  "decisions": {
+    "11": "accepted",
+    "12": "accepted",
+    "16": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "animatic:shot.11#narrationStem",
+      "via": "animatic:shot.11"
+    },
+    {
+      "address": "animatic:shot.12#narrationStem",
+      "via": "animatic:shot.12"
+    },
+    {
+      "address": "animatic:shot.16#narrationStem",
+      "via": "animatic:shot.16"
+    },
+    {
+      "address": "animatic:shot.11#composition",
+      "via": "animatic:shot.11"
+    },
+    {
+      "address": "animatic:shot.12#composition",
+      "via": "animatic:shot.12"
+    },
+    {
+      "address": "animatic:shot.16#composition",
+      "via": "animatic:shot.16"
+    }
+  ],
+  "handoffId": "20000101T002829000",
+  "handoffSummary": "入力欄にカーソルが入った瞬間にプレースホルダー「Do anything」が消えるようにしました。同じ入力欄を使う shot 11 の終わりと shot 16 も揃えています。",
+  "handoffNotes": [
+    {
+      "address": "animatic:shot.11",
+      "text": "最後に入力欄へカーソルが入る瞬間、プレースホルダーを消すようにしました（shot 12 の頭とつながるため）。"
+    },
+    {
+      "address": "animatic:shot.12",
+      "text": "カーソルが入った時点でプレースホルダーを消し、空の入力欄に $konte が打ち込まれます。打ち込み後の候補選択と送信の間は、絵に必要な間としてそのまま残しています。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "同じく、カーソルが入った瞬間にプレースホルダーを消すようにしました。"
+    }
+  ]
+}

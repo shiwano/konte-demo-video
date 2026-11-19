@@ -1,0 +1,264 @@
+{
+  "mode": "animatic-preview",
+  "stage": "animatic",
+  "createdAt": "2000-01-01T00:26:50.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-k4n9jwwe"
+        },
+        "sources": {
+          "animatic:shot.01.vo": "v-k4n9jwwe"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-FKMBtfgE"
+        },
+        "sources": {
+          "animatic:shot.02.vo": "v-FKMBtfgE"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 5.5,
+        "duration": 5.5,
+        "variants": {
+          "vo": "v-pa9QbSOS"
+        },
+        "sources": {
+          "animatic:shot.03.vo": "v-pa9QbSOS",
+          "reference:icon": "v-NjizW5dk"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 11,
+        "duration": 2,
+        "variants": {
+          "vo": "v-w93YvYGh"
+        },
+        "sources": {
+          "animatic:shot.04.vo": "v-w93YvYGh",
+          "reference:icon": "v-NjizW5dk"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 13,
+        "duration": 3.5,
+        "variants": {
+          "vo": "v-FNAkiZ7s"
+        },
+        "sources": {
+          "animatic:shot.05.vo": "v-FNAkiZ7s",
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 16.5,
+        "duration": 2,
+        "variants": {},
+        "sources": {
+          "reference:icon": "v-NjizW5dk",
+          "reference:refGirl": "v-TtkREfFM",
+          "reference:refOwner": "v-kPB4Y64z",
+          "reference:refUmbrella": "v-o8BgUHdF",
+          "reference:refCafe": "v-aRJ5bTTN"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 18.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-3GnK03Gi"
+        },
+        "sources": {
+          "animatic:shot.07.vo": "v-3GnK03Gi"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 21.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-2XpsDtxf"
+        },
+        "sources": {
+          "animatic:shot.08.vo": "v-2XpsDtxf",
+          "reference:icon": "v-NjizW5dk",
+          "reference:panel01": "v-m25AXgHS",
+          "reference:panel02": "v-9qJdraMj",
+          "reference:panel03": "v-zR4w6aCP",
+          "reference:panel04": "v-Tx70aEiy",
+          "reference:panel05": "v-mWGJP50M",
+          "reference:panel06": "v-znJ4sgzB"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 24.5,
+        "duration": 3,
+        "variants": {
+          "vo": "v-liwD6WL4"
+        },
+        "sources": {
+          "animatic:shot.09.vo": "v-liwD6WL4",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame03": "v-2kepDeyZ",
+          "reference:frame04": "v-fNI6mBNy"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 27.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-RTB2tcrw"
+        },
+        "sources": {
+          "animatic:shot.10.vo": "v-RTB2tcrw",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 30,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-igWn5vhX"
+        },
+        "sources": {
+          "animatic:shot.11.vo": "v-igWn5vhX",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 32.5,
+        "duration": 1.5,
+        "variants": {},
+        "sources": {
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05Before": "v-oc9EcJ9Y"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 34,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-GE2VZrK5"
+        },
+        "sources": {
+          "animatic:shot.13.vo": "v-GE2VZrK5"
+        }
+      },
+      {
+        "shotId": "14",
+        "start": 36.5,
+        "duration": 2.5,
+        "variants": {
+          "vo": "v-ke59eNz1"
+        },
+        "sources": {
+          "animatic:shot.14.vo": "v-ke59eNz1",
+          "reference:icon": "v-NjizW5dk",
+          "reference:frame05": "v-o8gMN6Fm"
+        }
+      },
+      {
+        "shotId": "15",
+        "start": 39,
+        "duration": 4,
+        "variants": {
+          "vo": "v-UhMOiNkk"
+        },
+        "sources": {
+          "animatic:shot.15.vo": "v-UhMOiNkk"
+        }
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {},
+    "contentHashes": {
+      "animatic:shot.01#composition": "18da04caa7bf8e59845e9422fbc1a254e38ae46f142fa1e3ad1aa112c83c3d34",
+      "animatic:shot.02#composition": "66331162edba6fa7ff7ab27747ee1040f6ef55cede5cb8b97eb1877bce7ce5cb",
+      "animatic:shot.03#composition": "e5175cfd5dd69d5fedb05c8f63d934c8809ab645107625b2b443da88586774b2",
+      "animatic:shot.04#composition": "64d956bdbaf9a708c74f68ef0850524427594f0167e697810fb6104efe4d9df7",
+      "animatic:shot.05#composition": "6e54e51f7cc28dcdd07e431129ada587208e608a60472bbada225e3a4c16b197",
+      "animatic:shot.06#composition": "e1111aaae976b0151b062aca8b8961237eeaf02b8a45a724046b5f20d075f14b",
+      "animatic:shot.07#composition": "5bae70e7f97a33278dff91b2245027775aea92c48907a7d565df79d47d02cdc5",
+      "animatic:shot.08#composition": "6cfb3f761f1f258c7eccad79ffe386c297470a7456ae6cb042ada02a429cd75c",
+      "animatic:shot.09#composition": "b20ddfdf2493425bdd6bd0f21cc36af483f09dedd506a8e829f565849adc5bdf",
+      "animatic:shot.10#composition": "f34cb3079f657e344a91f6bb4f412a89726beb581f2654616fb1af6a8924c33a",
+      "animatic:shot.11#composition": "083c90345c0d6f19adbe127965636f492a642e4e95e0dafb96e0acdc7c1d629a",
+      "animatic:shot.12#composition": "7f8d04a8ed7a12b0e2a921d42029cd86911d1958414d3506cbf3284baa861b8e",
+      "animatic:shot.13#composition": "5f5e950fe4c08215c54da0ae31e7a745f888365d5a60145910e2ad187b5cdae5",
+      "animatic:shot.14#composition": "c00e8e8c3ab8f0a07ff8b32c13930df4ab171062e59bb181c0f1f7f6d8350e91",
+      "animatic:shot.15#composition": "309934f854f430514ed9e44781ec54c2dab1cdde3b18dd22ed36e0d7d414d4d1",
+      "animatic:shot.01#narrationStem": "19236680df1c8efd82b7f0504783139d32e16f1f3dddc8471698f68528f6a254",
+      "animatic:shot.02#narrationStem": "876bfcd752ee52eb90000e7adc12a5dfe5e93e44e69071faff0de7725e4f37c4",
+      "animatic:shot.03#narrationStem": "079b74dcc499a950d5a0775a74fda15865a6fb1c5f17a94423175ad5bc635af7",
+      "animatic:shot.04#narrationStem": "a515a186ee1bd21f26d56602e0e964ffa2831a2d72ab0da2f52467629f97545c",
+      "animatic:shot.05#narrationStem": "334a9e6611eebbde5e55c80ec3190e1f44dac38f2309d735b0b1b2588f9e4baa",
+      "animatic:shot.07#narrationStem": "54ec233372320fe31a4a795d3ccbb6013492ec23bf078122f146e71b2ed6a8e5",
+      "animatic:shot.08#narrationStem": "8bbde73bf6606c8e2416bbb5197cb8b304250994eeea958777b3814a0b46e237",
+      "animatic:shot.09#narrationStem": "97448c7c5f19f15443900325117986c88f6d5b6e5e871db646ec37ec0c7063d1",
+      "animatic:shot.10#narrationStem": "13038d04111ca3b3bbe75ed8a5a0e73a5a2b43f68c6764f87876547cd2e8af6e",
+      "animatic:shot.11#narrationStem": "c42ca9b42a5e5fd82fad62d474742da60b88d660420ca31fb1e4a0eb61e60f94",
+      "animatic:shot.13#narrationStem": "f5290d29b93fb7aaba1c3f3b7faf4e967d72a7771cefb37ecf7f39a86fe826fb",
+      "animatic:shot.14#narrationStem": "6068e3854d643eeaf4598f34a10086ee08d282ac971e5f327d940113e22b96fe",
+      "animatic:shot.15#narrationStem": "aab71807cd3ca3f718f899cb700d108c6db3fc7fbe6009d8da730e5d027be801"
+    }
+  },
+  "decisions": {
+    "03": "accepted",
+    "04": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "animatic:shot.03#narrationStem",
+      "via": "animatic:shot.03"
+    },
+    {
+      "address": "animatic:shot.04#narrationStem",
+      "via": "animatic:shot.04"
+    },
+    {
+      "address": "animatic:shot.03#composition",
+      "via": "animatic:shot.03"
+    },
+    {
+      "address": "animatic:shot.04#composition",
+      "via": "animatic:shot.04"
+    }
+  ],
+  "handoffId": "20000101T002649000",
+  "handoffSummary": "ショット03のズームを直しました。カメラが左上を支点に寄りながら下へ動き、同時に画面もスクロールしていたため、動きが二重になっていました。カメラの寄りをやめて、スクロールだけで見せています。",
+  "handoffNotes": [
+    {
+      "address": "animatic:shot.03",
+      "text": "カメラの寄りをやめて、スクロールだけにしました"
+    },
+    {
+      "address": "animatic:shot.04",
+      "text": "画面の拡大方法を変えたので描き直しています。見た目は前回と同じです"
+    }
+  ]
+}

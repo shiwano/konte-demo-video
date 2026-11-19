@@ -1,0 +1,22 @@
+{
+  "stage": "video",
+  "summary": "animatic で受け入れていただいた、再起動をやめて新しいセッションを始める流れを映像側に反映しました。効果音と字幕が乗った状態です。",
+  "notes": [
+    {
+      "address": "video:shot.12",
+      "text": "チェックリスト3項目めの文言のみ変更です。"
+    },
+    {
+      "address": "video:shot.13",
+      "text": "チェックリストと進行表示の文言を hand-off の言い回しに変えました。"
+    },
+    {
+      "address": "video:shot.14",
+      "text": "新しい返答の文とナレーション「Then start a new session.」です。"
+    },
+    {
+      "address": "video:shot.16",
+      "text": "shot 14 の最後の画面から始まり、konte-workspace の + で新しいセッションを開きます。"
+    }
+  ]
+}

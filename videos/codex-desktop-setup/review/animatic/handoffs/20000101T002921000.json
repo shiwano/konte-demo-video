@@ -1,0 +1,14 @@
+{
+  "stage": "animatic",
+  "summary": "Konte プラグインの説明文を、今の「Set up konte, …」に直しました。",
+  "notes": [
+    {
+      "address": "animatic:shot.10",
+      "text": "Personal タブの konte の行の説明を「Set up konte, the agent-operated AI video…」にしました。"
+    },
+    {
+      "address": "animatic:shot.11",
+      "text": "最初に映る Customize 画面の konte の行の説明も同じく直っています。"
+    }
+  ]
+}

@@ -143,7 +143,7 @@ export default defineDirection({
         kind: "graphic",
         role: "rhythm",
         action:
-          "入力欄に `$konte` が打ち込まれ、Konte: Setup と Konte: Upgrade の二つだけの候補から Konte: Setup が選ばれて送信される。",
+          "入力欄に `$konte` が打ち込まれ、Konte: Setup だけの候補からそれが選ばれて送信される。",
         duration: 3.5,
         script: [{ narration: "and run konte setup." }],
       },
@@ -161,25 +161,17 @@ export default defineDirection({
         kind: "graphic",
         role: "rhythm",
         action:
-          "エージェントの返答に、Codex を完全に終了して起動し直すよう求める一文が現れ、その文に寄る。",
+          "エージェントの返答に、このワークスペースで新しいチャットを始めるよう求める一文が現れ、その文に寄る。",
         duration: 2.5,
-        script: [{ narration: "Then quit and reopen the app." }],
-      },
-      {
-        id: "15",
-        kind: "graphic",
-        role: "rhythm",
-        action:
-          "上のメニューバーの File → Quit ChatGPT で Codex が終了して画面が一瞬暗くなり、起動し直した Codex の、konte-workspace のホーム画面が開く。",
-        duration: 2.5,
+        script: [{ narration: "Then start a new chat." }],
       },
       {
         id: "16",
         kind: "graphic",
         role: "rhythm",
         action:
-          "入力欄に `$konte` が打ち込まれ、再起動で五つに増えた候補の中から Konte Checkin が選ばれて送信される。",
-        duration: 4,
+          "Set up Konte のチャットから左端のホームアイコンで新しいチャットのホーム画面が開き、入力欄に `$konte` が打ち込まれ、増えた候補の中から Konte Checkin が選ばれて送信される。",
+        duration: 4.5,
         telop: ["5 Check in"],
         script: [{ narration: "Now run konte checkin." }],
       },

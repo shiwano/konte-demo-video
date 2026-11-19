@@ -1,0 +1,22 @@
+{
+  "stage": "animatic",
+  "summary": "setup 後の再起動をやめ、新しいセッションを始める流れに直しました。旧 shot 15（File → Exit で再起動）は削除しています。",
+  "notes": [
+    {
+      "address": "animatic:shot.12",
+      "text": "画面内のチェックリスト3項目めを「Hand off next steps」に変えただけです。"
+    },
+    {
+      "address": "animatic:shot.13",
+      "text": "チェックリストと進行表示の文言を、再起動から hand-off の言い回しに変えました。"
+    },
+    {
+      "address": "animatic:shot.14",
+      "text": "返答を「Start a new session in this folder…」にし、ナレーションを「Then start a new session.」で作り直しました（新しい音声は 1.6 秒で、引き伸ばしなしで収まります）。"
+    },
+    {
+      "address": "animatic:shot.16",
+      "text": "旧 shot 15 がなくなったので、shot 14 の最後の画面（setup の返答）から始まり、konte-workspace の + で新しいセッションを開くようにしました。"
+    }
+  ]
+}

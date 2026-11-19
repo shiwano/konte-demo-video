@@ -1,0 +1,10 @@
+{
+  "stage": "video",
+  "summary": "書き出し用のカバー画像を、konte のインストールが終わってトーストが出た瞬間（shot 10）に設定しました。これを受け入れていただければ書き出します。",
+  "notes": [
+    {
+      "address": "video:thumbnail",
+      "text": "shot 10 の「Added」とトースト「Konte is installed and ready to use.」が見える瞬間です。"
+    }
+  ]
+}

@@ -158,24 +158,16 @@ export default defineDirection({
         kind: "graphic",
         role: "rhythm",
         action:
-          "エージェントの返答に、Claude Code を完全に終了して起動し直すよう求める一文が現れ、その文に寄る。",
+          "エージェントの返答に、このフォルダで新しいセッションを始めるよう求める一文が現れ、その文に寄る。",
         duration: 2,
-        script: [{ narration: "Then quit and reopen the app." }],
-      },
-      {
-        id: "15",
-        kind: "graphic",
-        role: "rhythm",
-        action:
-          "左上のメニューから File → Exit で Claude Code が終了して画面が一瞬暗くなり、起動し直した Claude Code の、フォルダ欄に konte-workspace が出た New session 画面が開く。",
-        duration: 2.5,
+        script: [{ narration: "Then start a new session." }],
       },
       {
         id: "16",
         kind: "graphic",
         role: "rhythm",
         action:
-          "サイドバーの konte-workspace の横の + で新しいセッションが開き、入力欄に `/konte-checkin` が打ち込まれて送信される。",
+          "Konte setup のセッション画面から、サイドバーの konte-workspace の横の + で新しいセッションが開き、入力欄に `/konte-checkin` が打ち込まれて送信される。",
         duration: 4,
         telop: ["5 Check in"],
         script: [{ narration: "Now run konte checkin." }],

@@ -1,0 +1,14 @@
+{
+  "stage": "video",
+  "summary": "スキル候補から Konte: Upgrade を消した shot 12 と 16 を、効果音・字幕つきで並べています。",
+  "notes": [
+    {
+      "address": "video:shot.12",
+      "text": "$konte の候補は Konte: Setup だけです。"
+    },
+    {
+      "address": "video:shot.16",
+      "text": "候補は四つで、Konte Checkin が選ばれます。"
+    }
+  ]
+}

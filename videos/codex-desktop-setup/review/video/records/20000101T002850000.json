@@ -1,0 +1,223 @@
+{
+  "mode": "video-preview",
+  "stage": "video",
+  "createdAt": "2000-01-01T00:28:50.000Z",
+  "context": {
+    "shots": [
+      {
+        "shotId": "01",
+        "start": 0,
+        "duration": 2,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "02",
+        "start": 2,
+        "duration": 2,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "03",
+        "start": 4,
+        "duration": 2.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "04",
+        "start": 6.5,
+        "duration": 3.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "05",
+        "start": 10,
+        "duration": 2.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "06",
+        "start": 12.5,
+        "duration": 2.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "07",
+        "start": 15,
+        "duration": 2,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "08",
+        "start": 17,
+        "duration": 3,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "09",
+        "start": 20,
+        "duration": 3.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "10",
+        "start": 23.5,
+        "duration": 3.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "11",
+        "start": 27,
+        "duration": 2,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr"
+        }
+      },
+      {
+        "shotId": "12",
+        "start": 29,
+        "duration": 3.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "13",
+        "start": 32.5,
+        "duration": 2.5,
+        "variants": {},
+        "sources": {}
+      },
+      {
+        "shotId": "14",
+        "start": 35,
+        "duration": 2.5,
+        "variants": {},
+        "sources": {}
+      },
+      {
+        "shotId": "16",
+        "start": 37.5,
+        "duration": 4.5,
+        "variants": {},
+        "sources": {
+          "reference:sfxClick": "v-t7kODcQr",
+          "reference:sfxTyping": "v-K9lrI4EW"
+        }
+      },
+      {
+        "shotId": "17",
+        "start": 42,
+        "duration": 3.5,
+        "variants": {},
+        "sources": {}
+      }
+    ],
+    "timeline": {},
+    "timelineSources": {
+      "reference:bgm": "v-zEpF0CI2"
+    },
+    "contentHashes": {
+      "video:shot.01#composition": "e95b4f50ffb82144396292c2592149ef320c1421670ff99fdeb58e552678060c",
+      "video:shot.02#composition": "a5479cf4031763e920e6315f269b90b9432312b73dfb3eec382a890a188ed87e",
+      "video:shot.03#composition": "e324a9987f2bd9cb1e95004ebb8c9689db222d201aecf228f8c21a2303b7a756",
+      "video:shot.04#composition": "e14bc9ebec9001a2d969e461f1b69cdc5e19964c03230045616d05e79f590cf9",
+      "video:shot.05#composition": "8e65dc4dbb489be27ebf2088b13b05d5e615ff920dbaee866d4024152bd7340d",
+      "video:shot.06#composition": "d02f38fee73c72f8563067d0f0ac61b2063ad478498d4917e79d40a1e3a645ac",
+      "video:shot.07#composition": "119d40f4a349f973179fc0fc24bd786174ab40c75a0d160cfd0c9001aaff0bec",
+      "video:shot.08#composition": "7e96e82ddb89a2c0724d160c16a5843f2f3d78a8d30911f209cd880f8e6eccb6",
+      "video:shot.09#composition": "367cb6dbd1536a8745dd78223fb640945b576b8d1b99bd03c399e97c25240363",
+      "video:shot.10#composition": "a72efd1d5557abee70cbc7166a81b18acae900449c26efa6bb1665e44502ab2a",
+      "video:shot.11#composition": "ccd7fd3e3db2141f16614731bf6e6d230166dad1ec8d245b7fba735741019bb5",
+      "video:shot.12#composition": "b6d955ecb7b75d061816c698e8f1f6418770b099e0a9835f2a14b18a14b432e4",
+      "video:shot.13#composition": "e437adae8256acc3beb6463ad13898569b1426b49d358444017ca19a0431ed4b",
+      "video:shot.14#composition": "84b718c799f59947512366f66140140a22f697295ee6a86a0c0a13641ef982ac",
+      "video:shot.16#composition": "a7823d3d0ede1be0d230658be9f54895476a3c605a12dd799c26bbae4ba62c56",
+      "video:shot.17#composition": "58c8033f771c573c307ce8baa6c46a04e91b32545b75b8453384a5d4ca220952",
+      "video:shot.01#stem": "63b7584f45e59d8fa687e58f95c636eb97c9074764745eb7134f93a293449d47",
+      "video:shot.02#stem": "32f867b610b0394c5e0d72455b2e0fc9898f64924cd64c67737a0cca35915296",
+      "video:shot.03#stem": "89fa45cd73e2ac404688e8fe87914a941368eccfe1e365528f38976319f6c2c3",
+      "video:shot.04#stem": "5b90d6395153f7a176132d24f9f5d67bb1c6bc58f6d454f7812658028f0b3ecb",
+      "video:shot.05#stem": "0c9ac90342864f4cec903edd9bade20ca45cd6ffe0119e2db24c1873946ebfa8",
+      "video:shot.06#stem": "a50f71123bcc80c82d1714ed4e163950b788486b743ba64461b8662740de0a16",
+      "video:shot.07#stem": "3930df3b08ff92036cfdeb60afe8dd370fcd5aafdff642cf6d64df6f3c6229fe",
+      "video:shot.08#stem": "cc22d18989188cb7da389e18ad4b7d36bcf248dbd954caf9ec4156f1e07610cf",
+      "video:shot.09#stem": "3aefb544bc2874c4ae6f98715504e2c915e8a23643c485366be7268fab82d6f2",
+      "video:shot.10#stem": "be9d1ac697dad0df0f043c1b9aa9cff354626ff5026b0f80c9b8d9d36dccfdeb",
+      "video:shot.11#stem": "c39bea9e216c4302bc9e4c8d2af8cd99a0aef03e98118664da9126c5817086bd",
+      "video:shot.12#stem": "aa889a947562827d5dcbf70c1059c28d8f76c5df5b467a3016e48f827aaf32fe",
+      "video:shot.13#stem": "62792a3559013327513d42a545a990d2129d8e67cbc901d0e1c6c86c776f5fbc",
+      "video:shot.14#stem": "5424dccd4c6706feb31a33bfddb6b8d800828a3576b64ed513af09f799a69be9",
+      "video:shot.16#stem": "5fd776a9f135b865cbfe613e4ca46a60e884e90afc3e8600367a3066b9a93072",
+      "video:shot.17#stem": "c093c27eb020fbe8c31576b1d8e5a6296a65941b4128c868c81f6c666a3ac679",
+      "video:timeline#stem": "a295ce97c46040870e68f6ae86c5664f6d330483e10a25aee22f55cd0994a2de"
+    }
+  },
+  "decisions": {
+    "12": "accepted",
+    "16": "accepted"
+  },
+  "cascadeAccepted": [
+    {
+      "address": "video:shot.12#stem",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "video:shot.16#stem",
+      "via": "video:shot.16"
+    },
+    {
+      "address": "video:shot.12#composition",
+      "via": "video:shot.12"
+    },
+    {
+      "address": "video:shot.16#composition",
+      "via": "video:shot.16"
+    }
+  ],
+  "handoffId": "20000101T002849000",
+  "handoffSummary": "スキル候補から Konte: Upgrade を消した shot 12 と 16 を、効果音・字幕つきで並べています。",
+  "handoffNotes": [
+    {
+      "address": "video:shot.12",
+      "text": "$konte の候補は Konte: Setup だけです。"
+    },
+    {
+      "address": "video:shot.16",
+      "text": "候補は四つで、Konte Checkin が選ばれます。"
+    }
+  ]
+}

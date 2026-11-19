@@ -1,0 +1,18 @@
+{
+  "stage": "video",
+  "summary": "Konte プラグインの説明文とバージョン、/konte の候補を直した shot 10〜12 を、効果音・字幕つきで並べています。",
+  "notes": [
+    {
+      "address": "video:shot.10",
+      "text": "Konte の行の説明が、追加前「Install and bootstrap konte, …」、追加後「v0.2.0 · Set up konte, …」になりました。"
+    },
+    {
+      "address": "video:shot.11",
+      "text": "Plugins 画面に残る Konte の行の説明が同じく直っています。"
+    },
+    {
+      "address": "video:shot.12",
+      "text": "/konte の候補は konte:setup と context の二つです。"
+    }
+  ]
+}

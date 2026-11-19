@@ -45,8 +45,7 @@ export default defineAnimatic(direction, {
       .nextGraphicShot("12", voiced("12"))
       .nextGraphicShot("13", voiced("13"))
       .nextGraphicShot("14", voiced("14"))
-      .nextGraphicShot("15", silent("15"))
-      .nextGraphicShot("16", voiced("16", undefined, 0.6))
+      .nextGraphicShot("16", voiced("16", undefined, 1.2))
       .nextGraphicShot("17", voiced("17")),
   }),
 });
